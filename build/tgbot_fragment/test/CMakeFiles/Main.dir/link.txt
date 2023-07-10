@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/Main.dir/src/Test.cpp.o -o Main  -Wl,-rpath,/usr/local/lib ../libtgbot_fragment.a ../tgbot-cpp/libTgBot.a /usr/local/lib/libz.so /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0 /usr/local/lib/libcurl.so 
