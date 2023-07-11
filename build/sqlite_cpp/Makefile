@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anaskhan/proj/botmaestro
+CMAKE_SOURCE_DIR = /home/anaskhan/proj/buildroid
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anaskhan/proj/botmaestro/build
+CMAKE_BINARY_DIR = /home/anaskhan/proj/buildroid/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anaskhan/proj/botmaestro/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/botmaestro/build/CMakeFiles /home/anaskhan/proj/botmaestro/build/sqlite_cpp//CMakeFiles/progress.marks
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sqlite_cpp/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/botmaestro/build/CMakeFiles 0
+	cd /home/anaskhan/proj/buildroid/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles /home/anaskhan/proj/buildroid/build/sqlite_cpp//CMakeFiles/progress.marks
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sqlite_cpp/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sqlite_cpp/clean
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sqlite_cpp/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sqlite_cpp/preinstall
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sqlite_cpp/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sqlite_cpp/preinstall
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sqlite_cpp/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anaskhan/proj/botmaestro/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anaskhan/proj/buildroid/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 sqlite_cpp/CMakeFiles/sqlite_cpp.dir/rule:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sqlite_cpp/CMakeFiles/sqlite_cpp.dir/rule
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sqlite_cpp/CMakeFiles/sqlite_cpp.dir/rule
 .PHONY : sqlite_cpp/CMakeFiles/sqlite_cpp.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ sqlite_cpp: sqlite_cpp/CMakeFiles/sqlite_cpp.dir/rule
 
 # fast build rule for target.
 sqlite_cpp/fast:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build
 .PHONY : sqlite_cpp/fast
 
 src/Cursor.o: src/Cursor.cpp.o
@@ -180,7 +180,7 @@ src/Cursor.o: src/Cursor.cpp.o
 
 # target to build an object file
 src/Cursor.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/Cursor.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/Cursor.cpp.o
 .PHONY : src/Cursor.cpp.o
 
 src/Cursor.i: src/Cursor.cpp.i
@@ -188,7 +188,7 @@ src/Cursor.i: src/Cursor.cpp.i
 
 # target to preprocess a source file
 src/Cursor.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/Cursor.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/Cursor.cpp.i
 .PHONY : src/Cursor.cpp.i
 
 src/Cursor.s: src/Cursor.cpp.s
@@ -196,7 +196,7 @@ src/Cursor.s: src/Cursor.cpp.s
 
 # target to generate assembly for a file
 src/Cursor.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/Cursor.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/Cursor.cpp.s
 .PHONY : src/Cursor.cpp.s
 
 src/Database.o: src/Database.cpp.o
@@ -204,7 +204,7 @@ src/Database.o: src/Database.cpp.o
 
 # target to build an object file
 src/Database.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/Database.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/Database.cpp.o
 .PHONY : src/Database.cpp.o
 
 src/Database.i: src/Database.cpp.i
@@ -212,7 +212,7 @@ src/Database.i: src/Database.cpp.i
 
 # target to preprocess a source file
 src/Database.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/Database.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/Database.cpp.i
 .PHONY : src/Database.cpp.i
 
 src/Database.s: src/Database.cpp.s
@@ -220,7 +220,7 @@ src/Database.s: src/Database.cpp.s
 
 # target to generate assembly for a file
 src/Database.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/Database.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/Database.cpp.s
 .PHONY : src/Database.cpp.s
 
 src/PreparedStatement.o: src/PreparedStatement.cpp.o
@@ -228,7 +228,7 @@ src/PreparedStatement.o: src/PreparedStatement.cpp.o
 
 # target to build an object file
 src/PreparedStatement.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/PreparedStatement.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/PreparedStatement.cpp.o
 .PHONY : src/PreparedStatement.cpp.o
 
 src/PreparedStatement.i: src/PreparedStatement.cpp.i
@@ -236,7 +236,7 @@ src/PreparedStatement.i: src/PreparedStatement.cpp.i
 
 # target to preprocess a source file
 src/PreparedStatement.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/PreparedStatement.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/PreparedStatement.cpp.i
 .PHONY : src/PreparedStatement.cpp.i
 
 src/PreparedStatement.s: src/PreparedStatement.cpp.s
@@ -244,7 +244,7 @@ src/PreparedStatement.s: src/PreparedStatement.cpp.s
 
 # target to generate assembly for a file
 src/PreparedStatement.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/PreparedStatement.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/PreparedStatement.cpp.s
 .PHONY : src/PreparedStatement.cpp.s
 
 src/SQLite/sqlite3.o: src/SQLite/sqlite3.c.o
@@ -252,7 +252,7 @@ src/SQLite/sqlite3.o: src/SQLite/sqlite3.c.o
 
 # target to build an object file
 src/SQLite/sqlite3.c.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.o
 .PHONY : src/SQLite/sqlite3.c.o
 
 src/SQLite/sqlite3.i: src/SQLite/sqlite3.c.i
@@ -260,7 +260,7 @@ src/SQLite/sqlite3.i: src/SQLite/sqlite3.c.i
 
 # target to preprocess a source file
 src/SQLite/sqlite3.c.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.i
 .PHONY : src/SQLite/sqlite3.c.i
 
 src/SQLite/sqlite3.s: src/SQLite/sqlite3.c.s
@@ -268,7 +268,7 @@ src/SQLite/sqlite3.s: src/SQLite/sqlite3.c.s
 
 # target to generate assembly for a file
 src/SQLite/sqlite3.c.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.s
 .PHONY : src/SQLite/sqlite3.c.s
 
 src/SQLiteCursor.o: src/SQLiteCursor.cpp.o
@@ -276,7 +276,7 @@ src/SQLiteCursor.o: src/SQLiteCursor.cpp.o
 
 # target to build an object file
 src/SQLiteCursor.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLiteCursor.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLiteCursor.cpp.o
 .PHONY : src/SQLiteCursor.cpp.o
 
 src/SQLiteCursor.i: src/SQLiteCursor.cpp.i
@@ -284,7 +284,7 @@ src/SQLiteCursor.i: src/SQLiteCursor.cpp.i
 
 # target to preprocess a source file
 src/SQLiteCursor.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLiteCursor.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLiteCursor.cpp.i
 .PHONY : src/SQLiteCursor.cpp.i
 
 src/SQLiteCursor.s: src/SQLiteCursor.cpp.s
@@ -292,7 +292,7 @@ src/SQLiteCursor.s: src/SQLiteCursor.cpp.s
 
 # target to generate assembly for a file
 src/SQLiteCursor.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLiteCursor.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLiteCursor.cpp.s
 .PHONY : src/SQLiteCursor.cpp.s
 
 src/SQLiteDatabase.o: src/SQLiteDatabase.cpp.o
@@ -300,7 +300,7 @@ src/SQLiteDatabase.o: src/SQLiteDatabase.cpp.o
 
 # target to build an object file
 src/SQLiteDatabase.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLiteDatabase.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLiteDatabase.cpp.o
 .PHONY : src/SQLiteDatabase.cpp.o
 
 src/SQLiteDatabase.i: src/SQLiteDatabase.cpp.i
@@ -308,7 +308,7 @@ src/SQLiteDatabase.i: src/SQLiteDatabase.cpp.i
 
 # target to preprocess a source file
 src/SQLiteDatabase.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLiteDatabase.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLiteDatabase.cpp.i
 .PHONY : src/SQLiteDatabase.cpp.i
 
 src/SQLiteDatabase.s: src/SQLiteDatabase.cpp.s
@@ -316,7 +316,7 @@ src/SQLiteDatabase.s: src/SQLiteDatabase.cpp.s
 
 # target to generate assembly for a file
 src/SQLiteDatabase.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLiteDatabase.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLiteDatabase.cpp.s
 .PHONY : src/SQLiteDatabase.cpp.s
 
 src/SQLitePreparedStatement.o: src/SQLitePreparedStatement.cpp.o
@@ -324,7 +324,7 @@ src/SQLitePreparedStatement.o: src/SQLitePreparedStatement.cpp.o
 
 # target to build an object file
 src/SQLitePreparedStatement.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLitePreparedStatement.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLitePreparedStatement.cpp.o
 .PHONY : src/SQLitePreparedStatement.cpp.o
 
 src/SQLitePreparedStatement.i: src/SQLitePreparedStatement.cpp.i
@@ -332,7 +332,7 @@ src/SQLitePreparedStatement.i: src/SQLitePreparedStatement.cpp.i
 
 # target to preprocess a source file
 src/SQLitePreparedStatement.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLitePreparedStatement.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLitePreparedStatement.cpp.i
 .PHONY : src/SQLitePreparedStatement.cpp.i
 
 src/SQLitePreparedStatement.s: src/SQLitePreparedStatement.cpp.s
@@ -340,7 +340,7 @@ src/SQLitePreparedStatement.s: src/SQLitePreparedStatement.cpp.s
 
 # target to generate assembly for a file
 src/SQLitePreparedStatement.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLitePreparedStatement.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLitePreparedStatement.cpp.s
 .PHONY : src/SQLitePreparedStatement.cpp.s
 
 src/core/Base.o: src/core/Base.cpp.o
@@ -348,7 +348,7 @@ src/core/Base.o: src/core/Base.cpp.o
 
 # target to build an object file
 src/core/Base.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/Base.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/Base.cpp.o
 .PHONY : src/core/Base.cpp.o
 
 src/core/Base.i: src/core/Base.cpp.i
@@ -356,7 +356,7 @@ src/core/Base.i: src/core/Base.cpp.i
 
 # target to preprocess a source file
 src/core/Base.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/Base.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/Base.cpp.i
 .PHONY : src/core/Base.cpp.i
 
 src/core/Base.s: src/core/Base.cpp.s
@@ -364,7 +364,7 @@ src/core/Base.s: src/core/Base.cpp.s
 
 # target to generate assembly for a file
 src/core/Base.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/Base.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/Base.cpp.s
 .PHONY : src/core/Base.cpp.s
 
 src/core/BuffersStorage.o: src/core/BuffersStorage.cpp.o
@@ -372,7 +372,7 @@ src/core/BuffersStorage.o: src/core/BuffersStorage.cpp.o
 
 # target to build an object file
 src/core/BuffersStorage.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/BuffersStorage.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/BuffersStorage.cpp.o
 .PHONY : src/core/BuffersStorage.cpp.o
 
 src/core/BuffersStorage.i: src/core/BuffersStorage.cpp.i
@@ -380,7 +380,7 @@ src/core/BuffersStorage.i: src/core/BuffersStorage.cpp.i
 
 # target to preprocess a source file
 src/core/BuffersStorage.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/BuffersStorage.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/BuffersStorage.cpp.i
 .PHONY : src/core/BuffersStorage.cpp.i
 
 src/core/BuffersStorage.s: src/core/BuffersStorage.cpp.s
@@ -388,7 +388,7 @@ src/core/BuffersStorage.s: src/core/BuffersStorage.cpp.s
 
 # target to generate assembly for a file
 src/core/BuffersStorage.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/BuffersStorage.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/BuffersStorage.cpp.s
 .PHONY : src/core/BuffersStorage.cpp.s
 
 src/core/ByteArray.o: src/core/ByteArray.cpp.o
@@ -396,7 +396,7 @@ src/core/ByteArray.o: src/core/ByteArray.cpp.o
 
 # target to build an object file
 src/core/ByteArray.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/ByteArray.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/ByteArray.cpp.o
 .PHONY : src/core/ByteArray.cpp.o
 
 src/core/ByteArray.i: src/core/ByteArray.cpp.i
@@ -404,7 +404,7 @@ src/core/ByteArray.i: src/core/ByteArray.cpp.i
 
 # target to preprocess a source file
 src/core/ByteArray.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/ByteArray.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/ByteArray.cpp.i
 .PHONY : src/core/ByteArray.cpp.i
 
 src/core/ByteArray.s: src/core/ByteArray.cpp.s
@@ -412,7 +412,7 @@ src/core/ByteArray.s: src/core/ByteArray.cpp.s
 
 # target to generate assembly for a file
 src/core/ByteArray.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/ByteArray.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/ByteArray.cpp.s
 .PHONY : src/core/ByteArray.cpp.s
 
 src/core/FileLog.o: src/core/FileLog.cpp.o
@@ -420,7 +420,7 @@ src/core/FileLog.o: src/core/FileLog.cpp.o
 
 # target to build an object file
 src/core/FileLog.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/FileLog.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/FileLog.cpp.o
 .PHONY : src/core/FileLog.cpp.o
 
 src/core/FileLog.i: src/core/FileLog.cpp.i
@@ -428,7 +428,7 @@ src/core/FileLog.i: src/core/FileLog.cpp.i
 
 # target to preprocess a source file
 src/core/FileLog.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/FileLog.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/FileLog.cpp.i
 .PHONY : src/core/FileLog.cpp.i
 
 src/core/FileLog.s: src/core/FileLog.cpp.s
@@ -436,7 +436,7 @@ src/core/FileLog.s: src/core/FileLog.cpp.s
 
 # target to generate assembly for a file
 src/core/FileLog.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/FileLog.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/FileLog.cpp.s
 .PHONY : src/core/FileLog.cpp.s
 
 src/core/NativeByteBuffer.o: src/core/NativeByteBuffer.cpp.o
@@ -444,7 +444,7 @@ src/core/NativeByteBuffer.o: src/core/NativeByteBuffer.cpp.o
 
 # target to build an object file
 src/core/NativeByteBuffer.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/NativeByteBuffer.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/NativeByteBuffer.cpp.o
 .PHONY : src/core/NativeByteBuffer.cpp.o
 
 src/core/NativeByteBuffer.i: src/core/NativeByteBuffer.cpp.i
@@ -452,7 +452,7 @@ src/core/NativeByteBuffer.i: src/core/NativeByteBuffer.cpp.i
 
 # target to preprocess a source file
 src/core/NativeByteBuffer.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/NativeByteBuffer.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/NativeByteBuffer.cpp.i
 .PHONY : src/core/NativeByteBuffer.cpp.i
 
 src/core/NativeByteBuffer.s: src/core/NativeByteBuffer.cpp.s
@@ -460,7 +460,7 @@ src/core/NativeByteBuffer.s: src/core/NativeByteBuffer.cpp.s
 
 # target to generate assembly for a file
 src/core/NativeByteBuffer.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/NativeByteBuffer.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/NativeByteBuffer.cpp.s
 .PHONY : src/core/NativeByteBuffer.cpp.s
 
 src/core/TgObject.o: src/core/TgObject.cpp.o
@@ -468,7 +468,7 @@ src/core/TgObject.o: src/core/TgObject.cpp.o
 
 # target to build an object file
 src/core/TgObject.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/TgObject.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/TgObject.cpp.o
 .PHONY : src/core/TgObject.cpp.o
 
 src/core/TgObject.i: src/core/TgObject.cpp.i
@@ -476,7 +476,7 @@ src/core/TgObject.i: src/core/TgObject.cpp.i
 
 # target to preprocess a source file
 src/core/TgObject.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/TgObject.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/TgObject.cpp.i
 .PHONY : src/core/TgObject.cpp.i
 
 src/core/TgObject.s: src/core/TgObject.cpp.s
@@ -484,7 +484,7 @@ src/core/TgObject.s: src/core/TgObject.cpp.s
 
 # target to generate assembly for a file
 src/core/TgObject.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/TgObject.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f sqlite_cpp/CMakeFiles/sqlite_cpp.dir/build.make sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/TgObject.cpp.s
 .PHONY : src/core/TgObject.cpp.s
 
 # Help Target
@@ -550,6 +550,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anaskhan/proj/botmaestro/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anaskhan/proj/buildroid/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

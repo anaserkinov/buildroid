@@ -8,7 +8,7 @@
                 "${workspaceFolder}/src/fragments/"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/clang-12",
+            "compilerPath": "/usr/bin/g++",
             "intelliSenseMode": "linux-clang-x64",
             "configurationProvider": "ms-vscode.cmake-tools"
         }

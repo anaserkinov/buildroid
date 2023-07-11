@@ -35,46 +35,48 @@ int main() {
     DatabaseController dbController;
 
     FragmentManager fragmentManager(&bot);
-    fragmentManager.setFragmentFactory([&dbController](int fragmentId) -> Fragment {
+    fragmentManager.setFragmentFactory([&dbController](int fragmentId) -> std::shared_ptr<Fragment> {
         switch (fragmentId) {
         case Fragments::LOGIN: {
-            BaseFragment fragment = LoginFragment();
-            fragment.setDBController(&dbController);
+            auto fragment = std::make_shared<LoginFragment>();
+            fragment->setDBController(&dbController);
             return fragment;
         }
         default:
-            return Fragment(1);
+            return std::make_shared<Fragment>(1);
         }
     });
 
     bot.getEvents().onCommand(
             {"start"},
             [&](TgBot::Message::Ptr message) {
-                std::cout << "onConmmad: " << message->text<<"\n";
-                ReplyKeyboardMarkup::Ptr keyboardOneCol(new ReplyKeyboardMarkup);
-                std::vector<KeyboardButton::Ptr> row;
-                KeyboardButton::Ptr button(new KeyboardButton);
-                button->text = "Loy";
-                row.push_back(button);
-                keyboardOneCol->keyboard.push_back(row);
-                bot.getApi().sendMessage(
-                        message->chat->id,
-                        "Lll",
-                        false,
-                        0,
-                        keyboardOneCol);
+                fragmentManager.onCommand(message);
+
+                // std::cout << "onConmmad: " << message->text << "\n";
+                // ReplyKeyboardMarkup::Ptr keyboardOneCol(new ReplyKeyboardMarkup);
+                // std::vector<KeyboardButton::Ptr> row;
+                // KeyboardButton::Ptr button(new KeyboardButton);
+                // button->text = "Loy";
+                // row.push_back(button);
+                // keyboardOneCol->keyboard.push_back(row);
+                // bot.getApi().sendMessage(
+                //         message->chat->id,
+                //         "Lll",
+                //         false,
+                //         0,
+                //         keyboardOneCol);
             });
 
     bot.getEvents().onAnyMessage([&bot, &fragmentManager](Message::Ptr message) {
         // const std::string message = message->text;
-        std::cout << "onAny: " << message->text<<"\n";
+        std::cout << "onAny: " << message->text << "\n";
     });
 
     bot.getEvents().onNonCommandMessage([&bot, &fragmentManager](Message::Ptr message) {
         // const std::string message = message->text;
-        std::cout << message->text<<"\n";
+        std::cout << message->text << "\n";
         if (message->contact != nullptr) {
-            std::cout << message->contact->phoneNumber<<"\n";
+            std::cout << message->contact->phoneNumber << "\n";
         }
     });
 

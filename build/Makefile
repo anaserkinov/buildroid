@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anaskhan/proj/botmaestro
+CMAKE_SOURCE_DIR = /home/anaskhan/proj/buildroid
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anaskhan/proj/botmaestro/build
+CMAKE_BINARY_DIR = /home/anaskhan/proj/buildroid/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/botmaestro/build/CMakeFiles /home/anaskhan/proj/botmaestro/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles /home/anaskhan/proj/buildroid/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/botmaestro/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -162,17 +162,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BotMaestro
+# Target rules for targets named Buildroid
 
 # Build rule for target.
-BotMaestro: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BotMaestro
-.PHONY : BotMaestro
+Buildroid: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Buildroid
+.PHONY : Buildroid
 
 # fast build rule for target.
-BotMaestro/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/build
-.PHONY : BotMaestro/fast
+Buildroid/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/build
+.PHONY : Buildroid/fast
 
 #=============================================================================
 # Target rules for targets named sqlite_cpp
@@ -231,7 +231,7 @@ src/DatabaseController.o: src/DatabaseController.cpp.o
 
 # target to build an object file
 src/DatabaseController.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/DatabaseController.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o
 .PHONY : src/DatabaseController.cpp.o
 
 src/DatabaseController.i: src/DatabaseController.cpp.i
@@ -239,7 +239,7 @@ src/DatabaseController.i: src/DatabaseController.cpp.i
 
 # target to preprocess a source file
 src/DatabaseController.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/DatabaseController.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.i
 .PHONY : src/DatabaseController.cpp.i
 
 src/DatabaseController.s: src/DatabaseController.cpp.s
@@ -247,7 +247,7 @@ src/DatabaseController.s: src/DatabaseController.cpp.s
 
 # target to generate assembly for a file
 src/DatabaseController.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/DatabaseController.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.s
 .PHONY : src/DatabaseController.cpp.s
 
 src/Main.o: src/Main.cpp.o
@@ -255,7 +255,7 @@ src/Main.o: src/Main.cpp.o
 
 # target to build an object file
 src/Main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/Main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/Main.cpp.o
 .PHONY : src/Main.cpp.o
 
 src/Main.i: src/Main.cpp.i
@@ -263,7 +263,7 @@ src/Main.i: src/Main.cpp.i
 
 # target to preprocess a source file
 src/Main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/Main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/Main.cpp.i
 .PHONY : src/Main.cpp.i
 
 src/Main.s: src/Main.cpp.s
@@ -271,7 +271,7 @@ src/Main.s: src/Main.cpp.s
 
 # target to generate assembly for a file
 src/Main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/Main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
 src/MainDatabase.o: src/MainDatabase.cpp.o
@@ -279,7 +279,7 @@ src/MainDatabase.o: src/MainDatabase.cpp.o
 
 # target to build an object file
 src/MainDatabase.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/MainDatabase.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.o
 .PHONY : src/MainDatabase.cpp.o
 
 src/MainDatabase.i: src/MainDatabase.cpp.i
@@ -287,7 +287,7 @@ src/MainDatabase.i: src/MainDatabase.cpp.i
 
 # target to preprocess a source file
 src/MainDatabase.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/MainDatabase.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.i
 .PHONY : src/MainDatabase.cpp.i
 
 src/MainDatabase.s: src/MainDatabase.cpp.s
@@ -295,7 +295,7 @@ src/MainDatabase.s: src/MainDatabase.cpp.s
 
 # target to generate assembly for a file
 src/MainDatabase.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/MainDatabase.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.s
 .PHONY : src/MainDatabase.cpp.s
 
 src/fragments/BaseFragment.o: src/fragments/BaseFragment.cpp.o
@@ -303,7 +303,7 @@ src/fragments/BaseFragment.o: src/fragments/BaseFragment.cpp.o
 
 # target to build an object file
 src/fragments/BaseFragment.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/fragments/BaseFragment.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o
 .PHONY : src/fragments/BaseFragment.cpp.o
 
 src/fragments/BaseFragment.i: src/fragments/BaseFragment.cpp.i
@@ -311,7 +311,7 @@ src/fragments/BaseFragment.i: src/fragments/BaseFragment.cpp.i
 
 # target to preprocess a source file
 src/fragments/BaseFragment.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/fragments/BaseFragment.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.i
 .PHONY : src/fragments/BaseFragment.cpp.i
 
 src/fragments/BaseFragment.s: src/fragments/BaseFragment.cpp.s
@@ -319,7 +319,7 @@ src/fragments/BaseFragment.s: src/fragments/BaseFragment.cpp.s
 
 # target to generate assembly for a file
 src/fragments/BaseFragment.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/fragments/BaseFragment.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.s
 .PHONY : src/fragments/BaseFragment.cpp.s
 
 src/fragments/LoginFragment.o: src/fragments/LoginFragment.cpp.o
@@ -327,7 +327,7 @@ src/fragments/LoginFragment.o: src/fragments/LoginFragment.cpp.o
 
 # target to build an object file
 src/fragments/LoginFragment.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/fragments/LoginFragment.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o
 .PHONY : src/fragments/LoginFragment.cpp.o
 
 src/fragments/LoginFragment.i: src/fragments/LoginFragment.cpp.i
@@ -335,7 +335,7 @@ src/fragments/LoginFragment.i: src/fragments/LoginFragment.cpp.i
 
 # target to preprocess a source file
 src/fragments/LoginFragment.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/fragments/LoginFragment.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.i
 .PHONY : src/fragments/LoginFragment.cpp.i
 
 src/fragments/LoginFragment.s: src/fragments/LoginFragment.cpp.s
@@ -343,7 +343,7 @@ src/fragments/LoginFragment.s: src/fragments/LoginFragment.cpp.s
 
 # target to generate assembly for a file
 src/fragments/LoginFragment.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/fragments/LoginFragment.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.s
 .PHONY : src/fragments/LoginFragment.cpp.s
 
 src/fragments/MainFragment.o: src/fragments/MainFragment.cpp.o
@@ -351,7 +351,7 @@ src/fragments/MainFragment.o: src/fragments/MainFragment.cpp.o
 
 # target to build an object file
 src/fragments/MainFragment.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/fragments/MainFragment.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o
 .PHONY : src/fragments/MainFragment.cpp.o
 
 src/fragments/MainFragment.i: src/fragments/MainFragment.cpp.i
@@ -359,7 +359,7 @@ src/fragments/MainFragment.i: src/fragments/MainFragment.cpp.i
 
 # target to preprocess a source file
 src/fragments/MainFragment.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/fragments/MainFragment.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.i
 .PHONY : src/fragments/MainFragment.cpp.i
 
 src/fragments/MainFragment.s: src/fragments/MainFragment.cpp.s
@@ -367,7 +367,7 @@ src/fragments/MainFragment.s: src/fragments/MainFragment.cpp.s
 
 # target to generate assembly for a file
 src/fragments/MainFragment.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/fragments/MainFragment.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.s
 .PHONY : src/fragments/MainFragment.cpp.s
 
 src/tgbot_fragment_db_impl/FragmentStateController.o: src/tgbot_fragment_db_impl/FragmentStateController.cpp.o
@@ -375,7 +375,7 @@ src/tgbot_fragment_db_impl/FragmentStateController.o: src/tgbot_fragment_db_impl
 
 # target to build an object file
 src/tgbot_fragment_db_impl/FragmentStateController.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o
 .PHONY : src/tgbot_fragment_db_impl/FragmentStateController.cpp.o
 
 src/tgbot_fragment_db_impl/FragmentStateController.i: src/tgbot_fragment_db_impl/FragmentStateController.cpp.i
@@ -383,7 +383,7 @@ src/tgbot_fragment_db_impl/FragmentStateController.i: src/tgbot_fragment_db_impl
 
 # target to preprocess a source file
 src/tgbot_fragment_db_impl/FragmentStateController.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.i
 .PHONY : src/tgbot_fragment_db_impl/FragmentStateController.cpp.i
 
 src/tgbot_fragment_db_impl/FragmentStateController.s: src/tgbot_fragment_db_impl/FragmentStateController.cpp.s
@@ -391,7 +391,7 @@ src/tgbot_fragment_db_impl/FragmentStateController.s: src/tgbot_fragment_db_impl
 
 # target to generate assembly for a file
 src/tgbot_fragment_db_impl/FragmentStateController.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BotMaestro.dir/build.make CMakeFiles/BotMaestro.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.s
 .PHONY : src/tgbot_fragment_db_impl/FragmentStateController.cpp.s
 
 # Help Target
@@ -406,7 +406,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... BotMaestro"
+	@echo "... Buildroid"
 	@echo "... Main"
 	@echo "... TgBot"
 	@echo "... sqlite_cpp"

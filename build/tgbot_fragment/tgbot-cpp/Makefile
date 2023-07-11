@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anaskhan/proj/botmaestro
+CMAKE_SOURCE_DIR = /home/anaskhan/proj/buildroid
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anaskhan/proj/botmaestro/build
+CMAKE_BINARY_DIR = /home/anaskhan/proj/buildroid/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anaskhan/proj/botmaestro/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/botmaestro/build/CMakeFiles /home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp//CMakeFiles/progress.marks
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/tgbot-cpp/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/botmaestro/build/CMakeFiles 0
+	cd /home/anaskhan/proj/buildroid/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles /home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp//CMakeFiles/progress.marks
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/tgbot-cpp/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/tgbot-cpp/clean
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/tgbot-cpp/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/tgbot-cpp/preinstall
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/tgbot-cpp/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/tgbot-cpp/preinstall
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/tgbot-cpp/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anaskhan/proj/botmaestro/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anaskhan/proj/buildroid/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/rule:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/rule
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/rule
 .PHONY : tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ TgBot: tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/rule
 
 # fast build rule for target.
 TgBot/fast:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build
 .PHONY : TgBot/fast
 
 src/Api.o: src/Api.cpp.o
@@ -180,7 +180,7 @@ src/Api.o: src/Api.cpp.o
 
 # target to build an object file
 src/Api.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/Api.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/Api.cpp.o
 .PHONY : src/Api.cpp.o
 
 src/Api.i: src/Api.cpp.i
@@ -188,7 +188,7 @@ src/Api.i: src/Api.cpp.i
 
 # target to preprocess a source file
 src/Api.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/Api.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/Api.cpp.i
 .PHONY : src/Api.cpp.i
 
 src/Api.s: src/Api.cpp.s
@@ -196,7 +196,7 @@ src/Api.s: src/Api.cpp.s
 
 # target to generate assembly for a file
 src/Api.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/Api.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/Api.cpp.s
 .PHONY : src/Api.cpp.s
 
 src/Bot.o: src/Bot.cpp.o
@@ -204,7 +204,7 @@ src/Bot.o: src/Bot.cpp.o
 
 # target to build an object file
 src/Bot.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/Bot.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/Bot.cpp.o
 .PHONY : src/Bot.cpp.o
 
 src/Bot.i: src/Bot.cpp.i
@@ -212,7 +212,7 @@ src/Bot.i: src/Bot.cpp.i
 
 # target to preprocess a source file
 src/Bot.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/Bot.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/Bot.cpp.i
 .PHONY : src/Bot.cpp.i
 
 src/Bot.s: src/Bot.cpp.s
@@ -220,7 +220,7 @@ src/Bot.s: src/Bot.cpp.s
 
 # target to generate assembly for a file
 src/Bot.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/Bot.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/Bot.cpp.s
 .PHONY : src/Bot.cpp.s
 
 src/EventHandler.o: src/EventHandler.cpp.o
@@ -228,7 +228,7 @@ src/EventHandler.o: src/EventHandler.cpp.o
 
 # target to build an object file
 src/EventHandler.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/EventHandler.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/EventHandler.cpp.o
 .PHONY : src/EventHandler.cpp.o
 
 src/EventHandler.i: src/EventHandler.cpp.i
@@ -236,7 +236,7 @@ src/EventHandler.i: src/EventHandler.cpp.i
 
 # target to preprocess a source file
 src/EventHandler.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/EventHandler.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/EventHandler.cpp.i
 .PHONY : src/EventHandler.cpp.i
 
 src/EventHandler.s: src/EventHandler.cpp.s
@@ -244,7 +244,7 @@ src/EventHandler.s: src/EventHandler.cpp.s
 
 # target to generate assembly for a file
 src/EventHandler.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/EventHandler.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/EventHandler.cpp.s
 .PHONY : src/EventHandler.cpp.s
 
 src/TgException.o: src/TgException.cpp.o
@@ -252,7 +252,7 @@ src/TgException.o: src/TgException.cpp.o
 
 # target to build an object file
 src/TgException.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/TgException.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/TgException.cpp.o
 .PHONY : src/TgException.cpp.o
 
 src/TgException.i: src/TgException.cpp.i
@@ -260,7 +260,7 @@ src/TgException.i: src/TgException.cpp.i
 
 # target to preprocess a source file
 src/TgException.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/TgException.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/TgException.cpp.i
 .PHONY : src/TgException.cpp.i
 
 src/TgException.s: src/TgException.cpp.s
@@ -268,7 +268,7 @@ src/TgException.s: src/TgException.cpp.s
 
 # target to generate assembly for a file
 src/TgException.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/TgException.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/TgException.cpp.s
 .PHONY : src/TgException.cpp.s
 
 src/TgTypeParser.o: src/TgTypeParser.cpp.o
@@ -276,7 +276,7 @@ src/TgTypeParser.o: src/TgTypeParser.cpp.o
 
 # target to build an object file
 src/TgTypeParser.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/TgTypeParser.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/TgTypeParser.cpp.o
 .PHONY : src/TgTypeParser.cpp.o
 
 src/TgTypeParser.i: src/TgTypeParser.cpp.i
@@ -284,7 +284,7 @@ src/TgTypeParser.i: src/TgTypeParser.cpp.i
 
 # target to preprocess a source file
 src/TgTypeParser.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/TgTypeParser.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/TgTypeParser.cpp.i
 .PHONY : src/TgTypeParser.cpp.i
 
 src/TgTypeParser.s: src/TgTypeParser.cpp.s
@@ -292,7 +292,7 @@ src/TgTypeParser.s: src/TgTypeParser.cpp.s
 
 # target to generate assembly for a file
 src/TgTypeParser.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/TgTypeParser.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/TgTypeParser.cpp.s
 .PHONY : src/TgTypeParser.cpp.s
 
 src/net/BoostHttpOnlySslClient.o: src/net/BoostHttpOnlySslClient.cpp.o
@@ -300,7 +300,7 @@ src/net/BoostHttpOnlySslClient.o: src/net/BoostHttpOnlySslClient.cpp.o
 
 # target to build an object file
 src/net/BoostHttpOnlySslClient.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/BoostHttpOnlySslClient.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/BoostHttpOnlySslClient.cpp.o
 .PHONY : src/net/BoostHttpOnlySslClient.cpp.o
 
 src/net/BoostHttpOnlySslClient.i: src/net/BoostHttpOnlySslClient.cpp.i
@@ -308,7 +308,7 @@ src/net/BoostHttpOnlySslClient.i: src/net/BoostHttpOnlySslClient.cpp.i
 
 # target to preprocess a source file
 src/net/BoostHttpOnlySslClient.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/BoostHttpOnlySslClient.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/BoostHttpOnlySslClient.cpp.i
 .PHONY : src/net/BoostHttpOnlySslClient.cpp.i
 
 src/net/BoostHttpOnlySslClient.s: src/net/BoostHttpOnlySslClient.cpp.s
@@ -316,7 +316,7 @@ src/net/BoostHttpOnlySslClient.s: src/net/BoostHttpOnlySslClient.cpp.s
 
 # target to generate assembly for a file
 src/net/BoostHttpOnlySslClient.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/BoostHttpOnlySslClient.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/BoostHttpOnlySslClient.cpp.s
 .PHONY : src/net/BoostHttpOnlySslClient.cpp.s
 
 src/net/CurlHttpClient.o: src/net/CurlHttpClient.cpp.o
@@ -324,7 +324,7 @@ src/net/CurlHttpClient.o: src/net/CurlHttpClient.cpp.o
 
 # target to build an object file
 src/net/CurlHttpClient.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/CurlHttpClient.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/CurlHttpClient.cpp.o
 .PHONY : src/net/CurlHttpClient.cpp.o
 
 src/net/CurlHttpClient.i: src/net/CurlHttpClient.cpp.i
@@ -332,7 +332,7 @@ src/net/CurlHttpClient.i: src/net/CurlHttpClient.cpp.i
 
 # target to preprocess a source file
 src/net/CurlHttpClient.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/CurlHttpClient.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/CurlHttpClient.cpp.i
 .PHONY : src/net/CurlHttpClient.cpp.i
 
 src/net/CurlHttpClient.s: src/net/CurlHttpClient.cpp.s
@@ -340,7 +340,7 @@ src/net/CurlHttpClient.s: src/net/CurlHttpClient.cpp.s
 
 # target to generate assembly for a file
 src/net/CurlHttpClient.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/CurlHttpClient.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/CurlHttpClient.cpp.s
 .PHONY : src/net/CurlHttpClient.cpp.s
 
 src/net/HttpParser.o: src/net/HttpParser.cpp.o
@@ -348,7 +348,7 @@ src/net/HttpParser.o: src/net/HttpParser.cpp.o
 
 # target to build an object file
 src/net/HttpParser.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/HttpParser.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/HttpParser.cpp.o
 .PHONY : src/net/HttpParser.cpp.o
 
 src/net/HttpParser.i: src/net/HttpParser.cpp.i
@@ -356,7 +356,7 @@ src/net/HttpParser.i: src/net/HttpParser.cpp.i
 
 # target to preprocess a source file
 src/net/HttpParser.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/HttpParser.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/HttpParser.cpp.i
 .PHONY : src/net/HttpParser.cpp.i
 
 src/net/HttpParser.s: src/net/HttpParser.cpp.s
@@ -364,7 +364,7 @@ src/net/HttpParser.s: src/net/HttpParser.cpp.s
 
 # target to generate assembly for a file
 src/net/HttpParser.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/HttpParser.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/HttpParser.cpp.s
 .PHONY : src/net/HttpParser.cpp.s
 
 src/net/TgLongPoll.o: src/net/TgLongPoll.cpp.o
@@ -372,7 +372,7 @@ src/net/TgLongPoll.o: src/net/TgLongPoll.cpp.o
 
 # target to build an object file
 src/net/TgLongPoll.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/TgLongPoll.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/TgLongPoll.cpp.o
 .PHONY : src/net/TgLongPoll.cpp.o
 
 src/net/TgLongPoll.i: src/net/TgLongPoll.cpp.i
@@ -380,7 +380,7 @@ src/net/TgLongPoll.i: src/net/TgLongPoll.cpp.i
 
 # target to preprocess a source file
 src/net/TgLongPoll.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/TgLongPoll.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/TgLongPoll.cpp.i
 .PHONY : src/net/TgLongPoll.cpp.i
 
 src/net/TgLongPoll.s: src/net/TgLongPoll.cpp.s
@@ -388,7 +388,7 @@ src/net/TgLongPoll.s: src/net/TgLongPoll.cpp.s
 
 # target to generate assembly for a file
 src/net/TgLongPoll.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/TgLongPoll.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/TgLongPoll.cpp.s
 .PHONY : src/net/TgLongPoll.cpp.s
 
 src/net/Url.o: src/net/Url.cpp.o
@@ -396,7 +396,7 @@ src/net/Url.o: src/net/Url.cpp.o
 
 # target to build an object file
 src/net/Url.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/Url.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/Url.cpp.o
 .PHONY : src/net/Url.cpp.o
 
 src/net/Url.i: src/net/Url.cpp.i
@@ -404,7 +404,7 @@ src/net/Url.i: src/net/Url.cpp.i
 
 # target to preprocess a source file
 src/net/Url.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/Url.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/Url.cpp.i
 .PHONY : src/net/Url.cpp.i
 
 src/net/Url.s: src/net/Url.cpp.s
@@ -412,7 +412,7 @@ src/net/Url.s: src/net/Url.cpp.s
 
 # target to generate assembly for a file
 src/net/Url.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/Url.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/net/Url.cpp.s
 .PHONY : src/net/Url.cpp.s
 
 src/tools/FileTools.o: src/tools/FileTools.cpp.o
@@ -420,7 +420,7 @@ src/tools/FileTools.o: src/tools/FileTools.cpp.o
 
 # target to build an object file
 src/tools/FileTools.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/FileTools.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/FileTools.cpp.o
 .PHONY : src/tools/FileTools.cpp.o
 
 src/tools/FileTools.i: src/tools/FileTools.cpp.i
@@ -428,7 +428,7 @@ src/tools/FileTools.i: src/tools/FileTools.cpp.i
 
 # target to preprocess a source file
 src/tools/FileTools.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/FileTools.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/FileTools.cpp.i
 .PHONY : src/tools/FileTools.cpp.i
 
 src/tools/FileTools.s: src/tools/FileTools.cpp.s
@@ -436,7 +436,7 @@ src/tools/FileTools.s: src/tools/FileTools.cpp.s
 
 # target to generate assembly for a file
 src/tools/FileTools.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/FileTools.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/FileTools.cpp.s
 .PHONY : src/tools/FileTools.cpp.s
 
 src/tools/StringTools.o: src/tools/StringTools.cpp.o
@@ -444,7 +444,7 @@ src/tools/StringTools.o: src/tools/StringTools.cpp.o
 
 # target to build an object file
 src/tools/StringTools.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/StringTools.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/StringTools.cpp.o
 .PHONY : src/tools/StringTools.cpp.o
 
 src/tools/StringTools.i: src/tools/StringTools.cpp.i
@@ -452,7 +452,7 @@ src/tools/StringTools.i: src/tools/StringTools.cpp.i
 
 # target to preprocess a source file
 src/tools/StringTools.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/StringTools.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/StringTools.cpp.i
 .PHONY : src/tools/StringTools.cpp.i
 
 src/tools/StringTools.s: src/tools/StringTools.cpp.s
@@ -460,7 +460,7 @@ src/tools/StringTools.s: src/tools/StringTools.cpp.s
 
 # target to generate assembly for a file
 src/tools/StringTools.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/StringTools.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/StringTools.cpp.s
 .PHONY : src/tools/StringTools.cpp.s
 
 src/types/BotCommandScope.o: src/types/BotCommandScope.cpp.o
@@ -468,7 +468,7 @@ src/types/BotCommandScope.o: src/types/BotCommandScope.cpp.o
 
 # target to build an object file
 src/types/BotCommandScope.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/BotCommandScope.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/BotCommandScope.cpp.o
 .PHONY : src/types/BotCommandScope.cpp.o
 
 src/types/BotCommandScope.i: src/types/BotCommandScope.cpp.i
@@ -476,7 +476,7 @@ src/types/BotCommandScope.i: src/types/BotCommandScope.cpp.i
 
 # target to preprocess a source file
 src/types/BotCommandScope.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/BotCommandScope.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/BotCommandScope.cpp.i
 .PHONY : src/types/BotCommandScope.cpp.i
 
 src/types/BotCommandScope.s: src/types/BotCommandScope.cpp.s
@@ -484,7 +484,7 @@ src/types/BotCommandScope.s: src/types/BotCommandScope.cpp.s
 
 # target to generate assembly for a file
 src/types/BotCommandScope.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/BotCommandScope.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/BotCommandScope.cpp.s
 .PHONY : src/types/BotCommandScope.cpp.s
 
 src/types/ChatMember.o: src/types/ChatMember.cpp.o
@@ -492,7 +492,7 @@ src/types/ChatMember.o: src/types/ChatMember.cpp.o
 
 # target to build an object file
 src/types/ChatMember.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/ChatMember.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/ChatMember.cpp.o
 .PHONY : src/types/ChatMember.cpp.o
 
 src/types/ChatMember.i: src/types/ChatMember.cpp.i
@@ -500,7 +500,7 @@ src/types/ChatMember.i: src/types/ChatMember.cpp.i
 
 # target to preprocess a source file
 src/types/ChatMember.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/ChatMember.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/ChatMember.cpp.i
 .PHONY : src/types/ChatMember.cpp.i
 
 src/types/ChatMember.s: src/types/ChatMember.cpp.s
@@ -508,7 +508,7 @@ src/types/ChatMember.s: src/types/ChatMember.cpp.s
 
 # target to generate assembly for a file
 src/types/ChatMember.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/ChatMember.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/ChatMember.cpp.s
 .PHONY : src/types/ChatMember.cpp.s
 
 src/types/InlineQueryResult.o: src/types/InlineQueryResult.cpp.o
@@ -516,7 +516,7 @@ src/types/InlineQueryResult.o: src/types/InlineQueryResult.cpp.o
 
 # target to build an object file
 src/types/InlineQueryResult.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InlineQueryResult.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InlineQueryResult.cpp.o
 .PHONY : src/types/InlineQueryResult.cpp.o
 
 src/types/InlineQueryResult.i: src/types/InlineQueryResult.cpp.i
@@ -524,7 +524,7 @@ src/types/InlineQueryResult.i: src/types/InlineQueryResult.cpp.i
 
 # target to preprocess a source file
 src/types/InlineQueryResult.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InlineQueryResult.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InlineQueryResult.cpp.i
 .PHONY : src/types/InlineQueryResult.cpp.i
 
 src/types/InlineQueryResult.s: src/types/InlineQueryResult.cpp.s
@@ -532,7 +532,7 @@ src/types/InlineQueryResult.s: src/types/InlineQueryResult.cpp.s
 
 # target to generate assembly for a file
 src/types/InlineQueryResult.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InlineQueryResult.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InlineQueryResult.cpp.s
 .PHONY : src/types/InlineQueryResult.cpp.s
 
 src/types/InputFile.o: src/types/InputFile.cpp.o
@@ -540,7 +540,7 @@ src/types/InputFile.o: src/types/InputFile.cpp.o
 
 # target to build an object file
 src/types/InputFile.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputFile.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputFile.cpp.o
 .PHONY : src/types/InputFile.cpp.o
 
 src/types/InputFile.i: src/types/InputFile.cpp.i
@@ -548,7 +548,7 @@ src/types/InputFile.i: src/types/InputFile.cpp.i
 
 # target to preprocess a source file
 src/types/InputFile.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputFile.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputFile.cpp.i
 .PHONY : src/types/InputFile.cpp.i
 
 src/types/InputFile.s: src/types/InputFile.cpp.s
@@ -556,7 +556,7 @@ src/types/InputFile.s: src/types/InputFile.cpp.s
 
 # target to generate assembly for a file
 src/types/InputFile.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputFile.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputFile.cpp.s
 .PHONY : src/types/InputFile.cpp.s
 
 src/types/InputMedia.o: src/types/InputMedia.cpp.o
@@ -564,7 +564,7 @@ src/types/InputMedia.o: src/types/InputMedia.cpp.o
 
 # target to build an object file
 src/types/InputMedia.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMedia.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMedia.cpp.o
 .PHONY : src/types/InputMedia.cpp.o
 
 src/types/InputMedia.i: src/types/InputMedia.cpp.i
@@ -572,7 +572,7 @@ src/types/InputMedia.i: src/types/InputMedia.cpp.i
 
 # target to preprocess a source file
 src/types/InputMedia.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMedia.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMedia.cpp.i
 .PHONY : src/types/InputMedia.cpp.i
 
 src/types/InputMedia.s: src/types/InputMedia.cpp.s
@@ -580,7 +580,7 @@ src/types/InputMedia.s: src/types/InputMedia.cpp.s
 
 # target to generate assembly for a file
 src/types/InputMedia.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMedia.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMedia.cpp.s
 .PHONY : src/types/InputMedia.cpp.s
 
 src/types/InputMessageContent.o: src/types/InputMessageContent.cpp.o
@@ -588,7 +588,7 @@ src/types/InputMessageContent.o: src/types/InputMessageContent.cpp.o
 
 # target to build an object file
 src/types/InputMessageContent.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMessageContent.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMessageContent.cpp.o
 .PHONY : src/types/InputMessageContent.cpp.o
 
 src/types/InputMessageContent.i: src/types/InputMessageContent.cpp.i
@@ -596,7 +596,7 @@ src/types/InputMessageContent.i: src/types/InputMessageContent.cpp.i
 
 # target to preprocess a source file
 src/types/InputMessageContent.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMessageContent.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMessageContent.cpp.i
 .PHONY : src/types/InputMessageContent.cpp.i
 
 src/types/InputMessageContent.s: src/types/InputMessageContent.cpp.s
@@ -604,7 +604,7 @@ src/types/InputMessageContent.s: src/types/InputMessageContent.cpp.s
 
 # target to generate assembly for a file
 src/types/InputMessageContent.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMessageContent.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMessageContent.cpp.s
 .PHONY : src/types/InputMessageContent.cpp.s
 
 src/types/MenuButton.o: src/types/MenuButton.cpp.o
@@ -612,7 +612,7 @@ src/types/MenuButton.o: src/types/MenuButton.cpp.o
 
 # target to build an object file
 src/types/MenuButton.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/MenuButton.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/MenuButton.cpp.o
 .PHONY : src/types/MenuButton.cpp.o
 
 src/types/MenuButton.i: src/types/MenuButton.cpp.i
@@ -620,7 +620,7 @@ src/types/MenuButton.i: src/types/MenuButton.cpp.i
 
 # target to preprocess a source file
 src/types/MenuButton.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/MenuButton.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/MenuButton.cpp.i
 .PHONY : src/types/MenuButton.cpp.i
 
 src/types/MenuButton.s: src/types/MenuButton.cpp.s
@@ -628,7 +628,7 @@ src/types/MenuButton.s: src/types/MenuButton.cpp.s
 
 # target to generate assembly for a file
 src/types/MenuButton.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/MenuButton.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/MenuButton.cpp.s
 .PHONY : src/types/MenuButton.cpp.s
 
 src/types/PassportElementError.o: src/types/PassportElementError.cpp.o
@@ -636,7 +636,7 @@ src/types/PassportElementError.o: src/types/PassportElementError.cpp.o
 
 # target to build an object file
 src/types/PassportElementError.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/PassportElementError.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/PassportElementError.cpp.o
 .PHONY : src/types/PassportElementError.cpp.o
 
 src/types/PassportElementError.i: src/types/PassportElementError.cpp.i
@@ -644,7 +644,7 @@ src/types/PassportElementError.i: src/types/PassportElementError.cpp.i
 
 # target to preprocess a source file
 src/types/PassportElementError.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/PassportElementError.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/PassportElementError.cpp.i
 .PHONY : src/types/PassportElementError.cpp.i
 
 src/types/PassportElementError.s: src/types/PassportElementError.cpp.s
@@ -652,7 +652,7 @@ src/types/PassportElementError.s: src/types/PassportElementError.cpp.s
 
 # target to generate assembly for a file
 src/types/PassportElementError.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/PassportElementError.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/src/types/PassportElementError.cpp.s
 .PHONY : src/types/PassportElementError.cpp.s
 
 # Help Target
@@ -739,6 +739,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anaskhan/proj/botmaestro/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anaskhan/proj/buildroid/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

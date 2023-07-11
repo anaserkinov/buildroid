@@ -1,217 +1,217 @@
 [
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/src/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/BotMaestro.dir/src/DatabaseController.cpp.o -c /home/anaskhan/proj/botmaestro/src/DatabaseController.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/src/DatabaseController.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/src/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include -fno-strict-aliasing -Os -o CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o -c /home/anaskhan/proj/buildroid/src/DatabaseController.cpp",
+  "file": "/home/anaskhan/proj/buildroid/src/DatabaseController.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/src/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/BotMaestro.dir/src/Main.cpp.o -c /home/anaskhan/proj/botmaestro/src/Main.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/src/Main.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/src/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include -fno-strict-aliasing -Os -o CMakeFiles/Buildroid.dir/src/Main.cpp.o -c /home/anaskhan/proj/buildroid/src/Main.cpp",
+  "file": "/home/anaskhan/proj/buildroid/src/Main.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/src/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/BotMaestro.dir/src/MainDatabase.cpp.o -c /home/anaskhan/proj/botmaestro/src/MainDatabase.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/src/MainDatabase.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/src/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include -fno-strict-aliasing -Os -o CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.o -c /home/anaskhan/proj/buildroid/src/MainDatabase.cpp",
+  "file": "/home/anaskhan/proj/buildroid/src/MainDatabase.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/src/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/BotMaestro.dir/src/fragments/BaseFragment.cpp.o -c /home/anaskhan/proj/botmaestro/src/fragments/BaseFragment.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/src/fragments/BaseFragment.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/src/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include -fno-strict-aliasing -Os -o CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o -c /home/anaskhan/proj/buildroid/src/fragments/BaseFragment.cpp",
+  "file": "/home/anaskhan/proj/buildroid/src/fragments/BaseFragment.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/src/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/BotMaestro.dir/src/fragments/LoginFragment.cpp.o -c /home/anaskhan/proj/botmaestro/src/fragments/LoginFragment.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/src/fragments/LoginFragment.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/src/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include -fno-strict-aliasing -Os -o CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o -c /home/anaskhan/proj/buildroid/src/fragments/LoginFragment.cpp",
+  "file": "/home/anaskhan/proj/buildroid/src/fragments/LoginFragment.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/src/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/BotMaestro.dir/src/fragments/MainFragment.cpp.o -c /home/anaskhan/proj/botmaestro/src/fragments/MainFragment.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/src/fragments/MainFragment.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/src/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include -fno-strict-aliasing -Os -o CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o -c /home/anaskhan/proj/buildroid/src/fragments/MainFragment.cpp",
+  "file": "/home/anaskhan/proj/buildroid/src/fragments/MainFragment.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/src/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/BotMaestro.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o -c /home/anaskhan/proj/botmaestro/src/tgbot_fragment_db_impl/FragmentStateController.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/src/tgbot_fragment_db_impl/FragmentStateController.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/src/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include -fno-strict-aliasing -Os -o CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o -c /home/anaskhan/proj/buildroid/src/tgbot_fragment_db_impl/FragmentStateController.cpp",
+  "file": "/home/anaskhan/proj/buildroid/src/tgbot_fragment_db_impl/FragmentStateController.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/sqlite_cpp",
-  "command": "/usr/bin/gcc  -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.o -c /home/anaskhan/proj/botmaestro/sqlite_cpp/src/SQLite/sqlite3.c",
-  "file": "/home/anaskhan/proj/botmaestro/sqlite_cpp/src/SQLite/sqlite3.c"
+  "directory": "/home/anaskhan/proj/buildroid/build/sqlite_cpp",
+  "command": "/usr/bin/gcc-12  -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.o -c /home/anaskhan/proj/buildroid/sqlite_cpp/src/SQLite/sqlite3.c",
+  "file": "/home/anaskhan/proj/buildroid/sqlite_cpp/src/SQLite/sqlite3.c"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/sqlite_cpp",
-  "command": "/usr/bin/g++  -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/core/TgObject.cpp.o -c /home/anaskhan/proj/botmaestro/sqlite_cpp/src/core/TgObject.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/sqlite_cpp/src/core/TgObject.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/sqlite_cpp",
+  "command": "/usr/bin/c++  -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/core/TgObject.cpp.o -c /home/anaskhan/proj/buildroid/sqlite_cpp/src/core/TgObject.cpp",
+  "file": "/home/anaskhan/proj/buildroid/sqlite_cpp/src/core/TgObject.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/sqlite_cpp",
-  "command": "/usr/bin/g++  -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/core/BuffersStorage.cpp.o -c /home/anaskhan/proj/botmaestro/sqlite_cpp/src/core/BuffersStorage.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/sqlite_cpp/src/core/BuffersStorage.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/sqlite_cpp",
+  "command": "/usr/bin/c++  -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/core/BuffersStorage.cpp.o -c /home/anaskhan/proj/buildroid/sqlite_cpp/src/core/BuffersStorage.cpp",
+  "file": "/home/anaskhan/proj/buildroid/sqlite_cpp/src/core/BuffersStorage.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/sqlite_cpp",
-  "command": "/usr/bin/g++  -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/core/ByteArray.cpp.o -c /home/anaskhan/proj/botmaestro/sqlite_cpp/src/core/ByteArray.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/sqlite_cpp/src/core/ByteArray.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/sqlite_cpp",
+  "command": "/usr/bin/c++  -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/core/ByteArray.cpp.o -c /home/anaskhan/proj/buildroid/sqlite_cpp/src/core/ByteArray.cpp",
+  "file": "/home/anaskhan/proj/buildroid/sqlite_cpp/src/core/ByteArray.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/sqlite_cpp",
-  "command": "/usr/bin/g++  -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/core/FileLog.cpp.o -c /home/anaskhan/proj/botmaestro/sqlite_cpp/src/core/FileLog.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/sqlite_cpp/src/core/FileLog.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/sqlite_cpp",
+  "command": "/usr/bin/c++  -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/core/FileLog.cpp.o -c /home/anaskhan/proj/buildroid/sqlite_cpp/src/core/FileLog.cpp",
+  "file": "/home/anaskhan/proj/buildroid/sqlite_cpp/src/core/FileLog.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/sqlite_cpp",
-  "command": "/usr/bin/g++  -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/core/NativeByteBuffer.cpp.o -c /home/anaskhan/proj/botmaestro/sqlite_cpp/src/core/NativeByteBuffer.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/sqlite_cpp/src/core/NativeByteBuffer.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/sqlite_cpp",
+  "command": "/usr/bin/c++  -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/core/NativeByteBuffer.cpp.o -c /home/anaskhan/proj/buildroid/sqlite_cpp/src/core/NativeByteBuffer.cpp",
+  "file": "/home/anaskhan/proj/buildroid/sqlite_cpp/src/core/NativeByteBuffer.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/sqlite_cpp",
-  "command": "/usr/bin/g++  -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/SQLitePreparedStatement.cpp.o -c /home/anaskhan/proj/botmaestro/sqlite_cpp/src/SQLitePreparedStatement.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/sqlite_cpp/src/SQLitePreparedStatement.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/sqlite_cpp",
+  "command": "/usr/bin/c++  -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/SQLitePreparedStatement.cpp.o -c /home/anaskhan/proj/buildroid/sqlite_cpp/src/SQLitePreparedStatement.cpp",
+  "file": "/home/anaskhan/proj/buildroid/sqlite_cpp/src/SQLitePreparedStatement.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/sqlite_cpp",
-  "command": "/usr/bin/g++  -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/SQLiteCursor.cpp.o -c /home/anaskhan/proj/botmaestro/sqlite_cpp/src/SQLiteCursor.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/sqlite_cpp/src/SQLiteCursor.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/sqlite_cpp",
+  "command": "/usr/bin/c++  -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/SQLiteCursor.cpp.o -c /home/anaskhan/proj/buildroid/sqlite_cpp/src/SQLiteCursor.cpp",
+  "file": "/home/anaskhan/proj/buildroid/sqlite_cpp/src/SQLiteCursor.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/sqlite_cpp",
-  "command": "/usr/bin/g++  -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/SQLiteDatabase.cpp.o -c /home/anaskhan/proj/botmaestro/sqlite_cpp/src/SQLiteDatabase.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/sqlite_cpp/src/SQLiteDatabase.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/sqlite_cpp",
+  "command": "/usr/bin/c++  -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/SQLiteDatabase.cpp.o -c /home/anaskhan/proj/buildroid/sqlite_cpp/src/SQLiteDatabase.cpp",
+  "file": "/home/anaskhan/proj/buildroid/sqlite_cpp/src/SQLiteDatabase.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/sqlite_cpp",
-  "command": "/usr/bin/g++  -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/PreparedStatement.cpp.o -c /home/anaskhan/proj/botmaestro/sqlite_cpp/src/PreparedStatement.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/sqlite_cpp/src/PreparedStatement.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/sqlite_cpp",
+  "command": "/usr/bin/c++  -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/PreparedStatement.cpp.o -c /home/anaskhan/proj/buildroid/sqlite_cpp/src/PreparedStatement.cpp",
+  "file": "/home/anaskhan/proj/buildroid/sqlite_cpp/src/PreparedStatement.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/sqlite_cpp",
-  "command": "/usr/bin/g++  -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/Cursor.cpp.o -c /home/anaskhan/proj/botmaestro/sqlite_cpp/src/Cursor.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/sqlite_cpp/src/Cursor.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/sqlite_cpp",
+  "command": "/usr/bin/c++  -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/Cursor.cpp.o -c /home/anaskhan/proj/buildroid/sqlite_cpp/src/Cursor.cpp",
+  "file": "/home/anaskhan/proj/buildroid/sqlite_cpp/src/Cursor.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/sqlite_cpp",
-  "command": "/usr/bin/g++  -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/Database.cpp.o -c /home/anaskhan/proj/botmaestro/sqlite_cpp/src/Database.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/sqlite_cpp/src/Database.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/sqlite_cpp",
+  "command": "/usr/bin/c++  -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/Database.cpp.o -c /home/anaskhan/proj/buildroid/sqlite_cpp/src/Database.cpp",
+  "file": "/home/anaskhan/proj/buildroid/sqlite_cpp/src/Database.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/sqlite_cpp",
-  "command": "/usr/bin/g++  -I/home/anaskhan/proj/botmaestro/sqlite_cpp/include -g -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/core/Base.cpp.o -c /home/anaskhan/proj/botmaestro/sqlite_cpp/src/core/Base.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/sqlite_cpp/src/core/Base.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/sqlite_cpp",
+  "command": "/usr/bin/c++  -I/home/anaskhan/proj/buildroid/sqlite_cpp/include -fno-strict-aliasing -Os -o CMakeFiles/sqlite_cpp.dir/src/core/Base.cpp.o -c /home/anaskhan/proj/buildroid/sqlite_cpp/src/core/Base.cpp",
+  "file": "/home/anaskhan/proj/buildroid/sqlite_cpp/src/core/Base.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include -g -o CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/src/Fragment.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/src/Fragment.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -o CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/src/Fragment.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/src/Fragment.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include -g -o CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/src/FragmentManager.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/src/FragmentManager.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -o CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/src/FragmentManager.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/src/FragmentManager.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/Api.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/Api.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/Api.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/Api.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/Api.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/Api.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/Bot.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/Bot.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/Bot.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/Bot.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/Bot.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/Bot.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/EventHandler.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/EventHandler.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/EventHandler.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/EventHandler.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/EventHandler.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/EventHandler.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/TgException.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/TgException.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/TgException.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/TgException.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/TgException.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/TgException.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/TgTypeParser.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/TgTypeParser.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/TgTypeParser.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/TgTypeParser.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/TgTypeParser.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/TgTypeParser.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/net/BoostHttpOnlySslClient.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/net/BoostHttpOnlySslClient.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/net/BoostHttpOnlySslClient.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/net/BoostHttpOnlySslClient.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/net/BoostHttpOnlySslClient.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/net/BoostHttpOnlySslClient.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/net/CurlHttpClient.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/net/CurlHttpClient.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/net/CurlHttpClient.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/net/CurlHttpClient.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/net/CurlHttpClient.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/net/CurlHttpClient.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/net/HttpParser.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/net/HttpParser.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/net/HttpParser.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/net/HttpParser.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/net/HttpParser.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/net/HttpParser.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/net/TgLongPoll.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/net/TgLongPoll.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/net/TgLongPoll.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/net/TgLongPoll.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/net/TgLongPoll.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/net/TgLongPoll.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/net/Url.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/net/Url.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/net/Url.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/net/Url.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/net/Url.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/net/Url.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/tools/FileTools.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/tools/FileTools.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/tools/FileTools.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/tools/FileTools.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/tools/FileTools.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/tools/FileTools.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/tools/StringTools.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/tools/StringTools.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/tools/StringTools.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/tools/StringTools.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/tools/StringTools.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/tools/StringTools.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/types/BotCommandScope.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/types/BotCommandScope.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/types/BotCommandScope.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/types/BotCommandScope.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/types/BotCommandScope.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/types/BotCommandScope.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/types/ChatMember.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/types/ChatMember.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/types/ChatMember.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/types/ChatMember.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/types/ChatMember.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/types/ChatMember.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/types/InlineQueryResult.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/types/InlineQueryResult.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/types/InlineQueryResult.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/types/InlineQueryResult.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/types/InlineQueryResult.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/types/InlineQueryResult.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/types/InputFile.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/types/InputFile.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/types/InputFile.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/types/InputFile.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/types/InputFile.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/types/InputFile.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/types/InputMedia.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/types/InputMedia.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/types/InputMedia.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/types/InputMedia.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/types/InputMedia.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/types/InputMedia.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/types/InputMessageContent.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/types/InputMessageContent.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/types/InputMessageContent.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/types/InputMessageContent.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/types/InputMessageContent.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/types/InputMessageContent.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/types/MenuButton.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/types/MenuButton.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/types/MenuButton.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/types/MenuButton.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/types/MenuButton.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/types/MenuButton.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp",
-  "command": "/usr/bin/g++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include  -Wall -g -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/types/PassportElementError.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/types/PassportElementError.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/src/types/PassportElementError.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp",
+  "command": "/usr/bin/c++ -DBOOST_ALL_DYN_LINK -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DHAVE_CURL -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -Wall -fPIC -std=c++14 -o CMakeFiles/TgBot.dir/src/types/PassportElementError.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/types/PassportElementError.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/src/types/PassportElementError.cpp"
 },
 {
-  "directory": "/home/anaskhan/proj/botmaestro/build/tgbot_fragment/test",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/botmaestro/tgbot_fragment/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/, -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/botmaestro/tgbot_fragment/test/../tgbot-cpp/include -I/home/anaskhan/proj/botmaestro/tgbot_fragment/tgbot-cpp/include -g -o CMakeFiles/Main.dir/src/Test.cpp.o -c /home/anaskhan/proj/botmaestro/tgbot_fragment/test/src/Test.cpp",
-  "file": "/home/anaskhan/proj/botmaestro/tgbot_fragment/test/src/Test.cpp"
+  "directory": "/home/anaskhan/proj/buildroid/build/tgbot_fragment/test",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/test/../tgbot-cpp/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include  -o CMakeFiles/Main.dir/src/Test.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/test/src/Test.cpp",
+  "file": "/home/anaskhan/proj/buildroid/tgbot_fragment/test/src/Test.cpp"
 }
 ]

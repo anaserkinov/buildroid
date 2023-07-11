@@ -1,4 +1,4 @@
-# Install script for directory: /home/anaskhan/proj/botmaestro/tgbot_fragment/test
+# Install script for directory: /home/anaskhan/proj/buildroid/tgbot_fragment/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

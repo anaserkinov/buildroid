@@ -21,7 +21,7 @@ public:
 class LoginFragment : public BaseFragment {
 public:
     LoginFragment();
-    // void onCreate(const Bot& bot, const Api api) override;
+    void onCommand(const Message::Ptr& message) override;
     void onNonCommandMessage(const Message::Ptr& message) override;
 };
 

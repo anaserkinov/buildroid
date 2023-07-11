@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(BotMaestro)
+project(Buildroid)
 
 set(SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
@@ -15,7 +15,7 @@ file(
     )
 
 add_executable(
-    BotMaestro 
+    Buildroid 
     ${SOURCE_FILES}
     )
 
@@ -29,7 +29,7 @@ include_directories(
     "src/include"
 )
 
-target_link_libraries(BotMaestro 
+target_link_libraries(Buildroid 
 tgbot_fragment
 sqlite_cpp
 TgBot

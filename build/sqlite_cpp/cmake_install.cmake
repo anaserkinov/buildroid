@@ -1,4 +1,4 @@
-# Install script for directory: /home/anaskhan/proj/botmaestro/sqlite_cpp
+# Install script for directory: /home/anaskhan/proj/buildroid/sqlite_cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

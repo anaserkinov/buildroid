@@ -75,7 +75,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/BotMaestro.dir/DependInfo.cmake"
+  "CMakeFiles/Buildroid.dir/DependInfo.cmake"
   "sqlite_cpp/CMakeFiles/sqlite_cpp.dir/DependInfo.cmake"
   "tgbot_fragment/CMakeFiles/tgbot_fragment.dir/DependInfo.cmake"
   "tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/DependInfo.cmake"

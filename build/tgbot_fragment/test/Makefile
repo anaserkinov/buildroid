@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anaskhan/proj/botmaestro
+CMAKE_SOURCE_DIR = /home/anaskhan/proj/buildroid
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anaskhan/proj/botmaestro/build
+CMAKE_BINARY_DIR = /home/anaskhan/proj/buildroid/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anaskhan/proj/botmaestro/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/botmaestro/build/CMakeFiles /home/anaskhan/proj/botmaestro/build/tgbot_fragment/test//CMakeFiles/progress.marks
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/botmaestro/build/CMakeFiles 0
+	cd /home/anaskhan/proj/buildroid/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles /home/anaskhan/proj/buildroid/build/tgbot_fragment/test//CMakeFiles/progress.marks
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/test/clean
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/test/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/test/preinstall
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/test/preinstall
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anaskhan/proj/botmaestro/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anaskhan/proj/buildroid/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tgbot_fragment/test/CMakeFiles/Main.dir/rule:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/test/CMakeFiles/Main.dir/rule
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/test/CMakeFiles/Main.dir/rule
 .PHONY : tgbot_fragment/test/CMakeFiles/Main.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ Main: tgbot_fragment/test/CMakeFiles/Main.dir/rule
 
 # fast build rule for target.
 Main/fast:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/test/CMakeFiles/Main.dir/build.make tgbot_fragment/test/CMakeFiles/Main.dir/build
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/test/CMakeFiles/Main.dir/build.make tgbot_fragment/test/CMakeFiles/Main.dir/build
 .PHONY : Main/fast
 
 src/Test.o: src/Test.cpp.o
@@ -180,7 +180,7 @@ src/Test.o: src/Test.cpp.o
 
 # target to build an object file
 src/Test.cpp.o:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/test/CMakeFiles/Main.dir/build.make tgbot_fragment/test/CMakeFiles/Main.dir/src/Test.cpp.o
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/test/CMakeFiles/Main.dir/build.make tgbot_fragment/test/CMakeFiles/Main.dir/src/Test.cpp.o
 .PHONY : src/Test.cpp.o
 
 src/Test.i: src/Test.cpp.i
@@ -188,7 +188,7 @@ src/Test.i: src/Test.cpp.i
 
 # target to preprocess a source file
 src/Test.cpp.i:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/test/CMakeFiles/Main.dir/build.make tgbot_fragment/test/CMakeFiles/Main.dir/src/Test.cpp.i
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/test/CMakeFiles/Main.dir/build.make tgbot_fragment/test/CMakeFiles/Main.dir/src/Test.cpp.i
 .PHONY : src/Test.cpp.i
 
 src/Test.s: src/Test.cpp.s
@@ -196,7 +196,7 @@ src/Test.s: src/Test.cpp.s
 
 # target to generate assembly for a file
 src/Test.cpp.s:
-	cd /home/anaskhan/proj/botmaestro/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/test/CMakeFiles/Main.dir/build.make tgbot_fragment/test/CMakeFiles/Main.dir/src/Test.cpp.s
+	cd /home/anaskhan/proj/buildroid/build && $(MAKE) $(MAKESILENT) -f tgbot_fragment/test/CMakeFiles/Main.dir/build.make tgbot_fragment/test/CMakeFiles/Main.dir/src/Test.cpp.s
 .PHONY : src/Test.cpp.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anaskhan/proj/botmaestro/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anaskhan/proj/buildroid/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

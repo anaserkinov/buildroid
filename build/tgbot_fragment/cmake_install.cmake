@@ -1,4 +1,4 @@
-# Install script for directory: /home/anaskhan/proj/botmaestro/tgbot_fragment
+# Install script for directory: /home/anaskhan/proj/buildroid/tgbot_fragment
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/anaskhan/proj/botmaestro/build/tgbot_fragment/tgbot-cpp/cmake_install.cmake")
-  include("/home/anaskhan/proj/botmaestro/build/tgbot_fragment/test/cmake_install.cmake")
+  include("/home/anaskhan/proj/buildroid/build/tgbot_fragment/tgbot-cpp/cmake_install.cmake")
+  include("/home/anaskhan/proj/buildroid/build/tgbot_fragment/test/cmake_install.cmake")
 
 endif()
 
