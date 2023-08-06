@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/src/include/**",
-                "${workspaceFolder}/src/fragments/"
+                "${workspaceFolder}/src/fragments/",
+                "${workspaceFolder}/libgit2/include/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",

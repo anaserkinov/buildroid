@@ -226,6 +226,110 @@ Main/fast:
 	$(MAKE) $(MAKESILENT) -f tgbot_fragment/test/CMakeFiles/Main.dir/build.make tgbot_fragment/test/CMakeFiles/Main.dir/build
 .PHONY : Main/fast
 
+#=============================================================================
+# Target rules for targets named http-parser
+
+# Build rule for target.
+http-parser: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 http-parser
+.PHONY : http-parser
+
+# fast build rule for target.
+http-parser/fast:
+	$(MAKE) $(MAKESILENT) -f libgit2/deps/http-parser/CMakeFiles/http-parser.dir/build.make libgit2/deps/http-parser/CMakeFiles/http-parser.dir/build
+.PHONY : http-parser/fast
+
+#=============================================================================
+# Target rules for targets named pcre
+
+# Build rule for target.
+pcre: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pcre
+.PHONY : pcre
+
+# fast build rule for target.
+pcre/fast:
+	$(MAKE) $(MAKESILENT) -f libgit2/deps/pcre/CMakeFiles/pcre.dir/build.make libgit2/deps/pcre/CMakeFiles/pcre.dir/build
+.PHONY : pcre/fast
+
+#=============================================================================
+# Target rules for targets named xdiff
+
+# Build rule for target.
+xdiff: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xdiff
+.PHONY : xdiff
+
+# fast build rule for target.
+xdiff/fast:
+	$(MAKE) $(MAKESILENT) -f libgit2/deps/xdiff/CMakeFiles/xdiff.dir/build.make libgit2/deps/xdiff/CMakeFiles/xdiff.dir/build
+.PHONY : xdiff/fast
+
+#=============================================================================
+# Target rules for targets named ntlmclient
+
+# Build rule for target.
+ntlmclient: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ntlmclient
+.PHONY : ntlmclient
+
+# fast build rule for target.
+ntlmclient/fast:
+	$(MAKE) $(MAKESILENT) -f libgit2/deps/ntlmclient/CMakeFiles/ntlmclient.dir/build.make libgit2/deps/ntlmclient/CMakeFiles/ntlmclient.dir/build
+.PHONY : ntlmclient/fast
+
+#=============================================================================
+# Target rules for targets named libgit2
+
+# Build rule for target.
+libgit2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libgit2
+.PHONY : libgit2
+
+# fast build rule for target.
+libgit2/fast:
+	$(MAKE) $(MAKESILENT) -f libgit2/src/libgit2/CMakeFiles/libgit2.dir/build.make libgit2/src/libgit2/CMakeFiles/libgit2.dir/build
+.PHONY : libgit2/fast
+
+#=============================================================================
+# Target rules for targets named libgit2package
+
+# Build rule for target.
+libgit2package: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libgit2package
+.PHONY : libgit2package
+
+# fast build rule for target.
+libgit2package/fast:
+	$(MAKE) $(MAKESILENT) -f libgit2/src/libgit2/CMakeFiles/libgit2package.dir/build.make libgit2/src/libgit2/CMakeFiles/libgit2package.dir/build
+.PHONY : libgit2package/fast
+
+#=============================================================================
+# Target rules for targets named util
+
+# Build rule for target.
+util: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 util
+.PHONY : util
+
+# fast build rule for target.
+util/fast:
+	$(MAKE) $(MAKESILENT) -f libgit2/src/util/CMakeFiles/util.dir/build.make libgit2/src/util/CMakeFiles/util.dir/build
+.PHONY : util/fast
+
+#=============================================================================
+# Target rules for targets named git2_cli
+
+# Build rule for target.
+git2_cli: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 git2_cli
+.PHONY : git2_cli
+
+# fast build rule for target.
+git2_cli/fast:
+	$(MAKE) $(MAKESILENT) -f libgit2/src/cli/CMakeFiles/git2_cli.dir/build.make libgit2/src/cli/CMakeFiles/git2_cli.dir/build
+.PHONY : git2_cli/fast
+
 src/DatabaseController.o: src/DatabaseController.cpp.o
 .PHONY : src/DatabaseController.o
 
@@ -370,6 +474,30 @@ src/fragments/MainFragment.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.s
 .PHONY : src/fragments/MainFragment.cpp.s
 
+src/fragments/TaxiFragment.o: src/fragments/TaxiFragment.cpp.o
+.PHONY : src/fragments/TaxiFragment.o
+
+# target to build an object file
+src/fragments/TaxiFragment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o
+.PHONY : src/fragments/TaxiFragment.cpp.o
+
+src/fragments/TaxiFragment.i: src/fragments/TaxiFragment.cpp.i
+.PHONY : src/fragments/TaxiFragment.i
+
+# target to preprocess a source file
+src/fragments/TaxiFragment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.i
+.PHONY : src/fragments/TaxiFragment.cpp.i
+
+src/fragments/TaxiFragment.s: src/fragments/TaxiFragment.cpp.s
+.PHONY : src/fragments/TaxiFragment.s
+
+# target to generate assembly for a file
+src/fragments/TaxiFragment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.s
+.PHONY : src/fragments/TaxiFragment.cpp.s
+
 src/tgbot_fragment_db_impl/FragmentStateController.o: src/tgbot_fragment_db_impl/FragmentStateController.cpp.o
 .PHONY : src/tgbot_fragment_db_impl/FragmentStateController.o
 
@@ -409,8 +537,16 @@ help:
 	@echo "... Buildroid"
 	@echo "... Main"
 	@echo "... TgBot"
+	@echo "... git2_cli"
+	@echo "... http-parser"
+	@echo "... libgit2"
+	@echo "... libgit2package"
+	@echo "... ntlmclient"
+	@echo "... pcre"
 	@echo "... sqlite_cpp"
 	@echo "... tgbot_fragment"
+	@echo "... util"
+	@echo "... xdiff"
 	@echo "... src/DatabaseController.o"
 	@echo "... src/DatabaseController.i"
 	@echo "... src/DatabaseController.s"
@@ -429,6 +565,9 @@ help:
 	@echo "... src/fragments/MainFragment.o"
 	@echo "... src/fragments/MainFragment.i"
 	@echo "... src/fragments/MainFragment.s"
+	@echo "... src/fragments/TaxiFragment.o"
+	@echo "... src/fragments/TaxiFragment.i"
+	@echo "... src/fragments/TaxiFragment.s"
 	@echo "... src/tgbot_fragment_db_impl/FragmentStateController.o"
 	@echo "... src/tgbot_fragment_db_impl/FragmentStateController.i"
 	@echo "... src/tgbot_fragment_db_impl/FragmentStateController.s"

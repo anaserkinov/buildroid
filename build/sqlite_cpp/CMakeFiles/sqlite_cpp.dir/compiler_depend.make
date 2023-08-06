@@ -137,7 +137,7 @@ sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/Cursor.cpp.o: ../sqlite_cpp/src/Cursor.
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
-  ../sqlite_cpp/include/core/NativeByteBuffer.h \
+  ../sqlite_cpp/include/SQLiteCursor.hpp \
   /usr/include/c++/11/string \
   /usr/include/c++/11/bits/char_traits.h \
   /usr/include/c++/11/cstdint \
@@ -188,7 +188,7 @@ sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/Cursor.cpp.o: ../sqlite_cpp/src/Cursor.
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  ../sqlite_cpp/include/SQLiteCursor.hpp \
+  ../sqlite_cpp/include/core/NativeByteBuffer.h \
   ../sqlite_cpp/include/core/types.hpp \
   /usr/include/c++/11/optional \
   /usr/include/c++/11/bits/enable_special_members.h \
@@ -456,8 +456,8 @@ sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/Database.cpp.o: ../sqlite_cpp/src/Datab
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
   ../sqlite_cpp/include/Cursor.hpp \
-  ../sqlite_cpp/include/core/NativeByteBuffer.h \
   ../sqlite_cpp/include/SQLiteCursor.hpp \
+  ../sqlite_cpp/include/core/NativeByteBuffer.h \
   ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/istream \
@@ -690,8 +690,8 @@ sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/PreparedStatement.cpp.o: ../sqlite_cpp/
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
   ../sqlite_cpp/include/Cursor.hpp \
-  ../sqlite_cpp/include/core/NativeByteBuffer.h \
   ../sqlite_cpp/include/SQLiteCursor.hpp \
+  ../sqlite_cpp/include/core/NativeByteBuffer.h \
   ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
   ../sqlite_cpp/include/SQLiteDatabase.hpp \
   /usr/include/c++/11/stdexcept \
@@ -728,7 +728,7 @@ sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/PreparedStatement.cpp.o: ../sqlite_cpp/
 
 sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.o: ../sqlite_cpp/src/SQLite/sqlite3.c \
   /usr/include/stdc-predef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/features.h \
@@ -739,7 +739,7 @@ sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.o: ../sqlite_cpp/src/S
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -2439,8 +2439,6 @@ sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/TgObject.cpp.o: ../sqlite_cpp/src/
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
 /usr/include/c++/11/exception:
 
 /usr/include/c++/11/ext/concurrence.h:
@@ -2691,9 +2689,9 @@ sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/TgObject.cpp.o: ../sqlite_cpp/src/
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
 ../sqlite_cpp/include/SQLiteCursor.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/statx.h:
 
@@ -2775,8 +2773,6 @@ sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/TgObject.cpp.o: ../sqlite_cpp/src/
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h:
-
 /usr/include/c++/11/bits/predefined_ops.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
@@ -2796,8 +2792,6 @@ sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/TgObject.cpp.o: ../sqlite_cpp/src/
 /usr/include/c++/11/bits/char_traits.h:
 
 /usr/include/asm-generic/errno-base.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -2820,16 +2814,6 @@ sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/TgObject.cpp.o: ../sqlite_cpp/src/
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/c++/11/bits/ostream_insert.h:
-
-/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/c++/11/string_view:
 
 /usr/include/stdlib.h:
 
@@ -3000,3 +2984,15 @@ sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/TgObject.cpp.o: ../sqlite_cpp/src/
 /usr/include/c++/11/cstring:
 
 /usr/include/math.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/c++/11/string_view:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:

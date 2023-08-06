@@ -73,15 +73,15 @@ sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.o: sqlite_cpp/CMakeFil
 sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.o: ../sqlite_cpp/src/SQLite/sqlite3.c
 sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.o: sqlite_cpp/CMakeFiles/sqlite_cpp.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.o"
-	cd /home/anaskhan/proj/buildroid/build/sqlite_cpp && /usr/bin/gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.o -MF CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.o.d -o CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.o -c /home/anaskhan/proj/buildroid/sqlite_cpp/src/SQLite/sqlite3.c
+	cd /home/anaskhan/proj/buildroid/build/sqlite_cpp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.o -MF CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.o.d -o CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.o -c /home/anaskhan/proj/buildroid/sqlite_cpp/src/SQLite/sqlite3.c
 
 sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.i"
-	cd /home/anaskhan/proj/buildroid/build/sqlite_cpp && /usr/bin/gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anaskhan/proj/buildroid/sqlite_cpp/src/SQLite/sqlite3.c > CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.i
+	cd /home/anaskhan/proj/buildroid/build/sqlite_cpp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anaskhan/proj/buildroid/sqlite_cpp/src/SQLite/sqlite3.c > CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.i
 
 sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.s"
-	cd /home/anaskhan/proj/buildroid/build/sqlite_cpp && /usr/bin/gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anaskhan/proj/buildroid/sqlite_cpp/src/SQLite/sqlite3.c -o CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.s
+	cd /home/anaskhan/proj/buildroid/build/sqlite_cpp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anaskhan/proj/buildroid/sqlite_cpp/src/SQLite/sqlite3.c -o CMakeFiles/sqlite_cpp.dir/src/SQLite/sqlite3.c.s
 
 sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/TgObject.cpp.o: sqlite_cpp/CMakeFiles/sqlite_cpp.dir/flags.make
 sqlite_cpp/CMakeFiles/sqlite_cpp.dir/src/core/TgObject.cpp.o: ../sqlite_cpp/src/core/TgObject.cpp

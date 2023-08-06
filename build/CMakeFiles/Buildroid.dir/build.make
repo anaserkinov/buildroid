@@ -153,10 +153,24 @@ CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anaskhan/proj/buildroid/src/fragments/MainFragment.cpp -o CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.s
 
+CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o: CMakeFiles/Buildroid.dir/flags.make
+CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o: ../src/fragments/TaxiFragment.cpp
+CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o: CMakeFiles/Buildroid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o -MF CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o.d -o CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o -c /home/anaskhan/proj/buildroid/src/fragments/TaxiFragment.cpp
+
+CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anaskhan/proj/buildroid/src/fragments/TaxiFragment.cpp > CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.i
+
+CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anaskhan/proj/buildroid/src/fragments/TaxiFragment.cpp -o CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.s
+
 CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o: CMakeFiles/Buildroid.dir/flags.make
 CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o: ../src/tgbot_fragment_db_impl/FragmentStateController.cpp
 CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o: CMakeFiles/Buildroid.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o -MF CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o.d -o CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o -c /home/anaskhan/proj/buildroid/src/tgbot_fragment_db_impl/FragmentStateController.cpp
 
 CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.i: cmake_force
@@ -175,6 +189,7 @@ Buildroid_OBJECTS = \
 "CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o" \
 "CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o" \
 "CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o" \
+"CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o" \
 "CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o"
 
 # External object files for target Buildroid
@@ -186,18 +201,21 @@ Buildroid: CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.o
 Buildroid: CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o
 Buildroid: CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o
 Buildroid: CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o
+Buildroid: CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o
 Buildroid: CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o
 Buildroid: CMakeFiles/Buildroid.dir/build.make
 Buildroid: tgbot_fragment/libtgbot_fragment.a
 Buildroid: sqlite_cpp/libsqlite_cpp.a
 Buildroid: tgbot_fragment/tgbot-cpp/libTgBot.a
+Buildroid: /usr/local/lib/libcpprest.so.2.10
+Buildroid: libgit2/libgit2.a
+Buildroid: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0
+Buildroid: /usr/local/lib/libcurl.so
 Buildroid: /usr/local/lib/libz.so
 Buildroid: /usr/lib/x86_64-linux-gnu/libssl.so
 Buildroid: /usr/lib/x86_64-linux-gnu/libcrypto.so
-Buildroid: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0
-Buildroid: /usr/local/lib/libcurl.so
 Buildroid: CMakeFiles/Buildroid.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Buildroid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Buildroid"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Buildroid.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

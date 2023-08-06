@@ -1351,7 +1351,8 @@ tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.o: ../tgbot_fragme
   ../tgbot_fragment/tgbot-cpp/include/tgbot/EventHandler.h \
   ../tgbot_fragment/tgbot-cpp/include/tgbot/EventBroadcaster.h \
   ../tgbot_fragment/include/Fragment.hpp \
-  ../tgbot_fragment/include/FragmentStateController.hpp
+  ../tgbot_fragment/include/FragmentStateController.hpp \
+  /usr/include/c++/11/iostream
 
 tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.o: ../tgbot_fragment/src/FragmentManager.cpp \
   /usr/include/stdc-predef.h \
@@ -2703,7 +2704,8 @@ tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.o: ../tgbot
   ../tgbot_fragment/include/Fragment.hpp \
   ../tgbot_fragment/tgbot-cpp/include/tgbot/types/Message.h \
   ../tgbot_fragment/include/FragmentStateController.hpp \
-  ../tgbot_fragment/include/Fragment.hpp
+  ../tgbot_fragment/include/Fragment.hpp \
+  /usr/include/c++/11/iostream
 
 
 ../tgbot_fragment/src/FragmentManager.cpp:
@@ -4655,6 +4657,8 @@ tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.o: ../tgbot
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/Chat.h:
 
 /usr/include/boost/concept/detail/concept_def.hpp:
+
+/usr/include/c++/11/iostream:
 
 /usr/include/boost/mpl/aux_/has_tag.hpp:
 

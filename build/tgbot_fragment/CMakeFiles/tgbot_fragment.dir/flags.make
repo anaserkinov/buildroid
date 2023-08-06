@@ -6,5 +6,5 @@ CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK
 
 CXX_INCLUDES = -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot_fragment -I/home/anaskhan/proj/buildroid/tgbot_fragment/include -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include/tgbot -I/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp/include
 
-CXX_FLAGS = 
+CXX_FLAGS = -g
 

@@ -1,45 +1,69 @@
 #include "DatabaseController.hpp"
 
+#include "Fragments.hpp"
+
 DatabaseController::DatabaseController() {
 }
 
 void DatabaseController::createTables() {
-    auto db = MainDatabase::getDB();
-
-    db.executeFast(
-              "CREATE TABLE IF NOT EXISTS users("
-              "id INTEGER PRIMARY KEY,"
-              "firstName TEXT,"
-              "lastName TEXT,"
-              "userName TEXT,"
-              "fragmentId INTEGER,"
-              "fragmentState INTEGER"
-              ")")
+    try {
+        MainDatabase::getDB().executeFast(
+                                 "CREATE TABLE IF NOT EXISTS users("
+                                 "id INTEGER NOT NULL PRIMARY KEY,"
+                                 "firstName TEXT,"
+                                 "lastName TEXT,"
+                                 "phoneNumber TEXT,"
+                                 "userName TEXT,"
+                                 "fragmentId INTEGER"
+                                 ")")
             ->stepThis()
             .dispose();
+    } catch (const std::exception& e) {
+        printf(e.what());
+        throw e;
+    }
 }
 
-
-void DatabaseController::insertApp(App app) {
-    PreparedStatementPtr preparedS = nullptr;
+void DatabaseController::insertUser(
+    int64_t id,
+    std::string firstName,
+    std::string lastName,
+    std::string phoneNumber,
+    std::string userName) {
     try {
-        auto db = MainDatabase::getDB();
+        auto preparedS = MainDatabase::getDB().executeFast(
+            "REPLACE INTO users VALUES(?,?,?,?,?,?)");
 
-        preparedS = db.executeFast("");
-
+        std::cout << "inset: " << id << "\n";
         preparedS->requery();
-        preparedS->bindInt(1, app.userId);
-        // preparedS->bind (2, app.name);
-        preparedS->bindInt(3, app.userId);
-        preparedS->bindInt(4, app.userId);
+        preparedS->bindInt64(1, id);
+        preparedS->bindString(2, firstName);
+        preparedS->bindString(3, lastName);
+        preparedS->bindString(4, phoneNumber);
+        preparedS->bindString(5, userName);
+        preparedS->bindInt32(6, Fragments::LOGIN);
 
         preparedS->step();
         preparedS->dispose();
     } catch (const std::exception& e) {
+        printf(e.what());
     }
 }
 
-void DatabaseController::updateApp(App app) {
+void DatabaseController::updateFragmentState(
+    int64_t id,
+    int fragmentId) {
+    try {
+        auto preparedS = MainDatabase::getDB().executeFast("UPDATE users SET fragmentId = ? WHERE id = ?");
+
+        preparedS->bindInt32(1, fragmentId);
+        preparedS->bindInt64(2, id);
+
+        preparedS->step();
+        preparedS->dispose();
+    } catch (const std::exception& e) {
+        printf(e.what());
+    }
 }
 
 App* DatabaseController::getApps(int64_t userId) {
@@ -79,12 +103,6 @@ App* DatabaseController::getApps(int64_t userId) {
     }
 
     return apps;
-}
-
-App DatabaseController::getApp(int64_t id) {
-}
-
-void DatabaseController::deleteApp(int64_t id) {
 }
 
 void DatabaseController::getApp(App app, CursorPtr& cursor) {

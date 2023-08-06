@@ -14,22 +14,45 @@
 # EXTERNAL cache entries
 ########################
 
+//Build the command-line interface
+BUILD_CLI:BOOL=ON
+
 //Build doxygen API documentation.
 BUILD_DOCUMENTATION:BOOL=OFF
 
-//Build tgbot-cpp shared/static library.
+//Build library usage example apps
+BUILD_EXAMPLES:BOOL=OFF
+
+//Build the fuzz targets
+BUILD_FUZZERS:BOOL=OFF
+
+//Build Shared Library (OFF for Static)
 BUILD_SHARED_LIBS:BOOL=OFF
+
+//Build Tests using the Clar suite
+BUILD_TESTS:BOOL=OFF
+
+Boost_ATOMIC_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.74.0
+
+Boost_CHRONO_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.74.0
+
+Boost_DATE_TIME_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.74.0
 
 //The directory containing a CMake configuration file for Boost.
 Boost_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0
 
+Boost_FILESYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0
+
 //Path to a file.
 Boost_INCLUDE_DIR:PATH=/usr/include
 
-//Boost system library (debug)
-Boost_SYSTEM_LIBRARY_DEBUG:FILEPATH=Boost_SYSTEM_LIBRARY_DEBUG-NOTFOUND
+Boost_RANDOM_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_random.so.1.74.0
+
+Boost_REGEX_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_regex.so.1.74.0
 
 Boost_SYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0
+
+Boost_THREAD_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.74.0
 
 //Value Computed by CMake
 Buildroid_BINARY_DIR:STATIC=/home/anaskhan/proj/buildroid/build
@@ -46,7 +69,8 @@ CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//No help, variable specified on the command line.
+//Choose the type of build, options are: Debug Release RelWithDebInfo
+// MinSizeRel.
 CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
@@ -67,27 +91,27 @@ CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-11
 CMAKE_CXX_FLAGS:STRING=
 
 //Flags used by the CXX compiler during DEBUG builds.
-CMAKE_CXX_FLAGS_DEBUG:STRING=
+CMAKE_CXX_FLAGS_DEBUG:STRING=-g
 
 //Flags used by the CXX compiler during MINSIZEREL builds.
-CMAKE_CXX_FLAGS_MINSIZEREL:STRING=
+CMAKE_CXX_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
 
 //Flags used by the CXX compiler during RELEASE builds.
-CMAKE_CXX_FLAGS_RELEASE:STRING=
+CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
-CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=
+CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-12
+//C compiler
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-12
+CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-11
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-12
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-11
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -122,8 +146,8 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//No help, variable specified on the command line.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
+//Enable/Disable output of compile commands during generation.
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 
 //User executables (bin)
 CMAKE_INSTALL_BINDIR:PATH=bin
@@ -220,6 +244,21 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=Buildroid
 
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=1.8.0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=8
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
 
@@ -294,8 +333,53 @@ CURL_LIBRARY_DEBUG:FILEPATH=CURL_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 CURL_LIBRARY_RELEASE:FILEPATH=/usr/local/lib/libcurl.so
 
+//Enable debug pool allocator
+DEBUG_POOL:BOOL=OFF
+
+//Enable strict allocator behavior
+DEBUG_STRICT_ALLOC:BOOL=OFF
+
+//Enable path validation in open
+DEBUG_STRICT_OPEN:BOOL=OFF
+
+//Do not include deprecated functions in the library
+DEPRECATE_HARD:BOOL=OFF
+
+//Enable reproducible builds
+ENABLE_REPRODUCIBLE_BUILDS:BOOL=OFF
+
 //Set to ON to enable building of tests
 ENABLE_TESTS:BOOL=OFF
+
+//Enable compilation with -Werror
+ENABLE_WERROR:BOOL=OFF
+
+//Enable experimental SHA256 support (for R&D/testing)
+EXPERIMENTAL_SHA256:BOOL=OFF
+
+//Path to a file.
+GSSAPI_INCLUDE_DIR:PATH=GSSAPI_INCLUDE_DIR-NOTFOUND
+
+//Path to a file.
+GSSAPI_ROOT_DIR:PATH=GSSAPI_ROOT_DIR-NOTFOUND
+
+//Path to a program.
+KRB5_CONFIG:FILEPATH=KRB5_CONFIG-NOTFOUND
+
+//Name of the produced binary
+LIBGIT2_FILENAME:STRING=git2
+
+//Path to a library.
+MBEDCRYPTO_LIBRARY:FILEPATH=MBEDCRYPTO_LIBRARY-NOTFOUND
+
+//Path to a file.
+MBEDTLS_INCLUDE_DIR:PATH=MBEDTLS_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+MBEDTLS_LIBRARY:FILEPATH=MBEDTLS_LIBRARY-NOTFOUND
+
+//Path to a library.
+MBEDX509_LIBRARY:FILEPATH=MBEDX509_LIBRARY-NOTFOUND
 
 //Path to a library.
 OPENSSL_CRYPTO_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
@@ -306,11 +390,24 @@ OPENSSL_INCLUDE_DIR:PATH=/usr/include
 //Path to a library.
 OPENSSL_SSL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libssl.so
 
+//Path to a file.
+PCRE_INCLUDE_DIR:PATH=PCRE_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+PCRE_LIBRARY:FILEPATH=PCRE_LIBRARY-NOTFOUND
+
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
+//Regular expression implementation. One of regcomp_l, pcre2, pcre,
+// regcomp, or builtin.
+REGEX_BACKEND:STRING=
+
+//Set the (SO)VERSION of the target
+SONAME:BOOL=ON
 
 //Value Computed by CMake
 SQLite_CPP_BINARY_DIR:STATIC=/home/anaskhan/proj/buildroid/build/sqlite_cpp
@@ -351,6 +448,44 @@ TgBot_LIB_DEPENDS:STATIC=general;/usr/local/lib/libz.so;general;/usr/lib/x86_64-
 //Value Computed by CMake
 TgBot_SOURCE_DIR:STATIC=/home/anaskhan/proj/buildroid/tgbot_fragment/tgbot-cpp
 
+//Use the bundled version of zlib. Can be set to one of Bundled(ON)/Chromium.
+// The Chromium option requires a x86_64 processor with SSE4.2
+// and CLMUL
+USE_BUNDLED_ZLIB:BOOL=OFF
+
+//Link with libgssapi for SPNEGO auth
+USE_GSSAPI:BOOL=OFF
+
+//Enable HTTPS support. Can be set to a specific backend
+USE_HTTPS:BOOL=ON
+
+//Specifies the HTTP Parser implementation; either system or builtin.
+USE_HTTP_PARSER:STRING=
+
+//Run tests with leak checker
+USE_LEAK_CHECKER:BOOL=OFF
+
+//Support nanosecond precision file mtimes and ctimes
+USE_NSEC:BOOL=ON
+
+//Enable NTLM support on Unix.
+USE_NTLMCLIENT:BOOL=ON
+
+//Enable SHA1. Can be set to CollisionDetection(ON)/HTTPS
+USE_SHA1:BOOL=ON
+
+//Enable SHA256. Can be set to HTTPS/Builtin
+USE_SHA256:BOOL=ON
+
+//Link with libssh2 to enable SSH support
+USE_SSH:BOOL=OFF
+
+//Enable standalone fuzzers (compatible with gcc)
+USE_STANDALONE_FUZZERS:BOOL=OFF
+
+//Use threads for parallel processing when possible
+USE_THREADS:BOOL=ON
+
 //Path to a file.
 ZLIB_INCLUDE_DIR:PATH=/usr/local/include
 
@@ -360,11 +495,50 @@ ZLIB_LIBRARY_DEBUG:FILEPATH=ZLIB_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 ZLIB_LIBRARY_RELEASE:FILEPATH=/usr/local/lib/libz.so
 
+//Path to a file.
+_GSSAPI_ROKEN:PATH=_GSSAPI_ROKEN-NOTFOUND
+
+//The directory containing a CMake configuration file for boost_atomic.
+boost_atomic_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_atomic-1.74.0
+
+//The directory containing a CMake configuration file for boost_chrono.
+boost_chrono_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_chrono-1.74.0
+
+//The directory containing a CMake configuration file for boost_date_time.
+boost_date_time_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_date_time-1.74.0
+
+//The directory containing a CMake configuration file for boost_filesystem.
+boost_filesystem_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_filesystem-1.74.0
+
 //The directory containing a CMake configuration file for boost_headers.
 boost_headers_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.74.0
 
+//The directory containing a CMake configuration file for boost_random.
+boost_random_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_random-1.74.0
+
+//The directory containing a CMake configuration file for boost_regex.
+boost_regex_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_regex-1.74.0
+
 //The directory containing a CMake configuration file for boost_system.
 boost_system_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_system-1.74.0
+
+//The directory containing a CMake configuration file for boost_thread.
+boost_thread_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_thread-1.74.0
+
+//The directory containing a CMake configuration file for cpprestsdk.
+cpprestsdk_DIR:PATH=/usr/local/lib/cmake/cpprestsdk
+
+//Value Computed by CMake
+libgit2_BINARY_DIR:STATIC=/home/anaskhan/proj/buildroid/build/libgit2
+
+//Value Computed by CMake
+libgit2_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+libgit2_SOURCE_DIR:STATIC=/home/anaskhan/proj/buildroid/libgit2
+
+//Dependencies for the target
+libgit2package_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libssl.so;general;/usr/lib/x86_64-linux-gnu/libcrypto.so;general;/usr/local/lib/libz.so;general;rt;
 
 //Path to a library.
 pkgcfg_lib_PC_CURL_curl:FILEPATH=/usr/local/lib/libcurl.so
@@ -385,10 +559,6 @@ tgbot_fragment_LIB_DEPENDS:STATIC=general;TgBot;
 
 //ADVANCED property for variable: Boost_DIR
 Boost_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Boost_SYSTEM_LIBRARY_DEBUG
-Boost_SYSTEM_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Boost_SYSTEM_LIBRARY_RELEASE
-Boost_SYSTEM_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -455,6 +625,8 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
+CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
@@ -523,7 +695,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -580,10 +752,130 @@ FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boo
 FIND_PACKAGE_MESSAGE_DETAILS_CURL:INTERNAL=[/usr/local/lib/libcurl.so][/usr/local/include][c ][v8.0.1(7.58.0)]
 //Details about finding OpenSSL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcrypto.so][/usr/include][c ][v3.0.2()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding ZLIB
 FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[/usr/local/lib/libz.so][/usr/local/include][v1.2.13()]
+//Have symbol poll
+GIT_IO_POLL:INTERNAL=1
+//Have symbol select
+GIT_IO_SELECT:INTERNAL=1
+//Have correct prototype for qsort_r
+GIT_QSORT_BSD:INTERNAL=0
+//Have correct prototype for qsort_s
+GIT_QSORT_C11:INTERNAL=0
+//Have correct prototype for qsort_r
+GIT_QSORT_GNU:INTERNAL=1
+//Have correct prototype for qsort_s
+GIT_QSORT_MSC:INTERNAL=0
+//Have symbol getentropy
+GIT_RAND_GETENTROPY:INTERNAL=1
+//Have symbol getloadavg
+GIT_RAND_GETLOADAVG:INTERNAL=1
+//ADVANCED property for variable: GSSAPI_ROOT_DIR
+GSSAPI_ROOT_DIR-ADVANCED:INTERNAL=1
+//Have function bcopy
+HAVE_BCOPY:INTERNAL=1
+//Have include dirent.h
+HAVE_DIRENT_H:INTERNAL=1
+//Have function futimens
+HAVE_FUTIMENS:INTERNAL=1
+//Have include inttypes.h
+HAVE_INTTYPES_H:INTERNAL=1
+//Result of TRY_COMPILE
+HAVE_LONG_LONG:INTERNAL=TRUE
+//Have function memmove
+HAVE_MEMMOVE:INTERNAL=1
+//Have symbol regcomp_l
+HAVE_REGCOMP_L:INTERNAL=
+//Have include stddef.h
+HAVE_STDDEF_H:INTERNAL=1
+//Have include stdint.h
+HAVE_STDINT_H:INTERNAL=1
+//Have function strerror
+HAVE_STRERROR:INTERNAL=1
+//Have function strtoll
+HAVE_STRTOLL:INTERNAL=1
+//Have function strtoq
+HAVE_STRTOQ:INTERNAL=1
+//Test HAVE_STRUCT_STAT_MTIME_NSEC
+HAVE_STRUCT_STAT_MTIME_NSEC:INTERNAL=
+//Test HAVE_STRUCT_STAT_NSEC
+HAVE_STRUCT_STAT_NSEC:INTERNAL=1
+//Test HAVE_STRUCT_STAT_ST_MTIM
+HAVE_STRUCT_STAT_ST_MTIM:INTERNAL=1
+//Test HAVE_STRUCT_STAT_ST_MTIMESPEC
+HAVE_STRUCT_STAT_ST_MTIMESPEC:INTERNAL=
+//Have include sys/stat.h
+HAVE_SYS_STAT_H:INTERNAL=1
+//Have include sys/types.h
+HAVE_SYS_TYPES_H:INTERNAL=1
+//Have include unistd.h
+HAVE_UNISTD_H:INTERNAL=1
+//Result of TRY_COMPILE
+HAVE_UNSIGNED_LONG_LONG:INTERNAL=TRUE
+//Have include windows.h
+HAVE_WINDOWS_H:INTERNAL=
+//Have function _strtoi64
+HAVE__STRTOI64:INTERNAL=
+//Test IS_WALL_SUPPORTED
+IS_WALL_SUPPORTED:INTERNAL=1
+//Test IS_WC11_EXTENSIONS_SUPPORTED
+IS_WC11_EXTENSIONS_SUPPORTED:INTERNAL=
+//Test IS_WC99_C11_COMPAT_SUPPORTED
+IS_WC99_C11_COMPAT_SUPPORTED:INTERNAL=1
+//Test IS_WDECLARATION_AFTER_STATEMENT_SUPPORTED
+IS_WDECLARATION_AFTER_STATEMENT_SUPPORTED:INTERNAL=1
+//Test IS_WDOCUMENTATION_SUPPORTED
+IS_WDOCUMENTATION_SUPPORTED:INTERNAL=
+//Test IS_WEXTRA_SUPPORTED
+IS_WEXTRA_SUPPORTED:INTERNAL=1
+//Test IS_WFORMAT_SECURITY_SUPPORTED
+IS_WFORMAT_SECURITY_SUPPORTED:INTERNAL=1
+//Test IS_WFORMAT_SUPPORTED
+IS_WFORMAT_SUPPORTED:INTERNAL=1
+//Test IS_WIMPLICIT_FALLTHROUGH_1_SUPPORTED
+IS_WIMPLICIT_FALLTHROUGH_1_SUPPORTED:INTERNAL=1
+//Test IS_WINT_CONVERSION_SUPPORTED
+IS_WINT_CONVERSION_SUPPORTED:INTERNAL=1
+//Test IS_WMISSING_DECLARATIONS_SUPPORTED
+IS_WMISSING_DECLARATIONS_SUPPORTED:INTERNAL=1
+//Test IS_WNO_DOCUMENTATION_DEPRECATED_SYNC_SUPPORTED
+IS_WNO_DOCUMENTATION_DEPRECATED_SYNC_SUPPORTED:INTERNAL=1
+//Test IS_WNO_IMPLICIT_FALLTHROUGH_SUPPORTED
+IS_WNO_IMPLICIT_FALLTHROUGH_SUPPORTED:INTERNAL=1
+//Test IS_WNO_MISSING_FIELD_INITIALIZERS_SUPPORTED
+IS_WNO_MISSING_FIELD_INITIALIZERS_SUPPORTED:INTERNAL=1
+//Test IS_WNO_UNUSED_FUNCTION_SUPPORTED
+IS_WNO_UNUSED_FUNCTION_SUPPORTED:INTERNAL=1
+//Test IS_WNO_UNUSED_PARAMETER_SUPPORTED
+IS_WNO_UNUSED_PARAMETER_SUPPORTED:INTERNAL=1
+//Test IS_WSHIFT_COUNT_OVERFLOW_SUPPORTED
+IS_WSHIFT_COUNT_OVERFLOW_SUPPORTED:INTERNAL=1
+//Test IS_WSTRICT_ALIASING_SUPPORTED
+IS_WSTRICT_ALIASING_SUPPORTED:INTERNAL=1
+//Test IS_WSTRICT_PROTOTYPES_SUPPORTED
+IS_WSTRICT_PROTOTYPES_SUPPORTED:INTERNAL=1
+//Test IS_WUNUSED_CONST_VARIABLE_SUPPORTED
+IS_WUNUSED_CONST_VARIABLE_SUPPORTED:INTERNAL=1
+//Test IS_WUNUSED_FUNCTION_SUPPORTED
+IS_WUNUSED_FUNCTION_SUPPORTED:INTERNAL=1
+//ADVANCED property for variable: KRB5_CONFIG
+KRB5_CONFIG-ADVANCED:INTERNAL=1
+//CHECK_TYPE_SIZE: sizeof(long long)
+LONG_LONG:INTERNAL=8
+//ADVANCED property for variable: MBEDCRYPTO_LIBRARY
+MBEDCRYPTO_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MBEDTLS_INCLUDE_DIR
+MBEDTLS_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MBEDTLS_LIBRARY
+MBEDTLS_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MBEDX509_LIBRARY
+MBEDX509_LIBRARY-ADVANCED:INTERNAL=1
+//Have library rt
+NEED_LIBRT:INTERNAL=1
 //ADVANCED property for variable: OPENSSL_CRYPTO_LIBRARY
 OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENSSL_INCLUDE_DIR
@@ -629,6 +921,8 @@ PC_CURL_libcurl_VERSION:INTERNAL=
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+//CHECK_TYPE_SIZE: sizeof(unsigned long long)
+UNSIGNED_LONG_LONG:INTERNAL=8
 //ADVANCED property for variable: ZLIB_INCLUDE_DIR
 ZLIB_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ZLIB_LIBRARY_DEBUG
@@ -637,6 +931,31 @@ ZLIB_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 ZLIB_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+_GSSAPI_CFLAGS:INTERNAL=
+_GSSAPI_CFLAGS_I:INTERNAL=
+_GSSAPI_CFLAGS_OTHER:INTERNAL=
+_GSSAPI_FOUND:INTERNAL=
+_GSSAPI_INCLUDEDIR:INTERNAL=
+_GSSAPI_LIBDIR:INTERNAL=
+_GSSAPI_LIBS:INTERNAL=
+_GSSAPI_LIBS_L:INTERNAL=
+_GSSAPI_LIBS_OTHER:INTERNAL=
+_GSSAPI_LIBS_PATHS:INTERNAL=
+_GSSAPI_MODULE_NAME:INTERNAL=
+_GSSAPI_PREFIX:INTERNAL=
+_GSSAPI_STATIC_CFLAGS:INTERNAL=
+_GSSAPI_STATIC_CFLAGS_I:INTERNAL=
+_GSSAPI_STATIC_CFLAGS_OTHER:INTERNAL=
+_GSSAPI_STATIC_LIBDIR:INTERNAL=
+_GSSAPI_STATIC_LIBS:INTERNAL=
+_GSSAPI_STATIC_LIBS_L:INTERNAL=
+_GSSAPI_STATIC_LIBS_OTHER:INTERNAL=
+_GSSAPI_STATIC_LIBS_PATHS:INTERNAL=
+_GSSAPI_VERSION:INTERNAL=
+_GSSAPI_heimdal-gssapi_INCLUDEDIR:INTERNAL=
+_GSSAPI_heimdal-gssapi_LIBDIR:INTERNAL=
+_GSSAPI_heimdal-gssapi_PREFIX:INTERNAL=
+_GSSAPI_heimdal-gssapi_VERSION:INTERNAL=
 _OPENSSL_CFLAGS:INTERNAL=
 _OPENSSL_CFLAGS_I:INTERNAL=
 _OPENSSL_CFLAGS_OTHER:INTERNAL=
@@ -675,11 +994,26 @@ _OPENSSL_openssl_VERSION:INTERNAL=
 __pkg_config_arguments_PC_CURL:INTERNAL=QUIET;libcurl
 __pkg_config_arguments__OPENSSL:INTERNAL=QUIET;openssl
 __pkg_config_checked_PC_CURL:INTERNAL=1
+__pkg_config_checked__GSSAPI:INTERNAL=1
 __pkg_config_checked__OPENSSL:INTERNAL=1
+//ADVANCED property for variable: boost_atomic_DIR
+boost_atomic_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_chrono_DIR
+boost_chrono_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_date_time_DIR
+boost_date_time_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_filesystem_DIR
+boost_filesystem_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: boost_headers_DIR
 boost_headers_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_random_DIR
+boost_random_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_regex_DIR
+boost_regex_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: boost_system_DIR
 boost_system_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_thread_DIR
+boost_thread_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PC_CURL_curl
 pkgcfg_lib_PC_CURL_curl-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_crypto
