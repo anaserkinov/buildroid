@@ -18,6 +18,17 @@ void DatabaseController::createTables() {
                                  ")")
             ->stepThis()
             .dispose();
+        MainDatabase::getDB().executeFast(
+                                 "CREATE TABLE IF NOT EXISTS apps("
+                                 "id INTEGER NOT NULL PRIMARY KEY,"
+                                 "firstName TEXT,"
+                                 "lastName TEXT,"
+                                 "phoneNumber TEXT,"
+                                 "userName TEXT,"
+                                 "fragmentId INTEGER"
+                                 ")")
+            ->stepThis()
+            .dispose();
     } catch (const std::exception& e) {
         printf(e.what());
         throw e;

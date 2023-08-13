@@ -1,34 +1,35 @@
 #include "Fragments.hpp"
-// #include <git2.h>
 
 TaxiFragment::TaxiFragment()
     : BaseFragment(Fragments::TAXI){};
 
 void TaxiFragment::onCreate(const Message::Ptr& lastMessage) {
-    dbController->updateFragmentState(lastMessage->from->id, fragmentId);
+    // std::vector<std::vector<std::string>> buttons;
+    // buttons.push_back(
+    //     {"Sync"});
+    // placeKeyboards(
+    //     branches,
+    //     buttons,
+    //     2);
 
-    // auto keyboard = std::make_shared<ReplyKeyboardMarkup>();
-    // keyboard->resizeKeyboard = true;
-    // keyboard->oneTimeKeyboard = true;
+    BaseFragment::onCreate(lastMessage);
+    auto keyboard = std::make_shared<ReplyKeyboardMarkup>();
+    keyboard->resizeKeyboard = true;
+    keyboard->oneTimeKeyboard = true;
     // sendMessage(
     //     lastMessage->chat->id,
-    //     "Select project",
+    //     "Select app",
     //     false,
     //     0,
     //     createKeyboard(
-    //         {
-    //             {"Taxi",
-    //              "Bito"},
-    //         },
+    //         {},
     //         keyboard));
 }
 
 void TaxiFragment::onNonCommandMessage(const Message::Ptr& message) {
-    // if (message->text == "Bito") {
-    //     sendMessage(
-    //         message->chat->id,
-    //         "https://play.google.com/store/apps/details?id=uz.unical.bito.pro");
-    // } else if (message->text == "Taxi") {
+    if (message->text == "Add new") {
+    
+    } else {
         
-    // }
+    }
 }

@@ -330,6 +330,45 @@ git2_cli/fast:
 	$(MAKE) $(MAKESILENT) -f libgit2/src/cli/CMakeFiles/git2_cli.dir/build.make libgit2/src/cli/CMakeFiles/git2_cli.dir/build
 .PHONY : git2_cli/fast
 
+#=============================================================================
+# Target rules for targets named headertest
+
+# Build rule for target.
+headertest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 headertest
+.PHONY : headertest
+
+# fast build rule for target.
+headertest/fast:
+	$(MAKE) $(MAKESILENT) -f libgit2/tests/headertest/CMakeFiles/headertest.dir/build.make libgit2/tests/headertest/CMakeFiles/headertest.dir/build
+.PHONY : headertest/fast
+
+#=============================================================================
+# Target rules for targets named libgit2_tests
+
+# Build rule for target.
+libgit2_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libgit2_tests
+.PHONY : libgit2_tests
+
+# fast build rule for target.
+libgit2_tests/fast:
+	$(MAKE) $(MAKESILENT) -f libgit2/tests/libgit2/CMakeFiles/libgit2_tests.dir/build.make libgit2/tests/libgit2/CMakeFiles/libgit2_tests.dir/build
+.PHONY : libgit2_tests/fast
+
+#=============================================================================
+# Target rules for targets named util_tests
+
+# Build rule for target.
+util_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 util_tests
+.PHONY : util_tests
+
+# fast build rule for target.
+util_tests/fast:
+	$(MAKE) $(MAKESILENT) -f libgit2/tests/util/CMakeFiles/util_tests.dir/build.make libgit2/tests/util/CMakeFiles/util_tests.dir/build
+.PHONY : util_tests/fast
+
 src/DatabaseController.o: src/DatabaseController.cpp.o
 .PHONY : src/DatabaseController.o
 
@@ -353,6 +392,30 @@ src/DatabaseController.s: src/DatabaseController.cpp.s
 src/DatabaseController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.s
 .PHONY : src/DatabaseController.cpp.s
+
+src/GitManager.o: src/GitManager.cpp.o
+.PHONY : src/GitManager.o
+
+# target to build an object file
+src/GitManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/GitManager.cpp.o
+.PHONY : src/GitManager.cpp.o
+
+src/GitManager.i: src/GitManager.cpp.i
+.PHONY : src/GitManager.i
+
+# target to preprocess a source file
+src/GitManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/GitManager.cpp.i
+.PHONY : src/GitManager.cpp.i
+
+src/GitManager.s: src/GitManager.cpp.s
+.PHONY : src/GitManager.s
+
+# target to generate assembly for a file
+src/GitManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/GitManager.cpp.s
+.PHONY : src/GitManager.cpp.s
 
 src/Main.o: src/Main.cpp.o
 .PHONY : src/Main.o
@@ -522,6 +585,30 @@ src/tgbot_fragment_db_impl/FragmentStateController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.s
 .PHONY : src/tgbot_fragment_db_impl/FragmentStateController.cpp.s
 
+src/utils.o: src/utils.cpp.o
+.PHONY : src/utils.o
+
+# target to build an object file
+src/utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/utils.cpp.o
+.PHONY : src/utils.cpp.o
+
+src/utils.i: src/utils.cpp.i
+.PHONY : src/utils.i
+
+# target to preprocess a source file
+src/utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/utils.cpp.i
+.PHONY : src/utils.cpp.i
+
+src/utils.s: src/utils.cpp.s
+.PHONY : src/utils.s
+
+# target to generate assembly for a file
+src/utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/utils.cpp.s
+.PHONY : src/utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -538,18 +625,24 @@ help:
 	@echo "... Main"
 	@echo "... TgBot"
 	@echo "... git2_cli"
+	@echo "... headertest"
 	@echo "... http-parser"
 	@echo "... libgit2"
+	@echo "... libgit2_tests"
 	@echo "... libgit2package"
 	@echo "... ntlmclient"
 	@echo "... pcre"
 	@echo "... sqlite_cpp"
 	@echo "... tgbot_fragment"
 	@echo "... util"
+	@echo "... util_tests"
 	@echo "... xdiff"
 	@echo "... src/DatabaseController.o"
 	@echo "... src/DatabaseController.i"
 	@echo "... src/DatabaseController.s"
+	@echo "... src/GitManager.o"
+	@echo "... src/GitManager.i"
+	@echo "... src/GitManager.s"
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"
@@ -571,6 +664,9 @@ help:
 	@echo "... src/tgbot_fragment_db_impl/FragmentStateController.o"
 	@echo "... src/tgbot_fragment_db_impl/FragmentStateController.i"
 	@echo "... src/tgbot_fragment_db_impl/FragmentStateController.s"
+	@echo "... src/utils.o"
+	@echo "... src/utils.i"
+	@echo "... src/utils.s"
 .PHONY : help
 
 

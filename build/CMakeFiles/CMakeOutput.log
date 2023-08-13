@@ -28,11 +28,11 @@ The CXX compiler identification is GNU, found in "/home/anaskhan/proj/buildroid/
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_79ffc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_79ffc.dir/build.make CMakeFiles/cmTC_79ffc.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_18299/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_18299.dir/build.make CMakeFiles/cmTC_18299.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -v -o CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Building C object CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -42,8 +42,8 @@ Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~2
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_79ffc.dir/'
- /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_79ffc.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccodDELF.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_18299.dir/'
+ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_18299.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccuzYFzn.s
 GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
 	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
 
@@ -63,17 +63,17 @@ GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 50eaa2331df977b8016186198deb2d18
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_79ffc.dir/'
- as -v --64 -o CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o /tmp/ccodDELF.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_18299.dir/'
+ as -v --64 -o CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o /tmp/ccuzYFzn.s
 GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.'
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_79ffc
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79ffc.dir/link.txt --verbose=1
+Linking C executable cmTC_18299
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18299.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc  -v CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o -o cmTC_79ffc 
+/usr/bin/cc  -v CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o -o cmTC_18299 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -86,9 +86,9 @@ Supported LTO compression algorithms: zlib zstd
 gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_79ffc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_79ffc.'
- /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAHzg0u.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_79ffc /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_79ffc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_79ffc.'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_18299' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_18299.'
+ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGGIuDk.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_18299 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_18299' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_18299.'
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -112,11 +112,11 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_79ffc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_79ffc.dir/build.make CMakeFiles/cmTC_79ffc.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_18299/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_18299.dir/build.make CMakeFiles/cmTC_18299.dir/build]
   ignore line: [gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp']
   ignore line: [/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)]
-  ignore line: [Building C object CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Building C object CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -126,8 +126,8 @@ Parsed C implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
   ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_79ffc.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_79ffc.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccodDELF.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_18299.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_18299.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccuzYFzn.s]
   ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
   ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
   ignore line: []
@@ -147,17 +147,17 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 50eaa2331df977b8016186198deb2d18]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_79ffc.dir/']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o /tmp/ccodDELF.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_18299.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o /tmp/ccuzYFzn.s]
   ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.']
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.']
   ignore line: [/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)]
-  ignore line: [Linking C executable cmTC_79ffc]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79ffc.dir/link.txt --verbose=1]
+  ignore line: [Linking C executable cmTC_18299]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18299.dir/link.txt --verbose=1]
   ignore line: [/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)]
-  ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o -o cmTC_79ffc ]
+  ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o -o cmTC_18299 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -170,13 +170,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_79ffc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_79ffc.']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAHzg0u.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_79ffc /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_18299' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_18299.']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGGIuDk.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_18299 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccAHzg0u.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccGGIuDk.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -194,7 +194,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_79ffc] ==> ignore
+    arg [cmTC_18299] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -206,7 +206,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
-    arg [CMakeFiles/cmTC_79ffc.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_18299.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -240,11 +240,11 @@ Parsed C implicit link information from above output:
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_206b9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_206b9.dir/build.make CMakeFiles/cmTC_206b9.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_be3f5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_be3f5.dir/build.make CMakeFiles/cmTC_be3f5.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building CXX object CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++   -v -o CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Building CXX object CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++   -v -o CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -254,8 +254,8 @@ Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~2
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_206b9.dir/'
- /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_206b9.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccGvwAMM.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_be3f5.dir/'
+ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_be3f5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccSpbhLW.s
 GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
 	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
 
@@ -279,17 +279,17 @@ GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_206b9.dir/'
- as -v --64 -o CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccGvwAMM.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_be3f5.dir/'
+ as -v --64 -o CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccSpbhLW.s
 GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.'
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking CXX executable cmTC_206b9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_206b9.dir/link.txt --verbose=1
+Linking CXX executable cmTC_be3f5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be3f5.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/c++  -v CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_206b9 
+/usr/bin/c++  -v CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_be3f5 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -302,9 +302,9 @@ Supported LTO compression algorithms: zlib zstd
 gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_206b9' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_206b9.'
- /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIKjWUk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_206b9 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_206b9' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_206b9.'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_be3f5' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_be3f5.'
+ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQS7Xha.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_be3f5 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_be3f5' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_be3f5.'
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -334,11 +334,11 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_206b9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_206b9.dir/build.make CMakeFiles/cmTC_206b9.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_be3f5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_be3f5.dir/build.make CMakeFiles/cmTC_be3f5.dir/build]
   ignore line: [gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp']
   ignore line: [/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)]
-  ignore line: [Building CXX object CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Building CXX object CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -348,8 +348,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
   ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_206b9.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_206b9.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccGvwAMM.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_be3f5.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_be3f5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccSpbhLW.s]
   ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
   ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
   ignore line: []
@@ -373,17 +373,17 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_206b9.dir/']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccGvwAMM.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_be3f5.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccSpbhLW.s]
   ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.']
   ignore line: [/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)]
-  ignore line: [Linking CXX executable cmTC_206b9]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_206b9.dir/link.txt --verbose=1]
+  ignore line: [Linking CXX executable cmTC_be3f5]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be3f5.dir/link.txt --verbose=1]
   ignore line: [/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)]
-  ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_206b9 ]
+  ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_be3f5 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -396,13 +396,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_206b9' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_206b9.']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIKjWUk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_206b9 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_be3f5' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_be3f5.']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQS7Xha.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_be3f5 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccIKjWUk.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccQS7Xha.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -420,7 +420,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_206b9] ==> ignore
+    arg [cmTC_be3f5] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -432,7 +432,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
-    arg [CMakeFiles/cmTC_206b9.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_be3f5.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -462,16 +462,16 @@ Parsed CXX implicit link information from above output:
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0c31f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0c31f.dir/build.make CMakeFiles/cmTC_0c31f.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c25f1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c25f1.dir/build.make CMakeFiles/cmTC_c25f1.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_0c31f.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_0c31f.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_c25f1.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c25f1.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_0c31f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c31f.dir/link.txt --verbose=1
+Linking C executable cmTC_c25f1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c25f1.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc CMakeFiles/cmTC_0c31f.dir/CheckIncludeFile.c.o -o cmTC_0c31f 
+/usr/bin/cc CMakeFiles/cmTC_c25f1.dir/CheckIncludeFile.c.o -o cmTC_c25f1 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -479,16 +479,16 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fc2f0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fc2f0.dir/build.make CMakeFiles/cmTC_fc2f0.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a4235/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a4235.dir/build.make CMakeFiles/cmTC_a4235.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_fc2f0.dir/src.c.o
-/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_fc2f0.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_a4235.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_a4235.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_fc2f0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc2f0.dir/link.txt --verbose=1
+Linking C executable cmTC_a4235
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4235.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc CMakeFiles/cmTC_fc2f0.dir/src.c.o -o cmTC_fc2f0 
+/usr/bin/cc CMakeFiles/cmTC_a4235.dir/src.c.o -o cmTC_a4235 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -516,16 +516,16 @@ int main(void)
 Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIM succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3a5d4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3a5d4.dir/build.make CMakeFiles/cmTC_3a5d4.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_07be7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_07be7.dir/build.make CMakeFiles/cmTC_07be7.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_3a5d4.dir/src.c.o
-/usr/bin/cc -DHAVE_STRUCT_STAT_ST_MTIM   -o CMakeFiles/cmTC_3a5d4.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_07be7.dir/src.c.o
+/usr/bin/cc -DHAVE_STRUCT_STAT_ST_MTIM   -o CMakeFiles/cmTC_07be7.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_3a5d4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a5d4.dir/link.txt --verbose=1
+Linking C executable cmTC_07be7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07be7.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc CMakeFiles/cmTC_3a5d4.dir/src.c.o -o cmTC_3a5d4 
+/usr/bin/cc CMakeFiles/cmTC_07be7.dir/src.c.o -o cmTC_07be7 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -543,16 +543,16 @@ int main()
 Performing C SOURCE FILE Test HAVE_STRUCT_STAT_NSEC succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4741e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4741e.dir/build.make CMakeFiles/cmTC_4741e.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dcc38/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dcc38.dir/build.make CMakeFiles/cmTC_dcc38.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_4741e.dir/src.c.o
-/usr/bin/cc -DHAVE_STRUCT_STAT_NSEC   -o CMakeFiles/cmTC_4741e.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_dcc38.dir/src.c.o
+/usr/bin/cc -DHAVE_STRUCT_STAT_NSEC   -o CMakeFiles/cmTC_dcc38.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_4741e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4741e.dir/link.txt --verbose=1
+Linking C executable cmTC_dcc38
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcc38.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc CMakeFiles/cmTC_4741e.dir/src.c.o -o cmTC_4741e 
+/usr/bin/cc CMakeFiles/cmTC_dcc38.dir/src.c.o -o cmTC_dcc38 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -569,16 +569,16 @@ int main()
 Determining if the function futimens exists passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ddf77/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ddf77.dir/build.make CMakeFiles/cmTC_ddf77.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_94108/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_94108.dir/build.make CMakeFiles/cmTC_94108.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_ddf77.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=futimens -o CMakeFiles/cmTC_ddf77.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Building C object CMakeFiles/cmTC_94108.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=futimens -o CMakeFiles/cmTC_94108.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_ddf77
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ddf77.dir/link.txt --verbose=1
+Linking C executable cmTC_94108
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94108.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=futimens CMakeFiles/cmTC_ddf77.dir/CheckFunctionExists.c.o -o cmTC_ddf77 
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=futimens CMakeFiles/cmTC_94108.dir/CheckFunctionExists.c.o -o cmTC_94108 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -586,16 +586,16 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Performing C SOURCE FILE Test IS_WALL_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a84ce/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a84ce.dir/build.make CMakeFiles/cmTC_a84ce.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a95e5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a95e5.dir/build.make CMakeFiles/cmTC_a95e5.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_a84ce.dir/src.c.o
-/usr/bin/cc -DIS_WALL_SUPPORTED  -D_GNU_SOURCE     -Wall -o CMakeFiles/cmTC_a84ce.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_a95e5.dir/src.c.o
+/usr/bin/cc -DIS_WALL_SUPPORTED  -D_GNU_SOURCE     -Wall -o CMakeFiles/cmTC_a95e5.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_a84ce
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a84ce.dir/link.txt --verbose=1
+Linking C executable cmTC_a95e5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a95e5.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE   CMakeFiles/cmTC_a84ce.dir/src.c.o -o cmTC_a84ce 
+/usr/bin/cc -D_GNU_SOURCE   CMakeFiles/cmTC_a95e5.dir/src.c.o -o cmTC_a95e5 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -604,16 +604,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WEXTRA_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_104f5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_104f5.dir/build.make CMakeFiles/cmTC_104f5.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4b8b0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4b8b0.dir/build.make CMakeFiles/cmTC_4b8b0.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_104f5.dir/src.c.o
-/usr/bin/cc -DIS_WEXTRA_SUPPORTED  -D_GNU_SOURCE  -Wall    -Wextra -o CMakeFiles/cmTC_104f5.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_4b8b0.dir/src.c.o
+/usr/bin/cc -DIS_WEXTRA_SUPPORTED  -D_GNU_SOURCE  -Wall    -Wextra -o CMakeFiles/cmTC_4b8b0.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_104f5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_104f5.dir/link.txt --verbose=1
+Linking C executable cmTC_4b8b0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b8b0.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall  CMakeFiles/cmTC_104f5.dir/src.c.o -o cmTC_104f5 
+/usr/bin/cc -D_GNU_SOURCE  -Wall  CMakeFiles/cmTC_4b8b0.dir/src.c.o -o cmTC_4b8b0 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -622,16 +622,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WNO_DOCUMENTATION_DEPRECATED_SYNC_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8edc2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8edc2.dir/build.make CMakeFiles/cmTC_8edc2.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1fb67/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1fb67.dir/build.make CMakeFiles/cmTC_1fb67.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_8edc2.dir/src.c.o
-/usr/bin/cc -DIS_WNO_DOCUMENTATION_DEPRECATED_SYNC_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra    -Wno-documentation-deprecated-sync -o CMakeFiles/cmTC_8edc2.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_1fb67.dir/src.c.o
+/usr/bin/cc -DIS_WNO_DOCUMENTATION_DEPRECATED_SYNC_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra    -Wno-documentation-deprecated-sync -o CMakeFiles/cmTC_1fb67.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_8edc2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8edc2.dir/link.txt --verbose=1
+Linking C executable cmTC_1fb67
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fb67.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra  CMakeFiles/cmTC_8edc2.dir/src.c.o -o cmTC_8edc2 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra  CMakeFiles/cmTC_1fb67.dir/src.c.o -o cmTC_1fb67 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -640,16 +640,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WNO_MISSING_FIELD_INITIALIZERS_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e36c6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e36c6.dir/build.make CMakeFiles/cmTC_e36c6.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f30b9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f30b9.dir/build.make CMakeFiles/cmTC_f30b9.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_e36c6.dir/src.c.o
-/usr/bin/cc -DIS_WNO_MISSING_FIELD_INITIALIZERS_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync    -Wno-missing-field-initializers -o CMakeFiles/cmTC_e36c6.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_f30b9.dir/src.c.o
+/usr/bin/cc -DIS_WNO_MISSING_FIELD_INITIALIZERS_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync    -Wno-missing-field-initializers -o CMakeFiles/cmTC_f30b9.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_e36c6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e36c6.dir/link.txt --verbose=1
+Linking C executable cmTC_f30b9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f30b9.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync  CMakeFiles/cmTC_e36c6.dir/src.c.o -o cmTC_e36c6 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync  CMakeFiles/cmTC_f30b9.dir/src.c.o -o cmTC_f30b9 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -658,16 +658,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WMISSING_DECLARATIONS_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_97169/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_97169.dir/build.make CMakeFiles/cmTC_97169.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fe582/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fe582.dir/build.make CMakeFiles/cmTC_fe582.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_97169.dir/src.c.o
-/usr/bin/cc -DIS_WMISSING_DECLARATIONS_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers    -Wmissing-declarations -o CMakeFiles/cmTC_97169.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_fe582.dir/src.c.o
+/usr/bin/cc -DIS_WMISSING_DECLARATIONS_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers    -Wmissing-declarations -o CMakeFiles/cmTC_fe582.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_97169
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97169.dir/link.txt --verbose=1
+Linking C executable cmTC_fe582
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe582.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers  CMakeFiles/cmTC_97169.dir/src.c.o -o cmTC_97169 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers  CMakeFiles/cmTC_fe582.dir/src.c.o -o cmTC_fe582 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -676,16 +676,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WSTRICT_ALIASING_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c5708/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c5708.dir/build.make CMakeFiles/cmTC_c5708.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cdf79/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cdf79.dir/build.make CMakeFiles/cmTC_cdf79.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_c5708.dir/src.c.o
-/usr/bin/cc -DIS_WSTRICT_ALIASING_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations    -Wstrict-aliasing -o CMakeFiles/cmTC_c5708.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_cdf79.dir/src.c.o
+/usr/bin/cc -DIS_WSTRICT_ALIASING_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations    -Wstrict-aliasing -o CMakeFiles/cmTC_cdf79.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_c5708
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5708.dir/link.txt --verbose=1
+Linking C executable cmTC_cdf79
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdf79.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations  CMakeFiles/cmTC_c5708.dir/src.c.o -o cmTC_c5708 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations  CMakeFiles/cmTC_cdf79.dir/src.c.o -o cmTC_cdf79 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -694,16 +694,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WSTRICT_PROTOTYPES_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6426b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6426b.dir/build.make CMakeFiles/cmTC_6426b.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2837a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2837a.dir/build.make CMakeFiles/cmTC_2837a.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_6426b.dir/src.c.o
-/usr/bin/cc -DIS_WSTRICT_PROTOTYPES_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing    -Wstrict-prototypes -o CMakeFiles/cmTC_6426b.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_2837a.dir/src.c.o
+/usr/bin/cc -DIS_WSTRICT_PROTOTYPES_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing    -Wstrict-prototypes -o CMakeFiles/cmTC_2837a.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_6426b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6426b.dir/link.txt --verbose=1
+Linking C executable cmTC_2837a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2837a.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing  CMakeFiles/cmTC_6426b.dir/src.c.o -o cmTC_6426b 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing  CMakeFiles/cmTC_2837a.dir/src.c.o -o cmTC_2837a 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -712,16 +712,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WDECLARATION_AFTER_STATEMENT_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e000f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e000f.dir/build.make CMakeFiles/cmTC_e000f.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7b5c0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7b5c0.dir/build.make CMakeFiles/cmTC_7b5c0.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_e000f.dir/src.c.o
-/usr/bin/cc -DIS_WDECLARATION_AFTER_STATEMENT_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes    -Wdeclaration-after-statement -o CMakeFiles/cmTC_e000f.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_7b5c0.dir/src.c.o
+/usr/bin/cc -DIS_WDECLARATION_AFTER_STATEMENT_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes    -Wdeclaration-after-statement -o CMakeFiles/cmTC_7b5c0.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_e000f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e000f.dir/link.txt --verbose=1
+Linking C executable cmTC_7b5c0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b5c0.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes  CMakeFiles/cmTC_e000f.dir/src.c.o -o cmTC_e000f 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes  CMakeFiles/cmTC_7b5c0.dir/src.c.o -o cmTC_7b5c0 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -730,16 +730,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WSHIFT_COUNT_OVERFLOW_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c0c44/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c0c44.dir/build.make CMakeFiles/cmTC_c0c44.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a2362/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a2362.dir/build.make CMakeFiles/cmTC_a2362.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_c0c44.dir/src.c.o
-/usr/bin/cc -DIS_WSHIFT_COUNT_OVERFLOW_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement    -Wshift-count-overflow -o CMakeFiles/cmTC_c0c44.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_a2362.dir/src.c.o
+/usr/bin/cc -DIS_WSHIFT_COUNT_OVERFLOW_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement    -Wshift-count-overflow -o CMakeFiles/cmTC_a2362.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_c0c44
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0c44.dir/link.txt --verbose=1
+Linking C executable cmTC_a2362
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2362.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement  CMakeFiles/cmTC_c0c44.dir/src.c.o -o cmTC_c0c44 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement  CMakeFiles/cmTC_a2362.dir/src.c.o -o cmTC_a2362 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -748,16 +748,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WUNUSED_CONST_VARIABLE_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_25074/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_25074.dir/build.make CMakeFiles/cmTC_25074.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9c777/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9c777.dir/build.make CMakeFiles/cmTC_9c777.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_25074.dir/src.c.o
-/usr/bin/cc -DIS_WUNUSED_CONST_VARIABLE_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow    -Wunused-const-variable -o CMakeFiles/cmTC_25074.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_9c777.dir/src.c.o
+/usr/bin/cc -DIS_WUNUSED_CONST_VARIABLE_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow    -Wunused-const-variable -o CMakeFiles/cmTC_9c777.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_25074
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25074.dir/link.txt --verbose=1
+Linking C executable cmTC_9c777
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c777.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow  CMakeFiles/cmTC_25074.dir/src.c.o -o cmTC_25074 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow  CMakeFiles/cmTC_9c777.dir/src.c.o -o cmTC_9c777 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -766,16 +766,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WUNUSED_FUNCTION_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d8bff/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d8bff.dir/build.make CMakeFiles/cmTC_d8bff.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1a94d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1a94d.dir/build.make CMakeFiles/cmTC_1a94d.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_d8bff.dir/src.c.o
-/usr/bin/cc -DIS_WUNUSED_FUNCTION_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable    -Wunused-function -o CMakeFiles/cmTC_d8bff.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_1a94d.dir/src.c.o
+/usr/bin/cc -DIS_WUNUSED_FUNCTION_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable    -Wunused-function -o CMakeFiles/cmTC_1a94d.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_d8bff
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8bff.dir/link.txt --verbose=1
+Linking C executable cmTC_1a94d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a94d.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable  CMakeFiles/cmTC_d8bff.dir/src.c.o -o cmTC_d8bff 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable  CMakeFiles/cmTC_1a94d.dir/src.c.o -o cmTC_1a94d 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -784,16 +784,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WINT_CONVERSION_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9a284/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9a284.dir/build.make CMakeFiles/cmTC_9a284.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f5c5a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f5c5a.dir/build.make CMakeFiles/cmTC_f5c5a.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_9a284.dir/src.c.o
-/usr/bin/cc -DIS_WINT_CONVERSION_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function    -Wint-conversion -o CMakeFiles/cmTC_9a284.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_f5c5a.dir/src.c.o
+/usr/bin/cc -DIS_WINT_CONVERSION_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function    -Wint-conversion -o CMakeFiles/cmTC_f5c5a.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_9a284
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a284.dir/link.txt --verbose=1
+Linking C executable cmTC_f5c5a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5c5a.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function  CMakeFiles/cmTC_9a284.dir/src.c.o -o cmTC_9a284 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function  CMakeFiles/cmTC_f5c5a.dir/src.c.o -o cmTC_f5c5a 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -802,16 +802,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WC99_C11_COMPAT_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f85a5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f85a5.dir/build.make CMakeFiles/cmTC_f85a5.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6ca5d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6ca5d.dir/build.make CMakeFiles/cmTC_6ca5d.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_f85a5.dir/src.c.o
-/usr/bin/cc -DIS_WC99_C11_COMPAT_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion    -Wc99-c11-compat -o CMakeFiles/cmTC_f85a5.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_6ca5d.dir/src.c.o
+/usr/bin/cc -DIS_WC99_C11_COMPAT_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion    -Wc99-c11-compat -o CMakeFiles/cmTC_6ca5d.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_f85a5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f85a5.dir/link.txt --verbose=1
+Linking C executable cmTC_6ca5d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ca5d.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion  CMakeFiles/cmTC_f85a5.dir/src.c.o -o cmTC_f85a5 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion  CMakeFiles/cmTC_6ca5d.dir/src.c.o -o cmTC_6ca5d 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -820,16 +820,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WFORMAT_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cd281/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cd281.dir/build.make CMakeFiles/cmTC_cd281.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_56d49/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_56d49.dir/build.make CMakeFiles/cmTC_56d49.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_cd281.dir/src.c.o
-/usr/bin/cc -DIS_WFORMAT_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat    -Wformat -o CMakeFiles/cmTC_cd281.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_56d49.dir/src.c.o
+/usr/bin/cc -DIS_WFORMAT_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat    -Wformat -o CMakeFiles/cmTC_56d49.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_cd281
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd281.dir/link.txt --verbose=1
+Linking C executable cmTC_56d49
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56d49.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat  CMakeFiles/cmTC_cd281.dir/src.c.o -o cmTC_cd281 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat  CMakeFiles/cmTC_56d49.dir/src.c.o -o cmTC_56d49 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -838,16 +838,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WFORMAT_SECURITY_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c7cc7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c7cc7.dir/build.make CMakeFiles/cmTC_c7cc7.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bbd8f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bbd8f.dir/build.make CMakeFiles/cmTC_bbd8f.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_c7cc7.dir/src.c.o
-/usr/bin/cc -DIS_WFORMAT_SECURITY_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat    -Wformat-security -o CMakeFiles/cmTC_c7cc7.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_bbd8f.dir/src.c.o
+/usr/bin/cc -DIS_WFORMAT_SECURITY_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat    -Wformat-security -o CMakeFiles/cmTC_bbd8f.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_c7cc7
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7cc7.dir/link.txt --verbose=1
+Linking C executable cmTC_bbd8f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbd8f.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat  CMakeFiles/cmTC_c7cc7.dir/src.c.o -o cmTC_c7cc7 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat  CMakeFiles/cmTC_bbd8f.dir/src.c.o -o cmTC_bbd8f 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -856,16 +856,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WIMPLICIT_FALLTHROUGH_1_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bbf49/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bbf49.dir/build.make CMakeFiles/cmTC_bbf49.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_811e6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_811e6.dir/build.make CMakeFiles/cmTC_811e6.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_bbf49.dir/src.c.o
-/usr/bin/cc -DIS_WIMPLICIT_FALLTHROUGH_1_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security    -Wimplicit-fallthrough=1 -o CMakeFiles/cmTC_bbf49.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_811e6.dir/src.c.o
+/usr/bin/cc -DIS_WIMPLICIT_FALLTHROUGH_1_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security    -Wimplicit-fallthrough=1 -o CMakeFiles/cmTC_811e6.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_bbf49
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbf49.dir/link.txt --verbose=1
+Linking C executable cmTC_811e6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_811e6.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_bbf49.dir/src.c.o -o cmTC_bbf49 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_811e6.dir/src.c.o -o cmTC_811e6 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -874,16 +874,16 @@ int main(void) { return 0; }
 Determining if the include file dirent.h exists passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_216ad/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_216ad.dir/build.make CMakeFiles/cmTC_216ad.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bee24/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bee24.dir/build.make CMakeFiles/cmTC_bee24.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_216ad.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_216ad.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_bee24.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_bee24.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_216ad
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_216ad.dir/link.txt --verbose=1
+Linking C executable cmTC_bee24
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bee24.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_216ad.dir/CheckIncludeFile.c.o -o cmTC_216ad 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_bee24.dir/CheckIncludeFile.c.o -o cmTC_bee24 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -891,16 +891,16 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Determining if the include file stdint.h exists passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_aff8f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_aff8f.dir/build.make CMakeFiles/cmTC_aff8f.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_98e8e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_98e8e.dir/build.make CMakeFiles/cmTC_98e8e.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_aff8f.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_aff8f.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_98e8e.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_98e8e.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_aff8f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aff8f.dir/link.txt --verbose=1
+Linking C executable cmTC_98e8e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98e8e.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_aff8f.dir/CheckIncludeFile.c.o -o cmTC_aff8f 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_98e8e.dir/CheckIncludeFile.c.o -o cmTC_98e8e 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -908,16 +908,16 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Determining if the include file inttypes.h exists passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_80bf5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_80bf5.dir/build.make CMakeFiles/cmTC_80bf5.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2a85b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2a85b.dir/build.make CMakeFiles/cmTC_2a85b.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_80bf5.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_80bf5.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_2a85b.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_2a85b.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_80bf5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80bf5.dir/link.txt --verbose=1
+Linking C executable cmTC_2a85b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a85b.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_80bf5.dir/CheckIncludeFile.c.o -o cmTC_80bf5 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_2a85b.dir/CheckIncludeFile.c.o -o cmTC_2a85b 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -925,16 +925,16 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Determining if the include file sys/stat.h exists passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_863f0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_863f0.dir/build.make CMakeFiles/cmTC_863f0.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7a77e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7a77e.dir/build.make CMakeFiles/cmTC_7a77e.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_863f0.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_863f0.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_7a77e.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_7a77e.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_863f0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_863f0.dir/link.txt --verbose=1
+Linking C executable cmTC_7a77e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a77e.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_863f0.dir/CheckIncludeFile.c.o -o cmTC_863f0 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_7a77e.dir/CheckIncludeFile.c.o -o cmTC_7a77e 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -942,16 +942,16 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Determining if the include file sys/types.h exists passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_12821/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_12821.dir/build.make CMakeFiles/cmTC_12821.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8bc34/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8bc34.dir/build.make CMakeFiles/cmTC_8bc34.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_12821.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_12821.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_8bc34.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_8bc34.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_12821
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12821.dir/link.txt --verbose=1
+Linking C executable cmTC_8bc34
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8bc34.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_12821.dir/CheckIncludeFile.c.o -o cmTC_12821 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_8bc34.dir/CheckIncludeFile.c.o -o cmTC_8bc34 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -959,16 +959,16 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Determining if the include file unistd.h exists passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_db87b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_db87b.dir/build.make CMakeFiles/cmTC_db87b.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_08a17/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_08a17.dir/build.make CMakeFiles/cmTC_08a17.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_db87b.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_db87b.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_08a17.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_08a17.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_db87b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db87b.dir/link.txt --verbose=1
+Linking C executable cmTC_08a17
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08a17.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_db87b.dir/CheckIncludeFile.c.o -o cmTC_db87b 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_08a17.dir/CheckIncludeFile.c.o -o cmTC_08a17 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -976,21 +976,21 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Determining if the function bcopy exists passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dcfa1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dcfa1.dir/build.make CMakeFiles/cmTC_dcfa1.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_80978/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_80978.dir/build.make CMakeFiles/cmTC_80978.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_dcfa1.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=bcopy -o CMakeFiles/cmTC_dcfa1.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Building C object CMakeFiles/cmTC_80978.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=bcopy -o CMakeFiles/cmTC_80978.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
 <command-line>: warning: conflicting types for built-in function ‘bcopy’; expected ‘void(const void *, void *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
 /usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
       |   ^~~~~~~~~~~~~~~~~~~~~
 cc1: note: unrecognized command-line option ‘-Wno-documentation-deprecated-sync’ may have been intended to silence earlier diagnostics
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_dcfa1
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcfa1.dir/link.txt --verbose=1
+Linking C executable cmTC_80978
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80978.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=bcopy CMakeFiles/cmTC_dcfa1.dir/CheckFunctionExists.c.o -o cmTC_dcfa1 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=bcopy CMakeFiles/cmTC_80978.dir/CheckFunctionExists.c.o -o cmTC_80978 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -998,11 +998,11 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Determining if the function memmove exists passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7f962/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7f962.dir/build.make CMakeFiles/cmTC_7f962.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dbfd4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dbfd4.dir/build.make CMakeFiles/cmTC_dbfd4.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_7f962.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=memmove -o CMakeFiles/cmTC_7f962.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Building C object CMakeFiles/cmTC_dbfd4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=memmove -o CMakeFiles/cmTC_dbfd4.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
 <command-line>: warning: conflicting types for built-in function ‘memmove’; expected ‘void *(void *, const void *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
 /usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
     7 |   CHECK_FUNCTION_EXISTS(void);
@@ -1012,10 +1012,10 @@ Building C object CMakeFiles/cmTC_7f962.dir/CheckFunctionExists.c.o
     1 | #ifdef CHECK_FUNCTION_EXISTS
 cc1: note: unrecognized command-line option ‘-Wno-documentation-deprecated-sync’ may have been intended to silence earlier diagnostics
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_7f962
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f962.dir/link.txt --verbose=1
+Linking C executable cmTC_dbfd4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbfd4.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=memmove CMakeFiles/cmTC_7f962.dir/CheckFunctionExists.c.o -o cmTC_7f962 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=memmove CMakeFiles/cmTC_dbfd4.dir/CheckFunctionExists.c.o -o cmTC_dbfd4 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -1023,16 +1023,16 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Determining if the function strerror exists passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c01ad/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c01ad.dir/build.make CMakeFiles/cmTC_c01ad.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_09e70/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_09e70.dir/build.make CMakeFiles/cmTC_09e70.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_c01ad.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=strerror -o CMakeFiles/cmTC_c01ad.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Building C object CMakeFiles/cmTC_09e70.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=strerror -o CMakeFiles/cmTC_09e70.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_c01ad
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c01ad.dir/link.txt --verbose=1
+Linking C executable cmTC_09e70
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09e70.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=strerror CMakeFiles/cmTC_c01ad.dir/CheckFunctionExists.c.o -o cmTC_c01ad 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=strerror CMakeFiles/cmTC_09e70.dir/CheckFunctionExists.c.o -o cmTC_09e70 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -1040,16 +1040,16 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Determining if the function strtoll exists passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_64c28/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_64c28.dir/build.make CMakeFiles/cmTC_64c28.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_75eec/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_75eec.dir/build.make CMakeFiles/cmTC_75eec.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_64c28.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=strtoll -o CMakeFiles/cmTC_64c28.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Building C object CMakeFiles/cmTC_75eec.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=strtoll -o CMakeFiles/cmTC_75eec.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_64c28
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64c28.dir/link.txt --verbose=1
+Linking C executable cmTC_75eec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75eec.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=strtoll CMakeFiles/cmTC_64c28.dir/CheckFunctionExists.c.o -o cmTC_64c28 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=strtoll CMakeFiles/cmTC_75eec.dir/CheckFunctionExists.c.o -o cmTC_75eec 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -1057,16 +1057,16 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Determining if the function strtoq exists passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2c436/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2c436.dir/build.make CMakeFiles/cmTC_2c436.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b4916/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b4916.dir/build.make CMakeFiles/cmTC_b4916.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_2c436.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=strtoq -o CMakeFiles/cmTC_2c436.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Building C object CMakeFiles/cmTC_b4916.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=strtoq -o CMakeFiles/cmTC_b4916.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_2c436
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c436.dir/link.txt --verbose=1
+Linking C executable cmTC_b4916
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4916.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=strtoq CMakeFiles/cmTC_2c436.dir/CheckFunctionExists.c.o -o cmTC_2c436 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=strtoq CMakeFiles/cmTC_b4916.dir/CheckFunctionExists.c.o -o cmTC_b4916 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -1074,16 +1074,16 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Determining if the include file stddef.h exists passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cef0f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cef0f.dir/build.make CMakeFiles/cmTC_cef0f.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8df23/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8df23.dir/build.make CMakeFiles/cmTC_8df23.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_cef0f.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_cef0f.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_8df23.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_8df23.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_cef0f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cef0f.dir/link.txt --verbose=1
+Linking C executable cmTC_8df23
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8df23.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_cef0f.dir/CheckIncludeFile.c.o -o cmTC_cef0f 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_8df23.dir/CheckIncludeFile.c.o -o cmTC_8df23 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -1091,16 +1091,16 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Determining size of long long passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2859e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2859e.dir/build.make CMakeFiles/cmTC_2859e.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_51454/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_51454.dir/build.make CMakeFiles/cmTC_51454.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_2859e.dir/LONG_LONG.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_2859e.dir/LONG_LONG.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CheckTypeSize/LONG_LONG.c
+Building C object CMakeFiles/cmTC_51454.dir/LONG_LONG.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_51454.dir/LONG_LONG.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CheckTypeSize/LONG_LONG.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_2859e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2859e.dir/link.txt --verbose=1
+Linking C executable cmTC_51454
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51454.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_2859e.dir/LONG_LONG.c.o -o cmTC_2859e 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_51454.dir/LONG_LONG.c.o -o cmTC_51454 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -1108,16 +1108,16 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Determining size of unsigned long long passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9c964/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9c964.dir/build.make CMakeFiles/cmTC_9c964.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_aa9f6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_aa9f6.dir/build.make CMakeFiles/cmTC_aa9f6.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_9c964.dir/UNSIGNED_LONG_LONG.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_9c964.dir/UNSIGNED_LONG_LONG.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CheckTypeSize/UNSIGNED_LONG_LONG.c
+Building C object CMakeFiles/cmTC_aa9f6.dir/UNSIGNED_LONG_LONG.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_aa9f6.dir/UNSIGNED_LONG_LONG.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CheckTypeSize/UNSIGNED_LONG_LONG.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_9c964
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c964.dir/link.txt --verbose=1
+Linking C executable cmTC_aa9f6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa9f6.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_9c964.dir/UNSIGNED_LONG_LONG.c.o -o cmTC_9c964 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_aa9f6.dir/UNSIGNED_LONG_LONG.c.o -o cmTC_aa9f6 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -1125,16 +1125,16 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Performing C SOURCE FILE Test IS_WNO_UNUSED_FUNCTION_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0c97d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0c97d.dir/build.make CMakeFiles/cmTC_0c97d.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5d669/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5d669.dir/build.make CMakeFiles/cmTC_5d669.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_0c97d.dir/src.c.o
-/usr/bin/cc -DIS_WNO_UNUSED_FUNCTION_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security    -Wno-unused-function -o CMakeFiles/cmTC_0c97d.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_5d669.dir/src.c.o
+/usr/bin/cc -DIS_WNO_UNUSED_FUNCTION_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security    -Wno-unused-function -o CMakeFiles/cmTC_5d669.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_0c97d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c97d.dir/link.txt --verbose=1
+Linking C executable cmTC_5d669
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d669.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_0c97d.dir/src.c.o -o cmTC_0c97d 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_5d669.dir/src.c.o -o cmTC_5d669 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -1143,16 +1143,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WNO_IMPLICIT_FALLTHROUGH_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7643b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7643b.dir/build.make CMakeFiles/cmTC_7643b.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_baa02/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_baa02.dir/build.make CMakeFiles/cmTC_baa02.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_7643b.dir/src.c.o
-/usr/bin/cc -DIS_WNO_IMPLICIT_FALLTHROUGH_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function    -Wno-implicit-fallthrough -o CMakeFiles/cmTC_7643b.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_baa02.dir/src.c.o
+/usr/bin/cc -DIS_WNO_IMPLICIT_FALLTHROUGH_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function    -Wno-implicit-fallthrough -o CMakeFiles/cmTC_baa02.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_7643b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7643b.dir/link.txt --verbose=1
+Linking C executable cmTC_baa02
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_baa02.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function  CMakeFiles/cmTC_7643b.dir/src.c.o -o cmTC_7643b 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function  CMakeFiles/cmTC_baa02.dir/src.c.o -o cmTC_baa02 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -1161,16 +1161,16 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test IS_WNO_UNUSED_PARAMETER_SUPPORTED succeeded with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_114bd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_114bd.dir/build.make CMakeFiles/cmTC_114bd.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9e36a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9e36a.dir/build.make CMakeFiles/cmTC_9e36a.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_114bd.dir/src.c.o
-/usr/bin/cc -DIS_WNO_UNUSED_PARAMETER_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function    -Wno-unused-parameter -o CMakeFiles/cmTC_114bd.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_9e36a.dir/src.c.o
+/usr/bin/cc -DIS_WNO_UNUSED_PARAMETER_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function    -Wno-unused-parameter -o CMakeFiles/cmTC_9e36a.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_114bd
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_114bd.dir/link.txt --verbose=1
+Linking C executable cmTC_9e36a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e36a.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function  CMakeFiles/cmTC_114bd.dir/src.c.o -o cmTC_114bd 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function  CMakeFiles/cmTC_9e36a.dir/src.c.o -o cmTC_9e36a 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -1179,16 +1179,16 @@ int main(void) { return 0; }
 Determining if the prototype qsort_r exists for GIT_QSORT_GNU passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_61ff8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_61ff8.dir/build.make CMakeFiles/cmTC_61ff8.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f6e06/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f6e06.dir/build.make CMakeFiles/cmTC_f6e06.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_61ff8.dir/CheckPrototypeDefinition.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function -Wno-unused-parameter  -o CMakeFiles/cmTC_61ff8.dir/CheckPrototypeDefinition.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+Building C object CMakeFiles/cmTC_f6e06.dir/CheckPrototypeDefinition.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function -Wno-unused-parameter  -o CMakeFiles/cmTC_f6e06.dir/CheckPrototypeDefinition.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_61ff8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61ff8.dir/link.txt --verbose=1
+Linking C executable cmTC_f6e06
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6e06.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function -Wno-unused-parameter  CMakeFiles/cmTC_61ff8.dir/CheckPrototypeDefinition.c.o -o cmTC_61ff8 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function -Wno-unused-parameter  CMakeFiles/cmTC_f6e06.dir/CheckPrototypeDefinition.c.o -o cmTC_f6e06 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -1196,16 +1196,16 @@ gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMak
 Determining if the getentropy exist passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_544be/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_544be.dir/build.make CMakeFiles/cmTC_544be.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_14d4f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_14d4f.dir/build.make CMakeFiles/cmTC_14d4f.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_544be.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_544be.dir/CheckSymbolExists.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_14d4f.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_14d4f.dir/CheckSymbolExists.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_544be
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_544be.dir/link.txt --verbose=1
+Linking C executable cmTC_14d4f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14d4f.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_544be.dir/CheckSymbolExists.c.o -o cmTC_544be 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_14d4f.dir/CheckSymbolExists.c.o -o cmTC_14d4f 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -1226,16 +1226,16 @@ int main(int argc, char** argv)
 Determining if the getloadavg exist passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fe90c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fe90c.dir/build.make CMakeFiles/cmTC_fe90c.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_baee9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_baee9.dir/build.make CMakeFiles/cmTC_baee9.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_fe90c.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_fe90c.dir/CheckSymbolExists.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_baee9.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_baee9.dir/CheckSymbolExists.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_fe90c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe90c.dir/link.txt --verbose=1
+Linking C executable cmTC_baee9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_baee9.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_fe90c.dir/CheckSymbolExists.c.o -o cmTC_fe90c 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_baee9.dir/CheckSymbolExists.c.o -o cmTC_baee9 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -1256,16 +1256,16 @@ int main(int argc, char** argv)
 Determining if the poll exist passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d3f70/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d3f70.dir/build.make CMakeFiles/cmTC_d3f70.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8060a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8060a.dir/build.make CMakeFiles/cmTC_8060a.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_d3f70.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_d3f70.dir/CheckSymbolExists.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_8060a.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_8060a.dir/CheckSymbolExists.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_d3f70
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3f70.dir/link.txt --verbose=1
+Linking C executable cmTC_8060a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8060a.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_d3f70.dir/CheckSymbolExists.c.o -o cmTC_d3f70 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_8060a.dir/CheckSymbolExists.c.o -o cmTC_8060a 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -1286,16 +1286,16 @@ int main(int argc, char** argv)
 Determining if the select exist passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dcfb8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dcfb8.dir/build.make CMakeFiles/cmTC_dcfb8.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c05b7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c05b7.dir/build.make CMakeFiles/cmTC_c05b7.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_dcfb8.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_dcfb8.dir/CheckSymbolExists.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_c05b7.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_c05b7.dir/CheckSymbolExists.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_dcfb8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcfb8.dir/link.txt --verbose=1
+Linking C executable cmTC_c05b7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c05b7.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_dcfb8.dir/CheckSymbolExists.c.o -o cmTC_dcfb8 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  CMakeFiles/cmTC_c05b7.dir/CheckSymbolExists.c.o -o cmTC_c05b7 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 
@@ -1316,16 +1316,16 @@ int main(int argc, char** argv)
 Determining if the function clock_gettime exists in the rt passed with the following output:
 Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e235e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e235e.dir/build.make CMakeFiles/cmTC_e235e.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c8a68/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c8a68.dir/build.make CMakeFiles/cmTC_c8a68.dir/build
 gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Building C object CMakeFiles/cmTC_e235e.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=clock_gettime -o CMakeFiles/cmTC_e235e.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Building C object CMakeFiles/cmTC_c8a68.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=clock_gettime -o CMakeFiles/cmTC_c8a68.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-Linking C executable cmTC_e235e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e235e.dir/link.txt --verbose=1
+Linking C executable cmTC_c8a68
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8a68.dir/link.txt --verbose=1
 /usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
-/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=clock_gettime CMakeFiles/cmTC_e235e.dir/CheckFunctionExists.c.o -o cmTC_e235e   -L/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/time.h  -Wl,-rpath,/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/time.h -lrt 
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=clock_gettime CMakeFiles/cmTC_c8a68.dir/CheckFunctionExists.c.o -o cmTC_c8a68   -L/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/time.h  -Wl,-rpath,/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/time.h -lrt 
 gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp'
 
 

@@ -1376,6 +1376,368 @@ CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o: ../src/DatabaseController
   /usr/include/boost/variant/bad_visit.hpp \
   ../tgbot_fragment/tgbot-cpp/include/tgbot/types/Message.h
 
+CMakeFiles/Buildroid.dir/src/GitManager.cpp.o: ../src/GitManager.cpp \
+  /usr/include/stdc-predef.h \
+  ../src/include/GitManager.hpp \
+  ../libgit2/include/git2.h \
+  ../libgit2/include/git2/annotated_commit.h \
+  ../libgit2/include/git2/common.h \
+  /usr/include/time.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/c++/11/stdlib.h \
+  /usr/include/c++/11/cstdlib \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+  /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/inttypes.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  ../libgit2/include/git2/repository.h \
+  ../libgit2/include/git2/types.h \
+  ../libgit2/include/git2/buffer.h \
+  ../libgit2/include/git2/oid.h \
+  ../libgit2/include/git2/experimental.h \
+  ../libgit2/include/git2/apply.h \
+  ../libgit2/include/git2/diff.h \
+  ../libgit2/include/git2/tree.h \
+  ../libgit2/include/git2/object.h \
+  ../libgit2/include/git2/refs.h \
+  ../libgit2/include/git2/strarray.h \
+  ../libgit2/include/git2/attr.h \
+  ../libgit2/include/git2/blob.h \
+  ../libgit2/include/git2/blame.h \
+  ../libgit2/include/git2/branch.h \
+  ../libgit2/include/git2/buffer.h \
+  ../libgit2/include/git2/cert.h \
+  ../libgit2/include/git2/checkout.h \
+  ../libgit2/include/git2/cherrypick.h \
+  ../libgit2/include/git2/merge.h \
+  ../libgit2/include/git2/oidarray.h \
+  ../libgit2/include/git2/checkout.h \
+  ../libgit2/include/git2/index.h \
+  ../libgit2/include/git2/indexer.h \
+  ../libgit2/include/git2/annotated_commit.h \
+  ../libgit2/include/git2/clone.h \
+  ../libgit2/include/git2/remote.h \
+  ../libgit2/include/git2/refspec.h \
+  ../libgit2/include/git2/net.h \
+  ../libgit2/include/git2/transport.h \
+  ../libgit2/include/git2/cert.h \
+  ../libgit2/include/git2/credential.h \
+  ../libgit2/include/git2/pack.h \
+  ../libgit2/include/git2/proxy.h \
+  ../libgit2/include/git2/commit.h \
+  ../libgit2/include/git2/common.h \
+  ../libgit2/include/git2/config.h \
+  ../libgit2/include/git2/credential.h \
+  ../libgit2/include/git2/deprecated.h \
+  ../libgit2/include/git2/attr.h \
+  ../libgit2/include/git2/config.h \
+  ../libgit2/include/git2/blame.h \
+  ../libgit2/include/git2/cherrypick.h \
+  ../libgit2/include/git2/clone.h \
+  ../libgit2/include/git2/describe.h \
+  ../libgit2/include/git2/errors.h \
+  ../libgit2/include/git2/filter.h \
+  ../libgit2/include/git2/rebase.h \
+  ../libgit2/include/git2/commit.h \
+  ../libgit2/include/git2/trace.h \
+  ../libgit2/include/git2/revert.h \
+  ../libgit2/include/git2/revparse.h \
+  ../libgit2/include/git2/stash.h \
+  ../libgit2/include/git2/status.h \
+  ../libgit2/include/git2/submodule.h \
+  ../libgit2/include/git2/worktree.h \
+  ../libgit2/include/git2/credential_helpers.h \
+  ../libgit2/include/git2/sys/credential.h \
+  ../libgit2/include/git2/common.h \
+  ../libgit2/include/git2/credential.h \
+  ../libgit2/include/git2/describe.h \
+  ../libgit2/include/git2/diff.h \
+  ../libgit2/include/git2/email.h \
+  ../libgit2/include/git2/errors.h \
+  ../libgit2/include/git2/experimental.h \
+  ../libgit2/include/git2/filter.h \
+  ../libgit2/include/git2/global.h \
+  ../libgit2/include/git2/graph.h \
+  ../libgit2/include/git2/ignore.h \
+  ../libgit2/include/git2/index.h \
+  ../libgit2/include/git2/indexer.h \
+  ../libgit2/include/git2/mailmap.h \
+  ../libgit2/include/git2/merge.h \
+  ../libgit2/include/git2/message.h \
+  ../libgit2/include/git2/net.h \
+  ../libgit2/include/git2/notes.h \
+  ../libgit2/include/git2/object.h \
+  ../libgit2/include/git2/odb.h \
+  ../libgit2/include/git2/odb_backend.h \
+  ../libgit2/include/git2/oid.h \
+  ../libgit2/include/git2/pack.h \
+  ../libgit2/include/git2/patch.h \
+  ../libgit2/include/git2/pathspec.h \
+  ../libgit2/include/git2/proxy.h \
+  ../libgit2/include/git2/rebase.h \
+  ../libgit2/include/git2/refdb.h \
+  ../libgit2/include/git2/reflog.h \
+  ../libgit2/include/git2/refs.h \
+  ../libgit2/include/git2/refspec.h \
+  ../libgit2/include/git2/remote.h \
+  ../libgit2/include/git2/repository.h \
+  ../libgit2/include/git2/reset.h \
+  ../libgit2/include/git2/revert.h \
+  ../libgit2/include/git2/revparse.h \
+  ../libgit2/include/git2/revwalk.h \
+  ../libgit2/include/git2/signature.h \
+  ../libgit2/include/git2/stash.h \
+  ../libgit2/include/git2/status.h \
+  ../libgit2/include/git2/submodule.h \
+  ../libgit2/include/git2/tag.h \
+  ../libgit2/include/git2/transport.h \
+  ../libgit2/include/git2/transaction.h \
+  ../libgit2/include/git2/tree.h \
+  ../libgit2/include/git2/types.h \
+  ../libgit2/include/git2/version.h \
+  ../libgit2/include/git2/worktree.h \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+  ../src/include/gitty.hpp \
+  /usr/include/c++/11/string \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/bits/functexcept.h \
+  /usr/include/c++/11/bits/exception_defines.h \
+  /usr/include/c++/11/bits/cpp_type_traits.h \
+  /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/ext/numeric_traits.h \
+  /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/move.h \
+  /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/11/bits/concept_check.h \
+  /usr/include/c++/11/debug/assertions.h \
+  /usr/include/c++/11/bits/stl_iterator.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/debug/debug.h \
+  /usr/include/c++/11/bits/predefined_ops.h \
+  /usr/include/c++/11/bits/postypes.h \
+  /usr/include/c++/11/cwchar \
+  /usr/include/wchar.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
+  /usr/include/c++/11/cstdint \
+  /usr/include/c++/11/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+  /usr/include/c++/11/ext/new_allocator.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/c++/11/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/cctype \
+  /usr/include/ctype.h \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/cstdio \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
+  /usr/include/c++/11/cerrno \
+  /usr/include/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/linux/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/c++/11/bits/charconv.h \
+  /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/stdexcept \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/filesystem \
+  /usr/include/c++/11/bits/fs_fwd.h \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/c++/11/bits/fs_path.h \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/locale \
+  /usr/include/c++/11/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/11/bits/locale_conv.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
+  /usr/include/c++/11/codecvt \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/fs_dir.h \
+  /usr/include/c++/11/bits/fs_ops.h \
+  ../src/include/utils.hpp \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/pstl/execution_defs.h
+
 CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   /usr/include/stdc-predef.h \
   /usr/local/include/cpprest/http_listener.h \
@@ -3607,6 +3969,7 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   ../src/include/Fragments.hpp \
   ../src/include/DatabaseController.hpp \
   ../tgbot_fragment/include/Fragment.hpp \
+  ../src/include/GitManager.hpp \
   ../libgit2/include/git2.h \
   ../libgit2/include/git2/annotated_commit.h \
   ../libgit2/include/git2/common.h \
@@ -3716,7 +4079,15 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   ../libgit2/include/git2/tree.h \
   ../libgit2/include/git2/types.h \
   ../libgit2/include/git2/version.h \
-  ../libgit2/include/git2/worktree.h
+  ../libgit2/include/git2/worktree.h \
+  ../src/include/gitty.hpp \
+  /usr/include/c++/11/filesystem \
+  /usr/include/c++/11/bits/fs_fwd.h \
+  /usr/include/c++/11/bits/fs_path.h \
+  /usr/include/c++/11/codecvt \
+  /usr/include/c++/11/bits/fs_dir.h \
+  /usr/include/c++/11/bits/fs_ops.h \
+  ../src/include/utils.hpp
 
 CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.o: ../src/MainDatabase.cpp \
   /usr/include/stdc-predef.h \
@@ -9427,7 +9798,126 @@ CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o: ../src/fragments/Taxi
   /usr/include/boost/variant/detail/element_index.hpp \
   /usr/include/boost/variant/visitor_ptr.hpp \
   /usr/include/boost/variant/bad_visit.hpp \
-  ../tgbot_fragment/tgbot-cpp/include/tgbot/types/Message.h
+  ../tgbot_fragment/tgbot-cpp/include/tgbot/types/Message.h \
+  ../src/include/GitManager.hpp \
+  ../libgit2/include/git2.h \
+  ../libgit2/include/git2/annotated_commit.h \
+  ../libgit2/include/git2/common.h \
+  /usr/include/inttypes.h \
+  ../libgit2/include/git2/repository.h \
+  ../libgit2/include/git2/types.h \
+  ../libgit2/include/git2/buffer.h \
+  ../libgit2/include/git2/oid.h \
+  ../libgit2/include/git2/experimental.h \
+  ../libgit2/include/git2/apply.h \
+  ../libgit2/include/git2/diff.h \
+  ../libgit2/include/git2/tree.h \
+  ../libgit2/include/git2/object.h \
+  ../libgit2/include/git2/refs.h \
+  ../libgit2/include/git2/strarray.h \
+  ../libgit2/include/git2/attr.h \
+  ../libgit2/include/git2/blob.h \
+  ../libgit2/include/git2/blame.h \
+  ../libgit2/include/git2/branch.h \
+  ../libgit2/include/git2/buffer.h \
+  ../libgit2/include/git2/cert.h \
+  ../libgit2/include/git2/checkout.h \
+  ../libgit2/include/git2/cherrypick.h \
+  ../libgit2/include/git2/merge.h \
+  ../libgit2/include/git2/oidarray.h \
+  ../libgit2/include/git2/checkout.h \
+  ../libgit2/include/git2/index.h \
+  ../libgit2/include/git2/indexer.h \
+  ../libgit2/include/git2/annotated_commit.h \
+  ../libgit2/include/git2/clone.h \
+  ../libgit2/include/git2/remote.h \
+  ../libgit2/include/git2/refspec.h \
+  ../libgit2/include/git2/net.h \
+  ../libgit2/include/git2/transport.h \
+  ../libgit2/include/git2/cert.h \
+  ../libgit2/include/git2/credential.h \
+  ../libgit2/include/git2/pack.h \
+  ../libgit2/include/git2/proxy.h \
+  ../libgit2/include/git2/commit.h \
+  ../libgit2/include/git2/common.h \
+  ../libgit2/include/git2/config.h \
+  ../libgit2/include/git2/credential.h \
+  ../libgit2/include/git2/deprecated.h \
+  ../libgit2/include/git2/attr.h \
+  ../libgit2/include/git2/config.h \
+  ../libgit2/include/git2/blame.h \
+  ../libgit2/include/git2/cherrypick.h \
+  ../libgit2/include/git2/clone.h \
+  ../libgit2/include/git2/describe.h \
+  ../libgit2/include/git2/errors.h \
+  ../libgit2/include/git2/filter.h \
+  ../libgit2/include/git2/rebase.h \
+  ../libgit2/include/git2/commit.h \
+  ../libgit2/include/git2/trace.h \
+  ../libgit2/include/git2/revert.h \
+  ../libgit2/include/git2/revparse.h \
+  ../libgit2/include/git2/stash.h \
+  ../libgit2/include/git2/status.h \
+  ../libgit2/include/git2/submodule.h \
+  ../libgit2/include/git2/worktree.h \
+  ../libgit2/include/git2/credential_helpers.h \
+  ../libgit2/include/git2/sys/credential.h \
+  ../libgit2/include/git2/common.h \
+  ../libgit2/include/git2/credential.h \
+  ../libgit2/include/git2/describe.h \
+  ../libgit2/include/git2/diff.h \
+  ../libgit2/include/git2/email.h \
+  ../libgit2/include/git2/errors.h \
+  ../libgit2/include/git2/experimental.h \
+  ../libgit2/include/git2/filter.h \
+  ../libgit2/include/git2/global.h \
+  ../libgit2/include/git2/graph.h \
+  ../libgit2/include/git2/ignore.h \
+  ../libgit2/include/git2/index.h \
+  ../libgit2/include/git2/indexer.h \
+  ../libgit2/include/git2/mailmap.h \
+  ../libgit2/include/git2/merge.h \
+  ../libgit2/include/git2/message.h \
+  ../libgit2/include/git2/net.h \
+  ../libgit2/include/git2/notes.h \
+  ../libgit2/include/git2/object.h \
+  ../libgit2/include/git2/odb.h \
+  ../libgit2/include/git2/odb_backend.h \
+  ../libgit2/include/git2/oid.h \
+  ../libgit2/include/git2/pack.h \
+  ../libgit2/include/git2/patch.h \
+  ../libgit2/include/git2/pathspec.h \
+  ../libgit2/include/git2/proxy.h \
+  ../libgit2/include/git2/rebase.h \
+  ../libgit2/include/git2/refdb.h \
+  ../libgit2/include/git2/reflog.h \
+  ../libgit2/include/git2/refs.h \
+  ../libgit2/include/git2/refspec.h \
+  ../libgit2/include/git2/remote.h \
+  ../libgit2/include/git2/repository.h \
+  ../libgit2/include/git2/reset.h \
+  ../libgit2/include/git2/revert.h \
+  ../libgit2/include/git2/revparse.h \
+  ../libgit2/include/git2/revwalk.h \
+  ../libgit2/include/git2/signature.h \
+  ../libgit2/include/git2/stash.h \
+  ../libgit2/include/git2/status.h \
+  ../libgit2/include/git2/submodule.h \
+  ../libgit2/include/git2/tag.h \
+  ../libgit2/include/git2/transport.h \
+  ../libgit2/include/git2/transaction.h \
+  ../libgit2/include/git2/tree.h \
+  ../libgit2/include/git2/types.h \
+  ../libgit2/include/git2/version.h \
+  ../libgit2/include/git2/worktree.h \
+  ../src/include/gitty.hpp \
+  /usr/include/c++/11/filesystem \
+  /usr/include/c++/11/bits/fs_fwd.h \
+  /usr/include/c++/11/bits/fs_path.h \
+  /usr/include/c++/11/codecvt \
+  /usr/include/c++/11/bits/fs_dir.h \
+  /usr/include/c++/11/bits/fs_ops.h \
+  ../src/include/utils.hpp
 
 CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o: ../src/tgbot_fragment_db_impl/FragmentStateController.cpp \
   /usr/include/stdc-predef.h \
@@ -10804,6 +11294,163 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
   ../tgbot_fragment/tgbot-cpp/include/tgbot/types/Message.h \
   ../src/include/MainDatabase.hpp
 
+CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
+  /usr/include/stdc-predef.h \
+  ../src/include/utils.hpp \
+  /usr/include/c++/11/string \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/bits/functexcept.h \
+  /usr/include/c++/11/bits/exception_defines.h \
+  /usr/include/c++/11/bits/cpp_type_traits.h \
+  /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/ext/numeric_traits.h \
+  /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/move.h \
+  /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/11/bits/concept_check.h \
+  /usr/include/c++/11/debug/assertions.h \
+  /usr/include/c++/11/bits/stl_iterator.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/debug/debug.h \
+  /usr/include/c++/11/bits/predefined_ops.h \
+  /usr/include/c++/11/bits/postypes.h \
+  /usr/include/c++/11/cwchar \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
+  /usr/include/c++/11/cstdint \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/11/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+  /usr/include/c++/11/ext/new_allocator.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/c++/11/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/cctype \
+  /usr/include/ctype.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/cstdlib \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+  /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/cstdio \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
+  /usr/include/c++/11/cerrno \
+  /usr/include/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/linux/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/c++/11/bits/charconv.h \
+  /usr/include/c++/11/bits/basic_string.tcc
+
 
 ../src/tgbot_fragment_db_impl/FragmentStateController.cpp:
 
@@ -10812,56 +11459,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 ../src/fragments/BaseFragment.cpp:
 
 ../src/MainDatabase.cpp:
-
-../libgit2/include/git2/version.h:
-
-../libgit2/include/git2/reset.h:
-
-../libgit2/include/git2/reflog.h:
-
-../libgit2/include/git2/pathspec.h:
-
-../libgit2/include/git2/message.h:
-
-../libgit2/include/git2/graph.h:
-
-../libgit2/include/git2/sys/credential.h:
-
-../libgit2/include/git2/credential_helpers.h:
-
-../libgit2/include/git2/worktree.h:
-
-../libgit2/include/git2/deprecated.h:
-
-../libgit2/include/git2/commit.h:
-
-../libgit2/include/git2/credential.h:
-
-../libgit2/include/git2/transport.h:
-
-../libgit2/include/git2/remote.h:
-
-../libgit2/include/git2/clone.h:
-
-../libgit2/include/git2/cherrypick.h:
-
-../libgit2/include/git2/checkout.h:
-
-../libgit2/include/git2/cert.h:
-
-../libgit2/include/git2/branch.h:
-
-../libgit2/include/git2/object.h:
-
-../libgit2/include/git2/diff.h:
-
-../libgit2/include/git2/buffer.h:
-
-../libgit2/include/git2/attr.h:
-
-../libgit2/include/git2/common.h:
-
-../libgit2/include/git2/annotated_commit.h:
 
 ../tgbot_fragment/include/FragmentManager.hpp:
 
@@ -10880,10 +11477,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 /usr/include/boost/asio/windows/basic_overlapped_handle.hpp:
 
 /usr/include/boost/asio/impl/use_future.hpp:
-
-../libgit2/include/git2/email.h:
-
-/usr/include/boost/asio/use_awaitable.hpp:
 
 /usr/include/boost/asio/system_timer.hpp:
 
@@ -10949,10 +11542,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/include/boost/predef/library/std.h:
 
-../libgit2/include/git2/ignore.h:
-
-/usr/include/boost/predef/library/c/zos.h:
-
 /usr/include/boost/predef/library/c/vms.h:
 
 /usr/include/boost/predef/library/c/uc.h:
@@ -10991,10 +11580,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/include/boost/predef/compiler/edg.h:
 
-../libgit2/include/git2/revparse.h:
-
-/usr/include/boost/predef/compiler/digitalmars.h:
-
 /usr/include/boost/predef/compiler/diab.h:
 
 /usr/include/boost/predef/compiler/compaq.h:
@@ -11018,10 +11603,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 /usr/include/boost/predef/architecture/mips.h:
 
 /usr/include/boost/predef/architecture/m68k.h:
-
-../libgit2/include/git2/types.h:
-
-/usr/include/boost/predef/architecture/ia64.h:
 
 /usr/include/boost/predef/architecture/convex.h:
 
@@ -11117,10 +11698,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/include/boost/asio/impl/buffered_read_stream.hpp:
 
-../libgit2/include/git2/global.h:
-
-/usr/include/boost/asio/detail/buffered_stream_storage.hpp:
-
 /usr/include/boost/asio/buffered_read_stream.hpp:
 
 /usr/include/boost/asio/bind_executor.hpp:
@@ -11132,10 +11709,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 /usr/include/boost/asio/detail/impl/reactive_descriptor_service.ipp:
 
 /usr/include/boost/asio/detail/descriptor_write_op.hpp:
-
-../libgit2/include/git2/revwalk.h:
-
-/usr/include/boost/asio/detail/impl/descriptor_ops.ipp:
 
 /usr/include/boost/asio/detail/descriptor_ops.hpp:
 
@@ -11248,10 +11821,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 /usr/include/boost/date_time/time_defs.hpp:
 
 /usr/include/boost/date_time/posix_time/posix_time_config.hpp:
-
-../libgit2/include/git2/apply.h:
-
-/usr/include/boost/date_time/posix_time/ptime.hpp:
 
 /usr/include/boost/asio/completion_condition.hpp:
 
@@ -11375,10 +11944,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/include/openssl/bnerr.h:
 
-../libgit2/include/git2/oid.h:
-
-/usr/include/openssl/params.h:
-
 /usr/include/openssl/evp.h:
 
 /usr/include/openssl/buffer.h:
@@ -11464,10 +12029,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 /usr/include/x86_64-linux-gnu/bits/ioctl-types.h:
 
 /usr/include/asm-generic/ioctl.h:
-
-../libgit2/include/git2/index.h:
-
-/usr/include/x86_64-linux-gnu/asm/ioctl.h:
 
 /usr/include/linux/ioctl.h:
 
@@ -11651,8 +12212,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/include/boost/asio/traits/static_query.hpp:
 
-/usr/include/boost/asio/traits/query_static_constexpr_member.hpp:
-
 /usr/include/boost/asio/is_applicable_property.hpp:
 
 /usr/include/c++/11/csignal:
@@ -11694,10 +12253,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 /usr/include/boost/asio/execution/detail/as_receiver.hpp:
 
 /usr/include/boost/asio/traits/set_error_free.hpp:
-
-../libgit2/include/git2/revert.h:
-
-/usr/include/boost/asio/traits/set_error_member.hpp:
 
 /usr/include/openssl/buffererr.h:
 
@@ -11831,6 +12386,108 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/local/include/cpprest/asyncrt_utils.h:
 
+../src/include/utils.hpp:
+
+/usr/include/c++/11/codecvt:
+
+/usr/include/c++/11/bits/fs_fwd.h:
+
+../src/include/gitty.hpp:
+
+../libgit2/include/git2/version.h:
+
+/usr/include/boost/asio/detail/impl/descriptor_ops.ipp:
+
+../libgit2/include/git2/revwalk.h:
+
+../libgit2/include/git2/reset.h:
+
+../libgit2/include/git2/reflog.h:
+
+../libgit2/include/git2/pathspec.h:
+
+../libgit2/include/git2/message.h:
+
+/usr/include/boost/predef/library/c/zos.h:
+
+../libgit2/include/git2/ignore.h:
+
+../libgit2/include/git2/graph.h:
+
+/usr/include/boost/asio/detail/buffered_stream_storage.hpp:
+
+../libgit2/include/git2/global.h:
+
+/usr/include/boost/asio/use_awaitable.hpp:
+
+../libgit2/include/git2/email.h:
+
+../libgit2/include/git2/sys/credential.h:
+
+../libgit2/include/git2/credential_helpers.h:
+
+../libgit2/include/git2/worktree.h:
+
+/usr/include/boost/predef/compiler/digitalmars.h:
+
+../libgit2/include/git2/revparse.h:
+
+/usr/include/boost/asio/traits/set_error_member.hpp:
+
+../libgit2/include/git2/revert.h:
+
+../libgit2/include/git2/deprecated.h:
+
+../libgit2/include/git2/commit.h:
+
+../libgit2/include/git2/credential.h:
+
+../libgit2/include/git2/transport.h:
+
+../libgit2/include/git2/remote.h:
+
+../libgit2/include/git2/clone.h:
+
+/usr/include/x86_64-linux-gnu/asm/ioctl.h:
+
+../libgit2/include/git2/index.h:
+
+../libgit2/include/git2/cherrypick.h:
+
+../libgit2/include/git2/checkout.h:
+
+../libgit2/include/git2/cert.h:
+
+../libgit2/include/git2/branch.h:
+
+../libgit2/include/git2/object.h:
+
+../libgit2/include/git2/diff.h:
+
+/usr/include/boost/date_time/posix_time/ptime.hpp:
+
+../libgit2/include/git2/apply.h:
+
+/usr/include/openssl/params.h:
+
+../libgit2/include/git2/oid.h:
+
+../libgit2/include/git2/buffer.h:
+
+/usr/include/boost/predef/architecture/ia64.h:
+
+../libgit2/include/git2/types.h:
+
+../libgit2/include/git2/attr.h:
+
+../libgit2/include/git2/common.h:
+
+../libgit2/include/git2/annotated_commit.h:
+
+/usr/include/boost/asio/traits/query_static_constexpr_member.hpp:
+
+../src/GitManager.cpp:
+
 /usr/include/boost/variant/bad_visit.hpp:
 
 /usr/include/boost/asio/impl/read.hpp:
@@ -11939,9 +12596,9 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/quadmath.h:
 
-../libgit2/include/git2/odb_backend.h:
-
 /usr/include/boost/predef/detail/os_detected.h:
+
+../libgit2/include/git2/odb_backend.h:
 
 /usr/include/boost/math/special_functions/fpclassify.hpp:
 
@@ -12507,6 +13164,8 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/include/boost/asio/ip/impl/host_name.ipp:
 
+/usr/include/c++/11/bits/fs_ops.h:
+
 /usr/include/boost/bind/bind.hpp:
 
 /usr/include/boost/asio/detail/signal_op.hpp:
@@ -12787,6 +13446,8 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/MessageEntity.h:
 
+/usr/include/c++/11/bits/fs_path.h:
+
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/VideoChatParticipantsInvited.h:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/EventBroadcaster.h:
@@ -12808,6 +13469,8 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 /usr/include/boost/mpl/arg.hpp:
 
 /usr/include/boost/move/detail/type_traits.hpp:
+
+/usr/include/c++/11/filesystem:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/export.h:
 
@@ -12857,9 +13520,9 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/include/boost/mpl/has_key_fwd.hpp:
 
-../libgit2/include/git2/refspec.h:
-
 /usr/include/signal.h:
+
+../libgit2/include/git2/refspec.h:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/Contact.h:
 
@@ -12993,9 +13656,9 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
-../libgit2/include/git2/blame.h:
-
 /usr/include/x86_64-linux-gnu/bits/socket2.h:
+
+../libgit2/include/git2/blame.h:
 
 /usr/include/boost/preprocessor/slot/detail/def.hpp:
 
@@ -13021,9 +13684,9 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
-../libgit2/include/git2/stash.h:
-
 /usr/include/boost/asio/ssl/detail/password_callback.hpp:
+
+../libgit2/include/git2/stash.h:
 
 /usr/include/boost/mpl/bool_fwd.hpp:
 
@@ -13215,9 +13878,9 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/include/boost/preprocessor/punctuation/comma.hpp:
 
-../libgit2/include/git2/repository.h:
-
 /usr/include/boost/asio/detail/wait_op.hpp:
+
+../libgit2/include/git2/repository.h:
 
 /usr/include/boost/mpl/integral_c_tag.hpp:
 
@@ -13605,9 +14268,9 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
-../libgit2/include/git2/merge.h:
-
 /usr/include/boost/date_time/special_defs.hpp:
+
+../libgit2/include/git2/merge.h:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultContact.h:
 
@@ -14001,6 +14664,8 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/include/c++/11/stdexcept:
 
+../src/include/GitManager.hpp:
+
 /usr/include/boost/range/end.hpp:
 
 /usr/include/boost/type_traits/is_member_function_pointer.hpp:
@@ -14161,9 +14826,9 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/include/boost/smart_ptr/detail/operator_bool.hpp:
 
-../libgit2/include/git2/odb.h:
-
 /usr/include/openssl/symhacks.h:
+
+../libgit2/include/git2/odb.h:
 
 /usr/include/boost/blank.hpp:
 
@@ -14313,6 +14978,8 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/include/boost/mpl/aux_/config/dtp.hpp:
 
+../src/utils.cpp:
+
 /usr/include/boost/mpl/vector/vector10.hpp:
 
 /usr/include/boost/mpl/aux_/arithmetic_op.hpp:
@@ -14341,9 +15008,9 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:
 
-../libgit2/include/git2/indexer.h:
-
 /usr/include/boost/regex/config/cwchar.hpp:
+
+../libgit2/include/git2/indexer.h:
 
 /usr/include/boost/mem_fn.hpp:
 
@@ -14602,6 +15269,8 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 /usr/include/boost/mpl/integral_c.hpp:
 
 /usr/include/boost/asio/basic_waitable_timer.hpp:
+
+/usr/include/c++/11/bits/fs_dir.h:
 
 /usr/include/boost/mpl/long.hpp:
 
@@ -15335,9 +16004,9 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
 
 /usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp:
 
-../libgit2/include/git2/experimental.h:
-
 /usr/include/boost/asio/basic_socket_iostream.hpp:
+
+../libgit2/include/git2/experimental.h:
 
 /usr/include/boost/multi_index/detail/node_handle.hpp:
 

@@ -9,9 +9,7 @@ set(SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 file(
     GLOB 
     SOURCE_FILES 
-    ${SOURCE_DIR}/Main.cpp
-    ${SOURCE_DIR}/DatabaseController.cpp
-    ${SOURCE_DIR}/MainDatabase.cpp
+    ${SOURCE_DIR}/*.cpp
     ${SOURCE_DIR}/fragments/*.cpp
     ${SOURCE_DIR}/tgbot_fragment_db_impl/*.cpp
     )
@@ -23,17 +21,6 @@ add_executable(
 
 add_subdirectory("sqlite_cpp")
 add_subdirectory("tgbot_fragment")
-
-# Add libgit2
-# find_package(PkgConfig)
-# if(PkgConfig_FOUND)
-#   PKG_CHECK_MODULES(LIBGIT2 libgit2>=0.99)
-# endif()
-# if(NOT LIBGIT2_FOUND)
-#   add_subdirectory(libgit2)
-# endif()
-
-# include(CMakePackageConfigHelpers)
 
 add_subdirectory(libgit2)
 

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/anaskhan/proj/buildroid/src/DatabaseController.cpp" "CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o.d"
+  "/home/anaskhan/proj/buildroid/src/GitManager.cpp" "CMakeFiles/Buildroid.dir/src/GitManager.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/GitManager.cpp.o.d"
   "/home/anaskhan/proj/buildroid/src/Main.cpp" "CMakeFiles/Buildroid.dir/src/Main.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/Main.cpp.o.d"
   "/home/anaskhan/proj/buildroid/src/MainDatabase.cpp" "CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.o.d"
   "/home/anaskhan/proj/buildroid/src/fragments/BaseFragment.cpp" "CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o.d"
@@ -16,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/anaskhan/proj/buildroid/src/fragments/MainFragment.cpp" "CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o.d"
   "/home/anaskhan/proj/buildroid/src/fragments/TaxiFragment.cpp" "CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o.d"
   "/home/anaskhan/proj/buildroid/src/tgbot_fragment_db_impl/FragmentStateController.cpp" "CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o.d"
+  "/home/anaskhan/proj/buildroid/src/utils.cpp" "CMakeFiles/Buildroid.dir/src/utils.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/utils.cpp.o.d"
   )
 
 # Targets to which this target links.

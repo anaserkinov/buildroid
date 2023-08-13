@@ -4,7 +4,7 @@ MainFragment::MainFragment()
     : BaseFragment(Fragments::MAIN){};
 
 void MainFragment::onCreate(const Message::Ptr& lastMessage) {
-    dbController->updateFragmentState(lastMessage->from->id, fragmentId);
+    BaseFragment::onCreate(lastMessage);
     auto keyboard = std::make_shared<ReplyKeyboardMarkup>();
     keyboard->resizeKeyboard = true;
     keyboard->oneTimeKeyboard = true;

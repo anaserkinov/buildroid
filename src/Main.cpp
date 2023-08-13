@@ -12,7 +12,7 @@
 #include "DatabaseController.hpp"
 #include "FragmentManager.hpp"
 #include "Fragments.hpp"
-#include "git2.h"
+#include "GitManager.hpp"
 
 using namespace TgBot;
 
@@ -70,50 +70,14 @@ int main() {
 
     pthread_create(&thread, nullptr, runListener, nullptr);
 
-    TgBot::Bot bot(configMap["BOT_TOKEN"]);
-
     git_libgit2_init();
+    GitManager::init(
+        configMap["GIT_USERNAME"].c_str(),
+        configMap["GIT_TOKEN"].c_str(),
+        configMap["TAXI_REPO"].c_str(),
+        (Utils::workDir + "/" + Utils::taxiPath).c_str());
 
-    git_repository* repo = nullptr;
-    int error = git_repository_open(&repo, "../libgit2");
-    if (error != 0) {
-        std::cerr << "Error opening repository: " << git_error_last()->message << std::endl;
-        return 1;
-    }
-
-    git_remote* remote = nullptr;
-    error = git_remote_lookup(&remote, repo, "origin");
-    if (error != 0) {
-        std::cerr << "Error looking up remote: " << git_error_last()->message << std::endl;
-        git_repository_free(repo);
-        return 1;
-    }
-
-    // git_remote_callbacks callbacks = GIT_REMOTE_CALLBACKS_INIT;
-    // error = git_remote_fetch(remote,nullptr, nullptr, &callbacks);
-    // if (error != 0) {
-    //     std::cerr << "Error fetching remote: " << git_error_last()->message << std::endl;
-    //     git_remote_free(remote);
-    //     git_repository_free(repo);
-    //     return 1;
-    // }
-
-    git_strarray refspecs;
-    error = git_remote_get_fetch_refspecs(&refspecs, remote);
-    if (error != 0) {
-        std::cerr << "Error getting fetch refspecs: " << git_error_last()->message << std::endl;
-        git_remote_free(remote);
-        git_repository_free(repo);
-        return 1;
-    }
-
-    for (size_t i = 0; i < refspecs.count; ++i) {
-        std::cout << refspecs.strings[i] << std::endl;
-    }
-
-    git_strarray_free(&refspecs);
-    git_remote_free(remote);
-    git_libgit2_shutdown();
+    TgBot::Bot bot(configMap["BOT_TOKEN"]);
 
     DatabaseController dbController;
     dbController.createTables();
@@ -176,6 +140,7 @@ int main() {
     printf("Exit bot\n");
 
     pthread_join(thread, nullptr);
+    git_libgit2_shutdown();
 
     printf("Exit server\n");
 

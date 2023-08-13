@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "Buildroid.pdb"
   "CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o"
   "CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o.d"
+  "CMakeFiles/Buildroid.dir/src/GitManager.cpp.o"
+  "CMakeFiles/Buildroid.dir/src/GitManager.cpp.o.d"
   "CMakeFiles/Buildroid.dir/src/Main.cpp.o"
   "CMakeFiles/Buildroid.dir/src/Main.cpp.o.d"
   "CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.o"
@@ -17,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o.d"
   "CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o"
   "CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o.d"
+  "CMakeFiles/Buildroid.dir/src/utils.cpp.o"
+  "CMakeFiles/Buildroid.dir/src/utils.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

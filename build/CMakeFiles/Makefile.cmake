@@ -15,6 +15,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/CheckTypeSize/UNSIGNED_LONG_LONG.c"
   "../libgit2/CMakeLists.txt"
   "../libgit2/cmake/AddCFlagIfSupported.cmake"
+  "../libgit2/cmake/AddClarTest.cmake"
   "../libgit2/cmake/CheckPrototypeDefinitionSafe.cmake"
   "../libgit2/cmake/DefaultCFlags.cmake"
   "../libgit2/cmake/EnableWarnings.cmake"
@@ -47,6 +48,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../libgit2/src/libgit2/experimental.h.in"
   "../libgit2/src/util/CMakeLists.txt"
   "../libgit2/src/util/git2_features.h.in"
+  "../libgit2/tests/CMakeLists.txt"
+  "../libgit2/tests/headertest/CMakeLists.txt"
+  "../libgit2/tests/libgit2/CMakeLists.txt"
+  "../libgit2/tests/util/CMakeLists.txt"
   "../sqlite_cpp/CMakeLists.txt"
   "../tgbot_fragment/CMakeLists.txt"
   "../tgbot_fragment/test/CMakeLists.txt"
@@ -198,6 +203,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake"
   "/usr/share/cmake-3.22/Modules/FindPkgConfig.cmake"
+  "/usr/share/cmake-3.22/Modules/FindPythonInterp.cmake"
   "/usr/share/cmake-3.22/Modules/FindThreads.cmake"
   "/usr/share/cmake-3.22/Modules/FindZLIB.cmake"
   "/usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake"
@@ -245,6 +251,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "libgit2/src/util/git2_features.h"
   "libgit2/src/util/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libgit2/src/cli/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libgit2/tests/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libgit2/tests/headertest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libgit2/tests/libgit2/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libgit2/tests/util/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -262,4 +272,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "libgit2/src/libgit2/CMakeFiles/libgit2package.dir/DependInfo.cmake"
   "libgit2/src/util/CMakeFiles/util.dir/DependInfo.cmake"
   "libgit2/src/cli/CMakeFiles/git2_cli.dir/DependInfo.cmake"
+  "libgit2/tests/headertest/CMakeFiles/headertest.dir/DependInfo.cmake"
+  "libgit2/tests/libgit2/CMakeFiles/libgit2_tests.dir/DependInfo.cmake"
+  "libgit2/tests/util/CMakeFiles/util_tests.dir/DependInfo.cmake"
   )

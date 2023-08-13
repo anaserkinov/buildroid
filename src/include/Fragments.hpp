@@ -20,6 +20,7 @@ class BaseFragment : public Fragment {
 
    public:
     BaseFragment(int id);
+    void onCreate(const Message::Ptr& lastMessage) override;
     void setDBController(DatabaseController* dbController);
     ~BaseFragment();
 };
