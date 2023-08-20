@@ -98,6 +98,14 @@ int main() {
                 fragment = std::make_shared<TaxiFragment>();
                 break;
             }
+            case Fragments::BUILD_TYPE: {
+                fragment = std::make_shared<BuildTypeFragment>();
+                break;
+            }
+             case Fragments::APP: {
+                fragment = std::make_shared<AppFragment>();
+                break;
+            }
             default:
                 fragment = std::make_shared<BaseFragment>(1);
         }

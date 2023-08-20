@@ -28,11 +28,12 @@ void LoginFragment::onCommand(const Message::Ptr& message) {
 }
 
 void LoginFragment::onNonCommandMessage(const Message::Ptr& message) {
-    if (message->contact != nullptr && message->from->id == message->contact->userId) {
+    // if (message->contact != nullptr && message->from->id == message->contact->userId) {
+    if (message->contact != nullptr) {
         auto admin = std::find(admins.begin(), admins.end(), message->contact->phoneNumber);
         if (admin != admins.end()) {
             auto user = message->from;
-            std::cout<<"userId in login: "<<user->id<<"\n";
+            std::cout << "userId in login: " << user->id << "\n";
             dbController->insertUser(
                 user->id,
                 user->firstName,
@@ -42,7 +43,7 @@ void LoginFragment::onNonCommandMessage(const Message::Ptr& message) {
 
             sendMessage(
                 message->chat->id,
-                "Welcome " + message->from->firstName + " !",
+                "Oo you, " + message->from->firstName + " 🫵, again",
                 false,
                 0,
                 std::make_shared<ReplyKeyboardRemove>());
@@ -52,5 +53,5 @@ void LoginFragment::onNonCommandMessage(const Message::Ptr& message) {
     }
     sendMessage(
         message->chat->id,
-        "Access denied !");
+        "Access denied 🚫");
 }

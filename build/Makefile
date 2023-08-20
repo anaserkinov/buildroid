@@ -465,6 +465,30 @@ src/MainDatabase.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.s
 .PHONY : src/MainDatabase.cpp.s
 
+src/fragments/AppFragment.o: src/fragments/AppFragment.cpp.o
+.PHONY : src/fragments/AppFragment.o
+
+# target to build an object file
+src/fragments/AppFragment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.o
+.PHONY : src/fragments/AppFragment.cpp.o
+
+src/fragments/AppFragment.i: src/fragments/AppFragment.cpp.i
+.PHONY : src/fragments/AppFragment.i
+
+# target to preprocess a source file
+src/fragments/AppFragment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.i
+.PHONY : src/fragments/AppFragment.cpp.i
+
+src/fragments/AppFragment.s: src/fragments/AppFragment.cpp.s
+.PHONY : src/fragments/AppFragment.s
+
+# target to generate assembly for a file
+src/fragments/AppFragment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.s
+.PHONY : src/fragments/AppFragment.cpp.s
+
 src/fragments/BaseFragment.o: src/fragments/BaseFragment.cpp.o
 .PHONY : src/fragments/BaseFragment.o
 
@@ -488,6 +512,30 @@ src/fragments/BaseFragment.s: src/fragments/BaseFragment.cpp.s
 src/fragments/BaseFragment.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.s
 .PHONY : src/fragments/BaseFragment.cpp.s
+
+src/fragments/BuildTypeFragment.o: src/fragments/BuildTypeFragment.cpp.o
+.PHONY : src/fragments/BuildTypeFragment.o
+
+# target to build an object file
+src/fragments/BuildTypeFragment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o
+.PHONY : src/fragments/BuildTypeFragment.cpp.o
+
+src/fragments/BuildTypeFragment.i: src/fragments/BuildTypeFragment.cpp.i
+.PHONY : src/fragments/BuildTypeFragment.i
+
+# target to preprocess a source file
+src/fragments/BuildTypeFragment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.i
+.PHONY : src/fragments/BuildTypeFragment.cpp.i
+
+src/fragments/BuildTypeFragment.s: src/fragments/BuildTypeFragment.cpp.s
+.PHONY : src/fragments/BuildTypeFragment.s
+
+# target to generate assembly for a file
+src/fragments/BuildTypeFragment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.s
+.PHONY : src/fragments/BuildTypeFragment.cpp.s
 
 src/fragments/LoginFragment.o: src/fragments/LoginFragment.cpp.o
 .PHONY : src/fragments/LoginFragment.o
@@ -649,9 +697,15 @@ help:
 	@echo "... src/MainDatabase.o"
 	@echo "... src/MainDatabase.i"
 	@echo "... src/MainDatabase.s"
+	@echo "... src/fragments/AppFragment.o"
+	@echo "... src/fragments/AppFragment.i"
+	@echo "... src/fragments/AppFragment.s"
 	@echo "... src/fragments/BaseFragment.o"
 	@echo "... src/fragments/BaseFragment.i"
 	@echo "... src/fragments/BaseFragment.s"
+	@echo "... src/fragments/BuildTypeFragment.o"
+	@echo "... src/fragments/BuildTypeFragment.i"
+	@echo "... src/fragments/BuildTypeFragment.s"
 	@echo "... src/fragments/LoginFragment.o"
 	@echo "... src/fragments/LoginFragment.i"
 	@echo "... src/fragments/LoginFragment.s"

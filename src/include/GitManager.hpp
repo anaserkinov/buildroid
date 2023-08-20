@@ -3,13 +3,14 @@
 
 #include <git2.h>
 
+#include <algorithm>
 #include <cstring>
+#include <filesystem>
 #include <gitty.hpp>
 #include <vector>
+
 #include "iostream"
-#include <filesystem>
 #include "utils.hpp"
-#include <algorithm>
 
 struct CredentialsPayload {
     const char* username;
@@ -18,14 +19,21 @@ struct CredentialsPayload {
 
 class GitManager {
    private:
+    static const CredentialsPayload& getCredentials(
+        const char* username,
+        const char* password) {
+        static CredentialsPayload credentialsPayload = {username, password};
+        return credentialsPayload;
+    }
+
     static int credentialsCallback(
         git_cred** out,
         const char* url,
         const char* username_from_url,
         unsigned int allowed_types,
         void* payload) {
-        CredentialsPayload* credentialsPayload = static_cast<CredentialsPayload*>(payload);
-        git_cred_userpass_plaintext_new(out, credentialsPayload->username, credentialsPayload->password);
+        const CredentialsPayload& credentialsPayload = getCredentials(nullptr, nullptr);
+        git_cred_userpass_plaintext_new(out, credentialsPayload.username, credentialsPayload.password);
         return 0;
     }
 
@@ -39,6 +47,8 @@ class GitManager {
         const char* localPath);
 
     void getBranches(const char* localPath, std::vector<std::string>& branches);
+
+    void fetch(const char* localPath);
 
     ~GitManager();
 };

@@ -6,18 +6,18 @@ void GitManager::init(
     const char* repoUrl,
     const char* localPath) {
     std::string repoFolder = localPath;
+
+    getCredentials(
+        username,
+        token);
+
     if (std::filesystem::exists(repoFolder) && std::filesystem::is_directory(repoFolder)) {
         std::cout << "Repo exists." << std::endl;
     } else {
-
-        CredentialsPayload credentialsPayload;
-        credentialsPayload.username = username;
-        credentialsPayload.password = token;
-
         git_repository* repo = nullptr;
         git_clone_options clone_opts = GIT_CLONE_OPTIONS_INIT;
         clone_opts.fetch_opts.callbacks.credentials = credentialsCallback;
-        clone_opts.fetch_opts.callbacks.payload = &credentialsPayload;
+        // clone_opts.fetch_opts.callbacks.payload = &credentialsPayload;
 
         int result = git_clone(&repo, repoUrl, repoFolder.c_str(), &clone_opts);
         if (result != 0) {
@@ -67,6 +67,33 @@ void GitManager::getBranches(const char* localPath, std::vector<std::string>& br
 
     git_reference_iterator_free(iter);
     git_repository_free(repo);
+}
+
+void GitManager::fetch(const char* localPath) {
+    git_repository* repo = nullptr;
+
+    git_repository_open(&repo, localPath);
+
+    git_remote* remote = nullptr;
+    const char* remote_name = "origin";
+    int lookup_result = git_remote_lookup(&remote, repo, remote_name);
+    if (lookup_result != 0) {
+        const git_error* error = giterr_last();
+        if (error) {
+            printf("git_remote_lookup error: %s\n", error->message);
+        }
+    }
+
+    git_fetch_options fetch_opts = GIT_FETCH_OPTIONS_INIT;
+    fetch_opts.callbacks.credentials = credentialsCallback;
+
+    int fetch_result = git_remote_fetch(remote, NULL, &fetch_opts, "fetch");
+    if (fetch_result != 0) {
+        const git_error* error = giterr_last();
+        if (error) {
+            printf("git_remote_fetch error: %s\n", error->message);
+        }
+    }
 }
 
 GitManager::~GitManager() {
