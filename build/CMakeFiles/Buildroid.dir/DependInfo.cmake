@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/anaskhan/proj/buildroid/src/fragments/AppFragment.cpp" "CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.o.d"
   "/home/anaskhan/proj/buildroid/src/fragments/BaseFragment.cpp" "CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o.d"
   "/home/anaskhan/proj/buildroid/src/fragments/BuildTypeFragment.cpp" "CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o.d"
+  "/home/anaskhan/proj/buildroid/src/fragments/ConfirmFragment.cpp" "CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o.d"
   "/home/anaskhan/proj/buildroid/src/fragments/LoginFragment.cpp" "CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o.d"
   "/home/anaskhan/proj/buildroid/src/fragments/MainFragment.cpp" "CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o.d"
   "/home/anaskhan/proj/buildroid/src/fragments/TaxiFragment.cpp" "CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o.d"

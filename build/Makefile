@@ -537,6 +537,30 @@ src/fragments/BuildTypeFragment.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.s
 .PHONY : src/fragments/BuildTypeFragment.cpp.s
 
+src/fragments/ConfirmFragment.o: src/fragments/ConfirmFragment.cpp.o
+.PHONY : src/fragments/ConfirmFragment.o
+
+# target to build an object file
+src/fragments/ConfirmFragment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o
+.PHONY : src/fragments/ConfirmFragment.cpp.o
+
+src/fragments/ConfirmFragment.i: src/fragments/ConfirmFragment.cpp.i
+.PHONY : src/fragments/ConfirmFragment.i
+
+# target to preprocess a source file
+src/fragments/ConfirmFragment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.i
+.PHONY : src/fragments/ConfirmFragment.cpp.i
+
+src/fragments/ConfirmFragment.s: src/fragments/ConfirmFragment.cpp.s
+.PHONY : src/fragments/ConfirmFragment.s
+
+# target to generate assembly for a file
+src/fragments/ConfirmFragment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.s
+.PHONY : src/fragments/ConfirmFragment.cpp.s
+
 src/fragments/LoginFragment.o: src/fragments/LoginFragment.cpp.o
 .PHONY : src/fragments/LoginFragment.o
 
@@ -706,6 +730,9 @@ help:
 	@echo "... src/fragments/BuildTypeFragment.o"
 	@echo "... src/fragments/BuildTypeFragment.i"
 	@echo "... src/fragments/BuildTypeFragment.s"
+	@echo "... src/fragments/ConfirmFragment.o"
+	@echo "... src/fragments/ConfirmFragment.i"
+	@echo "... src/fragments/ConfirmFragment.s"
 	@echo "... src/fragments/LoginFragment.o"
 	@echo "... src/fragments/LoginFragment.i"
 	@echo "... src/fragments/LoginFragment.s"

@@ -386,7 +386,7 @@ CMakeFiles/Buildroid.dir/all: libgit2/src/libgit2/CMakeFiles/libgit2package.dir/
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Buildroid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 33
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Buildroid.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : CMakeFiles/Buildroid.dir/rule
@@ -438,7 +438,7 @@ tgbot_fragment/CMakeFiles/tgbot_fragment.dir/all: tgbot_fragment/tgbot-cpp/CMake
 
 # Build rule for subdir invocation for target.
 tgbot_fragment/CMakeFiles/tgbot_fragment.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/CMakeFiles/tgbot_fragment.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : tgbot_fragment/CMakeFiles/tgbot_fragment.dir/rule
@@ -459,12 +459,12 @@ tgbot_fragment/CMakeFiles/tgbot_fragment.dir/clean:
 tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/all:
 	$(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/depend
 	$(MAKE) $(MAKESILENT) -f tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build.make tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=3,4 "Built target TgBot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=3,4,5 "Built target TgBot"
 .PHONY : tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/all
 
 # Build rule for subdir invocation for target.
 tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/rule
@@ -491,7 +491,7 @@ tgbot_fragment/test/CMakeFiles/Main.dir/all: tgbot_fragment/tgbot-cpp/CMakeFiles
 
 # Build rule for subdir invocation for target.
 tgbot_fragment/test/CMakeFiles/Main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/test/CMakeFiles/Main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : tgbot_fragment/test/CMakeFiles/Main.dir/rule
@@ -704,12 +704,12 @@ libgit2/src/cli/CMakeFiles/git2_cli.dir/all: libgit2/src/libgit2/CMakeFiles/libg
 libgit2/src/cli/CMakeFiles/git2_cli.dir/all: libgit2/src/util/CMakeFiles/util.dir/all
 	$(MAKE) $(MAKESILENT) -f libgit2/src/cli/CMakeFiles/git2_cli.dir/build.make libgit2/src/cli/CMakeFiles/git2_cli.dir/depend
 	$(MAKE) $(MAKESILENT) -f libgit2/src/cli/CMakeFiles/git2_cli.dir/build.make libgit2/src/cli/CMakeFiles/git2_cli.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=5,6 "Built target git2_cli"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=6 "Built target git2_cli"
 .PHONY : libgit2/src/cli/CMakeFiles/git2_cli.dir/all
 
 # Build rule for subdir invocation for target.
 libgit2/src/cli/CMakeFiles/git2_cli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libgit2/src/cli/CMakeFiles/git2_cli.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : libgit2/src/cli/CMakeFiles/git2_cli.dir/rule

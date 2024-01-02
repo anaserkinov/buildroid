@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o.d"
   "CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o"
   "CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o.d"
+  "CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o"
+  "CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o.d"
   "CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o"
   "CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o.d"
   "CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o"
