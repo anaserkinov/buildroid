@@ -73,15 +73,15 @@ tgbot_fragment/test/CMakeFiles/Main.dir/src/Test.cpp.o: tgbot_fragment/test/CMak
 tgbot_fragment/test/CMakeFiles/Main.dir/src/Test.cpp.o: ../tgbot_fragment/test/src/Test.cpp
 tgbot_fragment/test/CMakeFiles/Main.dir/src/Test.cpp.o: tgbot_fragment/test/CMakeFiles/Main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tgbot_fragment/test/CMakeFiles/Main.dir/src/Test.cpp.o"
-	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tgbot_fragment/test/CMakeFiles/Main.dir/src/Test.cpp.o -MF CMakeFiles/Main.dir/src/Test.cpp.o.d -o CMakeFiles/Main.dir/src/Test.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/test/src/Test.cpp
+	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment/test && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tgbot_fragment/test/CMakeFiles/Main.dir/src/Test.cpp.o -MF CMakeFiles/Main.dir/src/Test.cpp.o.d -o CMakeFiles/Main.dir/src/Test.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/test/src/Test.cpp
 
 tgbot_fragment/test/CMakeFiles/Main.dir/src/Test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Main.dir/src/Test.cpp.i"
-	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anaskhan/proj/buildroid/tgbot_fragment/test/src/Test.cpp > CMakeFiles/Main.dir/src/Test.cpp.i
+	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment/test && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anaskhan/proj/buildroid/tgbot_fragment/test/src/Test.cpp > CMakeFiles/Main.dir/src/Test.cpp.i
 
 tgbot_fragment/test/CMakeFiles/Main.dir/src/Test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Main.dir/src/Test.cpp.s"
-	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anaskhan/proj/buildroid/tgbot_fragment/test/src/Test.cpp -o CMakeFiles/Main.dir/src/Test.cpp.s
+	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment/test && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anaskhan/proj/buildroid/tgbot_fragment/test/src/Test.cpp -o CMakeFiles/Main.dir/src/Test.cpp.s
 
 # Object files for target Main
 Main_OBJECTS = \

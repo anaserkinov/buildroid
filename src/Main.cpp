@@ -1,12 +1,15 @@
 #include <cpprest/http_listener.h>
 #include <cpprest/json.h>
-#include <pthread.h>
 #include <tgbot/tgbot.h>
 
+#include <condition_variable>
+#include <filesystem>
 #include <fstream>
 #include <iostream>
+#include <mutex>
 #include <sstream>
 #include <string>
+#include <thread>
 #include <unordered_map>
 
 #include "DatabaseController.hpp"
@@ -16,12 +19,17 @@
 
 using namespace TgBot;
 
-pthread_t thread;
+TgBot::Bot* bot = nullptr;
+DatabaseController dbController;
+
+std::mutex docekrMtx;
+std::condition_variable dockerCV;
+bool resumeDCThread = true;
 
 void signalHandler(int s) {
     printf("SIGINT got\n");
     // listener.close().wait();
-    pthread_join(thread, nullptr);
+    // pthread_join(thread, nullptr);
     exit(0);
 };
 
@@ -50,6 +58,125 @@ void* runListener(void* arg) {
     return nullptr;
 }
 
+void dockerThread() {
+    while (true) {
+        std::unique_ptr<Task> task = dbController.getConfirmedTask();
+
+        std::cout<<"thread running \n";
+
+        if (task != nullptr) {
+            try {
+                dbController.setTaskStatus(
+                    task->id,
+                    TASK_STATUS::IN_PROGRESS);
+                task->status = TASK_STATUS::IN_PROGRESS;
+
+                bot->getApi().editMessageText(
+                    Utils::getTaskInfoText(task),
+                    task->charId,
+                    task->messageId,
+                    "",
+                    "html");
+
+                dbController.setTaskStatus(
+                    task->id,
+                    TASK_STATUS::COMPLETED);
+            } catch (const std::exception& e) {
+                std::cerr << e.what() << '\n';
+                dbController.setTaskStatus(
+                    task->id,
+                    TASK_STATUS::CONFIRMED);
+            }
+        }
+
+        {
+            std::unique_lock<std::mutex> lock(docekrMtx);
+            if (resumeDCThread && dbController.getConfirmedTask() == nullptr) {
+                resumeDCThread = false;
+                dockerCV.wait(lock, [] { return resumeDCThread; });
+            }
+        }
+    }
+}
+
+std::vector<std::string> split(const std::string& s, char delimiter) {
+    std::vector<std::string> tokens;
+    std::string token;
+    std::istringstream tokenStream(s);
+    while (std::getline(tokenStream, token, delimiter)) {
+        tokens.push_back(token);
+    }
+    return tokens;
+}
+
+bool checkIfDCImageExists() {
+    FILE* pipe = popen("docker images --format \"{{.Repository}}\"", "r");
+
+    if (!pipe) {
+        std::cerr << "Error: Unable to run the Docker command." << std::endl;
+        return 1;
+    }
+
+    char buffer[128];
+
+    while (fgets(buffer, sizeof(buffer), pipe) != nullptr) {
+        buffer[strcspn(buffer, "\n")] = '\0';
+        if (std::string(buffer) == "taxi_image") {
+            pclose(pipe);
+            return true;
+        }
+    }
+
+    pclose(pipe);
+
+    return false;
+}
+
+bool checkIfDCContainerExists() {
+    FILE* pipe = popen("docker ps -a --format '{{.Names}}'", "r");
+
+    if (!pipe) {
+        std::cerr << "Error: Unable to run the Docker command." << std::endl;
+        return 1;
+    }
+
+    char buffer[128];
+
+    while (fgets(buffer, sizeof(buffer), pipe) != nullptr) {
+        buffer[strcspn(buffer, "\n")] = '\0';
+        if (std::string(buffer) == "taxi_container") {
+            pclose(pipe);
+            return true;
+        }
+    }
+
+    pclose(pipe);
+
+    return false;
+}
+
+std::string getContainerStatus(const std::string& containerName) {
+    std::string command = "docker inspect --format '{{.State.Status}}' " + containerName;
+
+    FILE* pipe = popen(command.c_str(), "r");
+    if (!pipe) {
+        std::cerr << "Error executing command." << std::endl;
+        return "Error";
+    }
+
+    char buffer[128];
+    std::string status;
+
+    while (fgets(buffer, sizeof(buffer), pipe) != nullptr) {
+        buffer[strcspn(buffer, "\n")] = '\0';
+        status += buffer;
+    }
+
+    pclose(pipe);
+
+    return status;
+}
+
 int main() {
     std::ifstream configFile("../config.txt");
     std::unordered_map<std::string, std::string> configMap;
@@ -68,8 +195,6 @@ int main() {
         std::cerr << "Failed to open config file." << std::endl;
     }
 
-    pthread_create(&thread, nullptr, runListener, nullptr);
-
     git_libgit2_init();
     GitManager::init(
         configMap["GIT_USERNAME"].c_str(),
@@ -77,13 +202,65 @@ int main() {
         configMap["TAXI_REPO"].c_str(),
         (Utils::workDir + "/" + Utils::taxiPath).c_str());
 
-    TgBot::Bot bot(configMap["BOT_TOKEN"]);
+    if (checkIfDCImageExists()) {
+        std::cout << "Taxi image already exists\n";
+    } else {
+        int result = system(
+            "docker build -t "
+            "taxi_image "
+            "-f workdir/unicaltaxi-driver/Dockerfile .");
+        if (result == 0) {
+            std::cout << "Taxi image has been created\n";
+        } else {
+            std::cout << "Creating image failed\n";
+        }
+    }
 
-    DatabaseController dbController;
+    if (checkIfDCContainerExists()) {
+        std::cout << "Taxi container already exists\n";
+    } else {
+        const char* relativePath = "workdir/unicaltaxi-driver";
+        std::filesystem::path absolutePath = std::filesystem::absolute(relativePath);
+
+        std::string cmd = "docker run -d -v " + absolutePath.string() + ":/home/source --name taxi_container taxi_image";
+
+        int result = system(cmd.c_str());
+        if (result == 0) {
+            std::cout << "Taxi container has been created\n";
+        } else {
+            std::cout << "Taxi container has been created\n";
+        }
+    }
+
+    std::cout << "state: " << getContainerStatus("taxi_container") << "\n";
+    if (getContainerStatus("taxi_container") == "running") {
+        int result = system("docker stop taxi_container");
+        if (result == 0) {
+            std::cout << "Taxi container has been stopped\n";
+        } else {
+            std::cout << "Container couldn't be stopped\n";
+        }
+    }
+
     dbController.createTables();
 
-    FragmentManager fragmentManager(&bot);
-    fragmentManager.setFragmentFactory([&dbController](int fragmentId) -> std::shared_ptr<Fragment> {
+    dbController.addListener(1, [](int action) {
+        std::cout << "confirmed"
+                  << "\n";
+        {
+            std::unique_lock<std::mutex> lock(docekrMtx);
+            resumeDCThread = true;
+            dockerCV.notify_one();
+        }
+    });
+
+    bot = new Bot(configMap["BOT_TOKEN"]);
+
+    std::thread dcThread(dockerThread);
+    dcThread.detach();
+
+    FragmentManager fragmentManager(bot);
+    fragmentManager.setFragmentFactory([](int fragmentId) -> std::shared_ptr<Fragment> {
         std::shared_ptr<BaseFragment> fragment = nullptr;
         switch (fragmentId) {
             case Fragments::LOGIN: {
@@ -98,12 +275,16 @@ int main() {
                 fragment = std::make_shared<TaxiFragment>();
                 break;
             }
+            case Fragments::APP: {
+                fragment = std::make_shared<AppFragment>();
+                break;
+            }
             case Fragments::BUILD_TYPE: {
                 fragment = std::make_shared<BuildTypeFragment>();
                 break;
             }
-             case Fragments::APP: {
-                fragment = std::make_shared<AppFragment>();
+            case Fragments::CONFIRM: {
+                fragment = std::make_shared<ConfirmFragment>();
                 break;
             }
             default:
@@ -114,20 +295,25 @@ int main() {
         return fragment;
     });
 
-    bot.getEvents().onCommand(
+    bot->getEvents().onCommand(
         {"start"},
         [&](TgBot::Message::Ptr message) {
+            dbController.resetUser(message->from->id);
             fragmentManager.onCommand(message);
         });
 
-    bot.getEvents().onNonCommandMessage([&bot, &fragmentManager](Message::Ptr message) {
+    bot->getEvents().onNonCommandMessage([&fragmentManager](Message::Ptr message) {
         fragmentManager.onNonCommandMessage(message);
     });
 
-    signal(SIGINT, signalHandler);
+    bot->getEvents().onCallbackQuery([&fragmentManager](CallbackQuery::Ptr callbackQuery) {
+        fragmentManager.onCallbackQuery(callbackQuery);
+    });
+
+    // signal(SIGINT, signalHandler);
 
     try {
-        bot.getApi().deleteWebhook();
+        bot->getApi().deleteWebhook();
 
         // TgWebhookTcpServer webhookServer(8080, bot);
         // printf("Server starting\n");
@@ -136,7 +322,7 @@ int main() {
         // bot.getApi().setWebhook("https://anasxonunical.jprq.live");
         // webhookServer.start();
 
-        TgBot::TgLongPoll longPoll(bot);
+        TgBot::TgLongPoll longPoll(*bot);
         while (true) {
             printf("Long poll started\n");
             longPoll.start();
@@ -147,7 +333,6 @@ int main() {
 
     printf("Exit bot\n");
 
-    pthread_join(thread, nullptr);
     git_libgit2_shutdown();
 
     printf("Exit server\n");

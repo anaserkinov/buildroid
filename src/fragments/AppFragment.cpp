@@ -4,27 +4,35 @@
 AppFragment::AppFragment()
     : BaseFragment(Fragments::APP){};
 
-void AppFragment::onCreate(const Message::Ptr& lastMessage) {
-    BaseFragment::onCreate(lastMessage);
+void AppFragment::onCreate(int16_t type, const std::shared_ptr<void>& data) {
+    BaseFragment::onCreate(type, data);
+    Message::Ptr lastMessage = std::reinterpret_pointer_cast<Message>(data);
     auto keyboard = std::make_shared<ReplyKeyboardMarkup>();
     keyboard->resizeKeyboard = true;
     keyboard->oneTimeKeyboard = true;
+
+    std::vector<KeyboardButton::Ptr> fRow;
+    auto button = std::make_shared<KeyboardButton>();
+    button->text = "<Back 🇺🇿";
+    fRow.push_back(button);
+    keyboard->keyboard.push_back(fRow);
+
+    std::vector<KeyboardButton::Ptr> sRow;
+    button = std::make_shared<KeyboardButton>();
+    button->text = "All";
+    sRow.push_back(button);
+    keyboard->keyboard.push_back(sRow);
+
+
     sendMessage(
         lastMessage->chat->id,
         "Select 👁",
         false,
         0,
         createKeyboard(
-            {{"<Back 🇺🇿"},
-             {"All"},
-             {"salamtaxi",
-              "hamkortaxi"},
-             {"startaxi",
-              "fivecitytaxi"},
-             {"demotaxi",
-              "unicaltaxi"},
-             {"expresstaxi"}},
-            keyboard));
+            Utils::getTaxiApps(),
+            keyboard,
+            2));
 }
 
 void AppFragment::onNonCommandMessage(const Message::Ptr& message) {
@@ -32,12 +40,13 @@ void AppFragment::onNonCommandMessage(const Message::Ptr& message) {
     Utils::clearStringFromSticker(text);
     std::cout << text;
     if (text == "Back") {
-        presentFragment(Fragments::BUILD_TYPE, message);
+        presentFragment(Fragments::TAXI, Fragment::MESSAGE, message);
     } else {
-        if (text == "All" || Utils::isFolderExists(Utils::workDir + "/" + Utils::taxiPath + "/new/apps/" + text)) {
+        if (text == "All" || Utils::isFolderExists(Utils::workDir + "/" + Utils::taxiPath + "/apps/" + text)) {
             dbController->selectApp(
                 message->from->id,
                 text);
+            presentFragment(Fragments::BUILD_TYPE, Fragment::MESSAGE, message);
         } else
             sendMessage(
                 message->chat->id,

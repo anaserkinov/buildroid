@@ -73,29 +73,29 @@ tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.o: tgbot_fragment/
 tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.o: ../tgbot_fragment/src/Fragment.cpp
 tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.o: tgbot_fragment/CMakeFiles/tgbot_fragment.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.o"
-	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.o -MF CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.o.d -o CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/src/Fragment.cpp
+	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.o -MF CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.o.d -o CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/src/Fragment.cpp
 
 tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.i"
-	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anaskhan/proj/buildroid/tgbot_fragment/src/Fragment.cpp > CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.i
+	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anaskhan/proj/buildroid/tgbot_fragment/src/Fragment.cpp > CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.i
 
 tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.s"
-	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anaskhan/proj/buildroid/tgbot_fragment/src/Fragment.cpp -o CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.s
+	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anaskhan/proj/buildroid/tgbot_fragment/src/Fragment.cpp -o CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.s
 
 tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.o: tgbot_fragment/CMakeFiles/tgbot_fragment.dir/flags.make
 tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.o: ../tgbot_fragment/src/FragmentManager.cpp
 tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.o: tgbot_fragment/CMakeFiles/tgbot_fragment.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.o"
-	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.o -MF CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.o.d -o CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/src/FragmentManager.cpp
+	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.o -MF CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.o.d -o CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.o -c /home/anaskhan/proj/buildroid/tgbot_fragment/src/FragmentManager.cpp
 
 tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.i"
-	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anaskhan/proj/buildroid/tgbot_fragment/src/FragmentManager.cpp > CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.i
+	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anaskhan/proj/buildroid/tgbot_fragment/src/FragmentManager.cpp > CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.i
 
 tgbot_fragment/CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.s"
-	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anaskhan/proj/buildroid/tgbot_fragment/src/FragmentManager.cpp -o CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.s
+	cd /home/anaskhan/proj/buildroid/build/tgbot_fragment && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anaskhan/proj/buildroid/tgbot_fragment/src/FragmentManager.cpp -o CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.s
 
 # Object files for target tgbot_fragment
 tgbot_fragment_OBJECTS = \

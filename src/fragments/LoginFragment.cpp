@@ -47,7 +47,7 @@ void LoginFragment::onNonCommandMessage(const Message::Ptr& message) {
                 false,
                 0,
                 std::make_shared<ReplyKeyboardRemove>());
-            presentFragment(Fragments::MAIN, message);
+            presentFragment(Fragments::MAIN, Fragment::MESSAGE, message);
             return;
         }
     }

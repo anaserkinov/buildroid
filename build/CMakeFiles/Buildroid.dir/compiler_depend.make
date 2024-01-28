@@ -5,8 +5,7 @@ CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o: ../src/DatabaseController
   /usr/include/stdc-predef.h \
   ../src/include/DatabaseController.hpp \
   ../src/include/Callback.hpp \
-  ../src/include/Data.hpp \
-  /usr/include/c++/11/string \
+  /usr/include/c++/11/functional \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/features.h \
@@ -19,33 +18,117 @@ CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o: ../src/DatabaseController
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
   /usr/include/c++/11/pstl/pstl_config.h \
-  /usr/include/c++/11/bits/stringfwd.h \
-  /usr/include/c++/11/bits/memoryfwd.h \
-  /usr/include/c++/11/bits/char_traits.h \
-  /usr/include/c++/11/bits/stl_algobase.h \
-  /usr/include/c++/11/bits/functexcept.h \
-  /usr/include/c++/11/bits/exception_defines.h \
-  /usr/include/c++/11/bits/cpp_type_traits.h \
-  /usr/include/c++/11/ext/type_traits.h \
-  /usr/include/c++/11/ext/numeric_traits.h \
-  /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/compare \
+  /usr/include/c++/11/concepts \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/ext/numeric_traits.h \
+  /usr/include/c++/11/bits/cpp_type_traits.h \
+  /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/functexcept.h \
+  /usr/include/c++/11/bits/exception_defines.h \
+  /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/iterator_concepts.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/ranges_cmp.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/concept_check.h \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/bits/stl_iterator.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+  /usr/include/c++/11/ext/new_allocator.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/cstdlib \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+  /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  ../src/include/Data.hpp \
+  /usr/include/c++/11/string \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/char_traits.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/cwchar \
   /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
@@ -53,22 +136,11 @@ CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o: ../src/DatabaseController
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
   /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/c++/11/bits/allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
-  /usr/include/c++/11/ext/new_allocator.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/c++/11/clocale \
@@ -77,70 +149,33 @@ CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o: ../src/DatabaseController
   /usr/include/c++/11/iosfwd \
   /usr/include/c++/11/cctype \
   /usr/include/ctype.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/bits/basic_string.h \
   /usr/include/c++/11/ext/atomicity.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
   /usr/include/time.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/string_view \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/ranges_base.h \
+  /usr/include/c++/11/bits/max_size_type.h \
+  /usr/include/c++/11/numbers \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/ext/string_conversions.h \
-  /usr/include/c++/11/cstdlib \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/select2.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
-  /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -167,60 +202,21 @@ CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o: ../src/DatabaseController
   /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/c++/11/variant \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
   ../sqlite_cpp/include/core/types.hpp \
   /usr/include/c++/11/optional \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
-  /usr/include/c++/11/typeinfo \
   /usr/include/c++/11/bits/nested_exception.h \
   ../sqlite_cpp/include/core/collection.hpp \
   ../sqlite_cpp/include/core/object.hpp \
   ../sqlite_cpp/include/core/database.hpp \
   /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
-  /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/shared_ptr.h \
-  /usr/include/c++/11/bits/shared_ptr_base.h \
-  /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/bits/refwrap.h \
-  /usr/include/c++/11/ext/concurrence.h \
-  /usr/include/c++/11/bits/shared_ptr_atomic.h \
-  /usr/include/c++/11/bits/atomic_base.h \
-  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/11/backward/auto_ptr.h \
-  /usr/include/c++/11/pstl/glue_memory_defs.h \
-  /usr/include/c++/11/pstl/execution_defs.h \
-  ../sqlite_cpp/include/PreparedStatement.hpp \
-  /usr/include/c++/11/chrono \
-  /usr/include/c++/11/ratio \
-  /usr/include/c++/11/limits \
-  /usr/include/c++/11/ctime \
-  ../sqlite_cpp/include/Cursor.hpp \
-  ../sqlite_cpp/include/SQLiteCursor.hpp \
-  ../sqlite_cpp/include/core/NativeByteBuffer.h \
-  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
-  ../tgbot_fragment/include/FragmentStateController.hpp \
-  ../src/include/MainDatabase.hpp \
-  ../src/include/Fragments.hpp \
-  /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/bits/ios_base.h \
@@ -242,6 +238,60 @@ CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o: ../src/DatabaseController
   /usr/include/c++/11/bits/locale_facets.tcc \
   /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/bits/shared_ptr_atomic.h \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/bits/atomic_wait.h \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/syscall.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+  /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/bits/ranges_uninitialized.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/uses_allocator_args.h \
+  /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  ../sqlite_cpp/include/PreparedStatement.hpp \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/ctime \
+  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
+  ../sqlite_cpp/include/core/NativeByteBuffer.h \
+  ../sqlite_cpp/include/Cursor.hpp \
+  ../sqlite_cpp/include/SQLiteCursor.hpp \
+  ../tgbot_fragment/include/FragmentStateController.hpp \
+  ../src/include/MainDatabase.hpp \
+  ../src/include/Fragments.hpp \
+  /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
   ../src/include/DatabaseController.hpp \
@@ -407,15 +457,6 @@ CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o: ../src/DatabaseController
   /usr/include/boost/config/detail/select_stdlib_config.hpp \
   /usr/include/c++/11/version \
   /usr/include/boost/config/stdlib/libstdcpp3.hpp \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
   /usr/include/boost/config/detail/select_platform_config.hpp \
   /usr/include/boost/config/platform/linux.hpp \
   /usr/include/boost/config/detail/posix_features.hpp \
@@ -428,18 +469,6 @@ CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o: ../src/DatabaseController
   /usr/include/boost/cstdint.hpp \
   /usr/include/boost/config/workaround.hpp \
   /usr/include/boost/exception/exception.hpp \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/boost/property_tree/string_path.hpp \
   /usr/include/boost/property_tree/id_translator.hpp \
   /usr/include/boost/optional.hpp \
@@ -650,6 +679,8 @@ CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o: ../src/DatabaseController
   /usr/include/boost/preprocessor/stringize.hpp \
   /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp \
   /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/ranges_algo.h \
+  /usr/include/c++/11/bits/ranges_util.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
@@ -659,8 +690,6 @@ CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o: ../src/DatabaseController
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
-  /usr/include/c++/11/iterator \
-  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/boost/property_tree/stream_translator.hpp \
   /usr/include/boost/optional/optional_io.hpp \
   /usr/include/c++/11/sstream \
@@ -1126,16 +1155,6 @@ CMakeFiles/Buildroid.dir/src/DatabaseController.cpp.o: ../src/DatabaseController
   /usr/include/boost/range/detail/misc_concept.hpp \
   /usr/include/boost/type_traits/make_unsigned.hpp \
   /usr/include/boost/type_traits/is_signed.hpp \
-  /usr/include/c++/11/climits \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/boost/type_traits/is_unsigned.hpp \
   /usr/include/boost/range/detail/has_member_size.hpp \
   /usr/include/boost/utility.hpp \
@@ -1567,50 +1586,134 @@ CMakeFiles/Buildroid.dir/src/GitManager.cpp.o: ../src/GitManager.cpp \
   /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/compare \
+  /usr/include/c++/11/concepts \
   /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/ext/numeric_traits.h \
+  /usr/include/c++/11/bits/cpp_type_traits.h \
+  /usr/include/c++/11/ext/type_traits.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/exception_defines.h \
-  /usr/include/c++/11/bits/cpp_type_traits.h \
-  /usr/include/c++/11/ext/type_traits.h \
-  /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/iterator_concepts.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/ranges_cmp.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/concept_check.h \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/bits/stl_iterator.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_tempbuf.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
-  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/bits/refwrap.h \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/typeinfo \
-  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/ranges_algo.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/postypes.h \
+  /usr/include/c++/11/cwchar \
+  /usr/include/wchar.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/c++/11/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/11/cctype \
+  /usr/include/ctype.h \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/string \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/cstdint \
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/include/c++/11/ext/new_allocator.h \
-  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/basic_string.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/ranges_base.h \
+  /usr/include/c++/11/bits/max_size_type.h \
+  /usr/include/c++/11/numbers \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/cstdio \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
+  /usr/include/c++/11/cerrno \
+  /usr/include/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/linux/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/c++/11/bits/charconv.h \
+  /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/stdexcept \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/ranges_util.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/hashtable.h \
   /usr/include/c++/11/bits/hashtable_policy.h \
@@ -1631,72 +1734,6 @@ CMakeFiles/Buildroid.dir/src/GitManager.cpp.o: ../src/GitManager.cpp \
   /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/c++/11/filesystem \
   /usr/include/c++/11/bits/fs_fwd.h \
-  /usr/include/c++/11/system_error \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
-  /usr/include/c++/11/cerrno \
-  /usr/include/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/linux/errno.h \
-  /usr/include/x86_64-linux-gnu/asm/errno.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /usr/include/c++/11/iosfwd \
-  /usr/include/c++/11/bits/stringfwd.h \
-  /usr/include/c++/11/bits/postypes.h \
-  /usr/include/c++/11/cwchar \
-  /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
-  /usr/include/c++/11/stdexcept \
-  /usr/include/c++/11/exception \
-  /usr/include/c++/11/bits/exception_ptr.h \
-  /usr/include/c++/11/bits/cxxabi_init_exception.h \
-  /usr/include/c++/11/bits/nested_exception.h \
-  /usr/include/c++/11/string \
-  /usr/include/c++/11/bits/char_traits.h \
-  /usr/include/c++/11/cstdint \
-  /usr/include/c++/11/bits/localefwd.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
-  /usr/include/c++/11/clocale \
-  /usr/include/locale.h \
-  /usr/include/x86_64-linux-gnu/bits/locale.h \
-  /usr/include/c++/11/cctype \
-  /usr/include/ctype.h \
-  /usr/include/c++/11/bits/ostream_insert.h \
-  /usr/include/c++/11/bits/cxxabi_forced.h \
-  /usr/include/c++/11/bits/basic_string.h \
-  /usr/include/c++/11/ext/atomicity.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
-  /usr/include/c++/11/string_view \
-  /usr/include/c++/11/bits/string_view.tcc \
-  /usr/include/c++/11/ext/string_conversions.h \
-  /usr/include/c++/11/cstdio \
-  /usr/include/stdio.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
-  /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/basic_string.tcc \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/limits \
@@ -1704,17 +1741,11 @@ CMakeFiles/Buildroid.dir/src/GitManager.cpp.o: ../src/GitManager.cpp \
   /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/bits/fs_path.h \
   /usr/include/c++/11/locale \
-  /usr/include/c++/11/bits/locale_classes.h \
-  /usr/include/c++/11/bits/locale_classes.tcc \
   /usr/include/c++/11/bits/locale_facets.h \
   /usr/include/c++/11/cwctype \
   /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
-  /usr/include/c++/11/bits/ios_base.h \
-  /usr/include/c++/11/streambuf \
-  /usr/include/c++/11/bits/streambuf.tcc \
-  /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
   /usr/include/c++/11/bits/locale_facets.tcc \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
@@ -1725,15 +1756,15 @@ CMakeFiles/Buildroid.dir/src/GitManager.cpp.o: ../src/GitManager.cpp \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/iomanip \
   /usr/include/c++/11/bits/quoted_string.h \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/istream \
-  /usr/include/c++/11/ios \
-  /usr/include/c++/11/bits/basic_ios.h \
-  /usr/include/c++/11/bits/basic_ios.tcc \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/codecvt \
@@ -1810,12 +1841,17 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   /usr/include/c++/11/ext/type_traits.h \
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/compare \
+  /usr/include/c++/11/concepts \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/iterator_concepts.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/ranges_cmp.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/concept_check.h \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/bits/stl_iterator.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/cstdint \
@@ -1876,16 +1912,7 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/basic_string.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/string_view \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/string_view.tcc \
-  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
@@ -1902,6 +1929,22 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/ranges_base.h \
+  /usr/include/c++/11/bits/max_size_type.h \
+  /usr/include/c++/11/numbers \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -1986,13 +2029,29 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   /usr/include/c++/11/atomic \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/bits/atomic_wait.h \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/syscall.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+  /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/condition_variable \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/bits/unique_lock.h \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
@@ -2007,16 +2066,29 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/stop_token \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/semaphore \
+  /usr/include/c++/11/bits/semaphore_base.h \
+  /usr/include/c++/11/bits/atomic_timed_wait.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
+  /usr/include/semaphore.h \
+  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   /usr/include/c++/11/mutex \
   /usr/local/include/pplx/pplxinterface.h \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/bits/ranges_uninitialized.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
   /usr/local/include/pplx/pplxcancellation_token.h \
@@ -2033,21 +2105,10 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/ranges_algo.h \
+  /usr/include/c++/11/bits/ranges_util.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/c++/11/random \
   /usr/include/c++/11/cmath \
   /usr/include/math.h \
@@ -2079,7 +2140,6 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/bits/stl_numeric.h \
   /usr/include/c++/11/pstl/glue_numeric_defs.h \
-  /usr/include/x86_64-linux-gnu/sys/time.h \
   /usr/local/include/cpprest/containerstream.h \
   /usr/local/include/cpprest/astreambuf.h \
   /usr/include/c++/11/cstring \
@@ -2089,8 +2149,6 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/c++/11/math.h \
   /usr/local/include/cpprest/streams.h \
-  /usr/include/c++/11/iterator \
-  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/queue \
   /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_deque.h \
@@ -2199,7 +2257,6 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   /usr/include/boost/asio/detail/noncopyable.hpp \
   /usr/include/boost/asio/detail/recycling_allocator.hpp \
   /usr/include/boost/asio/detail/thread_context.hpp \
-  /usr/include/c++/11/climits \
   /usr/include/boost/asio/detail/call_stack.hpp \
   /usr/include/boost/asio/detail/tss_ptr.hpp \
   /usr/include/boost/asio/detail/keyword_tss_ptr.hpp \
@@ -3622,11 +3679,14 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   ../tgbot_fragment/tgbot-cpp/include/tgbot/net/HttpParser.h \
   /usr/include/boost/asio.hpp \
   /usr/include/boost/asio/awaitable.hpp \
-  /usr/include/boost/asio/basic_datagram_socket.hpp \
-  /usr/include/boost/asio/basic_socket.hpp \
+  /usr/include/c++/11/coroutine \
+  /usr/include/boost/asio/impl/awaitable.hpp \
   /usr/include/boost/asio/post.hpp \
   /usr/include/boost/asio/impl/post.hpp \
   /usr/include/boost/asio/detail/work_dispatcher.hpp \
+  /usr/include/boost/asio/this_coro.hpp \
+  /usr/include/boost/asio/basic_datagram_socket.hpp \
+  /usr/include/boost/asio/basic_socket.hpp \
   /usr/include/boost/asio/socket_base.hpp \
   /usr/include/boost/asio/detail/io_control.hpp \
   /usr/include/boost/asio/detail/socket_option.hpp \
@@ -3698,6 +3758,11 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   /usr/include/boost/asio/impl/buffered_write_stream.hpp \
   /usr/include/boost/asio/buffers_iterator.hpp \
   /usr/include/boost/asio/co_spawn.hpp \
+  /usr/include/boost/asio/impl/co_spawn.hpp \
+  /usr/include/boost/asio/dispatch.hpp \
+  /usr/include/boost/asio/impl/dispatch.hpp \
+  /usr/include/boost/asio/use_awaitable.hpp \
+  /usr/include/boost/asio/impl/use_awaitable.hpp \
   /usr/include/boost/asio/compose.hpp \
   /usr/include/boost/asio/impl/compose.hpp \
   /usr/include/boost/asio/connect.hpp \
@@ -3707,8 +3772,6 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   /usr/include/boost/asio/impl/defer.hpp \
   /usr/include/boost/asio/detached.hpp \
   /usr/include/boost/asio/impl/detached.hpp \
-  /usr/include/boost/asio/dispatch.hpp \
-  /usr/include/boost/asio/impl/dispatch.hpp \
   /usr/include/boost/asio/executor.hpp \
   /usr/include/boost/asio/impl/executor.hpp \
   /usr/include/boost/asio/impl/executor.ipp \
@@ -3774,7 +3837,6 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   /usr/include/boost/asio/detail/future.hpp \
   /usr/include/c++/11/future \
   /usr/include/c++/11/bits/atomic_futex.h \
-  /usr/include/c++/11/bits/std_thread.h \
   /usr/include/boost/asio/placeholders.hpp \
   /usr/include/boost/asio/posix/basic_descriptor.hpp \
   /usr/include/boost/asio/posix/basic_stream_descriptor.hpp \
@@ -3930,8 +3992,6 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   /usr/include/boost/asio/detail/impl/strand_executor_service.ipp \
   /usr/include/boost/asio/streambuf.hpp \
   /usr/include/boost/asio/system_timer.hpp \
-  /usr/include/boost/asio/this_coro.hpp \
-  /usr/include/boost/asio/use_awaitable.hpp \
   /usr/include/boost/asio/use_future.hpp \
   /usr/include/boost/asio/impl/use_future.hpp \
   /usr/include/boost/asio/version.hpp \
@@ -3953,6 +4013,13 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   ../tgbot_fragment/tgbot-cpp/include/tgbot/net/TgWebhookServer.h \
   ../tgbot_fragment/tgbot-cpp/include/tgbot/net/TgWebhookTcpServer.h \
   ../tgbot_fragment/tgbot-cpp/include/tgbot/tools/FileTools.h \
+  /usr/include/c++/11/filesystem \
+  /usr/include/c++/11/bits/fs_fwd.h \
+  /usr/include/c++/11/bits/fs_path.h \
+  /usr/include/c++/11/codecvt \
+  /usr/include/c++/11/bits/fs_dir.h \
+  /usr/include/c++/11/bits/fs_ops.h \
+  /usr/include/c++/11/thread \
   ../src/include/DatabaseController.hpp \
   ../src/include/Callback.hpp \
   ../src/include/Data.hpp \
@@ -3965,10 +4032,10 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   ../sqlite_cpp/include/core/object.hpp \
   ../sqlite_cpp/include/core/database.hpp \
   ../sqlite_cpp/include/PreparedStatement.hpp \
+  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
+  ../sqlite_cpp/include/core/NativeByteBuffer.h \
   ../sqlite_cpp/include/Cursor.hpp \
   ../sqlite_cpp/include/SQLiteCursor.hpp \
-  ../sqlite_cpp/include/core/NativeByteBuffer.h \
-  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
   ../tgbot_fragment/include/FragmentStateController.hpp \
   ../src/include/MainDatabase.hpp \
   ../tgbot_fragment/include/FragmentManager.hpp \
@@ -4091,12 +4158,6 @@ CMakeFiles/Buildroid.dir/src/Main.cpp.o: ../src/Main.cpp \
   ../libgit2/include/git2/types.h \
   ../libgit2/include/git2/version.h \
   ../libgit2/include/git2/worktree.h \
-  /usr/include/c++/11/filesystem \
-  /usr/include/c++/11/bits/fs_fwd.h \
-  /usr/include/c++/11/bits/fs_path.h \
-  /usr/include/c++/11/codecvt \
-  /usr/include/c++/11/bits/fs_dir.h \
-  /usr/include/c++/11/bits/fs_ops.h \
   ../src/include/gitty.hpp \
   ../src/include/utils.hpp \
   ../src/include/Data.hpp
@@ -4131,12 +4192,19 @@ CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.o: ../src/MainDatabase.cpp \
   /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/compare \
+  /usr/include/c++/11/concepts \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/iterator_concepts.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/ranges_cmp.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/concept_check.h \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/bits/stl_iterator.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/postypes.h \
@@ -4167,8 +4235,6 @@ CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.o: ../src/MainDatabase.cpp \
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/include/c++/11/ext/new_allocator.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/c++/11/clocale \
@@ -4183,64 +4249,71 @@ CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.o: ../src/MainDatabase.cpp \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/basic_string.h \
-  /usr/include/c++/11/ext/atomicity.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/string_view \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/bits/string_view.tcc \
-  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/select2.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/ranges_base.h \
+  /usr/include/c++/11/bits/max_size_type.h \
+  /usr/include/c++/11/numbers \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -4287,7 +4360,6 @@ CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.o: ../src/MainDatabase.cpp \
   ../sqlite_cpp/include/core/object.hpp \
   ../sqlite_cpp/include/core/database.hpp \
   /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
@@ -4295,6 +4367,27 @@ CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.o: ../src/MainDatabase.cpp \
   /usr/include/c++/11/bits/unique_ptr.h \
   /usr/include/c++/11/tuple \
   /usr/include/c++/11/array \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/stdexcept \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
@@ -4303,7 +4396,38 @@ CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.o: ../src/MainDatabase.cpp \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/bits/atomic_wait.h \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/syscall.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+  /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/bits/ranges_uninitialized.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
   ../sqlite_cpp/include/PreparedStatement.hpp \
@@ -4311,10 +4435,10 @@ CMakeFiles/Buildroid.dir/src/MainDatabase.cpp.o: ../src/MainDatabase.cpp \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
-  ../sqlite_cpp/include/Cursor.hpp \
-  ../sqlite_cpp/include/SQLiteCursor.hpp \
+  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
   ../sqlite_cpp/include/core/NativeByteBuffer.h \
-  ../sqlite_cpp/include/SQLitePreparedStatement.hpp
+  ../sqlite_cpp/include/Cursor.hpp \
+  ../sqlite_cpp/include/SQLiteCursor.hpp
 
 CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.o: ../src/fragments/AppFragment.cpp \
   /usr/include/stdc-predef.h \
@@ -4372,12 +4496,17 @@ CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.o: ../src/fragments/AppFr
   /usr/include/c++/11/ext/type_traits.h \
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/compare \
+  /usr/include/c++/11/concepts \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/iterator_concepts.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/ranges_cmp.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/concept_check.h \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/bits/stl_iterator.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/cstdint \
@@ -4438,16 +4567,7 @@ CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.o: ../src/fragments/AppFr
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/basic_string.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/string_view \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/string_view.tcc \
-  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
@@ -4464,6 +4584,22 @@ CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.o: ../src/fragments/AppFr
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/ranges_base.h \
+  /usr/include/c++/11/bits/max_size_type.h \
+  /usr/include/c++/11/numbers \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -4508,6 +4644,23 @@ CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.o: ../src/fragments/AppFr
   /usr/include/c++/11/bits/vector.tcc \
   ../src/include/DatabaseController.hpp \
   ../src/include/Callback.hpp \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
   ../src/include/Data.hpp \
   ../sqlite_cpp/include/Database.hpp \
   ../sqlite_cpp/include/SQLiteDatabase.hpp \
@@ -4517,11 +4670,6 @@ CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.o: ../src/fragments/AppFr
   /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/c++/11/variant \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/parse_numbers.h \
   ../sqlite_cpp/include/core/types.hpp \
   /usr/include/c++/11/optional \
@@ -4529,23 +4677,49 @@ CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.o: ../src/fragments/AppFr
   ../sqlite_cpp/include/core/object.hpp \
   ../sqlite_cpp/include/core/database.hpp \
   /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
-  /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/bits/atomic_wait.h \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/syscall.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+  /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/bits/ranges_uninitialized.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
   ../sqlite_cpp/include/PreparedStatement.hpp \
@@ -4553,10 +4727,10 @@ CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.o: ../src/fragments/AppFr
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
+  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
+  ../sqlite_cpp/include/core/NativeByteBuffer.h \
   ../sqlite_cpp/include/Cursor.hpp \
   ../sqlite_cpp/include/SQLiteCursor.hpp \
-  ../sqlite_cpp/include/core/NativeByteBuffer.h \
-  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
   ../tgbot_fragment/include/FragmentStateController.hpp \
   ../src/include/MainDatabase.hpp \
   ../tgbot_fragment/include/Fragment.hpp \
@@ -4721,15 +4895,6 @@ CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.o: ../src/fragments/AppFr
   /usr/include/boost/config/detail/select_stdlib_config.hpp \
   /usr/include/c++/11/version \
   /usr/include/boost/config/stdlib/libstdcpp3.hpp \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
   /usr/include/boost/config/detail/select_platform_config.hpp \
   /usr/include/boost/config/platform/linux.hpp \
   /usr/include/boost/config/detail/posix_features.hpp \
@@ -4742,18 +4907,6 @@ CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.o: ../src/fragments/AppFr
   /usr/include/boost/cstdint.hpp \
   /usr/include/boost/config/workaround.hpp \
   /usr/include/boost/exception/exception.hpp \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/boost/property_tree/string_path.hpp \
   /usr/include/boost/property_tree/id_translator.hpp \
   /usr/include/boost/optional.hpp \
@@ -4964,6 +5117,8 @@ CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.o: ../src/fragments/AppFr
   /usr/include/boost/preprocessor/stringize.hpp \
   /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp \
   /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/ranges_algo.h \
+  /usr/include/c++/11/bits/ranges_util.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
@@ -4973,8 +5128,6 @@ CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.o: ../src/fragments/AppFr
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
-  /usr/include/c++/11/iterator \
-  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/boost/property_tree/stream_translator.hpp \
   /usr/include/boost/optional/optional_io.hpp \
   /usr/include/c++/11/sstream \
@@ -5440,16 +5593,6 @@ CMakeFiles/Buildroid.dir/src/fragments/AppFragment.cpp.o: ../src/fragments/AppFr
   /usr/include/boost/range/detail/misc_concept.hpp \
   /usr/include/boost/type_traits/make_unsigned.hpp \
   /usr/include/boost/type_traits/is_signed.hpp \
-  /usr/include/c++/11/climits \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/boost/type_traits/is_unsigned.hpp \
   /usr/include/boost/range/detail/has_member_size.hpp \
   /usr/include/boost/utility.hpp \
@@ -5755,12 +5898,17 @@ CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o: ../src/fragments/Base
   /usr/include/c++/11/ext/type_traits.h \
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/compare \
+  /usr/include/c++/11/concepts \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/iterator_concepts.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/ranges_cmp.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/concept_check.h \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/bits/stl_iterator.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/cstdint \
@@ -5821,16 +5969,7 @@ CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o: ../src/fragments/Base
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/basic_string.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/string_view \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/string_view.tcc \
-  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
@@ -5847,6 +5986,22 @@ CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o: ../src/fragments/Base
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/ranges_base.h \
+  /usr/include/c++/11/bits/max_size_type.h \
+  /usr/include/c++/11/numbers \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -5891,6 +6046,23 @@ CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o: ../src/fragments/Base
   /usr/include/c++/11/bits/vector.tcc \
   ../src/include/DatabaseController.hpp \
   ../src/include/Callback.hpp \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
   ../src/include/Data.hpp \
   ../sqlite_cpp/include/Database.hpp \
   ../sqlite_cpp/include/SQLiteDatabase.hpp \
@@ -5900,11 +6072,6 @@ CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o: ../src/fragments/Base
   /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/c++/11/variant \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/parse_numbers.h \
   ../sqlite_cpp/include/core/types.hpp \
   /usr/include/c++/11/optional \
@@ -5912,23 +6079,49 @@ CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o: ../src/fragments/Base
   ../sqlite_cpp/include/core/object.hpp \
   ../sqlite_cpp/include/core/database.hpp \
   /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
-  /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/bits/atomic_wait.h \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/syscall.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+  /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/bits/ranges_uninitialized.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
   ../sqlite_cpp/include/PreparedStatement.hpp \
@@ -5936,10 +6129,10 @@ CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o: ../src/fragments/Base
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
+  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
+  ../sqlite_cpp/include/core/NativeByteBuffer.h \
   ../sqlite_cpp/include/Cursor.hpp \
   ../sqlite_cpp/include/SQLiteCursor.hpp \
-  ../sqlite_cpp/include/core/NativeByteBuffer.h \
-  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
   ../tgbot_fragment/include/FragmentStateController.hpp \
   ../src/include/MainDatabase.hpp \
   ../tgbot_fragment/include/Fragment.hpp \
@@ -6104,15 +6297,6 @@ CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o: ../src/fragments/Base
   /usr/include/boost/config/detail/select_stdlib_config.hpp \
   /usr/include/c++/11/version \
   /usr/include/boost/config/stdlib/libstdcpp3.hpp \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
   /usr/include/boost/config/detail/select_platform_config.hpp \
   /usr/include/boost/config/platform/linux.hpp \
   /usr/include/boost/config/detail/posix_features.hpp \
@@ -6125,18 +6309,6 @@ CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o: ../src/fragments/Base
   /usr/include/boost/cstdint.hpp \
   /usr/include/boost/config/workaround.hpp \
   /usr/include/boost/exception/exception.hpp \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/boost/property_tree/string_path.hpp \
   /usr/include/boost/property_tree/id_translator.hpp \
   /usr/include/boost/optional.hpp \
@@ -6347,6 +6519,8 @@ CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o: ../src/fragments/Base
   /usr/include/boost/preprocessor/stringize.hpp \
   /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp \
   /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/ranges_algo.h \
+  /usr/include/c++/11/bits/ranges_util.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
@@ -6356,8 +6530,6 @@ CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o: ../src/fragments/Base
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
-  /usr/include/c++/11/iterator \
-  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/boost/property_tree/stream_translator.hpp \
   /usr/include/boost/optional/optional_io.hpp \
   /usr/include/c++/11/sstream \
@@ -6823,16 +6995,6 @@ CMakeFiles/Buildroid.dir/src/fragments/BaseFragment.cpp.o: ../src/fragments/Base
   /usr/include/boost/range/detail/misc_concept.hpp \
   /usr/include/boost/type_traits/make_unsigned.hpp \
   /usr/include/boost/type_traits/is_signed.hpp \
-  /usr/include/c++/11/climits \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/boost/type_traits/is_unsigned.hpp \
   /usr/include/boost/range/detail/has_member_size.hpp \
   /usr/include/boost/utility.hpp \
@@ -7130,12 +7292,17 @@ CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o: ../src/fragments
   /usr/include/c++/11/ext/type_traits.h \
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/compare \
+  /usr/include/c++/11/concepts \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/iterator_concepts.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/ranges_cmp.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/concept_check.h \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/bits/stl_iterator.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/cstdint \
@@ -7196,16 +7363,7 @@ CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o: ../src/fragments
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/basic_string.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/string_view \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/string_view.tcc \
-  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
@@ -7222,6 +7380,22 @@ CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o: ../src/fragments
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/ranges_base.h \
+  /usr/include/c++/11/bits/max_size_type.h \
+  /usr/include/c++/11/numbers \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -7266,6 +7440,23 @@ CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o: ../src/fragments
   /usr/include/c++/11/bits/vector.tcc \
   ../src/include/DatabaseController.hpp \
   ../src/include/Callback.hpp \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
   ../src/include/Data.hpp \
   ../sqlite_cpp/include/Database.hpp \
   ../sqlite_cpp/include/SQLiteDatabase.hpp \
@@ -7275,11 +7466,6 @@ CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o: ../src/fragments
   /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/c++/11/variant \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/parse_numbers.h \
   ../sqlite_cpp/include/core/types.hpp \
   /usr/include/c++/11/optional \
@@ -7287,23 +7473,49 @@ CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o: ../src/fragments
   ../sqlite_cpp/include/core/object.hpp \
   ../sqlite_cpp/include/core/database.hpp \
   /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
-  /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/bits/atomic_wait.h \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/syscall.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+  /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/bits/ranges_uninitialized.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
   ../sqlite_cpp/include/PreparedStatement.hpp \
@@ -7311,10 +7523,10 @@ CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o: ../src/fragments
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
+  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
+  ../sqlite_cpp/include/core/NativeByteBuffer.h \
   ../sqlite_cpp/include/Cursor.hpp \
   ../sqlite_cpp/include/SQLiteCursor.hpp \
-  ../sqlite_cpp/include/core/NativeByteBuffer.h \
-  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
   ../tgbot_fragment/include/FragmentStateController.hpp \
   ../src/include/MainDatabase.hpp \
   ../tgbot_fragment/include/Fragment.hpp \
@@ -7479,15 +7691,6 @@ CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o: ../src/fragments
   /usr/include/boost/config/detail/select_stdlib_config.hpp \
   /usr/include/c++/11/version \
   /usr/include/boost/config/stdlib/libstdcpp3.hpp \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
   /usr/include/boost/config/detail/select_platform_config.hpp \
   /usr/include/boost/config/platform/linux.hpp \
   /usr/include/boost/config/detail/posix_features.hpp \
@@ -7500,18 +7703,6 @@ CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o: ../src/fragments
   /usr/include/boost/cstdint.hpp \
   /usr/include/boost/config/workaround.hpp \
   /usr/include/boost/exception/exception.hpp \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/boost/property_tree/string_path.hpp \
   /usr/include/boost/property_tree/id_translator.hpp \
   /usr/include/boost/optional.hpp \
@@ -7722,6 +7913,8 @@ CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o: ../src/fragments
   /usr/include/boost/preprocessor/stringize.hpp \
   /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp \
   /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/ranges_algo.h \
+  /usr/include/c++/11/bits/ranges_util.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
@@ -7731,8 +7924,6 @@ CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o: ../src/fragments
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
-  /usr/include/c++/11/iterator \
-  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/boost/property_tree/stream_translator.hpp \
   /usr/include/boost/optional/optional_io.hpp \
   /usr/include/c++/11/sstream \
@@ -8198,16 +8389,6 @@ CMakeFiles/Buildroid.dir/src/fragments/BuildTypeFragment.cpp.o: ../src/fragments
   /usr/include/boost/range/detail/misc_concept.hpp \
   /usr/include/boost/type_traits/make_unsigned.hpp \
   /usr/include/boost/type_traits/is_signed.hpp \
-  /usr/include/c++/11/climits \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/boost/type_traits/is_unsigned.hpp \
   /usr/include/boost/range/detail/has_member_size.hpp \
   /usr/include/boost/utility.hpp \
@@ -8513,12 +8694,17 @@ CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o: ../src/fragments/C
   /usr/include/c++/11/ext/type_traits.h \
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/compare \
+  /usr/include/c++/11/concepts \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/iterator_concepts.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/ranges_cmp.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/concept_check.h \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/bits/stl_iterator.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/cstdint \
@@ -8579,16 +8765,7 @@ CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o: ../src/fragments/C
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/basic_string.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/string_view \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/string_view.tcc \
-  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
@@ -8605,6 +8782,22 @@ CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o: ../src/fragments/C
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/ranges_base.h \
+  /usr/include/c++/11/bits/max_size_type.h \
+  /usr/include/c++/11/numbers \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -8649,6 +8842,23 @@ CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o: ../src/fragments/C
   /usr/include/c++/11/bits/vector.tcc \
   ../src/include/DatabaseController.hpp \
   ../src/include/Callback.hpp \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
   ../src/include/Data.hpp \
   ../sqlite_cpp/include/Database.hpp \
   ../sqlite_cpp/include/SQLiteDatabase.hpp \
@@ -8658,11 +8868,6 @@ CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o: ../src/fragments/C
   /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/c++/11/variant \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/parse_numbers.h \
   ../sqlite_cpp/include/core/types.hpp \
   /usr/include/c++/11/optional \
@@ -8670,23 +8875,49 @@ CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o: ../src/fragments/C
   ../sqlite_cpp/include/core/object.hpp \
   ../sqlite_cpp/include/core/database.hpp \
   /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
-  /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/bits/atomic_wait.h \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/syscall.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+  /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/bits/ranges_uninitialized.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
   ../sqlite_cpp/include/PreparedStatement.hpp \
@@ -8694,10 +8925,10 @@ CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o: ../src/fragments/C
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
+  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
+  ../sqlite_cpp/include/core/NativeByteBuffer.h \
   ../sqlite_cpp/include/Cursor.hpp \
   ../sqlite_cpp/include/SQLiteCursor.hpp \
-  ../sqlite_cpp/include/core/NativeByteBuffer.h \
-  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
   ../tgbot_fragment/include/FragmentStateController.hpp \
   ../src/include/MainDatabase.hpp \
   ../tgbot_fragment/include/Fragment.hpp \
@@ -8862,15 +9093,6 @@ CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o: ../src/fragments/C
   /usr/include/boost/config/detail/select_stdlib_config.hpp \
   /usr/include/c++/11/version \
   /usr/include/boost/config/stdlib/libstdcpp3.hpp \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
   /usr/include/boost/config/detail/select_platform_config.hpp \
   /usr/include/boost/config/platform/linux.hpp \
   /usr/include/boost/config/detail/posix_features.hpp \
@@ -8883,18 +9105,6 @@ CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o: ../src/fragments/C
   /usr/include/boost/cstdint.hpp \
   /usr/include/boost/config/workaround.hpp \
   /usr/include/boost/exception/exception.hpp \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/boost/property_tree/string_path.hpp \
   /usr/include/boost/property_tree/id_translator.hpp \
   /usr/include/boost/optional.hpp \
@@ -9105,6 +9315,8 @@ CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o: ../src/fragments/C
   /usr/include/boost/preprocessor/stringize.hpp \
   /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp \
   /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/ranges_algo.h \
+  /usr/include/c++/11/bits/ranges_util.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
@@ -9114,8 +9326,6 @@ CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o: ../src/fragments/C
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
-  /usr/include/c++/11/iterator \
-  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/boost/property_tree/stream_translator.hpp \
   /usr/include/boost/optional/optional_io.hpp \
   /usr/include/c++/11/sstream \
@@ -9581,16 +9791,6 @@ CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o: ../src/fragments/C
   /usr/include/boost/range/detail/misc_concept.hpp \
   /usr/include/boost/type_traits/make_unsigned.hpp \
   /usr/include/boost/type_traits/is_signed.hpp \
-  /usr/include/c++/11/climits \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/boost/type_traits/is_unsigned.hpp \
   /usr/include/boost/range/detail/has_member_size.hpp \
   /usr/include/boost/utility.hpp \
@@ -9860,19 +10060,26 @@ CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o: ../src/fragments/Log
   /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/compare \
+  /usr/include/c++/11/concepts \
   /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/ext/numeric_traits.h \
+  /usr/include/c++/11/bits/cpp_type_traits.h \
+  /usr/include/c++/11/ext/type_traits.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/exception_defines.h \
-  /usr/include/c++/11/bits/cpp_type_traits.h \
-  /usr/include/c++/11/ext/type_traits.h \
-  /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/iterator_concepts.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/ranges_cmp.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/concept_check.h \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/bits/stl_iterator.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/stl_algo.h \
@@ -9920,50 +10127,13 @@ CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o: ../src/fragments/Log
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_tempbuf.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
-  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/bits/refwrap.h \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/typeinfo \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/bits/allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
-  /usr/include/c++/11/ext/new_allocator.h \
-  /usr/include/c++/11/bits/memoryfwd.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
-  /usr/include/c++/11/pstl/execution_defs.h \
-  ../src/include/Fragments.hpp \
-  /usr/include/c++/11/iostream \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/ios \
+  /usr/include/c++/11/bits/ranges_algo.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
   /usr/include/c++/11/iosfwd \
   /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/cwchar \
   /usr/include/wchar.h \
@@ -9975,15 +10145,9 @@ CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o: ../src/fragments/Log
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/wchar2.h \
-  /usr/include/c++/11/exception \
-  /usr/include/c++/11/bits/exception_ptr.h \
-  /usr/include/c++/11/bits/cxxabi_init_exception.h \
-  /usr/include/c++/11/bits/nested_exception.h \
-  /usr/include/c++/11/bits/char_traits.h \
-  /usr/include/c++/11/cstdint \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/c++/11/streambuf \
   /usr/include/c++/11/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/c++/11/clocale \
@@ -10012,10 +10176,28 @@ CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o: ../src/fragments/Log
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/c++/11/bits/locale_classes.h \
   /usr/include/c++/11/string \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/cstdint \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/11/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+  /usr/include/c++/11/ext/new_allocator.h \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
   /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/ranges_base.h \
+  /usr/include/c++/11/bits/max_size_type.h \
+  /usr/include/c++/11/numbers \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/cstdio \
@@ -10040,15 +10222,45 @@ CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o: ../src/fragments/Log
   /usr/include/c++/11/system_error \
   /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
   /usr/include/c++/11/stdexcept \
-  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/bits/nested_exception.h \
   /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/ranges_util.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  ../src/include/Fragments.hpp \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/ios \
   /usr/include/c++/11/bits/basic_ios.h \
   /usr/include/c++/11/bits/locale_facets.h \
   /usr/include/c++/11/cwctype \
   /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
-  /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
   /usr/include/c++/11/bits/locale_facets.tcc \
   /usr/include/c++/11/bits/basic_ios.tcc \
@@ -10084,17 +10296,45 @@ CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o: ../src/fragments/Log
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/bits/atomic_wait.h \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/syscall.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+  /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/bits/ranges_uninitialized.h \
+  /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   ../sqlite_cpp/include/PreparedStatement.hpp \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
+  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
+  ../sqlite_cpp/include/core/NativeByteBuffer.h \
   ../sqlite_cpp/include/Cursor.hpp \
   ../sqlite_cpp/include/SQLiteCursor.hpp \
-  ../sqlite_cpp/include/core/NativeByteBuffer.h \
-  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
   ../tgbot_fragment/include/FragmentStateController.hpp \
   ../src/include/MainDatabase.hpp \
   ../tgbot_fragment/include/Fragment.hpp \
@@ -10259,15 +10499,6 @@ CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o: ../src/fragments/Log
   /usr/include/boost/config/detail/select_stdlib_config.hpp \
   /usr/include/c++/11/version \
   /usr/include/boost/config/stdlib/libstdcpp3.hpp \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
   /usr/include/boost/config/detail/select_platform_config.hpp \
   /usr/include/boost/config/platform/linux.hpp \
   /usr/include/boost/config/detail/posix_features.hpp \
@@ -10497,8 +10728,6 @@ CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o: ../src/fragments/Log
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
-  /usr/include/c++/11/iterator \
-  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/boost/property_tree/stream_translator.hpp \
   /usr/include/boost/optional/optional_io.hpp \
   /usr/include/c++/11/sstream \
@@ -10964,16 +11193,6 @@ CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o: ../src/fragments/Log
   /usr/include/boost/range/detail/misc_concept.hpp \
   /usr/include/boost/type_traits/make_unsigned.hpp \
   /usr/include/boost/type_traits/is_signed.hpp \
-  /usr/include/c++/11/climits \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/boost/type_traits/is_unsigned.hpp \
   /usr/include/boost/range/detail/has_member_size.hpp \
   /usr/include/boost/utility.hpp \
@@ -11271,12 +11490,17 @@ CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o: ../src/fragments/Main
   /usr/include/c++/11/ext/type_traits.h \
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/compare \
+  /usr/include/c++/11/concepts \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/iterator_concepts.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/ranges_cmp.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/concept_check.h \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/bits/stl_iterator.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/cstdint \
@@ -11337,16 +11561,7 @@ CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o: ../src/fragments/Main
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/basic_string.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/string_view \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/string_view.tcc \
-  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
@@ -11363,6 +11578,22 @@ CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o: ../src/fragments/Main
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/ranges_base.h \
+  /usr/include/c++/11/bits/max_size_type.h \
+  /usr/include/c++/11/numbers \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -11407,6 +11638,23 @@ CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o: ../src/fragments/Main
   /usr/include/c++/11/bits/vector.tcc \
   ../src/include/DatabaseController.hpp \
   ../src/include/Callback.hpp \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
   ../src/include/Data.hpp \
   ../sqlite_cpp/include/Database.hpp \
   ../sqlite_cpp/include/SQLiteDatabase.hpp \
@@ -11416,11 +11664,6 @@ CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o: ../src/fragments/Main
   /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/c++/11/variant \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/parse_numbers.h \
   ../sqlite_cpp/include/core/types.hpp \
   /usr/include/c++/11/optional \
@@ -11428,23 +11671,49 @@ CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o: ../src/fragments/Main
   ../sqlite_cpp/include/core/object.hpp \
   ../sqlite_cpp/include/core/database.hpp \
   /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
-  /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/bits/atomic_wait.h \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/syscall.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+  /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/bits/ranges_uninitialized.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
   ../sqlite_cpp/include/PreparedStatement.hpp \
@@ -11452,10 +11721,10 @@ CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o: ../src/fragments/Main
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
+  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
+  ../sqlite_cpp/include/core/NativeByteBuffer.h \
   ../sqlite_cpp/include/Cursor.hpp \
   ../sqlite_cpp/include/SQLiteCursor.hpp \
-  ../sqlite_cpp/include/core/NativeByteBuffer.h \
-  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
   ../tgbot_fragment/include/FragmentStateController.hpp \
   ../src/include/MainDatabase.hpp \
   ../tgbot_fragment/include/Fragment.hpp \
@@ -11620,15 +11889,6 @@ CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o: ../src/fragments/Main
   /usr/include/boost/config/detail/select_stdlib_config.hpp \
   /usr/include/c++/11/version \
   /usr/include/boost/config/stdlib/libstdcpp3.hpp \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
   /usr/include/boost/config/detail/select_platform_config.hpp \
   /usr/include/boost/config/platform/linux.hpp \
   /usr/include/boost/config/detail/posix_features.hpp \
@@ -11641,18 +11901,6 @@ CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o: ../src/fragments/Main
   /usr/include/boost/cstdint.hpp \
   /usr/include/boost/config/workaround.hpp \
   /usr/include/boost/exception/exception.hpp \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/boost/property_tree/string_path.hpp \
   /usr/include/boost/property_tree/id_translator.hpp \
   /usr/include/boost/optional.hpp \
@@ -11863,6 +12111,8 @@ CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o: ../src/fragments/Main
   /usr/include/boost/preprocessor/stringize.hpp \
   /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp \
   /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/ranges_algo.h \
+  /usr/include/c++/11/bits/ranges_util.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
@@ -11872,8 +12122,6 @@ CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o: ../src/fragments/Main
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
-  /usr/include/c++/11/iterator \
-  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/boost/property_tree/stream_translator.hpp \
   /usr/include/boost/optional/optional_io.hpp \
   /usr/include/c++/11/sstream \
@@ -12339,16 +12587,6 @@ CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o: ../src/fragments/Main
   /usr/include/boost/range/detail/misc_concept.hpp \
   /usr/include/boost/type_traits/make_unsigned.hpp \
   /usr/include/boost/type_traits/is_signed.hpp \
-  /usr/include/c++/11/climits \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/boost/type_traits/is_unsigned.hpp \
   /usr/include/boost/range/detail/has_member_size.hpp \
   /usr/include/boost/utility.hpp \
@@ -12646,12 +12884,17 @@ CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o: ../src/fragments/Taxi
   /usr/include/c++/11/ext/type_traits.h \
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/compare \
+  /usr/include/c++/11/concepts \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/iterator_concepts.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/ranges_cmp.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/concept_check.h \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/bits/stl_iterator.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/cstdint \
@@ -12712,16 +12955,7 @@ CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o: ../src/fragments/Taxi
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/basic_string.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/string_view \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/string_view.tcc \
-  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
@@ -12738,6 +12972,22 @@ CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o: ../src/fragments/Taxi
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/ranges_base.h \
+  /usr/include/c++/11/bits/max_size_type.h \
+  /usr/include/c++/11/numbers \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -12782,6 +13032,23 @@ CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o: ../src/fragments/Taxi
   /usr/include/c++/11/bits/vector.tcc \
   ../src/include/DatabaseController.hpp \
   ../src/include/Callback.hpp \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
   ../src/include/Data.hpp \
   ../sqlite_cpp/include/Database.hpp \
   ../sqlite_cpp/include/SQLiteDatabase.hpp \
@@ -12791,11 +13058,6 @@ CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o: ../src/fragments/Taxi
   /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/c++/11/variant \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/parse_numbers.h \
   ../sqlite_cpp/include/core/types.hpp \
   /usr/include/c++/11/optional \
@@ -12803,23 +13065,49 @@ CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o: ../src/fragments/Taxi
   ../sqlite_cpp/include/core/object.hpp \
   ../sqlite_cpp/include/core/database.hpp \
   /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
-  /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/bits/atomic_wait.h \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/syscall.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+  /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/bits/ranges_uninitialized.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
   ../sqlite_cpp/include/PreparedStatement.hpp \
@@ -12827,10 +13115,10 @@ CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o: ../src/fragments/Taxi
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
+  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
+  ../sqlite_cpp/include/core/NativeByteBuffer.h \
   ../sqlite_cpp/include/Cursor.hpp \
   ../sqlite_cpp/include/SQLiteCursor.hpp \
-  ../sqlite_cpp/include/core/NativeByteBuffer.h \
-  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
   ../tgbot_fragment/include/FragmentStateController.hpp \
   ../src/include/MainDatabase.hpp \
   ../tgbot_fragment/include/Fragment.hpp \
@@ -12995,15 +13283,6 @@ CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o: ../src/fragments/Taxi
   /usr/include/boost/config/detail/select_stdlib_config.hpp \
   /usr/include/c++/11/version \
   /usr/include/boost/config/stdlib/libstdcpp3.hpp \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
   /usr/include/boost/config/detail/select_platform_config.hpp \
   /usr/include/boost/config/platform/linux.hpp \
   /usr/include/boost/config/detail/posix_features.hpp \
@@ -13016,18 +13295,6 @@ CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o: ../src/fragments/Taxi
   /usr/include/boost/cstdint.hpp \
   /usr/include/boost/config/workaround.hpp \
   /usr/include/boost/exception/exception.hpp \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/boost/property_tree/string_path.hpp \
   /usr/include/boost/property_tree/id_translator.hpp \
   /usr/include/boost/optional.hpp \
@@ -13238,6 +13505,8 @@ CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o: ../src/fragments/Taxi
   /usr/include/boost/preprocessor/stringize.hpp \
   /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp \
   /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/ranges_algo.h \
+  /usr/include/c++/11/bits/ranges_util.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
@@ -13247,8 +13516,6 @@ CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o: ../src/fragments/Taxi
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
-  /usr/include/c++/11/iterator \
-  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/boost/property_tree/stream_translator.hpp \
   /usr/include/boost/optional/optional_io.hpp \
   /usr/include/c++/11/sstream \
@@ -13714,16 +13981,6 @@ CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o: ../src/fragments/Taxi
   /usr/include/boost/range/detail/misc_concept.hpp \
   /usr/include/boost/type_traits/make_unsigned.hpp \
   /usr/include/boost/type_traits/is_signed.hpp \
-  /usr/include/c++/11/climits \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/boost/type_traits/is_unsigned.hpp \
   /usr/include/boost/range/detail/has_member_size.hpp \
   /usr/include/boost/utility.hpp \
@@ -14113,12 +14370,19 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
   /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/compare \
+  /usr/include/c++/11/concepts \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/iterator_concepts.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/ranges_cmp.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/concept_check.h \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/bits/stl_iterator.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/postypes.h \
@@ -14149,8 +14413,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/include/c++/11/ext/new_allocator.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/c++/11/clocale \
@@ -14165,64 +14427,71 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/basic_string.h \
-  /usr/include/c++/11/ext/atomicity.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/string_view \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/bits/string_view.tcc \
-  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/select2.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/ranges_base.h \
+  /usr/include/c++/11/bits/max_size_type.h \
+  /usr/include/c++/11/numbers \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -14278,6 +14547,23 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
   /usr/include/c++/11/bits/vector.tcc \
   ../src/include/DatabaseController.hpp \
   ../src/include/Callback.hpp \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
   ../src/include/Data.hpp \
   ../sqlite_cpp/include/Database.hpp \
   ../sqlite_cpp/include/SQLiteDatabase.hpp \
@@ -14287,11 +14573,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
   /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/c++/11/variant \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/parse_numbers.h \
   ../sqlite_cpp/include/core/types.hpp \
   /usr/include/c++/11/optional \
@@ -14299,23 +14580,49 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
   ../sqlite_cpp/include/core/object.hpp \
   ../sqlite_cpp/include/core/database.hpp \
   /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
-  /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/bits/atomic_wait.h \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/syscall.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+  /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/bits/ranges_uninitialized.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
   ../sqlite_cpp/include/PreparedStatement.hpp \
@@ -14323,10 +14630,10 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
+  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
+  ../sqlite_cpp/include/core/NativeByteBuffer.h \
   ../sqlite_cpp/include/Cursor.hpp \
   ../sqlite_cpp/include/SQLiteCursor.hpp \
-  ../sqlite_cpp/include/core/NativeByteBuffer.h \
-  ../sqlite_cpp/include/SQLitePreparedStatement.hpp \
   ../src/include/MainDatabase.hpp \
   ../tgbot_fragment/include/Fragment.hpp \
   ../tgbot_fragment/tgbot-cpp/include/tgbot/Api.h \
@@ -14490,15 +14797,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
   /usr/include/boost/config/detail/select_stdlib_config.hpp \
   /usr/include/c++/11/version \
   /usr/include/boost/config/stdlib/libstdcpp3.hpp \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
   /usr/include/boost/config/detail/select_platform_config.hpp \
   /usr/include/boost/config/platform/linux.hpp \
   /usr/include/boost/config/detail/posix_features.hpp \
@@ -14511,18 +14809,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
   /usr/include/boost/cstdint.hpp \
   /usr/include/boost/config/workaround.hpp \
   /usr/include/boost/exception/exception.hpp \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/boost/property_tree/string_path.hpp \
   /usr/include/boost/property_tree/id_translator.hpp \
   /usr/include/boost/optional.hpp \
@@ -14733,6 +15019,8 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
   /usr/include/boost/preprocessor/stringize.hpp \
   /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp \
   /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/ranges_algo.h \
+  /usr/include/c++/11/bits/ranges_util.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
@@ -14742,8 +15030,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
-  /usr/include/c++/11/iterator \
-  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/boost/property_tree/stream_translator.hpp \
   /usr/include/boost/optional/optional_io.hpp \
   /usr/include/c++/11/sstream \
@@ -15209,16 +15495,6 @@ CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.
   /usr/include/boost/range/detail/misc_concept.hpp \
   /usr/include/boost/type_traits/make_unsigned.hpp \
   /usr/include/boost/type_traits/is_signed.hpp \
-  /usr/include/c++/11/climits \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/boost/type_traits/is_unsigned.hpp \
   /usr/include/boost/range/detail/has_member_size.hpp \
   /usr/include/boost/utility.hpp \
@@ -15490,12 +15766,19 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
   /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/compare \
+  /usr/include/c++/11/concepts \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/iterator_concepts.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/ranges_cmp.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/concept_check.h \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/bits/stl_iterator.h \
-  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/postypes.h \
@@ -15526,8 +15809,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/include/c++/11/ext/new_allocator.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/c++/11/clocale \
@@ -15542,64 +15823,71 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/basic_string.h \
-  /usr/include/c++/11/ext/atomicity.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/string_view \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/bits/string_view.tcc \
-  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/select2.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/ranges_base.h \
+  /usr/include/c++/11/bits/max_size_type.h \
+  /usr/include/c++/11/numbers \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -15621,20 +15909,33 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
   /usr/include/c++/11/algorithm \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/ranges_algo.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/stdexcept \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/ranges_util.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/tuple \
   /usr/include/c++/11/array \
   /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/typeinfo \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/hashtable.h \
@@ -15651,13 +15952,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
   /usr/include/c++/11/pstl/execution_defs.h \
   /usr/include/c++/11/filesystem \
   /usr/include/c++/11/bits/fs_fwd.h \
-  /usr/include/c++/11/system_error \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
-  /usr/include/c++/11/stdexcept \
-  /usr/include/c++/11/exception \
-  /usr/include/c++/11/bits/exception_ptr.h \
-  /usr/include/c++/11/bits/cxxabi_init_exception.h \
-  /usr/include/c++/11/bits/nested_exception.h \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/limits \
@@ -15665,17 +15959,11 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
   /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/bits/fs_path.h \
   /usr/include/c++/11/locale \
-  /usr/include/c++/11/bits/locale_classes.h \
-  /usr/include/c++/11/bits/locale_classes.tcc \
   /usr/include/c++/11/bits/locale_facets.h \
   /usr/include/c++/11/cwctype \
   /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
-  /usr/include/c++/11/bits/ios_base.h \
-  /usr/include/c++/11/streambuf \
-  /usr/include/c++/11/bits/streambuf.tcc \
-  /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
   /usr/include/c++/11/bits/locale_facets.tcc \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
@@ -15686,15 +15974,15 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/iomanip \
   /usr/include/c++/11/bits/quoted_string.h \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/istream \
-  /usr/include/c++/11/ios \
-  /usr/include/c++/11/bits/basic_ios.h \
-  /usr/include/c++/11/bits/basic_ios.tcc \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/codecvt \
@@ -15718,6 +16006,8 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 ../src/MainDatabase.cpp:
 
 ../tgbot_fragment/include/FragmentManager.hpp:
+
+/usr/include/c++/11/thread:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/tools/FileTools.h:
 
@@ -15754,8 +16044,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/boost/predef/hardware/simd.h:
 
 /usr/include/boost/predef/hardware.h:
-
-/usr/include/boost/predef/platform/windows_runtime.h:
 
 /usr/include/boost/predef/platform/windows_system.h:
 
@@ -15873,8 +16161,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/asio/read.hpp:
 
-/usr/include/c++/11/bits/std_thread.h:
-
 /usr/include/boost/asio/signal_set.hpp:
 
 /usr/include/c++/11/bits/atomic_futex.h:
@@ -15927,13 +16213,15 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/asio/generic/basic_endpoint.hpp:
 
+/usr/include/boost/asio/detached.hpp:
+
+/usr/include/boost/asio/impl/compose.hpp:
+
 /usr/include/boost/asio/impl/dispatch.hpp:
 
 /usr/include/boost/asio/dispatch.hpp:
 
-/usr/include/boost/asio/detached.hpp:
-
-/usr/include/boost/asio/impl/compose.hpp:
+/usr/include/boost/asio/impl/co_spawn.hpp:
 
 /usr/include/boost/asio/buffers_iterator.hpp:
 
@@ -16011,9 +16299,15 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/asio/socket_base.hpp:
 
+/usr/include/boost/asio/basic_socket.hpp:
+
 /usr/include/boost/asio/post.hpp:
 
-/usr/include/boost/asio/basic_socket.hpp:
+/usr/include/boost/predef/platform/windows_runtime.h:
+
+/usr/include/boost/asio/impl/awaitable.hpp:
+
+/usr/include/c++/11/coroutine:
 
 /usr/include/boost/asio/basic_socket_streambuf.hpp:
 
@@ -16133,8 +16427,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/asio/ssl/rfc2818_verification.hpp:
 
-/usr/include/boost/asio/ssl/impl/error.ipp:
-
 /usr/include/boost/asio/ssl/error.hpp:
 
 /usr/include/boost/asio/ssl/impl/context.ipp:
@@ -16222,8 +16514,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/openssl/stack.h:
 
 /usr/include/openssl/safestack.h:
-
-/usr/include/openssl/e_os2.h:
 
 /usr/include/openssl/opensslv.h:
 
@@ -16597,11 +16887,11 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/local/include/pplx/pplxcancellation_token.h:
 
-/usr/include/boost/asio/time_traits.hpp:
+/usr/include/semaphore.h:
 
-/usr/include/boost/asio/traits/set_done_free.hpp:
+/usr/include/c++/11/bits/atomic_timed_wait.h:
 
-/usr/include/c++/11/bits/std_mutex.h:
+/usr/include/c++/11/bits/std_thread.h:
 
 /usr/include/boost/asio/redirect_error.hpp:
 
@@ -16695,8 +16985,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 ../libgit2/include/git2/transport.h:
 
-../libgit2/include/git2/remote.h:
-
 ../libgit2/include/git2/clone.h:
 
 /usr/include/x86_64-linux-gnu/asm/ioctl.h:
@@ -16704,6 +16992,8 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 ../libgit2/include/git2/index.h:
 
 ../libgit2/include/git2/cherrypick.h:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
 
 ../libgit2/include/git2/checkout.h:
 
@@ -16810,8 +17100,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/boost/variant/apply_visitor.hpp:
 
 /usr/include/boost/variant/detail/hash_variant.hpp:
-
-/usr/include/boost/variant/detail/cast_storage.hpp:
 
 /usr/include/boost/variant/detail/visitation_impl.hpp:
 
@@ -16979,8 +17267,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/swap.hpp:
 
-/usr/include/boost/integer_traits.hpp:
-
 /usr/include/boost/type_traits/has_right_shift.hpp:
 
 /usr/include/boost/asio/detail/timer_scheduler.hpp:
@@ -17113,28 +17399,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/range/detail/has_member_size.hpp:
 
-/usr/include/boost/asio/ip/icmp.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/usr/include/c++/11/tr1/riemann_zeta.tcc:
-
-/usr/include/limits.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
-
-/usr/include/boost/asio/posix/basic_stream_descriptor.hpp:
-
-/usr/include/linux/version.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
-
-/usr/include/c++/11/climits:
-
 /usr/include/boost/range/value_type.hpp:
 
 /usr/include/boost/predef/compiler/borland.h:
@@ -17144,8 +17408,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/boost/concept/detail/concept_undef.hpp:
 
 /usr/include/boost/preprocessor/seq/enum.hpp:
-
-/usr/include/boost/preprocessor/seq/size.hpp:
 
 /usr/include/boost/preprocessor/seq/elem.hpp:
 
@@ -17159,55 +17421,73 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/preprocessor/seq/for_each_i.hpp:
 
-/usr/include/boost/asio/detail/operation.hpp:
+/usr/include/net/if.h:
 
-/usr/include/boost/mpl/integral_c_fwd.hpp:
+/usr/include/boost/concept/usage.hpp:
 
-/usr/include/boost/preprocessor/control/iif.hpp:
+/usr/include/openssl/cryptoerr.h:
 
-../libgit2/include/git2/tag.h:
+/usr/include/boost/type_traits/conversion_traits.hpp:
 
-/usr/include/c++/11/bits/enable_special_members.h:
+/usr/include/boost/concept/detail/has_constraints.hpp:
 
-/usr/include/boost/mpl/aux_/largest_int.hpp:
+/usr/include/boost/concept/detail/backward_compatibility.hpp:
 
-/usr/include/boost/preprocessor/control/if.hpp:
+/usr/include/boost/predef/os/irix.h:
 
-/usr/include/boost/asio/ip/unicast.hpp:
+/usr/include/boost/concept/detail/general.hpp:
 
-/usr/include/boost/asio/impl/executor.ipp:
+/usr/include/boost/asio/ssl/detail/buffered_handshake_op.hpp:
 
-/usr/include/boost/asio/traits/start_member.hpp:
+/usr/include/boost/range/concepts.hpp:
 
-/usr/include/boost/preprocessor/tuple/rem.hpp:
+/usr/include/boost/range/has_range_iterator.hpp:
 
-/usr/include/boost/asio/detail/reactor_fwd.hpp:
+/usr/include/boost/range/difference_type.hpp:
 
-/usr/include/boost/preprocessor/facilities/expand.hpp:
+/usr/include/boost/range/size_type.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/KeyboardButton.h:
+/usr/include/boost/range/size.hpp:
 
-/usr/include/x86_64-linux-gnu/openssl/configuration.h:
+/usr/include/boost/range/detail/sfinae.hpp:
 
-/usr/include/boost/preprocessor/arithmetic/inc.hpp:
+/usr/include/boost/asio/impl/serial_port_base.ipp:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+/usr/include/boost/range/detail/common.hpp:
 
-/usr/include/boost/preprocessor/slot/slot.hpp:
+../src/include/GitManager.hpp:
 
-../src/include/Data.hpp:
+/usr/include/boost/range/end.hpp:
 
-/usr/include/boost/asio/detail/executor_function.hpp:
+/usr/include/boost/predef/compiler/gcc_xml.h:
 
-/usr/include/boost/detail/templated_streams.hpp:
+/usr/include/boost/system/detail/generic_category.hpp:
 
-/usr/include/boost/preprocessor/config/config.hpp:
+/usr/include/boost/type_traits/copy_cv_ref.hpp:
 
-/usr/include/boost/asio/ssl/detail/openssl_init.hpp:
+/usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp:
 
-/usr/include/boost/none_t.hpp:
+/usr/include/boost/range/mutable_iterator.hpp:
 
-/usr/include/boost/multi_index/detail/copy_map.hpp:
+../src/fragments/ConfirmFragment.cpp:
+
+/usr/include/boost/range/range_fwd.hpp:
+
+/usr/include/boost/asio/version.hpp:
+
+/usr/include/boost/range/iterator.hpp:
+
+/usr/include/boost/detail/basic_pointerbuf.hpp:
+
+/usr/include/boost/range/config.hpp:
+
+/usr/include/boost/predef/platform/windows_uwp.h:
+
+/usr/include/boost/range/begin.hpp:
+
+/usr/include/boost/range/functions.hpp:
+
+/usr/include/boost/format/free_funcs.hpp:
 
 /usr/include/boost/move/traits.hpp:
 
@@ -17215,19 +17495,19 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/openssl/evperr.h:
 
+/usr/include/c++/11/semaphore:
+
 /usr/include/boost/preprocessor/array/data.hpp:
 
 /usr/include/boost/move/detail/meta_utils.hpp:
-
-/usr/include/boost/asio/ip/detail/endpoint.hpp:
-
-/usr/include/boost/move/utility.hpp:
 
 /usr/include/boost/multi_index/ordered_index.hpp:
 
 /usr/include/boost/type_traits/has_nothrow_assign.hpp:
 
 /usr/include/boost/predef/compiler/gcc.h:
+
+/usr/include/x86_64-linux-gnu/bits/semaphore.h:
 
 /usr/include/boost/type_traits/is_assignable.hpp:
 
@@ -17268,6 +17548,12 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/boost/numeric/conversion/detail/bounds.hpp:
 
 /usr/include/boost/mpl/aux_/empty_impl.hpp:
+
+/usr/include/boost/asio/posix/basic_stream_descriptor.hpp:
+
+/usr/include/linux/version.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
 
 /usr/include/boost/math/tools/user.hpp:
 
@@ -17319,17 +17605,15 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/type_traits/is_reference.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+/usr/include/boost/concept/assert.hpp:
 
-/usr/include/boost/asio/detail/concurrency_hint.hpp:
-
-/usr/include/c++/11/bits/functexcept.h:
-
-/usr/include/boost/preprocessor/iterate.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+/usr/include/boost/format/internals_fwd.hpp:
 
 /usr/include/boost/type_traits/is_default_constructible.hpp:
+
+/usr/include/boost/preprocessor/seq/size.hpp:
+
+/usr/include/c++/11/bits/ranges_algo.h:
 
 /usr/include/boost/asio/detail/select_interrupter.hpp:
 
@@ -17345,12 +17629,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/core/explicit_operator_bool.hpp:
 
-/usr/include/boost/predef/compiler/metrowerks.h:
-
-/usr/include/c++/11/future:
-
-/usr/include/boost/property_tree/id_translator.hpp:
-
 ../src/fragments/TaxiFragment.cpp:
 
 /usr/include/boost/variant/detail/apply_visitor_delayed.hpp:
@@ -17358,20 +17636,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/boost/type_traits/is_array.hpp:
 
 /usr/include/boost/property_tree/string_path.hpp:
-
-/usr/include/boost/asio/use_future.hpp:
-
-/usr/include/boost/date_time/date.hpp:
-
-/usr/include/c++/11/bits/stl_algo.h:
-
-/usr/include/c++/11/bits/hashtable_policy.h:
-
-/usr/include/c++/11/unordered_map:
-
-/usr/include/rpc/netdb.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/ChatMemberRestricted.h:
 
 /usr/include/boost/asio/execution/blocking_adaptation.hpp:
 
@@ -17381,9 +17645,9 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/config/detail/posix_features.hpp:
 
-/usr/include/boost/preprocessor/arithmetic/add.hpp:
-
 /usr/include/c++/11/iterator:
+
+/usr/include/boost/preprocessor/arithmetic/add.hpp:
 
 /usr/include/boost/system/detail/std_interoperability.hpp:
 
@@ -17405,22 +17669,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/ChatAdministratorRights.h:
 
-/usr/include/linux/close_range.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-../libgit2/include/git2/notes.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/boost/asio/ip/impl/host_name.ipp:
-
-/usr/include/c++/11/bits/fs_ops.h:
-
-/usr/include/boost/bind/bind.hpp:
-
 /usr/include/boost/asio/detail/signal_op.hpp:
 
 /usr/include/boost/mpl/apply.hpp:
@@ -17440,6 +17688,8 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/boost/date_time/period.hpp:
 
 /usr/include/pthread.h:
+
+/usr/include/c++/11/bits/ranges_base.h:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/PassportElementErrorReverseSide.h:
 
@@ -17511,6 +17761,10 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 ../src/include/MainDatabase.hpp:
 
+/usr/include/c++/11/tr1/riemann_zeta.tcc:
+
+/usr/include/limits.h:
+
 /usr/include/boost/type_traits/remove_cv.hpp:
 
 /usr/include/boost/mpl/aux_/config/has_apply.hpp:
@@ -17565,10 +17819,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/InputFile.h:
 
-/usr/include/boost/preprocessor/facilities/overload.hpp:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/InputMediaVideo.h:
-
 /usr/include/boost/type_traits/declval.hpp:
 
 ../libgit2/include/git2/rebase.h:
@@ -17587,14 +17837,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
-/usr/include/c++/11/bits/hashtable.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/BotCommandScopeAllChatAdministrators.h:
-
-/usr/include/boost/range/detail/safe_bool.hpp:
-
-/usr/include/boost/detail/call_traits.hpp:
-
 ../libgit2/include/git2/transaction.h:
 
 /usr/include/alloca.h:
@@ -17612,6 +17854,8 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/boost/mpl/aux_/config/adl.hpp:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/BotCommandScopeDefault.h:
+
+/usr/include/c++/11/bits/hashtable_policy.h:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/BotCommand.h:
 
@@ -17633,17 +17877,7 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/mpl/vector/vector20.hpp:
 
-/usr/include/boost/date_time/time.hpp:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/LoginUrl.h:
-
-/usr/include/boost/mpl/has_xxx.hpp:
-
-/usr/include/boost/mpl/at_fwd.hpp:
-
-/usr/include/boost/numeric/conversion/converter_policies.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/KeyboardButton.h:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/MessageId.h:
 
@@ -17661,12 +17895,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp:
 
-/usr/include/boost/mpl/list/aux_/include_preprocessed.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/ChatMember.h:
-
 /usr/include/boost/exception/exception.hpp:
 
 /usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp:
@@ -17676,10 +17904,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/InputContactMessageContent.h:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/PreCheckoutQuery.h:
-
-/usr/include/boost/predef/os/irix.h:
-
-/usr/include/boost/concept/detail/general.hpp:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/CallbackQuery.h:
 
@@ -17691,29 +17915,21 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/type_traits/is_rvalue_reference.hpp:
 
+/usr/include/boost/date_time/time.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/LoginUrl.h:
+
+/usr/include/boost/mpl/has_xxx.hpp:
+
+/usr/include/boost/mpl/at_fwd.hpp:
+
 /usr/include/boost/predef/hardware/simd/x86_amd/versions.h:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/WebAppInfo.h:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineKeyboardButton.h:
+/usr/include/boost/concept_check.hpp:
 
-/usr/include/boost/asio/execution.hpp:
-
-/usr/include/c++/11/bits/allocated_ptr.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/MessageEntity.h:
-
-/usr/include/c++/11/bits/fs_path.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/VideoChatParticipantsInvited.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/EventBroadcaster.h:
-
-/usr/include/c++/11/bits/alloc_traits.h:
-
-/usr/include/boost/asio/io_service_strand.hpp:
-
-/usr/include/errno.h:
+/usr/include/c++/11/variant:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/GeneralForumTopicUnhidden.h:
 
@@ -17724,12 +17940,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/boost/range/rend.hpp:
 
 /usr/include/boost/mpl/arg.hpp:
-
-/usr/include/boost/move/detail/type_traits.hpp:
-
-/usr/include/c++/11/filesystem:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/export.h:
 
 /usr/include/boost/asio/io_context_strand.hpp:
 
@@ -17753,13 +17963,17 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/ChatShared.h:
 
-/usr/include/boost/concept/detail/has_constraints.hpp:
-
 /usr/include/boost/type_traits/detail/is_function_cxx_11.hpp:
 
 /usr/include/boost/type_traits/is_nothrow_move_constructible.hpp:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/Venue.h:
+
+/usr/include/rpc/netdb.h:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/ChatMemberRestricted.h:
+
+/usr/include/c++/11/unordered_map:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/SuccessfulPayment.h:
 
@@ -17803,6 +18017,102 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/Sticker.h:
 
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/MessageEntity.h:
+
+/usr/include/boost/asio/execution.hpp:
+
+/usr/include/c++/11/bits/allocated_ptr.h:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/ChatLocation.h:
+
+/usr/include/boost/asio/detail/impl/strand_service.ipp:
+
+/usr/include/boost/system/api_config.hpp:
+
+/usr/include/boost/concept/detail/concept_def.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/Chat.h:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/TgTypeParser.h:
+
+/usr/include/boost/type_traits/is_nothrow_move_assignable.hpp:
+
+/usr/include/c++/11/istream:
+
+/usr/include/boost/predef/os/macos.h:
+
+/usr/include/boost/property_tree/ptree.hpp:
+
+/usr/include/boost/asio/ssl/detail/engine.hpp:
+
+/usr/include/openssl/objects.h:
+
+/usr/include/boost/mpl/insert_range_fwd.hpp:
+
+/usr/local/include/cpprest/json.h:
+
+/usr/include/boost/type_traits/intrinsics.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/GameHighScore.h:
+
+/usr/local/include/pplx/pplxinterface.h:
+
+../src/include/Fragments.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultCachedPhoto.h:
+
+/usr/include/boost/optional.hpp:
+
+/usr/include/boost/math/special_functions/math_fwd.hpp:
+
+/usr/include/boost/mpl/aux_/yes_no.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/ChatMemberUpdated.h:
+
+/usr/include/c++/11/condition_variable:
+
+../sqlite_cpp/include/Cursor.hpp:
+
+/usr/include/boost/asio/detail/impl/strand_executor_service.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+../libgit2/include/git2/mailmap.h:
+
+../sqlite_cpp/include/core/NativeByteBuffer.h:
+
+/usr/include/boost/date_time/gregorian/gregorian_types.hpp:
+
+../sqlite_cpp/include/SQLitePreparedStatement.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/Voice.h:
+
+/usr/include/boost/mpl/aux_/advance_forward.hpp:
+
+/usr/include/c++/11/ctime:
+
+/usr/include/boost/asio/detail/bulk_executor_op.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/EncryptedCredentials.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+
+/usr/include/c++/11/limits:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/BotCommandScopeAllGroupChats.h:
+
+/usr/include/c++/11/ratio:
+
+/usr/include/boost/asio/ip/basic_resolver.hpp:
+
+/usr/include/boost/multi_index/sequenced_index.hpp:
+
+/usr/include/boost/type_traits/is_base_and_derived.hpp:
+
+/usr/include/c++/11/pstl/glue_memory_defs.h:
+
 /usr/include/boost/asio/traits/connect_member.hpp:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/ShippingAddress.h:
@@ -17815,39 +18125,233 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/serialization/split_free.hpp:
 
-/usr/include/boost/preprocessor/cat.hpp:
+/usr/include/boost/asio/time_traits.hpp:
 
-/usr/include/openssl/pkcs7err.h:
+/usr/include/boost/asio/traits/set_done_free.hpp:
 
-/usr/include/stdlib.h:
+/usr/include/c++/11/bits/std_mutex.h:
 
-/usr/include/boost/multi_index/detail/archive_constructed.hpp:
+/usr/include/boost/asio/ip/impl/network_v4.ipp:
 
-/usr/include/boost/type_traits/remove_pointer.hpp:
+/usr/include/boost/mpl/vector/aux_/include_preprocessed.hpp:
 
-/usr/include/c++/11/bits/string_view.tcc:
+/usr/include/boost/integer_traits.hpp:
 
-/usr/include/boost/predef/library/std/_prefix.h:
+/usr/include/x86_64-linux-gnu/bits/syscall.h:
 
-/usr/include/boost/asio/execution/execute.hpp:
+/usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/InputTextMessageContent.h:
+/usr/include/openssl/e_os2.h:
 
-/usr/include/c++/11/bits/functional_hash.h:
+/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
 
-/usr/include/c++/11/variant:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/BotCommandScopeAllChatAdministrators.h:
 
-/usr/include/boost/concept_check.hpp:
+/usr/include/boost/range/detail/safe_bool.hpp:
 
-/usr/include/c++/11/cfloat:
+/usr/include/boost/detail/call_traits.hpp:
 
-/usr/include/boost/type_traits/is_scalar.hpp:
+/usr/include/boost/mpl/erase_key_fwd.hpp:
 
-/usr/include/boost/mpl/aux_/integral_wrapper.hpp:
+/usr/include/linux/close_range.h:
 
-/usr/include/c++/11/bits/cxxabi_forced.h:
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+../libgit2/include/git2/notes.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/boost/asio/detail/concurrency_hint.hpp:
+
+/usr/include/c++/11/bits/functexcept.h:
+
+/usr/include/boost/preprocessor/iterate.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
+/usr/include/boost/numeric/conversion/converter_policies.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/boost/multi_index/detail/seq_index_ops.hpp:
+
+/usr/include/boost/asio/detail/reactive_serial_port_service.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/boost/type_traits/remove_bounds.hpp:
+
+/usr/include/boost/mpl/aux_/config/bind.hpp:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/boost/asio/basic_streambuf.hpp:
+
+/usr/include/boost/asio/detail/posix_signal_blocker.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultDocument.h:
+
+/usr/include/c++/11/bits/stringfwd.h:
+
+/usr/include/boost/predef/os/bsd/free.h:
+
+/usr/include/boost/type_traits/remove_const.hpp:
+
+/usr/include/boost/mpl/aux_/has_type.hpp:
+
+/usr/include/boost/type_traits/is_member_pointer.hpp:
+
+/usr/include/boost/move/detail/type_traits.hpp:
+
+/usr/include/boost/asio/ip/detail/endpoint.hpp:
+
+/usr/include/boost/move/utility.hpp:
+
+/usr/include/c++/11/bits/ranges_uninitialized.h:
+
+/usr/include/boost/mpl/iterator_range.hpp:
+
+/usr/include/boost/asio/detail/buffer_resize_guard.hpp:
+
+/usr/include/boost/asio/detail/work_dispatcher.hpp:
+
+/usr/include/c++/11/ext/new_allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
+/usr/include/boost/utility/enable_if.hpp:
+
+/usr/include/openssl/dtls1.h:
+
+/usr/include/boost/type_traits/add_const.hpp:
+
+/usr/include/boost/math/tools/real_cast.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/c++/11/bits/stl_algobase.h:
+
+/usr/include/c++/11/cstddef:
+
+/usr/include/boost/asio/ssl/detail/password_callback.hpp:
+
+../libgit2/include/git2/stash.h:
+
+/usr/include/boost/mpl/bool_fwd.hpp:
+
+/usr/include/boost/asio/ip/bad_address_cast.hpp:
+
+/usr/include/boost/numeric/conversion/sign_mixture_enum.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/boost/predef/compiler/nvcc.h:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/Location.h:
+
+/usr/include/boost/date_time/time_iterator.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/boost/asio/ip/icmp.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/c++/11/bits/range_access.h:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/ChatPermissions.h:
+
+/usr/include/boost/multi_index/detail/index_loader.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/c++/11/bits/std_function.h:
+
+/usr/include/boost/preprocessor/control/expr_iif.hpp:
+
+/usr/include/boost/move/detail/config_begin.hpp:
+
+/usr/include/boost/mpl/long_fwd.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultGame.h:
+
+/usr/include/boost/type_traits/is_base_of.hpp:
+
+/usr/include/boost/multi_index/detail/ord_index_impl_fwd.hpp:
+
+/usr/include/boost/mpl/min_max.hpp:
+
+/usr/include/c++/11/ext/aligned_buffer.h:
+
+/usr/include/c++/11/bits/semaphore_base.h:
+
+/usr/include/boost/config.hpp:
+
+/usr/include/c++/11/memory:
+
+/usr/include/boost/core/use_default.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/UserShared.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultCachedGif.h:
+
+/usr/include/boost/optional/optional.hpp:
+
+../libgit2/include/git2/signature.h:
+
+/usr/include/boost/mpl/bind.hpp:
+
+/usr/include/boost/asio/detail/is_executor.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket_type.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket2.h:
+
+../libgit2/include/git2/blame.h:
+
+/usr/include/boost/preprocessor/slot/detail/def.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/PassportElementErrorTranslationFiles.h:
+
+/usr/include/locale.h:
+
+/usr/include/c++/11/numbers:
+
+../libgit2/include/git2/config.h:
+
+/usr/include/boost/call_traits.hpp:
+
+/usr/include/boost/asio/ssl/stream.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/openssl/rand.h:
+
+/usr/include/boost/multi_index/detail/is_transparent.hpp:
 
 /usr/include/boost/multi_index/detail/access_specifier.hpp:
+
+/usr/include/c++/11/bits/postypes.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/boost/asio/detail/reactive_socket_send_op.hpp:
 
@@ -17864,6 +18368,30 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/boost/asio/detail/bind_handler.hpp:
 
 /usr/include/strings.h:
+
+/usr/include/boost/multi_index/detail/serialization_version.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/EncryptedPassportElement.h:
+
+/usr/include/boost/predef/library/std/_prefix.h:
+
+/usr/include/boost/asio/execution/execute.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/InputTextMessageContent.h:
+
+/usr/include/openssl/sslerr.h:
+
+/usr/include/c++/11/bits/locale_classes.tcc:
+
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
+
+/usr/include/openssl/pkcs7err.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/boost/multi_index/detail/archive_constructed.hpp:
+
+/usr/include/boost/type_traits/remove_pointer.hpp:
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
@@ -17887,243 +18415,9 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/bind/bind_cc.hpp:
 
-/usr/include/boost/asio/detail/buffer_resize_guard.hpp:
+../src/Main.cpp:
 
-/usr/include/boost/asio/detail/work_dispatcher.hpp:
-
-/usr/include/c++/11/ext/new_allocator.h:
-
-/usr/include/c++/11/bits/specfun.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/c++/11/bits/std_function.h:
-
-/usr/include/boost/preprocessor/control/expr_iif.hpp:
-
-/usr/include/termios.h:
-
-/usr/include/boost/asio/execution/context_as.hpp:
-
-/usr/include/c++/11/bits/stl_iterator.h:
-
-/usr/include/c++/11/ext/atomicity.h:
-
-/usr/include/openssl/pem.h:
-
-/usr/include/boost/preprocessor/array/elem.hpp:
-
-/usr/include/c++/11/bits/stl_pair.h:
-
-/usr/include/assert.h:
-
-/usr/include/boost/mpl/aux_/config/has_xxx.hpp:
-
-/usr/include/boost/predef/architecture/arm.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/x86_64-linux-gnu/bits/socket2.h:
-
-../libgit2/include/git2/blame.h:
-
-/usr/include/boost/preprocessor/slot/detail/def.hpp:
-
-/usr/include/time.h:
-
-/usr/include/boost/asio/detail/signal_blocker.hpp:
-
-/usr/include/boost/mpl/value_type_fwd.hpp:
-
-/usr/include/boost/asio/detail/socket_holder.hpp:
-
-/usr/include/boost/type_traits/is_unsigned.hpp:
-
-/usr/include/c++/11/bits/shared_ptr_base.h:
-
-/usr/include/boost/multi_index/detail/converter.hpp:
-
-/usr/include/c++/11/bits/basic_string.h:
-
-/usr/include/boost/asio/ip/bad_address_cast.hpp:
-
-/usr/include/boost/numeric/conversion/sign_mixture_enum.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/boost/asio/ssl/detail/password_callback.hpp:
-
-../libgit2/include/git2/stash.h:
-
-/usr/include/boost/mpl/bool_fwd.hpp:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/PassportElementErrorTranslationFiles.h:
-
-/usr/include/locale.h:
-
-/usr/include/x86_64-linux-gnu/bits/socket_type.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/include/c++/11/bits/localefwd.h:
-
-/usr/include/boost/iterator/iterator_facade.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
-
-/usr/include/boost/asio/basic_socket_acceptor.hpp:
-
-/usr/include/c++/11/bits/exception_ptr.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/boost/math/tools/real_cast.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultCachedPhoto.h:
-
-/usr/include/boost/optional.hpp:
-
-/usr/include/boost/math/special_functions/math_fwd.hpp:
-
-/usr/include/boost/mpl/aux_/yes_no.hpp:
-
-/usr/include/boost/asio/ip/host_name.hpp:
-
-/usr/include/boost/optional/bad_optional_access.hpp:
-
-/usr/include/c++/11/cctype:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/c++/11/bits/range_access.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/ChatPermissions.h:
-
-/usr/include/boost/multi_index/detail/index_loader.hpp:
-
-/usr/include/c++/11/ctime:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/boost/multi_index/detail/do_not_copy_elements_tag.hpp:
-
-/usr/include/boost/asio/detail/service_registry.hpp:
-
-/usr/local/include/cpprest/details/http_constants.dat:
-
-/usr/include/c++/11/ext/type_traits.h:
-
-/usr/include/boost/type_traits/is_base_and_derived.hpp:
-
-/usr/include/c++/11/pstl/glue_memory_defs.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/boost/mpl/list/aux_/front.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
-
-/usr/include/boost/asio/detail/reactive_serial_port_service.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/boost/type_traits/remove_bounds.hpp:
-
-/usr/include/boost/mpl/aux_/config/bind.hpp:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/boost/variant/variant.hpp:
-
-/usr/include/boost/mpl/aux_/config/preprocessor.hpp:
-
-/usr/include/c++/11/ext/numeric_traits.h:
-
-/usr/include/boost/predef/other/endian.h:
-
-/usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp:
-
-/usr/include/boost/asio/basic_streambuf.hpp:
-
-/usr/include/boost/asio/detail/posix_signal_blocker.hpp:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultDocument.h:
-
-/usr/include/c++/11/bits/stringfwd.h:
-
-/usr/include/boost/predef/os/bsd/free.h:
-
-/usr/include/boost/type_traits/remove_const.hpp:
-
-/usr/include/boost/mpl/aux_/has_type.hpp:
-
-/usr/include/c++/11/bits/stl_function.h:
-
-/usr/include/c++/11/tr1/poly_hermite.tcc:
-
-/usr/include/c++/11/bits/memoryfwd.h:
-
-/usr/include/boost/type_traits/is_enum.hpp:
-
-/usr/include/boost/type_traits/detail/config.hpp:
-
-/usr/include/c++/11/bits/vector.tcc:
-
-/usr/include/boost/format/internals_fwd.hpp:
-
-/usr/include/boost/concept/assert.hpp:
-
-/usr/include/boost/asio/ssl/stream.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/openssl/rand.h:
-
-/usr/include/boost/multi_index/detail/is_transparent.hpp:
-
-/usr/include/boost/range/detail/misc_concept.hpp:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/boost/move/detail/config_begin.hpp:
-
-/usr/include/boost/mpl/long_fwd.hpp:
-
-/usr/include/boost/tuple/tuple.hpp:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/GeneralForumTopicHidden.h:
-
-/usr/include/boost/asio/execution/set_value.hpp:
-
-/usr/include/boost/mpl/size_t_fwd.hpp:
-
-/usr/include/c++/11/bits/hash_bytes.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/ChatLocation.h:
-
-../libgit2/include/git2/mailmap.h:
-
-../sqlite_cpp/include/core/NativeByteBuffer.h:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/boost/asio/traits/static_require.hpp:
-
-/usr/include/c++/11/type_traits:
-
-/usr/include/boost/mpl/vector/aux_/tag.hpp:
-
-/usr/include/openssl/cryptoerr.h:
-
-/usr/include/boost/type_traits/conversion_traits.hpp:
-
-/usr/include/c++/11/bits/charconv.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/Game.h:
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/boost/type_traits/conditional.hpp:
 
@@ -18131,59 +18425,21 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/usr/include/c++/11/tuple:
+/usr/include/boost/mpl/aux_/size_impl.hpp:
 
-../libgit2/include/git2/config.h:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/GeneralForumTopicHidden.h:
 
-/usr/include/boost/call_traits.hpp:
+/usr/include/boost/date_time/special_defs.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/Invoice.h:
+../libgit2/include/git2/merge.h:
 
-/usr/include/c++/11/string:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultContact.h:
 
-/usr/include/boost/range/detail/sfinae.hpp:
+/usr/include/c++/11/vector:
 
-/usr/include/boost/type_traits/is_complete.hpp:
+/usr/include/boost/mpl/aux_/traits_lambda_spec.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
-
-/usr/include/boost/mpl/list/aux_/begin_end.hpp:
-
-/usr/include/c++/11/cstdlib:
-
-/usr/include/c++/11/string_view:
-
-/usr/include/boost/preprocessor/detail/auto_rec.hpp:
-
-/usr/include/boost/asio/detail/reactive_socket_sendto_op.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/boost/mpl/aux_/lambda_spec.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
-
-/usr/include/boost/type_traits/is_base_of.hpp:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultGame.h:
-
-/usr/include/boost/multi_index/detail/ord_index_impl_fwd.hpp:
-
-/usr/include/boost/mpl/min_max.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/boost/asio/execution/blocking.hpp:
-
-/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
-
-/usr/include/boost/mpl/contains_fwd.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
-
-/usr/include/boost/preprocessor/arithmetic/dec.hpp:
+/usr/include/c++/11/bits/hashtable.h:
 
 /usr/include/boost/type_traits/copy_cv.hpp:
 
@@ -18195,23 +18451,81 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/c++/11/streambuf:
 
-/usr/include/c++/11/iosfwd:
+../tgbot_fragment/tgbot-cpp/include/tgbot/TgException.h:
 
-/usr/include/boost/regex/v4/match_flags.hpp:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/VideoChatScheduled.h:
 
-/usr/include/c++/11/initializer_list:
+/usr/include/boost/bind/mem_fn_template.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
+/usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/include/linux/errno.h:
+/usr/include/c++/11/filesystem:
 
-/usr/include/c++/11/bits/stl_algobase.h:
+../tgbot_fragment/tgbot-cpp/include/tgbot/export.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
+/usr/include/c++/11/compare:
 
-/usr/include/asm-generic/socket.h:
+/usr/include/c++/11/tr1/poly_hermite.tcc:
 
-/usr/include/boost/multi_index/detail/seq_index_ops.hpp:
+/usr/include/c++/11/bits/memoryfwd.h:
+
+/usr/include/c++/11/bits/stl_function.h:
+
+../src/include/Data.hpp:
+
+/usr/include/boost/throw_exception.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/boost/asio/detail/thread.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/boost/range/detail/misc_concept.hpp:
+
+/usr/include/stdc-predef.h:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/EventBroadcaster.h:
+
+/usr/include/c++/11/bits/alloc_traits.h:
+
+/usr/include/boost/asio/io_service_strand.hpp:
+
+/usr/include/errno.h:
+
+/usr/include/c++/11/bits/fs_path.h:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/VideoChatParticipantsInvited.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
+
+/usr/include/boost/mpl/aux_/nested_type_wknd.hpp:
+
+/usr/include/boost/predef/language.h:
+
+/usr/include/boost/operators.hpp:
+
+/usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/boost/type_traits/is_enum.hpp:
+
+/usr/include/boost/type_traits/detail/config.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/CallbackGame.h:
+
+/usr/include/c++/11/optional:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/boost/asio/traits/static_require.hpp:
+
+/usr/include/c++/11/type_traits:
+
+/usr/include/boost/mpl/vector/aux_/tag.hpp:
+
+/usr/include/c++/11/tuple:
 
 /usr/include/boost/asio/ssl/detail/write_op.hpp:
 
@@ -18227,51 +18541,41 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/mpl/set/aux_/erase_impl.hpp:
 
-/usr/include/ctype.h:
+/usr/include/boost/multi_index/member.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/BotCommandScopeChatMember.h:
+/usr/include/c++/11/bits/stl_uninitialized.h:
 
-/usr/include/boost/static_assert.hpp:
+/usr/include/boost/mpl/aux_/reverse_fold_impl.hpp:
 
-/usr/include/openssl/asyncerr.h:
+/usr/include/c++/11/cfloat:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultGif.h:
+/usr/include/boost/type_traits/is_scalar.hpp:
 
-/usr/include/boost/asio/detail/impl/handler_tracking.ipp:
+/usr/include/boost/mpl/aux_/integral_wrapper.hpp:
 
-/usr/include/boost/numeric/conversion/detail/is_subranged.hpp:
+/usr/include/c++/11/bits/cxxabi_forced.h:
 
-/usr/include/c++/11/ext/alloc_traits.h:
+/usr/include/openssl/pem.h:
 
-/usr/include/x86_64-linux-gnu/bits/sched.h:
+/usr/include/boost/preprocessor/array/elem.hpp:
 
-../src/include/Callback.hpp:
+/usr/include/c++/11/bits/stl_pair.h:
 
-/usr/include/boost/asio/basic_datagram_socket.hpp:
+/usr/include/assert.h:
 
-/usr/include/boost/type_traits/is_final.hpp:
+/usr/include/boost/mpl/aux_/config/has_xxx.hpp:
 
-/usr/include/boost/predef/compiler/nvcc.h:
+/usr/include/boost/config/stdlib/libstdcpp3.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/Location.h:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/Audio.h:
 
-/usr/include/boost/range/size.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
-/usr/include/c++/11/bits/atomic_base.h:
+/usr/include/c++/11/concepts:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultCachedAudio.h:
+/usr/include/c++/11/cxxabi.h:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQuery.h:
-
-/usr/include/boost/regex/config.hpp:
-
-/usr/include/boost/preprocessor/control/detail/while.hpp:
-
-/usr/include/c++/11/bits/basic_ios.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
-
-/usr/include/boost/multi_index/detail/auto_space.hpp:
+/usr/include/boost/mpl/aux_/arity_spec.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
@@ -18309,67 +18613,133 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/mpl/aux_/arity.hpp:
 
-/usr/include/boost/asio/detail/impl/strand_executor_service.hpp:
+/usr/include/c++/11/bits/functional_hash.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+../src/include/Callback.hpp:
 
-/usr/include/c++/11/condition_variable:
+/usr/include/boost/asio/basic_datagram_socket.hpp:
 
-../sqlite_cpp/include/Cursor.hpp:
+/usr/include/boost/type_traits/is_final.hpp:
+
+/usr/include/boost/utility/declval.hpp:
+
+/usr/include/boost/multi_index/detail/has_tag.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQuery.h:
+
+/usr/include/boost/regex/config.hpp:
+
+/usr/include/boost/preprocessor/control/detail/while.hpp:
+
+/usr/include/c++/11/bits/basic_ios.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/usr/include/boost/multi_index/detail/auto_space.hpp:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/boost/type_traits/is_member_pointer.hpp:
+/usr/include/boost/asio/detail/service_registry.hpp:
 
-/usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp:
+/usr/local/include/cpprest/details/http_constants.dat:
 
-/usr/include/boost/mpl/vector/aux_/back.hpp:
+/usr/include/c++/11/ext/type_traits.h:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/minus.hpp:
+/usr/include/boost/date_time/dst_rules.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultCachedGif.h:
+/usr/include/c++/11/bits/uses_allocator.h:
 
-/usr/include/boost/optional/optional.hpp:
+/usr/include/boost/mpl/aux_/config/workaround.hpp:
 
-../libgit2/include/git2/signature.h:
+/usr/include/c++/11/chrono:
 
-/usr/include/boost/mpl/bind.hpp:
+/usr/include/boost/mpl/protect.hpp:
 
-/usr/include/boost/asio/detail/is_executor.hpp:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+/usr/include/boost/asio/use_future.hpp:
 
-/usr/include/boost/type_traits/is_nothrow_move_assignable.hpp:
+/usr/include/boost/date_time/date.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/TgTypeParser.h:
+/usr/include/c++/11/bits/stl_algo.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
+/usr/include/boost/type_traits/is_complete.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+/usr/include/boost/mpl/list/aux_/begin_end.hpp:
 
-/usr/include/boost/asio/detail/scoped_ptr.hpp:
+/usr/include/c++/11/cstdlib:
 
-/usr/include/boost/preprocessor/enum_shifted_params.hpp:
+/usr/include/c++/11/string_view:
 
-/usr/include/boost/mpl/vector/aux_/O1_size.hpp:
+/usr/include/boost/preprocessor/detail/auto_rec.hpp:
 
-/usr/include/boost/preprocessor/arithmetic/mod.hpp:
+/usr/include/boost/asio/detail/reactive_socket_sendto_op.hpp:
 
-/usr/include/c++/11/functional:
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
-/usr/include/boost/mpl/aux_/config/operators.hpp:
+/usr/include/boost/mpl/aux_/lambda_spec.hpp:
 
-/usr/include/boost/asio/system_executor.hpp:
+/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/KeyboardButtonRequestUser.h:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/BotCommandScopeChatMember.h:
 
-/usr/include/boost/asio/uses_executor.hpp:
+/usr/include/boost/asio/execution/blocking.hpp:
 
-/usr/include/boost/type_traits/has_trivial_copy.hpp:
+/usr/include/boost/mpl/contains_fwd.hpp:
 
-/usr/include/boost/preprocessor/variadic/elem.hpp:
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
+
+/usr/include/boost/preprocessor/control/if.hpp:
+
+/usr/include/c++/11/bits/stream_iterator.h:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/ReplyKeyboardMarkup.h:
+
+/usr/include/c++/11/bits/cpp_type_traits.h:
+
+/usr/include/boost/asio/execution/prefer_only.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/boost/optional/detail/optional_swap.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/ChatMemberAdministrator.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/boost/mpl/set/aux_/clear_impl.hpp:
+
+/usr/include/termios.h:
+
+/usr/include/boost/asio/execution/context_as.hpp:
+
+/usr/include/c++/11/ext/atomicity.h:
+
+/usr/include/c++/11/bits/stl_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/x86_64-linux-gnu/openssl/configuration.h:
+
+/usr/include/boost/preprocessor/arithmetic/inc.hpp:
+
+/usr/include/boost/asio/compose.hpp:
+
+/usr/include/c++/11/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/11/array:
+
+/usr/include/c++/11/new:
+
+/usr/include/c++/11/climits:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/boost/mpl/list/aux_/front.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 ../libgit2/include/git2/tree.h:
 
@@ -18381,33 +18751,103 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/core/nvp.hpp:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
+
 /usr/include/c++/11/debug/debug.h:
 
 /usr/include/boost/multi_index/detail/raw_ptr.hpp:
 
-/usr/include/boost/predef/platform/windows_phone.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/usr/include/boost/lexical_cast/detail/widest_char.hpp:
+/usr/include/boost/variant/variant.hpp:
 
-/usr/include/boost/type_traits/is_constructible.hpp:
+/usr/include/boost/mpl/aux_/config/preprocessor.hpp:
 
-/usr/include/c++/11/tr1/legendre_function.tcc:
+/usr/include/c++/11/ext/numeric_traits.h:
 
-/usr/include/boost/bind/arg.hpp:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultCachedAudio.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+/usr/include/c++/11/bits/atomic_base.h:
 
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/Poll.h:
 
-/usr/include/x86_64-linux-gnu/bits/timex.h:
+/usr/include/boost/asio/impl/thread_pool.ipp:
 
-/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
+/usr/include/boost/asio/traits/set_done_member.hpp:
 
-/usr/include/boost/preprocessor/facilities/empty.hpp:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/MaskPosition.h:
 
-../libgit2/include/git2/status.h:
+/usr/include/boost/type_traits/is_empty.hpp:
 
-/usr/include/c++/11/bits/basic_ios.tcc:
+/usr/include/boost/predef/other/endian.h:
+
+/usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp:
+
+../libgit2/include/git2/remote.h:
+
+/usr/include/c++/11/bits/iterator_concepts.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
+
+/usr/include/boost/variant/detail/cast_storage.hpp:
+
+/usr/include/x86_64-linux-gnu/asm/unistd.h:
+
+/usr/include/c++/11/bits/locale_facets.tcc:
+
+/usr/include/boost/asio/ip/host_name.hpp:
+
+/usr/include/boost/optional/bad_optional_access.hpp:
+
+/usr/include/c++/11/cctype:
+
+/usr/include/x86_64-linux-gnu/sys/eventfd.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/include/boost/asio/detail/scoped_lock.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp:
+
+/usr/include/boost/mpl/limits/list.hpp:
+
+/usr/include/c++/11/bits/char_traits.h:
+
+/usr/include/c++/11/bits/concept_check.h:
+
+/usr/include/boost/asio/co_spawn.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/c++/11/bits/predefined_ops.h:
+
+/usr/include/c++/11/bits/atomic_wait.h:
+
+/usr/include/boost/type_traits/is_volatile.hpp:
+
+/usr/include/boost/asio/write_at.hpp:
+
+/usr/include/boost/mpl/begin_end_fwd.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/ReplyKeyboardRemove.h:
+
+/usr/include/c++/11/bits/stl_heap.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h:
+
+/usr/include/boost/range/reverse_iterator.hpp:
+
+/usr/include/c++/11/bits/std_abs.h:
+
+/usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp:
+
+/usr/include/boost/mpl/vector/aux_/back.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/minus.hpp:
+
+/usr/include/c++/11/bits/specfun.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/boost/predef/architecture/z.h:
 
@@ -18419,179 +18859,31 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/multi_index_container_fwd.hpp:
 
-/usr/include/boost/date_time/gregorian/gregorian_types.hpp:
+/usr/include/boost/tuple/tuple.hpp:
 
-../sqlite_cpp/include/SQLitePreparedStatement.hpp:
+/usr/include/boost/asio/execution/set_value.hpp:
 
-/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
+/usr/include/boost/mpl/size_t_fwd.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/Voice.h:
+/usr/include/c++/11/bits/hash_bytes.h:
 
-/usr/include/boost/mpl/aux_/advance_forward.hpp:
+/usr/include/c++/11/bits/string_view.tcc:
 
-/usr/include/boost/asio/execution/mapping.hpp:
-
-/usr/include/boost/preprocessor/punctuation/comma.hpp:
-
-/usr/include/boost/asio/detail/wait_op.hpp:
-
-../libgit2/include/git2/repository.h:
-
-/usr/include/boost/mpl/integral_c_tag.hpp:
-
-/usr/include/boost/preprocessor/tuple/elem.hpp:
-
-/usr/include/boost/mpl/O1_size_fwd.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/c++/11/bits/postypes.h:
-
-/usr/include/boost/numeric/conversion/conversion_traits.hpp:
-
-/usr/include/boost/mpl/aux_/config/pp_counter.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/boost/asio/execution/prefer_only.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/boost/type_traits/is_volatile.hpp:
-
-/usr/include/boost/asio/write_at.hpp:
-
-/usr/include/boost/mpl/begin_end_fwd.hpp:
-
-/usr/include/c++/11/debug/assertions.h:
-
-/usr/include/x86_64-linux-gnu/sys/eventfd.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/include/boost/asio/detail/scoped_lock.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/boost/config.hpp:
-
-/usr/include/c++/11/memory:
-
-/usr/include/boost/core/use_default.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/UserShared.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/net/if.h:
-
-/usr/include/boost/concept/usage.hpp:
-
-/usr/include/boost/mpl/limits/list.hpp:
-
-/usr/include/c++/11/bits/char_traits.h:
-
-/usr/include/c++/11/bits/concept_check.h:
-
-/usr/include/boost/optional/detail/optional_swap.hpp:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/ChatMemberAdministrator.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/boost/mpl/set/aux_/clear_impl.hpp:
-
-/usr/include/c++/11/new:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
-
-/usr/include/boost/asio/detail/impl/posix_mutex.ipp:
-
-/usr/include/boost/mpl/aux_/find_if_pred.hpp:
-
-/usr/include/c++/11/bits/stl_construct.h:
-
-/usr/include/boost/mpl/aux_/adl_barrier.hpp:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/WebAppData.h:
-
-/usr/include/boost/config/abi_suffix.hpp:
-
-/usr/include/fcntl.h:
-
-/usr/include/boost/config/no_tr1/memory.hpp:
-
-/usr/include/boost/asio/co_spawn.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/c++/11/bits/predefined_ops.h:
-
-/usr/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp:
-
-/usr/include/boost/optional/optional_fwd.hpp:
-
-/usr/include/boost/serialization/void_cast_fwd.hpp:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/Update.h:
-
-../src/Main.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/boost/config/stdlib/libstdcpp3.hpp:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/Audio.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
-/usr/include/boost/predef/architecture/sys390.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/PassportElementErrorUnspecified.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
-
-/usr/include/boost/multi_index/detail/index_base.hpp:
-
-/usr/include/c++/11/backward/binders.h:
-
-/usr/include/boost/asio/detail/thread.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/boost/throw_exception.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/boost/date_time/special_defs.hpp:
-
-../libgit2/include/git2/merge.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultContact.h:
-
-/usr/include/boost/move/utility_core.hpp:
-
-/usr/include/boost/utility/compare_pointees.hpp:
+/usr/include/c++/11/bits/refwrap.h:
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
 
-/usr/include/c++/11/bits/erase_if.h:
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
-/usr/include/c++/11/ext/aligned_buffer.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
-/usr/include/openssl/sslerr.h:
+/usr/include/boost/asio/basic_socket_acceptor.hpp:
 
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
+/usr/include/c++/11/bits/exception_ptr.h:
 
-/usr/include/c++/11/bits/locale_classes.tcc:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/Game.h:
+
+/usr/include/c++/11/bits/charconv.h:
 
 ../sqlite_cpp/include/SQLiteCursor.hpp:
 
@@ -18617,51 +18909,259 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/archive/detail/decl.hpp:
 
+/usr/include/boost/asio/detail/impl/posix_mutex.ipp:
+
+/usr/include/boost/mpl/aux_/find_if_pred.hpp:
+
+/usr/include/c++/11/bits/stl_construct.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+
+/usr/include/boost/mpl/aux_/adl_barrier.hpp:
+
 /usr/include/boost/asio/ssl/verify_context.hpp:
 
 /usr/include/boost/mpl/aux_/msvc_eti_base.hpp:
 
 /usr/include/c++/11/bits/shared_ptr.h:
 
-/usr/include/x86_64-linux-gnu/bits/select2.h:
+/usr/include/c++/11/debug/assertions.h:
 
-/usr/include/boost/utility/enable_if.hpp:
+/usr/include/boost/predef/compiler/metrowerks.h:
 
-/usr/include/openssl/dtls1.h:
+/usr/include/c++/11/future:
 
-/usr/include/boost/type_traits/add_const.hpp:
+/usr/include/boost/property_tree/id_translator.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/ReplyKeyboardRemove.h:
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
-/usr/include/c++/11/bits/stl_heap.h:
+/usr/include/boost/mpl/aux_/lambda_arity_param.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h:
+/usr/include/boost/predef/architecture/sys390.h:
 
-/usr/include/boost/range/reverse_iterator.hpp:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/PassportElementErrorUnspecified.h:
 
-/usr/include/c++/11/bits/std_abs.h:
+/usr/include/boost/predef/platform/windows_phone.h:
 
-/usr/include/linux/limits.h:
+/usr/include/boost/lexical_cast/detail/widest_char.hpp:
+
+/usr/include/boost/type_traits/is_constructible.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/c++/11/typeinfo:
+
+../sqlite_cpp/include/Database.hpp:
+
+/usr/include/boost/move/utility_core.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/boost/numeric/conversion/conversion_traits.hpp:
+
+/usr/include/boost/mpl/aux_/config/pp_counter.hpp:
+
+/usr/include/c++/11/bits/erase_if.h:
+
+/usr/include/c++/11/bits/basic_string.h:
+
+/usr/include/boost/asio/detail/socket_holder.hpp:
+
+/usr/include/boost/type_traits/is_unsigned.hpp:
+
+/usr/include/c++/11/bits/shared_ptr_base.h:
+
+/usr/include/boost/multi_index/detail/converter.hpp:
 
 /usr/include/c++/11/bits/allocator.h:
 
-/usr/include/boost/predef/language.h:
+/usr/include/linux/limits.h:
 
-/usr/include/boost/operators.hpp:
+/usr/include/boost/predef/platform.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
+/usr/include/boost/mpl/always.hpp:
 
-/usr/include/boost/mpl/aux_/nested_type_wknd.hpp:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineKeyboardButton.h:
+
+/usr/include/c++/11/bits/localefwd.h:
+
+/usr/include/boost/iterator/iterator_facade.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp:
+
+/usr/include/boost/mpl/list/aux_/include_preprocessed.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/ChatMember.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/VideoChatStarted.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/advance_forward.hpp:
+
+/usr/include/boost/asio/execution/impl/bad_executor.ipp:
+
+/usr/include/wchar.h:
+
+/usr/include/boost/is_placeholder.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/WebAppData.h:
+
+/usr/include/boost/config/abi_suffix.hpp:
+
+/usr/include/boost/asio/is_read_buffered.hpp:
+
+/usr/include/boost/asio/awaitable.hpp:
+
+/usr/include/openssl/engine.h:
+
+/usr/local/include/pplx/pplxtasks.h:
+
+/usr/include/c++/11/bits/istream.tcc:
+
+/usr/include/c++/11/clocale:
+
+/usr/include/fcntl.h:
+
+/usr/include/boost/config/no_tr1/memory.hpp:
+
+/usr/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp:
+
+/usr/include/boost/optional/optional_fwd.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/Update.h:
+
+/usr/include/boost/serialization/void_cast_fwd.hpp:
+
+/usr/include/boost/multi_index/detail/do_not_copy_elements_tag.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/boost/regex/v4/match_flags.hpp:
+
+/usr/include/c++/11/initializer_list:
+
+/usr/include/c++/11/iosfwd:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/11/backward/binders.h:
+
+/usr/include/boost/multi_index/detail/index_base.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
+
+/usr/include/boost/asio/detail/signal_blocker.hpp:
+
+/usr/include/boost/mpl/value_type_fwd.hpp:
+
+/usr/include/boost/static_assert.hpp:
+
+/usr/include/openssl/asyncerr.h:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultGif.h:
+
+/usr/include/boost/asio/detail/impl/handler_tracking.ipp:
+
+/usr/include/boost/numeric/conversion/detail/is_subranged.hpp:
+
+/usr/include/c++/11/ext/alloc_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/boost/predef/architecture/arm.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/time.h:
+
+/usr/include/boost/asio/execution/bulk_guarantee.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/Dice.h:
+
+/usr/local/include/cpprest/http_compression.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/PassportElementErrorFile.h:
+
+/usr/include/boost/iterator/detail/enable_if.hpp:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
+../libgit2/include/git2/blob.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/boost/asio/detail/scoped_ptr.hpp:
+
+/usr/include/boost/preprocessor/enum_shifted_params.hpp:
+
+/usr/include/boost/mpl/vector/aux_/O1_size.hpp:
+
+/usr/include/boost/asio/system_executor.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/KeyboardButtonRequestUser.h:
+
+/usr/include/boost/asio/uses_executor.hpp:
+
+/usr/include/boost/type_traits/has_trivial_copy.hpp:
+
+/usr/include/boost/preprocessor/variadic/elem.hpp:
+
+/usr/include/boost/preprocessor/arithmetic/mod.hpp:
+
+/usr/include/c++/11/functional:
+
+/usr/include/boost/mpl/aux_/config/operators.hpp:
+
+/usr/include/boost/mpl/aux_/has_key_impl.hpp:
+
+/usr/include/boost/foreach_fwd.hpp:
+
+/usr/include/c++/11/bits/max_size_type.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/ChatPhoto.h:
+
+/usr/include/boost/mpl/base.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/tools/StringTools.h:
+
+/usr/include/boost/preprocessor/seq/detail/is_empty.hpp:
+
+/usr/include/boost/preprocessor/list/detail/fold_right.hpp:
+
+/usr/include/c++/11/ext/string_conversions.h:
 
 /usr/include/boost/asio/detail/impl/posix_thread.ipp:
 
 /usr/include/c++/11/cstdio:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/boost/asio/detail/reactive_descriptor_service.hpp:
 
-/usr/include/c++/11/chrono:
-
-/usr/include/boost/mpl/protect.hpp:
+/usr/include/stdio.h:
 
 /usr/include/boost/predef/compiler/kai.h:
 
@@ -18673,19 +19173,45 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
-/usr/include/c++/11/bits/locale_facets.tcc:
-
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/Poll.h:
+/usr/include/boost/asio/detail/descriptor_read_op.hpp:
 
-/usr/include/boost/asio/impl/thread_pool.ipp:
+/usr/include/boost/iterator/detail/config_def.hpp:
 
-/usr/include/boost/asio/traits/set_done_member.hpp:
+/usr/include/boost/config/user.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/MaskPosition.h:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultLocation.h:
 
-/usr/include/boost/type_traits/is_empty.hpp:
+../tgbot_fragment/tgbot-cpp/include/tgbot/Api.h:
+
+/usr/include/boost/asio/local/stream_protocol.hpp:
+
+/usr/include/openssl/ssl2.h:
+
+/usr/include/boost/multi_index_container.hpp:
+
+/usr/include/boost/multi_index/detail/uintptr_type.hpp:
+
+/usr/include/boost/asio/high_resolution_timer.hpp:
+
+/usr/include/boost/asio/detail/handler_tracking.hpp:
+
+/usr/include/boost/variant/detail/has_result_type.hpp:
+
+/usr/include/boost/container/detail/std_fwd.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/ForumTopicCreated.h:
+
+/usr/include/wctype.h:
+
+/usr/include/boost/multi_index/detail/adl_swap.hpp:
+
+/usr/include/boost/mpl/greater.hpp:
+
+/usr/include/boost/utility/result_of.hpp:
+
+/usr/include/boost/bind/mem_fn_cc.hpp:
 
 /usr/include/linux/posix_types.h:
 
@@ -18715,55 +19241,11 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
-/usr/include/boost/predef/os/macos.h:
-
-/usr/include/boost/property_tree/ptree.hpp:
-
-/usr/include/c++/11/istream:
-
-/usr/include/boost/asio/ssl/detail/engine.hpp:
-
-/usr/include/openssl/objects.h:
-
-/usr/include/boost/mpl/insert_range_fwd.hpp:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/InputInvoiceMessageContent.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/VideoChatScheduled.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/TgException.h:
-
-/usr/include/boost/asio/impl/executor.hpp:
-
-/usr/include/boost/range/distance.hpp:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultVenue.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/MenuButtonDefault.h:
-
-/usr/include/c++/11/bits/nested_exception.h:
-
-/usr/include/boost/iterator/reverse_iterator.hpp:
-
 /usr/include/c++/11/cstring:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/BotCommandScopeAllGroupChats.h:
-
-/usr/include/c++/11/ratio:
-
-/usr/include/boost/asio/ip/basic_resolver.hpp:
-
-/usr/include/boost/multi_index/sequenced_index.hpp:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/MenuButtonWebApp.h:
 
 /usr/include/boost/preprocessor/logical/compl.hpp:
-
-/usr/include/boost/asio/detail/reactor_op.hpp:
-
-/usr/include/boost/preprocessor/detail/is_binary.hpp:
-
-/usr/include/c++/11/bits/stl_relops.h:
 
 /usr/include/boost/type_traits/add_pointer.hpp:
 
@@ -18777,59 +19259,21 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/InputMediaAudio.h:
 
-/usr/include/boost/mpl/aux_/traits_lambda_spec.hpp:
+/usr/include/c++/11/bits/nested_exception.h:
 
-/usr/include/c++/11/vector:
+/usr/include/boost/asio/execution/bulk_execute.hpp:
 
-/usr/include/boost/mpl/aux_/size_impl.hpp:
+/usr/include/boost/range/const_iterator.hpp:
 
-/usr/include/boost/mpl/aux_/has_key_impl.hpp:
+../sqlite_cpp/include/SQLiteDatabase.hpp:
 
-/usr/include/boost/foreach_fwd.hpp:
+/usr/include/boost/iterator/reverse_iterator.hpp:
 
-/usr/include/boost/multi_index/member.hpp:
+/usr/include/boost/asio/ssl/impl/error.ipp:
 
-/usr/include/c++/11/bits/stl_uninitialized.h:
+/usr/include/syscall.h:
 
-/usr/include/boost/mpl/aux_/reverse_fold_impl.hpp:
-
-/usr/include/c++/11/cstddef:
-
-/usr/include/boost/preprocessor/logical/bool.hpp:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/PhotoSize.h:
-
-/usr/include/boost/multi_index/detail/has_tag.hpp:
-
-/usr/include/boost/utility/declval.hpp:
-
-/usr/include/boost/asio/execution/bulk_guarantee.hpp:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/Dice.h:
-
-../libgit2/include/git2/blob.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:
-
-/usr/local/include/cpprest/http_compression.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/PassportElementErrorFile.h:
-
-/usr/include/boost/iterator/detail/enable_if.hpp:
-
-/usr/include/c++/11/bits/stl_bvector.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/CallbackGame.h:
-
-/usr/include/c++/11/optional:
-
-../sqlite_cpp/include/Database.hpp:
-
-/usr/include/c++/11/typeinfo:
+/usr/include/boost/mpl/aux_/has_size.hpp:
 
 /usr/include/boost/mpl/aux_/static_cast.hpp:
 
@@ -18859,24 +19303,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/optional/detail/optional_reference_spec.hpp:
 
-/usr/include/boost/date_time/dst_rules.hpp:
-
-/usr/include/c++/11/bits/uses_allocator.h:
-
-/usr/include/boost/mpl/aux_/config/workaround.hpp:
-
-/usr/include/boost/move/adl_move_swap.hpp:
-
-/usr/include/boost/mpl/list/aux_/preprocessed/plain/list10.hpp:
-
-/usr/include/boost/none.hpp:
-
-../libgit2/include/git2/proxy.h:
-
-/usr/include/boost/preprocessor/list/adt.hpp:
-
-/usr/include/boost/mpl/aux_/type_wrapper.hpp:
-
 /usr/include/c++/11/bits/unique_ptr.h:
 
 ../sqlite_cpp/include/PreparedStatement.hpp:
@@ -18886,40 +19312,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/boost/mpl/clear.hpp:
 
 /usr/include/c++/11/ostream:
-
-/usr/include/boost/asio/compose.hpp:
-
-/usr/include/c++/11/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/11/array:
-
-/usr/include/c++/11/bits/refwrap.h:
-
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/ChatMemberUpdated.h:
-
-/usr/include/boost/asio/detail/bulk_executor_op.hpp:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/EncryptedCredentials.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
-
-/usr/include/c++/11/limits:
-
-/usr/local/include/cpprest/json.h:
-
-/usr/include/boost/type_traits/intrinsics.hpp:
-
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/GameHighScore.h:
-
-/usr/local/include/pplx/pplxinterface.h:
-
-../src/include/Fragments.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/boost/bind/mem_fn_template.hpp:
 
 /usr/include/c++/11/bits/ios_base.h:
 
@@ -18938,6 +19330,8 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/boost/type_traits/is_integral.hpp:
 
 /usr/include/boost/config/detail/suffix.hpp:
+
+/usr/include/boost/asio/impl/use_awaitable.hpp:
 
 /usr/include/boost/mpl/list/list10.hpp:
 
@@ -18969,9 +19363,7 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/c++/11/stdexcept:
 
-../src/include/GitManager.hpp:
-
-/usr/include/boost/range/end.hpp:
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
 /usr/include/boost/asio/placeholders.hpp:
 
@@ -18995,97 +19387,131 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
-/usr/include/boost/asio/is_read_buffered.hpp:
+../libgit2/include/git2/tag.h:
 
-/usr/include/boost/asio/awaitable.hpp:
+/usr/include/c++/11/bits/enable_special_members.h:
 
-/usr/include/openssl/engine.h:
+/usr/include/boost/preprocessor/control/iif.hpp:
 
-/usr/local/include/pplx/pplxtasks.h:
+/usr/include/boost/mpl/aux_/largest_int.hpp:
 
-/usr/include/c++/11/clocale:
+../libgit2/include/git2/status.h:
 
-/usr/include/c++/11/bits/istream.tcc:
+/usr/include/c++/11/bits/basic_ios.tcc:
 
-/usr/include/boost/asio/detail/reactive_descriptor_service.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
-/usr/include/stdio.h:
+/usr/include/boost/preprocessor/facilities/empty.hpp:
 
-/usr/include/boost/asio/detail/descriptor_read_op.hpp:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/InputInvoiceMessageContent.h:
 
-/usr/include/boost/iterator/detail/config_def.hpp:
+/usr/include/boost/asio/detail/reactor_op.hpp:
 
-/usr/include/boost/config/user.hpp:
+/usr/include/boost/preprocessor/detail/is_binary.hpp:
 
-/usr/include/boost/multi_index/detail/uintptr_type.hpp:
+/usr/include/c++/11/bits/stl_relops.h:
 
-/usr/include/boost/asio/high_resolution_timer.hpp:
+/usr/include/boost/asio/impl/executor.hpp:
 
-/usr/include/boost/asio/detail/handler_tracking.hpp:
+/usr/include/boost/range/distance.hpp:
 
-/usr/include/boost/variant/detail/has_result_type.hpp:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultVenue.h:
 
-/usr/include/boost/container/detail/std_fwd.hpp:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/MenuButtonDefault.h:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/ForumTopicCreated.h:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/Invoice.h:
 
-/usr/include/wctype.h:
+/usr/include/c++/11/string:
 
-/usr/include/boost/multi_index/detail/adl_swap.hpp:
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
-/usr/include/boost/mpl/greater.hpp:
+/usr/include/boost/asio/ip/impl/host_name.ipp:
 
-/usr/include/boost/utility/result_of.hpp:
+/usr/include/c++/11/bits/fs_ops.h:
 
-/usr/include/boost/bind/mem_fn_cc.hpp:
+/usr/include/boost/bind/bind.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/InlineQueryResultLocation.h:
+/usr/include/boost/move/adl_move_swap.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/Api.h:
+/usr/include/boost/mpl/list/aux_/preprocessed/plain/list10.hpp:
 
-/usr/include/boost/asio/local/stream_protocol.hpp:
+/usr/include/boost/none.hpp:
 
-/usr/include/openssl/ssl2.h:
+../libgit2/include/git2/proxy.h:
 
-/usr/include/boost/multi_index_container.hpp:
+/usr/include/boost/preprocessor/list/adt.hpp:
 
-/usr/include/boost/asio/detail/impl/strand_service.ipp:
+/usr/include/boost/mpl/aux_/type_wrapper.hpp:
 
-/usr/include/boost/system/api_config.hpp:
+/usr/include/boost/asio/ssl/detail/openssl_init.hpp:
 
-/usr/include/boost/concept/detail/concept_def.hpp:
+/usr/include/boost/none_t.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/Chat.h:
+/usr/include/boost/multi_index/detail/copy_map.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/VideoChatStarted.h:
+/usr/include/boost/utility/compare_pointees.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/advance_forward.hpp:
+/usr/include/boost/preprocessor/cat.hpp:
 
-/usr/include/boost/asio/execution/impl/bad_executor.ipp:
+/usr/include/boost/asio/detail/executor_function.hpp:
 
-/usr/include/wchar.h:
+/usr/include/boost/detail/templated_streams.hpp:
 
-/usr/include/boost/is_placeholder.hpp:
+/usr/include/boost/preprocessor/config/config.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/tools/StringTools.h:
+/usr/include/boost/preprocessor/arithmetic/dec.hpp:
 
-/usr/include/boost/preprocessor/seq/detail/is_empty.hpp:
+/usr/include/boost/preprocessor/tuple/elem.hpp:
 
-/usr/include/boost/preprocessor/list/detail/fold_right.hpp:
+/usr/include/boost/mpl/O1_size_fwd.hpp:
 
-/usr/include/c++/11/ext/string_conversions.h:
+/usr/include/boost/asio/detail/reactor_fwd.hpp:
 
-/usr/include/x86_64-linux-gnu/sys/types.h:
+/usr/include/boost/preprocessor/facilities/expand.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/ChatPhoto.h:
+/usr/include/c++/11/tr1/legendre_function.tcc:
 
-/usr/include/boost/mpl/base.hpp:
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
-/usr/include/boost/date_time/time_iterator.hpp:
+/usr/include/boost/bind/arg.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/InputMediaVideo.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+/usr/include/boost/preprocessor/facilities/overload.hpp:
+
+/usr/include/boost/asio/ip/unicast.hpp:
+
+/usr/include/boost/asio/impl/executor.ipp:
+
+/usr/include/boost/asio/traits/start_member.hpp:
+
+/usr/include/boost/preprocessor/tuple/rem.hpp:
+
+/usr/include/boost/preprocessor/inc.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/bind_fwd.hpp:
+
+/usr/include/boost/preprocessor/array/size.hpp:
+
+/usr/include/boost/preprocessor/slot/slot.hpp:
+
+../tgbot_fragment/tgbot-cpp/include/tgbot/types/PhotoSize.h:
+
+/usr/include/boost/preprocessor/logical/bool.hpp:
+
+/usr/include/boost/asio/detail/operation.hpp:
+
+/usr/include/boost/mpl/integral_c_fwd.hpp:
+
+/usr/include/boost/asio/execution/mapping.hpp:
+
+/usr/include/boost/preprocessor/punctuation/comma.hpp:
+
+/usr/include/boost/asio/detail/wait_op.hpp:
+
+../libgit2/include/git2/repository.h:
+
+/usr/include/boost/mpl/integral_c_tag.hpp:
 
 /usr/include/boost/asio/ip/address.hpp:
 
@@ -19120,12 +19546,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/boost/mpl/aux_/preprocessed/gcc/advance_backward.hpp:
 
 /usr/include/boost/preprocessor/slot/detail/shared.hpp:
-
-/usr/include/boost/asio/execution/bulk_execute.hpp:
-
-../sqlite_cpp/include/SQLiteDatabase.hpp:
-
-/usr/include/boost/range/const_iterator.hpp:
 
 /usr/include/boost/asio/execution/any_executor.hpp:
 
@@ -19165,10 +19585,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/format/format_implementation.hpp:
 
-/usr/include/c++/11/cxxabi.h:
-
-/usr/include/boost/mpl/aux_/arity_spec.hpp:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h:
 
 /usr/include/boost/detail/indirect_traits.hpp:
@@ -19180,10 +19596,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/boost/limits.hpp:
 
 /usr/include/boost/multi_index/detail/is_index_list.hpp:
-
-/usr/include/boost/asio/impl/serial_port_base.ipp:
-
-/usr/include/boost/range/detail/common.hpp:
 
 /usr/include/boost/mpl/aux_/config/msvc.hpp:
 
@@ -19239,17 +19651,13 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/mpl/aux_/nttp_decl.hpp:
 
-/usr/include/boost/detail/basic_pointerbuf.hpp:
-
-/usr/include/boost/range/config.hpp:
-
-/usr/include/boost/mpl/aux_/lambda_arity_param.hpp:
-
 /usr/include/boost/mpl/aux_/template_arity_fwd.hpp:
 
 /usr/include/boost/mpl/aux_/config/dtp.hpp:
 
 ../src/utils.cpp:
+
+/usr/include/c++/11/bits/ranges_algobase.h:
 
 /usr/include/boost/mpl/vector/vector10.hpp:
 
@@ -19270,12 +19678,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/boost/mpl/aux_/preprocessed/gcc/reverse_iter_fold_impl.hpp:
 
 /usr/include/boost/preprocessor/repeat.hpp:
-
-/usr/include/boost/preprocessor/array/size.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/bind_fwd.hpp:
-
-/usr/include/boost/preprocessor/inc.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:
 
@@ -19322,10 +19724,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/boost/serialization/serialization.hpp:
 
 /usr/include/boost/format/format_fwd.hpp:
-
-/usr/include/boost/asio/version.hpp:
-
-/usr/include/boost/range/iterator.hpp:
 
 /usr/include/boost/asio/basic_streambuf_fwd.hpp:
 
@@ -19375,6 +19773,8 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/mpl/aux_/contains_impl.hpp:
 
+/usr/include/c++/11/bits/ranges_util.h:
+
 /usr/include/c++/11/locale:
 
 ../tgbot_fragment/tgbot-cpp/include/tgbot/types/InputMediaPhoto.h:
@@ -19393,19 +19793,13 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/c++/11/bits/locale_conv.h:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/ReplyKeyboardMarkup.h:
-
-/usr/include/c++/11/bits/cpp_type_traits.h:
-
-/usr/include/c++/11/bits/stream_iterator.h:
-
 /usr/include/boost/property_tree/stream_translator.hpp:
 
 /usr/include/boost/utility/base_from_member.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/boost/optional/optional_io.hpp:
 
@@ -19425,7 +19819,11 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/c++/11/bits/sstream.tcc:
 
+/usr/include/c++/11/stop_token:
+
 /usr/include/boost/mpl/aux_/value_wknd.hpp:
+
+/usr/include/c++/11/bits/ranges_cmp.h:
 
 /usr/include/boost/core/no_exceptions_support.hpp:
 
@@ -19585,6 +19983,8 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/mpl/aux_/config/gpu.hpp:
 
+/usr/include/x86_64-linux-gnu/sys/syscall.h:
+
 /usr/include/boost/mpl/aux_/na_assert.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp:
@@ -19629,9 +20029,13 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp:
 
-/usr/include/boost/predef/platform.h:
+/usr/include/boost/asio/ip/address_v6_range.hpp:
 
-/usr/include/boost/mpl/always.hpp:
+/usr/include/boost/asio/steady_timer.hpp:
+
+/usr/include/boost/range/iterator_range_core.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessor/default_params.hpp:
 
 /usr/include/boost/asio/detail/posix_thread.hpp:
 
@@ -19667,8 +20071,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/mpl/vector/aux_/preprocessed/typeof_based/vector20.hpp:
 
-/usr/include/boost/mpl/aux_/has_size.hpp:
-
 ../libgit2/include/git2/patch.h:
 
 /usr/include/boost/mpl/aux_/iter_fold_impl.hpp:
@@ -19679,11 +20081,13 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/core/ref.hpp:
 
-/usr/include/boost/mpl/iterator_range.hpp:
-
 /usr/include/string.h:
 
 /usr/include/boost/multi_index/identity.hpp:
+
+/usr/include/boost/range/detail/implementation_help.hpp:
+
+/usr/include/boost/serialization/tracking.hpp:
 
 /usr/include/boost/asio/ip/impl/address_v6.ipp:
 
@@ -19813,8 +20217,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:
 
-/usr/include/boost/concept/detail/backward_compatibility.hpp:
-
 /usr/include/boost/mpl/empty_fwd.hpp:
 
 /usr/local/include/cpprest/streams.h:
@@ -19826,10 +20228,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/include/boost/type_traits/add_cv.hpp:
 
 /usr/include/boost/mpl/vector/aux_/begin_end.hpp:
-
-/usr/include/boost/asio/ip/impl/network_v4.ipp:
-
-/usr/include/boost/mpl/vector/aux_/include_preprocessed.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
@@ -19927,15 +20325,9 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/mpl/set/aux_/erase_key_impl.hpp:
 
-/usr/include/boost/mpl/erase_key_fwd.hpp:
-
 /usr/include/boost/mpl/pop_back_fwd.hpp:
 
 /usr/include/boost/mpl/set/aux_/key_type_impl.hpp:
-
-/usr/include/boost/serialization/tracking.hpp:
-
-/usr/include/boost/range/detail/implementation_help.hpp:
 
 /usr/include/boost/date_time/gregorian/greg_weekday.hpp:
 
@@ -20117,12 +20509,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/preprocessor/repetition/repeat_from_to.hpp:
 
-../tgbot_fragment/tgbot-cpp/include/tgbot/types/EncryptedPassportElement.h:
-
-/usr/include/boost/multi_index/detail/serialization_version.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp:
-
 /usr/include/openssl/conferr.h:
 
 /usr/include/boost/variant/detail/enable_recursive_fwd.hpp:
@@ -20211,6 +20597,8 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/multi_index/detail/unbounded.hpp:
 
+/usr/include/c++/11/bits/uses_allocator_args.h:
+
 /usr/include/boost/multi_index/detail/undef_if_constexpr_macro.hpp:
 
 /usr/include/boost/multi_index/detail/duplicates_iterator.hpp:
@@ -20247,8 +20635,6 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 /usr/include/boost/core/pointer_traits.hpp:
 
-/usr/include/boost/format/free_funcs.hpp:
-
 /usr/include/boost/smart_ptr/shared_ptr.hpp:
 
 /usr/include/boost/core/checked_delete.hpp:
@@ -20269,9 +20655,9 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 
 ../libgit2/include/git2/experimental.h:
 
-/usr/include/boost/multi_index/detail/node_handle.hpp:
-
 /usr/include/boost/range/detail/extract_optional_type.hpp:
+
+/usr/include/boost/multi_index/detail/node_handle.hpp:
 
 /usr/include/boost/smart_ptr/detail/sp_noexcept.hpp:
 
@@ -20300,41 +20686,3 @@ CMakeFiles/Buildroid.dir/src/utils.cpp.o: ../src/utils.cpp \
 /usr/local/include/cpprest/http_listener.h:
 
 /usr/include/boost/format/feed_args.hpp:
-
-/usr/include/boost/asio/ip/address_v6_range.hpp:
-
-/usr/include/boost/asio/steady_timer.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessor/default_params.hpp:
-
-/usr/include/boost/range/iterator_range_core.hpp:
-
-/usr/include/boost/range/functions.hpp:
-
-/usr/include/boost/predef/platform/windows_uwp.h:
-
-/usr/include/boost/range/begin.hpp:
-
-../src/fragments/ConfirmFragment.cpp:
-
-/usr/include/boost/range/range_fwd.hpp:
-
-/usr/include/boost/range/mutable_iterator.hpp:
-
-/usr/include/boost/predef/compiler/gcc_xml.h:
-
-/usr/include/boost/system/detail/generic_category.hpp:
-
-/usr/include/boost/type_traits/copy_cv_ref.hpp:
-
-/usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp:
-
-/usr/include/boost/range/size_type.hpp:
-
-/usr/include/boost/range/difference_type.hpp:
-
-/usr/include/boost/range/has_range_iterator.hpp:
-
-/usr/include/boost/asio/ssl/detail/buffered_handshake_op.hpp:
-
-/usr/include/boost/range/concepts.hpp:

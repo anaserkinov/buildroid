@@ -1,6 +1,7 @@
 #include "DatabaseController.hpp"
 
 #include "Fragments.hpp"
+#include "utils.hpp"
 
 DatabaseController::DatabaseController() {
 }
@@ -14,28 +15,58 @@ void DatabaseController::createTables() {
                                  "lastName TEXT,"
                                  "phoneNumber TEXT,"
                                  "userName TEXT,"
-                                 "fragmentId INTEGER,"
-                                 "project TEXT,"
-                                 "branch TEXT,"
-                                 "buildType TEXT,"
-                                 "app TEXT"
+                                 "fragmentId INTEGER"
                                  ")")
             ->stepThis()
             .dispose();
         MainDatabase::getDB().executeFast(
-                                 "CREATE TABLE IF NOT EXISTS apps("
-                                 "id INTEGER NOT NULL PRIMARY KEY,"
-                                 "firstName TEXT,"
-                                 "lastName TEXT,"
-                                 "phoneNumber TEXT,"
-                                 "userName TEXT,"
-                                 "fragmentId INTEGER"
+                                 "CREATE TABLE IF NOT EXISTS tasks("
+                                 "id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,"
+                                 "userId INTEGER,"
+                                 "project TEXT,"
+                                 "branch TEXT,"
+                                 "app TEXT,"
+                                 "buildType TEXT,"
+                                 "status INTEGER,"
+                                 "errorCode INTEGER,"
+                                 "chatId INTEGER,"
+                                 "messageId INTEGER,"
+                                 "createdAt INTEGER,"
+                                 "startedAt INTEGER,"
+                                 "completedAt INTEGER"
                                  ")")
             ->stepThis()
             .dispose();
     } catch (const std::exception& e) {
         printf(e.what());
         throw e;
+    }
+}
+
+void DatabaseController::addListener(int id, const Callback& callback) {
+    mListeners.push_back(std::pair(id, callback));
+}
+
+void DatabaseController::removeListener(int id) {
+    std::remove_if(
+        mListeners.begin(),
+        mListeners.end(),
+        [&id](const auto& e) {
+            return e.first == id;
+        });
+}
+
+void DatabaseController::resetUser(int64_t id) {
+    try {
+        auto preparedS = MainDatabase::getDB().executeFast("UPDATE users SET fragmentId = ? WHERE id = ?");
+
+        preparedS->bindInt32(1, Fragments::LOGIN);
+        preparedS->bindInt64(2, id);
+
+        preparedS->step();
+        preparedS->dispose();
+    } catch (const std::exception& e) {
+        printf(e.what());
     }
 }
 
@@ -47,9 +78,8 @@ void DatabaseController::insertUser(
     std::string userName) {
     try {
         auto preparedS = MainDatabase::getDB().executeFast(
-            "REPLACE INTO users VALUES(?,?,?,?,?,?,?,?,?,?)");
+            "REPLACE INTO users VALUES(?,?,?,?,?,?)");
 
-        std::cout << "inset: " << id << "\n";
         preparedS->requery();
         preparedS->bindInt64(1, id);
         preparedS->bindString(2, firstName);
@@ -81,14 +111,111 @@ void DatabaseController::updateFragmentState(
     }
 }
 
+int32_t DatabaseController::getCurrentTaskId(int64_t userId) {
+    try {
+        List<Object> args = {userId, TASK_STATUS::CREATED};
+        CursorWrapper cursor = CursorWrapper(MainDatabase::getDB().queryFinalized("SELECT id FROM tasks WHERE userId = ? AND status = ? LIMIT 1", args));
+
+        if (cursor.ptr->next())
+            return cursor.ptr->longValue(0);
+
+    } catch (const std::exception& e) {
+        printf(e.what());
+    }
+    return -1;
+}
+
+int32_t DatabaseController::getTaskId(int64_t chatId, int64_t messageId) {
+    try {
+        List<Object> args = {chatId, messageId};
+        CursorWrapper cursor = CursorWrapper(MainDatabase::getDB().queryFinalized("SELECT id FROM tasks WHERE chatId = ? AND messageId = ? LIMIT 1", args));
+
+        if (cursor.ptr->next())
+            return cursor.ptr->longValue(0);
+
+    } catch (const std::exception& e) {
+        printf(e.what());
+    }
+    return -1;
+}
+
+std::unique_ptr<Task> DatabaseController::getTask(int32_t taskId) {
+    try {
+        List<Object> args = {taskId};
+        CursorWrapper cursor = CursorWrapper(MainDatabase::getDB().queryFinalized("SELECT * FROM tasks WHERE id = ?", args));
+
+        if (cursor.ptr->next())
+            return std::make_unique<Task>(
+                Task{
+                    cursor.ptr->longValue(0),
+                    cursor.ptr->longValue(1),
+                    cursor.ptr->stringValue(2),
+                    cursor.ptr->stringValue(3),
+                    cursor.ptr->stringValue(4),
+                    cursor.ptr->stringValue(5),
+                    cursor.ptr->intValue(6),
+                    cursor.ptr->intValue(7),
+                    cursor.ptr->longValue(8),
+                    cursor.ptr->longValue(9)});
+
+    } catch (const std::exception& e) {
+        printf(e.what());
+    }
+    return nullptr;
+}
+
+std::unique_ptr<Task> DatabaseController::getConfirmedTask() {
+    try {
+        List<Object> args = {TASK_STATUS::CONFIRMED};
+        CursorWrapper cursor = CursorWrapper(MainDatabase::getDB().queryFinalized("SELECT * FROM tasks WHERE status = ?", args));
+
+        if (cursor.ptr->next())
+            return std::make_unique<Task>(
+                Task{
+                    cursor.ptr->longValue(0),
+                    cursor.ptr->longValue(1),
+                    cursor.ptr->stringValue(2),
+                    cursor.ptr->stringValue(3),
+                    cursor.ptr->stringValue(4),
+                    cursor.ptr->stringValue(5),
+                    cursor.ptr->intValue(6),
+                    cursor.ptr->intValue(7),
+                    cursor.ptr->longValue(8),
+                    cursor.ptr->longValue(9)});
+
+    } catch (const std::exception& e) {
+        printf(e.what());
+    }
+    return nullptr;
+}
+
 void DatabaseController::selectProject(
-    int64_t id,
+    int64_t userId,
     std::string projectName) {
     try {
-        auto preparedS = MainDatabase::getDB().executeFast("UPDATE users SET project = ? WHERE id = ?");
+        int32_t userTaskId = getCurrentTaskId(userId);
+        if (userTaskId == -1) {
+            auto preparedS = MainDatabase::getDB().executeFast(
+                "REPLACE INTO tasks VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)");
+
+            preparedS->requery();
+            preparedS->bindInt64(2, userId);
+            preparedS->bindInt32(7, TASK_STATUS::CREATED);
+            preparedS->bindInt32(8, -1);
+            preparedS->bindInt32(9, -1);
+            preparedS->bindInt32(10, -1);
+            preparedS->bindInt32(11, -1);
+            preparedS->bindInt32(12, -1);
+            preparedS->bindInt32(13, -1);
+
+            userTaskId = preparedS->step(MainDatabase::getDB());
+            preparedS->dispose();
+        }
+
+        auto preparedS = MainDatabase::getDB().executeFast("UPDATE tasks SET project = ? WHERE id = ?");
 
         preparedS->bindString(1, projectName);
-        preparedS->bindInt64(2, id);
+        preparedS->bindInt64(2, userTaskId);
 
         preparedS->step();
         preparedS->dispose();
@@ -98,29 +225,14 @@ void DatabaseController::selectProject(
 }
 
 void DatabaseController::selectBranch(
-    int64_t id,
+    int64_t userId,
     std::string branchName) {
     try {
-        auto preparedS = MainDatabase::getDB().executeFast("UPDATE users SET branch = ? WHERE id = ?");
+        auto preparedS = MainDatabase::getDB().executeFast("UPDATE tasks SET branch = ? WHERE userId = ? AND status = ?");
 
         preparedS->bindString(1, branchName);
-        preparedS->bindInt64(2, id);
-
-        preparedS->step();
-        preparedS->dispose();
-    } catch (const std::exception& e) {
-        printf(e.what());
-    }
-}
-
-void DatabaseController::selectBuildType(
-    int64_t id,
-    std::string buildType) {
-    try {
-        auto preparedS = MainDatabase::getDB().executeFast("UPDATE users SET buildType = ? WHERE id = ?");
-
-        preparedS->bindString(1, buildType);
-        preparedS->bindInt64(2, id);
+        preparedS->bindInt64(2, userId);
+        preparedS->bindInt32(3, TASK_STATUS::CREATED);
 
         preparedS->step();
         preparedS->dispose();
@@ -130,13 +242,14 @@ void DatabaseController::selectBuildType(
 }
 
 void DatabaseController::selectApp(
-    int64_t id,
+    int64_t userId,
     std::string app) {
     try {
-        auto preparedS = MainDatabase::getDB().executeFast("UPDATE users SET app = ? WHERE id = ?");
+        auto preparedS = MainDatabase::getDB().executeFast("UPDATE tasks SET app = ? WHERE userId = ? AND status = ?");
 
         preparedS->bindString(1, app);
-        preparedS->bindInt64(2, id);
+        preparedS->bindInt64(2, userId);
+        preparedS->bindInt32(3, TASK_STATUS::CREATED);
 
         preparedS->step();
         preparedS->dispose();
@@ -145,51 +258,91 @@ void DatabaseController::selectApp(
     }
 }
 
-App* DatabaseController::getApps(int64_t userId) {
-    CursorPtr cursor = nullptr;
-    App* apps = nullptr;
+void DatabaseController::selectBuildType(
+    int64_t userId,
+    std::string buildType) {
     try {
-        auto db = MainDatabase::getDB();
+        auto preparedS = MainDatabase::getDB().executeFast("UPDATE tasks SET buildType = ? WHERE userId = ? AND status = ?");
 
-        List<Object> args = {userId};
-        cursor = db.queryFinalized("SELECT COUNT(id) FROM apps WHERE userId = ?", args);
+        preparedS->bindString(1, buildType);
+        preparedS->bindInt64(2, userId);
+        preparedS->bindInt32(3, TASK_STATUS::CREATED);
 
-        int count = 0;
-        if (cursor->next()) {
-            count = cursor->intValue(0);
-        }
-        cursor->dispose();
-
-        apps = new App[count];
-
-        if (count != 0) {
-            cursor = db.queryFinalized("SELECT * FROM apps WHERE userId = ?", args);
-
-            count = 0;
-            while (cursor) {
-                App app;
-                getApp(app, cursor);
-                apps[count] = app;
-                count++;
-            }
-        }
+        preparedS->step();
+        preparedS->dispose();
     } catch (const std::exception& e) {
-        apps = new App[0];
+        printf(e.what());
     }
-
-    if (cursor != nullptr) {
-        cursor->dispose();
-    }
-
-    return apps;
 }
 
-void DatabaseController::getApp(App app, CursorPtr& cursor) {
-    app.id = cursor->intValue(0);
-    app.userId = cursor->intValue(1);
-    app.name = cursor->stringValue(2);
-    app.versionName = cursor->stringValue(3);
-    app.versionCode = cursor->intValue(4);
+void DatabaseController::setTaskStatus(
+    int32_t id,
+    int32_t status) {
+    try {
+        auto preparedS = MainDatabase::getDB().executeFast("UPDATE tasks SET status = ? WHERE id = ?");
+
+        preparedS->bindInt32(1, status);
+        preparedS->bindInt32(2, id);
+
+        preparedS->step();
+        preparedS->dispose();
+
+        if (status == TASK_STATUS::CONFIRMED) {
+            for (const auto& entry : mListeners) {
+                entry.second(Events::TASK_CONFIRMED);
+            }
+        }
+
+    } catch (const std::exception& e) {
+        printf(e.what());
+    }
+}
+
+void DatabaseController::setErrorCode(
+    int32_t id,
+    int32_t errorCode) {
+    try {
+        auto preparedS = MainDatabase::getDB().executeFast("UPDATE tasks SET errorCode = ? WHERE id = ?");
+
+        preparedS->bindInt32(1, errorCode);
+        preparedS->bindInt32(2, id);
+
+        preparedS->step();
+        preparedS->dispose();
+    } catch (const std::exception& e) {
+        printf(e.what());
+    }
+}
+
+void DatabaseController::setTaskMessageId(
+    int32_t taskId,
+    int64_t chatId,
+    int64_t messageId) {
+    try {
+        auto preparedS = MainDatabase::getDB().executeFast("UPDATE tasks SET chatId = ?, messageId = ? WHERE id = ?");
+
+        preparedS->bindInt64(1, chatId);
+        preparedS->bindInt64(2, messageId);
+        preparedS->bindInt32(3, taskId);
+
+        preparedS->step();
+        preparedS->dispose();
+    } catch (const std::exception& e) {
+        printf(e.what());
+    }
+}
+
+void DatabaseController::deleteTask(int32_t id) {
+    try {
+        auto preparedS = MainDatabase::getDB().executeFast("DELETE FROM tasks WHERE id = ?");
+
+        preparedS->bindInt32(1, id);
+
+        preparedS->step();
+        preparedS->dispose();
+    } catch (const std::exception& e) {
+        printf(e.what());
+    }
 }
 
 DatabaseController::~DatabaseController() {

@@ -1,0 +1,332 @@
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIMESPEC failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7c606/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7c606.dir/build.make CMakeFiles/cmTC_7c606.dir/build
+gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_7c606.dir/src.c.o
+/usr/bin/cc -DHAVE_STRUCT_STAT_ST_MTIMESPEC   -o CMakeFiles/cmTC_7c606.dir/src.c.o -c /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/src.c
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/src.c:7:34: error: ‘struct stat’ has no member named ‘st_mtimespec’
+    7 |   (void)sizeof(((struct stat *)0)->st_mtimespec);
+      |                                  ^~
+gmake[1]: *** [CMakeFiles/cmTC_7c606.dir/build.make:78: CMakeFiles/cmTC_7c606.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_7c606/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtimespec);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_MTIME_NSEC failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e731e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e731e.dir/build.make CMakeFiles/cmTC_e731e.dir/build
+gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_e731e.dir/src.c.o
+/usr/bin/cc -DHAVE_STRUCT_STAT_MTIME_NSEC   -o CMakeFiles/cmTC_e731e.dir/src.c.o -c /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/src.c
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/src.c:6:34: error: ‘struct stat’ has no member named ‘st_mtime_nsec’
+    6 |   (void)sizeof(((struct stat *)0)->st_mtime_nsec);
+      |                                  ^~
+gmake[1]: *** [CMakeFiles/cmTC_e731e.dir/build.make:78: CMakeFiles/cmTC_e731e.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_e731e/fast] Error 2
+
+
+Source file was:
+
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtime_nsec);
+  return 0;
+}
+
+Performing C SOURCE FILE Test IS_WDOCUMENTATION_SUPPORTED failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_46a0e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_46a0e.dir/build.make CMakeFiles/cmTC_46a0e.dir/build
+gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_46a0e.dir/src.c.o
+/usr/bin/cc -DIS_WDOCUMENTATION_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra    -Wdocumentation -o CMakeFiles/cmTC_46a0e.dir/src.c.o -c /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command-line option '-Wdocumentation'
+gmake[1]: *** [CMakeFiles/cmTC_46a0e.dir/build.make:78: CMakeFiles/cmTC_46a0e.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_46a0e/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test IS_WC11_EXTENSIONS_SUPPORTED failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_334a3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_334a3.dir/build.make CMakeFiles/cmTC_334a3.dir/build
+gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_334a3.dir/src.c.o
+/usr/bin/cc -DIS_WC11_EXTENSIONS_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion    -Wc11-extensions -o CMakeFiles/cmTC_334a3.dir/src.c.o -c /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command-line option '-Wc11-extensions'; did you mean '-fms-extensions'?
+gmake[1]: *** [CMakeFiles/cmTC_334a3.dir/build.make:78: CMakeFiles/cmTC_334a3.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_334a3/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the regcomp_l exist failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3e103/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3e103.dir/build.make CMakeFiles/cmTC_3e103.dir/build
+gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_3e103.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_3e103.dir/CheckSymbolExists.c.o -c /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:10: fatal error: xlocale.h: No such file or directory
+    3 | #include <xlocale.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_3e103.dir/build.make:78: CMakeFiles/cmTC_3e103.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_3e103/fast] Error 2
+
+
+File /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <regex.h>
+#include <xlocale.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef regcomp_l
+  return ((int*)(&regcomp_l))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file windows.h exists failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8e05f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8e05f.dir/build.make CMakeFiles/cmTC_8e05f.dir/build
+gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_8e05f.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security  -o CMakeFiles/cmTC_8e05f.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: windows.h: No such file or directory
+    1 | #include <windows.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_8e05f.dir/build.make:78: CMakeFiles/cmTC_8e05f.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_8e05f/fast] Error 2
+
+
+
+Determining if the function _strtoi64 exists failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e6b04/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e6b04.dir/build.make CMakeFiles/cmTC_e6b04.dir/build
+gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_e6b04.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_strtoi64 -o CMakeFiles/cmTC_e6b04.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_e6b04
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6b04.dir/link.txt --verbose=1
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_strtoi64 CMakeFiles/cmTC_e6b04.dir/CheckFunctionExists.c.o -o cmTC_e6b04 
+/usr/bin/ld: CMakeFiles/cmTC_e6b04.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `_strtoi64'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_e6b04.dir/build.make:99: cmTC_e6b04] Error 1
+gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_e6b04/fast] Error 2
+
+
+
+Determining if the prototype qsort_r exists for GIT_QSORT_BSD failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1705a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1705a.dir/build.make CMakeFiles/cmTC_1705a.dir/build
+gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_1705a.dir/CheckPrototypeDefinition.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function -Wno-unused-parameter  -o CMakeFiles/cmTC_1705a.dir/CheckPrototypeDefinition.c.o -c /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:7: error: conflicting types for ‘qsort_r’; have ‘void(void *, size_t,  size_t,  void *, int (*)(void *, const void *, const void *))’ {aka ‘void(void *, long unsigned int,  long unsigned int,  void *, int (*)(void *, const void *, const void *))’}
+   14 | void (qsort_r)(void *base, size_t nmemb, size_t size, void *context, int (*compar)(void *, const void *, const void *)) {
+      |       ^~~~~~~
+In file included from /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:1:
+/usr/include/stdlib.h:841:13: note: previous declaration of ‘qsort_r’ with type ‘void(void *, size_t,  size_t,  int (*)(const void *, const void *, void *), void *)’ {aka ‘void(void *, long unsigned int,  long unsigned int,  int (*)(const void *, const void *, void *), void *)’}
+  841 | extern void qsort_r (void *__base, size_t __nmemb, size_t __size,
+      |             ^~~~~~~
+cc1: note: unrecognized command-line option ‘-Wno-documentation-deprecated-sync’ may have been intended to silence earlier diagnostics
+gmake[1]: *** [CMakeFiles/cmTC_1705a.dir/build.make:78: CMakeFiles/cmTC_1705a.dir/CheckPrototypeDefinition.c.o] Error 1
+gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_1705a/fast] Error 2
+
+
+
+#include <stdlib.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef qsort_r
+  cmakeRequireSymbol(0, &qsort_r);
+#endif
+}
+
+void (qsort_r)(void *base, size_t nmemb, size_t size, void *context, int (*compar)(void *, const void *, const void *)) {
+  return ;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
+Determining if the prototype qsort_s exists for GIT_QSORT_C11 failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c4d96/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c4d96.dir/build.make CMakeFiles/cmTC_c4d96.dir/build
+gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_c4d96.dir/CheckPrototypeDefinition.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function -Wno-unused-parameter  -o CMakeFiles/cmTC_c4d96.dir/CheckPrototypeDefinition.c.o -c /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c: In function ‘checkSymbol’:
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:10:26: error: ‘qsort_s’ undeclared (first use in this function); did you mean ‘qsort_r’?
+   10 |   cmakeRequireSymbol(0, &qsort_s);
+      |                          ^~~~~~~
+      |                          qsort_r
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:10:26: note: each undeclared identifier is reported only once for each function it appears in
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c: At top level:
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:31: error: unknown type name ‘rsize_t’; did you mean ‘ssize_t’?
+   14 | errno_t (qsort_s)(void *base, rsize_t nmemb, rsize_t size, int (*compar)(const void *, const void *, void *), void *context) {
+      |                               ^~~~~~~
+      |                               ssize_t
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:46: error: unknown type name ‘rsize_t’; did you mean ‘ssize_t’?
+   14 | errno_t (qsort_s)(void *base, rsize_t nmemb, rsize_t size, int (*compar)(const void *, const void *, void *), void *context) {
+      |                                              ^~~~~~~
+      |                                              ssize_t
+cc1: note: unrecognized command-line option ‘-Wno-documentation-deprecated-sync’ may have been intended to silence earlier diagnostics
+gmake[1]: *** [CMakeFiles/cmTC_c4d96.dir/build.make:78: CMakeFiles/cmTC_c4d96.dir/CheckPrototypeDefinition.c.o] Error 1
+gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_c4d96/fast] Error 2
+
+
+
+#include <stdlib.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef qsort_s
+  cmakeRequireSymbol(0, &qsort_s);
+#endif
+}
+
+errno_t (qsort_s)(void *base, rsize_t nmemb, rsize_t size, int (*compar)(const void *, const void *, void *), void *context) {
+  return 0;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
+Determining if the prototype qsort_s exists for GIT_QSORT_MSC failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4d766/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4d766.dir/build.make CMakeFiles/cmTC_4d766.dir/build
+gmake[1]: Entering directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_4d766.dir/CheckPrototypeDefinition.c.o
+/usr/bin/cc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function -Wno-unused-parameter  -o CMakeFiles/cmTC_4d766.dir/CheckPrototypeDefinition.c.o -c /home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c: In function ‘checkSymbol’:
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:10:26: error: ‘qsort_s’ undeclared (first use in this function); did you mean ‘qsort_r’?
+   10 |   cmakeRequireSymbol(0, &qsort_s);
+      |                          ^~~~~~~
+      |                          qsort_r
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:10:26: note: each undeclared identifier is reported only once for each function it appears in
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c: At top level:
+/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:7: warning: no previous declaration for ‘qsort_s’ [-Wmissing-declarations]
+   14 | void (qsort_s)(void *base, size_t num, size_t width, int (*compare )(void *, const void *, const void *), void *context) {
+      |       ^~~~~~~
+cc1: note: unrecognized command-line option ‘-Wno-documentation-deprecated-sync’ may have been intended to silence earlier diagnostics
+gmake[1]: *** [CMakeFiles/cmTC_4d766.dir/build.make:78: CMakeFiles/cmTC_4d766.dir/CheckPrototypeDefinition.c.o] Error 1
+gmake[1]: Leaving directory '/home/anaskhan/proj/buildroid/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_4d766/fast] Error 2
+
+
+
+#include <stdlib.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef qsort_s
+  cmakeRequireSymbol(0, &qsort_s);
+#endif
+}
+
+void (qsort_s)(void *base, size_t num, size_t width, int (*compare )(void *, const void *, const void *), void *context) {
+  return ;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
