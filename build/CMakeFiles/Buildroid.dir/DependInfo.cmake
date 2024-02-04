@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/anaskhan/proj/buildroid/src/fragments/ConfirmFragment.cpp" "CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/fragments/ConfirmFragment.cpp.o.d"
   "/home/anaskhan/proj/buildroid/src/fragments/LoginFragment.cpp" "CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/fragments/LoginFragment.cpp.o.d"
   "/home/anaskhan/proj/buildroid/src/fragments/MainFragment.cpp" "CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/fragments/MainFragment.cpp.o.d"
+  "/home/anaskhan/proj/buildroid/src/fragments/NoteFragment.cpp" "CMakeFiles/Buildroid.dir/src/fragments/NoteFragment.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/fragments/NoteFragment.cpp.o.d"
   "/home/anaskhan/proj/buildroid/src/fragments/TaxiFragment.cpp" "CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/fragments/TaxiFragment.cpp.o.d"
   "/home/anaskhan/proj/buildroid/src/tgbot_fragment_db_impl/FragmentStateController.cpp" "CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/tgbot_fragment_db_impl/FragmentStateController.cpp.o.d"
   "/home/anaskhan/proj/buildroid/src/utils.cpp" "CMakeFiles/Buildroid.dir/src/utils.cpp.o" "gcc" "CMakeFiles/Buildroid.dir/src/utils.cpp.o.d"

@@ -36,10 +36,10 @@ void GitManager::init(
 GitManager::GitManager() {
 }
 
-void GitManager::getBranches(const char* localPath, std::vector<std::string>& branches) {
+void GitManager::getBranches(const std::string& localPath, std::vector<std::string>& branches) {
     git_repository* repo = nullptr;
 
-    git_repository_open(&repo, localPath);
+    git_repository_open(&repo, localPath.c_str());
 
     git_reference_iterator* iter = nullptr;
     git_reference_iterator_new(&iter, repo);
@@ -49,15 +49,11 @@ void GitManager::getBranches(const char* localPath, std::vector<std::string>& br
         const char* full_ref_name = git_reference_name(ref);
 
         if (strcmp(full_ref_name, "refs/remotes/origin/HEAD") == 0) {
-            // Skip refs/remotes/origin/HEAD
             git_reference_free(ref);
             continue;
         }
         if (strncmp(full_ref_name, "refs/heads/", 11) == 0) {
-            // Local branch
-            // const char* branch_name = full_ref_name + 11;
         } else if (strncmp(full_ref_name, "refs/remotes/origin/", 20) == 0) {
-            // Remote branch
             const char* remote_branch_name = full_ref_name + 20;
             branches.emplace_back(remote_branch_name);
         }
@@ -69,14 +65,13 @@ void GitManager::getBranches(const char* localPath, std::vector<std::string>& br
     git_repository_free(repo);
 }
 
-void GitManager::fetch(const char* localPath) {
+void GitManager::fetch(const std::string& localPath) {
     git_repository* repo = nullptr;
 
-    git_repository_open(&repo, localPath);
+    git_repository_open(&repo, localPath.c_str());
 
     git_remote* remote = nullptr;
-    const char* remote_name = "origin";
-    int lookup_result = git_remote_lookup(&remote, repo, remote_name);
+    int lookup_result = git_remote_lookup(&remote, repo, "origin");
     if (lookup_result != 0) {
         const git_error* error = giterr_last();
         if (error) {
@@ -94,6 +89,52 @@ void GitManager::fetch(const char* localPath) {
             printf("git_remote_fetch error: %s\n", error->message);
         }
     }
+
+    git_repository_free(repo);
+    git_remote_free(remote);
+}
+
+void GitManager::checkout(const std::string& localPath, const std::string& branch) {
+    fetch(localPath);
+
+    git_repository* repo = nullptr;
+    git_repository_open(&repo, localPath.c_str());
+
+    std::string _branch = "origin/" + branch;
+
+    git_reference* branch_ref = nullptr;
+    int error = git_reference_dwim(&branch_ref, repo, _branch.c_str());
+    if (error != 0) {
+        const git_error* error = giterr_last();
+        if (error) {
+            printf("git_reference_dwim error: %s\n", error->message);
+        }
+    }
+
+    git_commit* commit = nullptr;
+    error = git_commit_lookup(&commit, repo, git_reference_target(branch_ref));
+    if (error != 0) {
+        const git_error* error = giterr_last();
+        if (error) {
+            printf("git_commit_lookup error: %s\n", error->message);
+        }
+    }
+
+    git_checkout_options checkout_opts = GIT_CHECKOUT_OPTIONS_INIT;
+    checkout_opts.checkout_strategy = GIT_CHECKOUT_FORCE;
+
+    error = git_checkout_tree(repo, (const git_object*)commit, &checkout_opts);
+    if (error != 0) {
+        const git_error* error = giterr_last();
+        if (error) {
+            printf("git_checkout_reference error: %s\n", error->message);
+        }
+    }
+
+    std::cout << "Remote branch '" << branch << "' checked out successfully." << std::endl;
+
+    git_reference_free(branch_ref);
+    git_repository_free(repo);
 }
 
 GitManager::~GitManager() {

@@ -19,7 +19,6 @@ class DatabaseController {
     void addListener(int id, const Callback& callback);
     void removeListener(int id);
 
-
     // user
     void resetUser(int64_t id);
     void insertUser(
@@ -44,12 +43,15 @@ class DatabaseController {
     void selectBranch(
         int64_t userId,
         std::string branchName);
-    void selectBuildType(
-        int64_t userId,
-        std::string buildType);
     void selectApp(
         int64_t userId,
         std::string app);
+    void selectBuildType(
+        int64_t userId,
+        std::string buildType);
+    void setTaskTitle(
+        int64_t userId,
+        std::string title);
     void setTaskStatus(
         int32_t id,
         int32_t status);
@@ -61,10 +63,7 @@ class DatabaseController {
         int64_t chatId,
         int64_t messageId);
     void deleteTask(
-        int32_t taskId
-    );
-
-
+        int32_t taskId);
 
     ~DatabaseController();
 };

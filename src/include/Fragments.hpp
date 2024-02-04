@@ -14,7 +14,8 @@ class Fragments {
     static const int TAXI = 4;
     static const int APP = 5;
     static const int BUILD_TYPE = 6;
-    static const int CONFIRM = 7;
+    static const int NOTE = 7;
+    static const int CONFIRM = 8;
 };
 
 class BaseFragment : public Fragment {
@@ -51,6 +52,13 @@ class TaxiFragment : public BaseFragment {
     void onNonCommandMessage(const Message::Ptr& message) override;
 };
 
+class AppFragment : public BaseFragment {
+   public:
+    AppFragment();
+    void onCreate(int16_t type, const std::shared_ptr<void>& data) override;
+    void onNonCommandMessage(const Message::Ptr& message) override;
+};
+
 class BuildTypeFragment : public BaseFragment {
    public:
     BuildTypeFragment();
@@ -58,9 +66,9 @@ class BuildTypeFragment : public BaseFragment {
     void onNonCommandMessage(const Message::Ptr& message) override;
 };
 
-class AppFragment : public BaseFragment {
+class NoteFragment : public BaseFragment {
    public:
-    AppFragment();
+    NoteFragment();
     void onCreate(int16_t type, const std::shared_ptr<void>& data) override;
     void onNonCommandMessage(const Message::Ptr& message) override;
 };

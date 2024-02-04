@@ -46,9 +46,11 @@ class GitManager {
         const char* repoUrl,
         const char* localPath);
 
-    void getBranches(const char* localPath, std::vector<std::string>& branches);
+    void getBranches(const std::string& localPath, std::vector<std::string>& branches);
 
-    void fetch(const char* localPath);
+    void fetch(const std::string& localPath);
+
+    void checkout(const std::string& localPath, const std::string& branch);
 
     ~GitManager();
 };

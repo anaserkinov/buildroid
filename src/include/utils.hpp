@@ -35,6 +35,32 @@ class Utils {
     static const std::string taxiPath;
     static const std::string bitoPath;
 
+    static std::unique_ptr<std::string> execute(const std::string& command) {
+        FILE* pipe = popen(command.c_str(), "r");
+        if (!pipe) {
+            std::cerr << "Error opening pipe." << std::endl;
+            return std::make_unique<std::string>("Error opening pipe.");
+        }
+
+        char buffer[128];
+        std::string result = "";
+        while (fgets(buffer, sizeof(buffer), pipe) != nullptr) {
+            result += buffer;
+        }
+        int status = pclose(pipe);
+
+        if (WIFEXITED(status) && WEXITSTATUS(status) == 0) {
+            std::cout << "Command executed successfully." << std::endl;
+            return nullptr; 
+        } else {
+            std::cerr << "Error executing command." << std::endl;
+            if (!result.empty()) {
+                std::cerr << "Error message: " << result << std::endl;
+            }
+            return std::make_unique<std::string>(result);
+        }
+    }
+
     static void clearStringFromSticker(std::string& s) {
         s.erase(std::remove_if(s.begin(), s.end(), isNotAlphanumeric), s.end());
 
@@ -47,7 +73,7 @@ class Utils {
         return std::filesystem::exists(folder) && std::filesystem::is_directory(folder);
     }
 
-    static const std::vector<std::string> getTaxiApps(){
+    static const std::vector<std::string> getTaxiApps() {
         std::vector<std::string> apps = {
             "alotaxi",
             "brandtaxi",
@@ -61,8 +87,7 @@ class Utils {
             "salamtaxi",
             "startaxi",
             "unicaltaxi",
-            "yataxi"
-        };
+            "yataxi"};
         return apps;
     }
 
@@ -86,6 +111,8 @@ class Utils {
             text += task->app;
             text += "</b>\nType: <b>";
             text += task->buildType;
+            text += "</b>\nTitle: <b>";
+            text += task->title;
             text += "</b>";
             return text;
         } else if (task->status == TASK_STATUS::CONFIRMED) {
@@ -97,9 +124,11 @@ class Utils {
             text += task->app;
             text += "</b>\nType: <b>";
             text += task->buildType;
+            text += "</b>\nTitle: <b>";
+            text += task->title;
             text += "</b>";
             return text;
-        } else {
+        } else if(task->status == TASK_STATUS::IN_PROGRESS)  {
             std::string text = "<strong>In progress ...</strong>\n\nProject: <b>";
             text += task->project;
             text += "</b>\nBranch: <b>";
@@ -108,6 +137,21 @@ class Utils {
             text += task->app;
             text += "</b>\nType: <b>";
             text += task->buildType;
+            text += "</b>\nTitle: <b>";
+            text += task->title;
+            text += "</b>";
+            return text;
+        } else {
+            std::string text = "<strong>Completed ...</strong>\n\nProject: <b>";
+            text += task->project;
+            text += "</b>\nBranch: <b>";
+            text += task->branch;
+            text += "</b>\nApp: <b>";
+            text += task->app;
+            text += "</b>\nType: <b>";
+            text += task->buildType;
+            text += "</b>\nTitle: <b>";
+            text += task->title;
             text += "</b>";
             return text;
         }

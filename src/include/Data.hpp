@@ -10,6 +10,7 @@ struct Task {
     std::string branch;
     std::string app;
     std::string buildType;
+    std::string title;
     int32_t status;
     int32_t errorCode;
     int64_t charId;

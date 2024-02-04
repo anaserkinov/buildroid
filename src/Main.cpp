@@ -22,9 +22,33 @@ using namespace TgBot;
 TgBot::Bot* bot = nullptr;
 DatabaseController dbController;
 
+std::string lastUsedBranch = "";
+
 std::mutex docekrMtx;
 std::condition_variable dockerCV;
 bool resumeDCThread = true;
+
+std::string getContainerStatus(const std::string& containerName) {
+    std::string command = "docker inspect --format '{{.State.Status}}' " + containerName;
+
+    FILE* pipe = popen(command.c_str(), "r");
+    if (!pipe) {
+        std::cerr << "Error executing command." << std::endl;
+        return "Error";
+    }
+
+    char buffer[128];
+    std::string status;
+
+    while (fgets(buffer, sizeof(buffer), pipe) != nullptr) {
+        buffer[strcspn(buffer, "\n")] = '\0';
+        status += buffer;
+    }
+
+    pclose(pipe);
+
+    return status;
+}
 
 void signalHandler(int s) {
     printf("SIGINT got\n");
@@ -62,7 +86,7 @@ void dockerThread() {
     while (true) {
         std::unique_ptr<Task> task = dbController.getConfirmedTask();
 
-        std::cout<<"thread running \n";
+        std::cout << "thread running \n";
 
         if (task != nullptr) {
             try {
@@ -78,9 +102,94 @@ void dockerThread() {
                     "",
                     "html");
 
+                GitManager gitManager;
+                gitManager.checkout(
+                    Utils::workDir + "/" + Utils::taxiPath,
+                    task->branch);
+
+                {
+                    std::ofstream localProperties(Utils::workDir + "/" + Utils::taxiPath + "/" + "local.properties");
+                    localProperties << "sdk.dir=/usr/local/android-sdk-linux";
+                    localProperties.close();
+                }
+
+                std::string containerStatus = getContainerStatus("taxi_container");
+                std::cout << "docker container status: " << containerStatus << "\n";
+                if (containerStatus != "running") {
+                    int result = system("docker start taxi_container");
+                    if (result == 0) {
+                        std::cout << "Taxi container has been started\n";
+                    } else {
+                        std::cout << "Container couldn't be started\n";
+                    }
+                }
+
+                std::string command = "docker exec -t taxi_container /bin/bash -c ";
+
+                command += "\"mkdir -p /home/source/docker/build/outputs/apk && ";
+                command += "cp -R /home/source/. /home/gradle/unicaltaxi-driver && ";
+                command += "cd /home/gradle/unicaltaxi-driver";
+
+                if (lastUsedBranch == "")
+                    lastUsedBranch = task->branch;
+
+                if (lastUsedBranch != task->branch) {
+                    lastUsedBranch = task->branch;
+                    command += " && gradle clean assamble";
+                }
+
+                // assembleStandaloneDebug
+                // assembleDebug
+                // assembleRelease
+                // bundleRelease
+
+                std::string buildCommand;
+
+                {
+                    std::vector<std::string> apps;
+
+                    if (task->app == "all") {
+                        std::vector<std::string> allApps = Utils::getTaxiApps();
+                        apps.assign(allApps.begin(), allApps.end());
+                    } else {
+                        apps.push_back(task->app);
+                    }
+
+                    if (task->buildType == "publish") {
+                        for (std::string app : apps) {
+                            buildCommand += "gradle :apps:" + app + ":bundleStoreRelease && ";
+                        }
+                    } else if (task->buildType == "release") {
+                        for (std::string app : apps) {
+                            buildCommand += "gradle :apps:" + app + ":assembleStoreRelease && ";
+                        }
+                    } else {
+                        for (std::string app : apps) {
+                            buildCommand += "gradle :apps:" + app + ":assembleStoreDebug && ";
+                        }
+                    }
+
+                    buildCommand.erase(buildCommand.length() - 4, 4);
+                }
+
+                command += " && " + buildCommand;
+
+                command += "\"";
+
+                Utils::execute(command);
+
                 dbController.setTaskStatus(
                     task->id,
                     TASK_STATUS::COMPLETED);
+
+                task->status = TASK_STATUS::COMPLETED;
+
+                bot->getApi().editMessageText(
+                    Utils::getTaskInfoText(task),
+                    task->charId,
+                    task->messageId,
+                    "",
+                    "html");
             } catch (const std::exception& e) {
                 std::cerr << e.what() << '\n';
                 dbController.setTaskStatus(
@@ -155,28 +264,6 @@ bool checkIfDCContainerExists() {
     return false;
 }
 
-std::string getContainerStatus(const std::string& containerName) {
-    std::string command = "docker inspect --format '{{.State.Status}}' " + containerName;
-
-    FILE* pipe = popen(command.c_str(), "r");
-    if (!pipe) {
-        std::cerr << "Error executing command." << std::endl;
-        return "Error";
-    }
-
-    char buffer[128];
-    std::string status;
-
-    while (fgets(buffer, sizeof(buffer), pipe) != nullptr) {
-        buffer[strcspn(buffer, "\n")] = '\0';
-        status += buffer;
-    }
-
-    pclose(pipe);
-
-    return status;
-}
-
 int main() {
     std::ifstream configFile("../config.txt");
     std::unordered_map<std::string, std::string> configMap;
@@ -232,7 +319,6 @@ int main() {
         }
     }
 
-    std::cout << "state: " << getContainerStatus("taxi_container") << "\n";
     if (getContainerStatus("taxi_container") == "running") {
         int result = system("docker stop taxi_container");
         if (result == 0) {
@@ -281,6 +367,10 @@ int main() {
             }
             case Fragments::BUILD_TYPE: {
                 fragment = std::make_shared<BuildTypeFragment>();
+                break;
+            }
+            case Fragments::NOTE: {
+                fragment = std::make_shared<NoteFragment>();
                 break;
             }
             case Fragments::CONFIRM: {

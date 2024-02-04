@@ -11,7 +11,7 @@ void TaxiFragment::onCreate(int16_t type, const std::shared_ptr<void>& data) {
     std::vector<std::string> branches;
 
     auto gitManager = GitManager();
-    gitManager.getBranches((Utils::workDir + "/" + Utils::taxiPath).c_str(), branches);
+    gitManager.getBranches(Utils::workDir + "/" + Utils::taxiPath, branches);
 
     std::vector<std::vector<std::string>> buttons;
     buttons.push_back(
@@ -41,14 +41,14 @@ void TaxiFragment::onNonCommandMessage(const Message::Ptr& message) {
     if (message->text == "<Back 🇺🇿") {
         presentFragment(Fragments::MAIN, Fragment::MESSAGE, message);
     } else if (message->text == "Sync ♻️") {
-        (GitManager()).fetch((Utils::workDir + "/" + Utils::taxiPath).c_str());
+        (GitManager()).fetch(Utils::workDir + "/" + Utils::taxiPath);
         onCreate(Fragment::MESSAGE, message);
     } else {
         std::string branch = message->text;
 
         auto gitManager = GitManager();
         std::vector<std::string> branches;
-        gitManager.getBranches((Utils::workDir + "/" + Utils::taxiPath).c_str(), branches);
+        gitManager.getBranches(Utils::workDir + "/" + Utils::taxiPath, branches);
 
         auto exists = std::find(branches.begin(), branches.end(), branch);
 

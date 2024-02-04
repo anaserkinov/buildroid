@@ -27,6 +27,7 @@ void DatabaseController::createTables() {
                                  "branch TEXT,"
                                  "app TEXT,"
                                  "buildType TEXT,"
+                                 "title TEXT,"
                                  "status INTEGER,"
                                  "errorCode INTEGER,"
                                  "chatId INTEGER,"
@@ -153,10 +154,11 @@ std::unique_ptr<Task> DatabaseController::getTask(int32_t taskId) {
                     cursor.ptr->stringValue(3),
                     cursor.ptr->stringValue(4),
                     cursor.ptr->stringValue(5),
-                    cursor.ptr->intValue(6),
+                    cursor.ptr->stringValue(6),
                     cursor.ptr->intValue(7),
-                    cursor.ptr->longValue(8),
-                    cursor.ptr->longValue(9)});
+                    cursor.ptr->intValue(8),
+                    cursor.ptr->longValue(9),
+                    cursor.ptr->longValue(10)});
 
     } catch (const std::exception& e) {
         printf(e.what());
@@ -178,10 +180,11 @@ std::unique_ptr<Task> DatabaseController::getConfirmedTask() {
                     cursor.ptr->stringValue(3),
                     cursor.ptr->stringValue(4),
                     cursor.ptr->stringValue(5),
-                    cursor.ptr->intValue(6),
+                    cursor.ptr->stringValue(6),
                     cursor.ptr->intValue(7),
-                    cursor.ptr->longValue(8),
-                    cursor.ptr->longValue(9)});
+                    cursor.ptr->intValue(8),
+                    cursor.ptr->longValue(9),
+                    cursor.ptr->longValue(10)});
 
     } catch (const std::exception& e) {
         printf(e.what());
@@ -196,17 +199,18 @@ void DatabaseController::selectProject(
         int32_t userTaskId = getCurrentTaskId(userId);
         if (userTaskId == -1) {
             auto preparedS = MainDatabase::getDB().executeFast(
-                "REPLACE INTO tasks VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)");
+                "REPLACE INTO tasks VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 
             preparedS->requery();
             preparedS->bindInt64(2, userId);
-            preparedS->bindInt32(7, TASK_STATUS::CREATED);
-            preparedS->bindInt32(8, -1);
+            preparedS->bindString(7, "");
+            preparedS->bindInt32(8, TASK_STATUS::CREATED);
             preparedS->bindInt32(9, -1);
-            preparedS->bindInt32(10, -1);
-            preparedS->bindInt32(11, -1);
-            preparedS->bindInt32(12, -1);
-            preparedS->bindInt32(13, -1);
+            preparedS->bindInt64(10, -1);
+            preparedS->bindInt64(11, -1);
+            preparedS->bindInt64(12, -1);
+            preparedS->bindInt64(13, -1);
+            preparedS->bindInt64(14, -1);
 
             userTaskId = preparedS->step(MainDatabase::getDB());
             preparedS->dispose();
@@ -265,6 +269,23 @@ void DatabaseController::selectBuildType(
         auto preparedS = MainDatabase::getDB().executeFast("UPDATE tasks SET buildType = ? WHERE userId = ? AND status = ?");
 
         preparedS->bindString(1, buildType);
+        preparedS->bindInt64(2, userId);
+        preparedS->bindInt32(3, TASK_STATUS::CREATED);
+
+        preparedS->step();
+        preparedS->dispose();
+    } catch (const std::exception& e) {
+        printf(e.what());
+    }
+}
+
+void DatabaseController::setTaskTitle(
+    int64_t userId,
+    std::string title) {
+    try {
+        auto preparedS = MainDatabase::getDB().executeFast("UPDATE tasks SET title = ? WHERE userId = ? AND status = ?");
+
+        preparedS->bindString(1, title);
         preparedS->bindInt64(2, userId);
         preparedS->bindInt32(3, TASK_STATUS::CREATED);
 

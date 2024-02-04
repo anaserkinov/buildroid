@@ -381,12 +381,12 @@ CMakeFiles/Buildroid.dir/all: tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/all
 CMakeFiles/Buildroid.dir/all: libgit2/src/libgit2/CMakeFiles/libgit2package.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Buildroid.dir/build.make CMakeFiles/Buildroid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=1 "Built target Buildroid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=1,2 "Built target Buildroid"
 .PHONY : CMakeFiles/Buildroid.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Buildroid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 35
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Buildroid.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : CMakeFiles/Buildroid.dir/rule
@@ -433,12 +433,12 @@ sqlite_cpp/CMakeFiles/sqlite_cpp.dir/clean:
 tgbot_fragment/CMakeFiles/tgbot_fragment.dir/all: tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/all
 	$(MAKE) $(MAKESILENT) -f tgbot_fragment/CMakeFiles/tgbot_fragment.dir/build.make tgbot_fragment/CMakeFiles/tgbot_fragment.dir/depend
 	$(MAKE) $(MAKESILENT) -f tgbot_fragment/CMakeFiles/tgbot_fragment.dir/build.make tgbot_fragment/CMakeFiles/tgbot_fragment.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=86 "Built target tgbot_fragment"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num= "Built target tgbot_fragment"
 .PHONY : tgbot_fragment/CMakeFiles/tgbot_fragment.dir/all
 
 # Build rule for subdir invocation for target.
 tgbot_fragment/CMakeFiles/tgbot_fragment.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/CMakeFiles/tgbot_fragment.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : tgbot_fragment/CMakeFiles/tgbot_fragment.dir/rule
@@ -486,12 +486,12 @@ tgbot_fragment/test/CMakeFiles/Main.dir/all: tgbot_fragment/CMakeFiles/tgbot_fra
 tgbot_fragment/test/CMakeFiles/Main.dir/all: tgbot_fragment/tgbot-cpp/CMakeFiles/TgBot.dir/all
 	$(MAKE) $(MAKESILENT) -f tgbot_fragment/test/CMakeFiles/Main.dir/build.make tgbot_fragment/test/CMakeFiles/Main.dir/depend
 	$(MAKE) $(MAKESILENT) -f tgbot_fragment/test/CMakeFiles/Main.dir/build.make tgbot_fragment/test/CMakeFiles/Main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=2 "Built target Main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num= "Built target Main"
 .PHONY : tgbot_fragment/test/CMakeFiles/Main.dir/all
 
 # Build rule for subdir invocation for target.
 tgbot_fragment/test/CMakeFiles/Main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tgbot_fragment/test/CMakeFiles/Main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : tgbot_fragment/test/CMakeFiles/Main.dir/rule
@@ -590,12 +590,12 @@ libgit2/deps/xdiff/CMakeFiles/xdiff.dir/clean:
 libgit2/deps/ntlmclient/CMakeFiles/ntlmclient.dir/all:
 	$(MAKE) $(MAKESILENT) -f libgit2/deps/ntlmclient/CMakeFiles/ntlmclient.dir/build.make libgit2/deps/ntlmclient/CMakeFiles/ntlmclient.dir/depend
 	$(MAKE) $(MAKESILENT) -f libgit2/deps/ntlmclient/CMakeFiles/ntlmclient.dir/build.make libgit2/deps/ntlmclient/CMakeFiles/ntlmclient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num= "Built target ntlmclient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=80 "Built target ntlmclient"
 .PHONY : libgit2/deps/ntlmclient/CMakeFiles/ntlmclient.dir/all
 
 # Build rule for subdir invocation for target.
 libgit2/deps/ntlmclient/CMakeFiles/ntlmclient.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libgit2/deps/ntlmclient/CMakeFiles/ntlmclient.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : libgit2/deps/ntlmclient/CMakeFiles/ntlmclient.dir/rule
@@ -616,7 +616,7 @@ libgit2/deps/ntlmclient/CMakeFiles/ntlmclient.dir/clean:
 libgit2/src/libgit2/CMakeFiles/libgit2.dir/all:
 	$(MAKE) $(MAKESILENT) -f libgit2/src/libgit2/CMakeFiles/libgit2.dir/build.make libgit2/src/libgit2/CMakeFiles/libgit2.dir/depend
 	$(MAKE) $(MAKESILENT) -f libgit2/src/libgit2/CMakeFiles/libgit2.dir/build.make libgit2/src/libgit2/CMakeFiles/libgit2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24 "Built target libgit2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target libgit2"
 .PHONY : libgit2/src/libgit2/CMakeFiles/libgit2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -652,7 +652,7 @@ libgit2/src/libgit2/CMakeFiles/libgit2package.dir/all: libgit2/src/util/CMakeFil
 
 # Build rule for subdir invocation for target.
 libgit2/src/libgit2/CMakeFiles/libgit2package.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libgit2/src/libgit2/CMakeFiles/libgit2package.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : libgit2/src/libgit2/CMakeFiles/libgit2package.dir/rule
@@ -673,12 +673,12 @@ libgit2/src/libgit2/CMakeFiles/libgit2package.dir/clean:
 libgit2/src/util/CMakeFiles/util.dir/all:
 	$(MAKE) $(MAKESILENT) -f libgit2/src/util/CMakeFiles/util.dir/build.make libgit2/src/util/CMakeFiles/util.dir/depend
 	$(MAKE) $(MAKESILENT) -f libgit2/src/util/CMakeFiles/util.dir/build.make libgit2/src/util/CMakeFiles/util.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=87,88,89,90 "Built target util"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=86,87,88,89,90 "Built target util"
 .PHONY : libgit2/src/util/CMakeFiles/util.dir/all
 
 # Build rule for subdir invocation for target.
 libgit2/src/util/CMakeFiles/util.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libgit2/src/util/CMakeFiles/util.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : libgit2/src/util/CMakeFiles/util.dir/rule
@@ -709,7 +709,7 @@ libgit2/src/cli/CMakeFiles/git2_cli.dir/all: libgit2/src/util/CMakeFiles/util.di
 
 # Build rule for subdir invocation for target.
 libgit2/src/cli/CMakeFiles/git2_cli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 29
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libgit2/src/cli/CMakeFiles/git2_cli.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : libgit2/src/cli/CMakeFiles/git2_cli.dir/rule
@@ -730,12 +730,12 @@ libgit2/src/cli/CMakeFiles/git2_cli.dir/clean:
 libgit2/tests/headertest/CMakeFiles/headertest.dir/all:
 	$(MAKE) $(MAKESILENT) -f libgit2/tests/headertest/CMakeFiles/headertest.dir/build.make libgit2/tests/headertest/CMakeFiles/headertest.dir/depend
 	$(MAKE) $(MAKESILENT) -f libgit2/tests/headertest/CMakeFiles/headertest.dir/build.make libgit2/tests/headertest/CMakeFiles/headertest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num= "Built target headertest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=7 "Built target headertest"
 .PHONY : libgit2/tests/headertest/CMakeFiles/headertest.dir/all
 
 # Build rule for subdir invocation for target.
 libgit2/tests/headertest/CMakeFiles/headertest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libgit2/tests/headertest/CMakeFiles/headertest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : libgit2/tests/headertest/CMakeFiles/headertest.dir/rule
@@ -761,7 +761,7 @@ libgit2/tests/libgit2/CMakeFiles/libgit2_tests.dir/all: libgit2/src/libgit2/CMak
 libgit2/tests/libgit2/CMakeFiles/libgit2_tests.dir/all: libgit2/src/util/CMakeFiles/util.dir/all
 	$(MAKE) $(MAKESILENT) -f libgit2/tests/libgit2/CMakeFiles/libgit2_tests.dir/build.make libgit2/tests/libgit2/CMakeFiles/libgit2_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f libgit2/tests/libgit2/CMakeFiles/libgit2_tests.dir/build.make libgit2/tests/libgit2/CMakeFiles/libgit2_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80 "Built target libgit2_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anaskhan/proj/buildroid/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79 "Built target libgit2_tests"
 .PHONY : libgit2/tests/libgit2/CMakeFiles/libgit2_tests.dir/all
 
 # Build rule for subdir invocation for target.
@@ -797,7 +797,7 @@ libgit2/tests/util/CMakeFiles/util_tests.dir/all: libgit2/src/util/CMakeFiles/ut
 
 # Build rule for subdir invocation for target.
 libgit2/tests/util/CMakeFiles/util_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 35
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libgit2/tests/util/CMakeFiles/util_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anaskhan/proj/buildroid/build/CMakeFiles 0
 .PHONY : libgit2/tests/util/CMakeFiles/util_tests.dir/rule

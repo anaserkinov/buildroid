@@ -6,11 +6,7 @@ BuildTypeFragment::BuildTypeFragment()
 
 void BuildTypeFragment::onCreate(int16_t type, const std::shared_ptr<void>& data) {
     BaseFragment::onCreate(type, data);
-    int64_t chatId;
-    if (type == Fragment::MESSAGE)
-        chatId = std::reinterpret_pointer_cast<Message>(data)->chat->id;
-    else
-        chatId = std::reinterpret_pointer_cast<CallbackQuery>(data)->message->chat->id;
+    int64_t chatId = std::reinterpret_pointer_cast<Message>(data)->chat->id;
     auto keyboard = std::make_shared<ReplyKeyboardMarkup>();
     keyboard->resizeKeyboard = true;
     keyboard->oneTimeKeyboard = true;
@@ -45,7 +41,7 @@ void BuildTypeFragment::onNonCommandMessage(const Message::Ptr& message) {
             dbController->selectBuildType(
                 message->from->id,
                 text);
-            presentFragment(Fragments::CONFIRM, Fragment::MESSAGE, message);
+            presentFragment(Fragments::NOTE, Fragment::MESSAGE, message);
         } else
             sendMessage(
                 message->chat->id,
