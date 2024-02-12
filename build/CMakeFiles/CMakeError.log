@@ -330,3 +330,291 @@ int main(int ac, char *av[]) {
 }
 
 
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIMESPEC failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_337aa && [1/2] Building C object CMakeFiles/cmTC_337aa.dir/src.c.o
+FAILED: CMakeFiles/cmTC_337aa.dir/src.c.o 
+/usr/bin/gcc-12 -DHAVE_STRUCT_STAT_ST_MTIMESPEC   -o CMakeFiles/cmTC_337aa.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c:7:34: error: ‘struct stat’ has no member named ‘st_mtimespec’
+    7 |   (void)sizeof(((struct stat *)0)->st_mtimespec);
+      |                                  ^~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtimespec);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_MTIME_NSEC failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_5a6d6 && [1/2] Building C object CMakeFiles/cmTC_5a6d6.dir/src.c.o
+FAILED: CMakeFiles/cmTC_5a6d6.dir/src.c.o 
+/usr/bin/gcc-12 -DHAVE_STRUCT_STAT_MTIME_NSEC   -o CMakeFiles/cmTC_5a6d6.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c:6:34: error: ‘struct stat’ has no member named ‘st_mtime_nsec’
+    6 |   (void)sizeof(((struct stat *)0)->st_mtime_nsec);
+      |                                  ^~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtime_nsec);
+  return 0;
+}
+
+Performing C SOURCE FILE Test IS_WDOCUMENTATION_SUPPORTED failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ee2bd && [1/2] Building C object CMakeFiles/cmTC_ee2bd.dir/src.c.o
+FAILED: CMakeFiles/cmTC_ee2bd.dir/src.c.o 
+/usr/bin/gcc-12 -DIS_WDOCUMENTATION_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra    -Wdocumentation -o CMakeFiles/cmTC_ee2bd.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+gcc-12: error: unrecognized command-line option '-Wdocumentation'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test IS_WC11_EXTENSIONS_SUPPORTED failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7ff8b && [1/2] Building C object CMakeFiles/cmTC_7ff8b.dir/src.c.o
+FAILED: CMakeFiles/cmTC_7ff8b.dir/src.c.o 
+/usr/bin/gcc-12 -DIS_WC11_EXTENSIONS_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion    -Wc11-extensions -o CMakeFiles/cmTC_7ff8b.dir/src.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/src.c
+gcc-12: error: unrecognized command-line option '-Wc11-extensions'; did you mean '-Wc++11-extensions'?
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the regcomp_l exist failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ecaba && [1/2] Building C object CMakeFiles/cmTC_ecaba.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_ecaba.dir/CheckSymbolExists.c.o 
+/usr/bin/gcc-12   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -o CMakeFiles/cmTC_ecaba.dir/CheckSymbolExists.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:10: fatal error: xlocale.h: No such file or directory
+    3 | #include <xlocale.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <regex.h>
+#include <xlocale.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef regcomp_l
+  return ((int*)(&regcomp_l))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file windows.h exists failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e8235 && [1/2] Building C object CMakeFiles/cmTC_e8235.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_e8235.dir/CheckIncludeFile.c.o 
+/usr/bin/gcc-12   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -o CMakeFiles/cmTC_e8235.dir/CheckIncludeFile.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: windows.h: No such file or directory
+    1 | #include <windows.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function _strtoi64 exists failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_aaae8 && [1/2] Building C object CMakeFiles/cmTC_aaae8.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_aaae8
+FAILED: cmTC_aaae8 
+: && /usr/bin/gcc-12 -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_strtoi64  CMakeFiles/cmTC_aaae8.dir/CheckFunctionExists.c.o -o cmTC_aaae8   && :
+/usr/bin/ld: CMakeFiles/cmTC_aaae8.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `_strtoi64'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the prototype qsort_r exists for GIT_QSORT_BSD failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_49d86 && [1/2] Building C object CMakeFiles/cmTC_49d86.dir/CheckPrototypeDefinition.c.o
+FAILED: CMakeFiles/cmTC_49d86.dir/CheckPrototypeDefinition.c.o 
+/usr/bin/gcc-12   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function -Wno-unused-parameter -o CMakeFiles/cmTC_49d86.dir/CheckPrototypeDefinition.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:7: error: conflicting types for ‘qsort_r’; have ‘void(void *, size_t,  size_t,  void *, int (*)(void *, const void *, const void *))’ {aka ‘void(void *, long unsigned int,  long unsigned int,  void *, int (*)(void *, const void *, const void *))’}
+   14 | void (qsort_r)(void *base, size_t nmemb, size_t size, void *context, int (*compar)(void *, const void *, const void *)) {
+      |       ^~~~~~~
+In file included from /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:1:
+/usr/include/stdlib.h:841:13: note: previous declaration of ‘qsort_r’ with type ‘void(void *, size_t,  size_t,  int (*)(const void *, const void *, void *), void *)’ {aka ‘void(void *, long unsigned int,  long unsigned int,  int (*)(const void *, const void *, void *), void *)’}
+  841 | extern void qsort_r (void *__base, size_t __nmemb, size_t __size,
+      |             ^~~~~~~
+cc1: note: unrecognized command-line option ‘-Wno-documentation-deprecated-sync’ may have been intended to silence earlier diagnostics
+ninja: build stopped: subcommand failed.
+
+
+
+#include <stdlib.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef qsort_r
+  cmakeRequireSymbol(0, &qsort_r);
+#endif
+}
+
+void (qsort_r)(void *base, size_t nmemb, size_t size, void *context, int (*compar)(void *, const void *, const void *)) {
+  return ;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
+Determining if the prototype qsort_s exists for GIT_QSORT_C11 failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_db492 && [1/2] Building C object CMakeFiles/cmTC_db492.dir/CheckPrototypeDefinition.c.o
+FAILED: CMakeFiles/cmTC_db492.dir/CheckPrototypeDefinition.c.o 
+/usr/bin/gcc-12   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function -Wno-unused-parameter -o CMakeFiles/cmTC_db492.dir/CheckPrototypeDefinition.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c: In function ‘checkSymbol’:
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:10:26: error: ‘qsort_s’ undeclared (first use in this function); did you mean ‘qsort_r’?
+   10 |   cmakeRequireSymbol(0, &qsort_s);
+      |                          ^~~~~~~
+      |                          qsort_r
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:10:26: note: each undeclared identifier is reported only once for each function it appears in
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c: At top level:
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:31: error: unknown type name ‘rsize_t’; did you mean ‘ssize_t’?
+   14 | errno_t (qsort_s)(void *base, rsize_t nmemb, rsize_t size, int (*compar)(const void *, const void *, void *), void *context) {
+      |                               ^~~~~~~
+      |                               ssize_t
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:46: error: unknown type name ‘rsize_t’; did you mean ‘ssize_t’?
+   14 | errno_t (qsort_s)(void *base, rsize_t nmemb, rsize_t size, int (*compar)(const void *, const void *, void *), void *context) {
+      |                                              ^~~~~~~
+      |                                              ssize_t
+cc1: note: unrecognized command-line option ‘-Wno-documentation-deprecated-sync’ may have been intended to silence earlier diagnostics
+ninja: build stopped: subcommand failed.
+
+
+
+#include <stdlib.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef qsort_s
+  cmakeRequireSymbol(0, &qsort_s);
+#endif
+}
+
+errno_t (qsort_s)(void *base, rsize_t nmemb, rsize_t size, int (*compar)(const void *, const void *, void *), void *context) {
+  return 0;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
+Determining if the prototype qsort_s exists for GIT_QSORT_MSC failed with the following output:
+Change Dir: /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_2c078 && [1/2] Building C object CMakeFiles/cmTC_2c078.dir/CheckPrototypeDefinition.c.o
+FAILED: CMakeFiles/cmTC_2c078.dir/CheckPrototypeDefinition.c.o 
+/usr/bin/gcc-12   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -Wno-unused-function -Wno-unused-parameter -o CMakeFiles/cmTC_2c078.dir/CheckPrototypeDefinition.c.o -c /home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c: In function ‘checkSymbol’:
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:10:26: error: ‘qsort_s’ undeclared (first use in this function); did you mean ‘qsort_r’?
+   10 |   cmakeRequireSymbol(0, &qsort_s);
+      |                          ^~~~~~~
+      |                          qsort_r
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:10:26: note: each undeclared identifier is reported only once for each function it appears in
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c: At top level:
+/home/anaskhan/proj/buildroid/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:7: warning: no previous declaration for ‘qsort_s’ [-Wmissing-declarations]
+   14 | void (qsort_s)(void *base, size_t num, size_t width, int (*compare )(void *, const void *, const void *), void *context) {
+      |       ^~~~~~~
+cc1: note: unrecognized command-line option ‘-Wno-documentation-deprecated-sync’ may have been intended to silence earlier diagnostics
+ninja: build stopped: subcommand failed.
+
+
+
+#include <stdlib.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef qsort_s
+  cmakeRequireSymbol(0, &qsort_s);
+#endif
+}
+
+void (qsort_s)(void *base, size_t num, size_t width, int (*compare )(void *, const void *, const void *), void *context) {
+  return ;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+

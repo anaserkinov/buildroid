@@ -24,19 +24,19 @@ void BuildTypeFragment::onCreate(int16_t type, const std::shared_ptr<void>& data
 }
 
 void BuildTypeFragment::onNonCommandMessage(const Message::Ptr& message) {
-    auto text = message->text;
+    auto text = Utils::toLowercase(message->text);
     Utils::clearStringFromSticker(text);
     std::cout << text;
     if (text == "Back") {
         presentFragment(Fragments::APP, Fragment::MESSAGE, message);
     } else {
-        if (text == "Publish" || text == "Release" || text == "Debug") {
-            if (text == "Publish") {
-                sendMessage(
-                    message->chat->id,
-                    "Not yet available");
-                return;
-            }
+        if (text == "publish" || text == "release" || text == "debug") {
+            // if (text == "publish") {
+            //     sendMessage(
+            //         message->chat->id,
+            //         "Not yet available");
+            //     return;
+            // }
 
             dbController->selectBuildType(
                 message->from->id,

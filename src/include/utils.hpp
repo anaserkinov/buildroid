@@ -51,7 +51,7 @@ class Utils {
 
         if (WIFEXITED(status) && WEXITSTATUS(status) == 0) {
             std::cout << "Command executed successfully." << std::endl;
-            return nullptr; 
+            return nullptr;
         } else {
             std::cerr << "Error executing command." << std::endl;
             if (!result.empty()) {
@@ -128,7 +128,7 @@ class Utils {
             text += task->title;
             text += "</b>";
             return text;
-        } else if(task->status == TASK_STATUS::IN_PROGRESS)  {
+        } else if (task->status == TASK_STATUS::IN_PROGRESS) {
             std::string text = "<strong>In progress ...</strong>\n\nProject: <b>";
             text += task->project;
             text += "</b>\nBranch: <b>";
@@ -155,6 +155,14 @@ class Utils {
             text += "</b>";
             return text;
         }
+    }
+
+    static std::string toLowercase(const std::string& str) {
+        std::string result;
+        for (char c : str) {
+            result += std::tolower(c);
+        }
+        return result;
     }
 };
 

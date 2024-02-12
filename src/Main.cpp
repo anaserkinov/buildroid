@@ -19,6 +19,8 @@
 
 using namespace TgBot;
 
+namespace fs = std::filesystem;
+
 TgBot::Bot* bot = nullptr;
 DatabaseController dbController;
 
@@ -126,16 +128,21 @@ void dockerThread() {
 
                 std::string command = "docker exec -t taxi_container /bin/bash -c ";
 
-                command += "\"mkdir -p /home/source/docker/build/outputs/apk && ";
+                command += "\"rm -rf /home/source/docker/build/outputs/publish && ";
+                command += "mkdir -p /home/source/docker/build/outputs/publish && ";
+                command += "rm -rf /home/source/docker/build/outputs/release && ";
+                command += "mkdir -p /home/source/docker/build/outputs/release && ";
+                command += "rm -rf /home/source/docker/build/outputs/debug && ";
+                command += "mkdir -p /home/source/docker/build/outputs/debug && ";
+                command += "rm -rf /home/gradle/unicaltaxi-driver && ";
                 command += "cp -R /home/source/. /home/gradle/unicaltaxi-driver && ";
                 command += "cd /home/gradle/unicaltaxi-driver";
 
-                if (lastUsedBranch == "")
-                    lastUsedBranch = task->branch;
-
                 if (lastUsedBranch != task->branch) {
                     lastUsedBranch = task->branch;
-                    command += " && gradle clean assamble";
+                    command += " && find . -type d -path '*/src/*' -prune -o -name 'build' -type d -exec rm -rf {} +";
+                    command += " && ./gradlew clean";
+                    // command += " && ./gradlew build --refresh-dependencies";
                 }
 
                 // assembleStandaloneDebug
@@ -144,11 +151,12 @@ void dockerThread() {
                 // bundleRelease
 
                 std::string buildCommand;
+                std::string copyOuputCommand;
 
                 {
                     std::vector<std::string> apps;
 
-                    if (task->app == "all") {
+                    if (task->app == "All") {
                         std::vector<std::string> allApps = Utils::getTaxiApps();
                         apps.assign(allApps.begin(), allApps.end());
                     } else {
@@ -158,21 +166,32 @@ void dockerThread() {
                     if (task->buildType == "publish") {
                         for (std::string app : apps) {
                             buildCommand += "gradle :apps:" + app + ":bundleStoreRelease && ";
+                            copyOuputCommand += "cp -R /home/gradle/unicaltaxi-driver/apps/" +
+                                                app +
+                                                "/store/release/. /home/source/docker/build/outputs/publish && ";
                         }
                     } else if (task->buildType == "release") {
                         for (std::string app : apps) {
                             buildCommand += "gradle :apps:" + app + ":assembleStoreRelease && ";
+                            copyOuputCommand += "cp -R /home/gradle/unicaltaxi-driver/apps/" +
+                                                app +
+                                                "/build/outputs/apk/store/release/. /home/source/docker/build/outputs/release && ";
                         }
                     } else {
                         for (std::string app : apps) {
                             buildCommand += "gradle :apps:" + app + ":assembleStoreDebug && ";
+                            copyOuputCommand += "cp -R /home/gradle/unicaltaxi-driver/apps/" +
+                                                app +
+                                                "/build/outputs/apk/store/debug/. /home/source/docker/build/outputs/debug && ";
                         }
                     }
 
                     buildCommand.erase(buildCommand.length() - 4, 4);
+                    copyOuputCommand.erase(copyOuputCommand.length() - 4, 4);
                 }
 
                 command += " && " + buildCommand;
+                command += " && " + copyOuputCommand;
 
                 command += "\"";
 
@@ -190,6 +209,33 @@ void dockerThread() {
                     task->messageId,
                     "",
                     "html");
+
+                if (task->buildType == "publish") {
+                    for (const auto& entry : fs::recursive_directory_iterator(fs::current_path().string() + "/" + Utils::workDir + "/" + Utils::taxiPath + "/docker/build/outputs/publish")) {
+                        if (entry.is_regular_file() && entry.path().extension() == ".aab") {
+                            bot->getApi().sendDocument(
+                                task->charId,
+                                InputFile::fromFile(entry.path().string(), "application/x-authorware-bin"));
+                        }
+                    }
+                } else if (task->buildType == "release") {
+                    for (const auto& entry : fs::recursive_directory_iterator(fs::current_path().string() + "/" + Utils::workDir + "/" + Utils::taxiPath + "/docker/build/outputs/release")) {
+                        if (entry.is_regular_file() && entry.path().extension() == ".apk") {
+                            bot->getApi().sendDocument(
+                                task->charId,
+                                InputFile::fromFile(entry.path().string(), "application/vnd.android.package-archive"));
+                        }
+                    }
+                } else {
+                    for (const auto& entry : fs::recursive_directory_iterator(fs::current_path().string() + "/" + Utils::workDir + "/" + Utils::taxiPath + "/docker/build/outputs/debug")) {
+                        if (entry.is_regular_file() && entry.path().extension() == ".apk") {
+                            bot->getApi().sendDocument(
+                                task->charId,
+                                InputFile::fromFile(entry.path().string(), "application/vnd.android.package-archive"));
+                        }
+                    }
+                }
+
             } catch (const std::exception& e) {
                 std::cerr << e.what() << '\n';
                 dbController.setTaskStatus(
