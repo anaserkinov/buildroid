@@ -1,2 +1,0 @@
-/usr/bin/ar qc libtgbot_fragment.a CMakeFiles/tgbot_fragment.dir/src/Fragment.cpp.o CMakeFiles/tgbot_fragment.dir/src/FragmentManager.cpp.o
-/usr/bin/ranlib libtgbot_fragment.a

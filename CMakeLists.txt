@@ -8,6 +8,8 @@ project(Buildroid)
 find_package(cpprestsdk REQUIRED)
 
 set(SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
+set(LIBS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/libs)
+
 
 file(
     GLOB 
@@ -22,18 +24,18 @@ add_executable(
     ${SOURCE_FILES}
     )
 
-add_subdirectory("sqlite_cpp")
-add_subdirectory("tgbot_fragment")
+add_subdirectory(${LIBS_DIR}/sqlite_cpp)
+add_subdirectory(${LIBS_DIR}/tgbot_fragment)
 
-add_subdirectory(libgit2)
+add_subdirectory(${LIBS_DIR}/libgit2)
 
 
 include_directories(
-    "sqlite_cpp/include"
-    "tgbot_fragment/tgbot-cpp/include/tgbot"
-    "tgbot_fragment/include"
+    "libs/sqlite_cpp/include"
+    "libs/tgbot_fragment/tgbot-cpp/include/tgbot"
+    "libs/tgbot_fragment/include"
     "src/include"
-    "libgit2/include"
+    "libs/libgit2/include"
 )
 
 target_link_libraries(Buildroid PRIVATE

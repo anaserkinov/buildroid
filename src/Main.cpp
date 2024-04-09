@@ -311,6 +311,9 @@ bool checkIfDCContainerExists() {
 }
 
 int main() {
+    // Json::Value jwt_header;
+
+    return;
     std::ifstream configFile("../config.txt");
     std::unordered_map<std::string, std::string> configMap;
 

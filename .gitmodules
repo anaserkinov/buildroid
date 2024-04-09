@@ -1,9 +1,9 @@
-[submodule "sqlite_cpp"]
-	path = sqlite_cpp
-	url = https://github.com/anaserkinov/sqlite_cpp.git
-[submodule "tgbot_fragment"]
-	path = tgbot_fragment
-	url = https://github.com/anaserkinov/tgbot_fragment.git
 [submodule "src/tgbot_fragment_db_impl"]
 	path = src/tgbot_fragment_db_impl
 	url = https://github.com/anaserkinov/tgbot_fragment_db_impl.git
+[submodule "libs/libs/sqlite_cpp"]
+	path = libs/libs/sqlite_cpp
+	url = https://github.com/anaserkinov/sqlite_cpp.git
+[submodule "libs/tgbot_fragment"]
+	path = libs/tgbot_fragment
+	url = https://github.com/anaserkinov/tgbot_fragment.git
