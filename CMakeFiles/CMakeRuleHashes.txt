@@ -1,3 +1,0 @@
-# Hashes of file build rules.
-5aba774db35e9b03f8198550ae892eae libgit2/tests/libgit2/clar.suite
-9e40e6c73609f10be0e6f185e9d87b7b libgit2/tests/util/clar.suite

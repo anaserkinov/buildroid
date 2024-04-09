@@ -5,7 +5,8 @@ set(CMAKE_CXX_STANDARD 23)
 
 project(Buildroid)
 
-find_package(cpprestsdk REQUIRED)
+set(JSON_INC_PATH external/vcpkg/packages/jsoncpp_x64-linux/include)
+set(JSON_LIB_PATH external/vcpkg/packages/jsoncpp_x64-linux/lib)
 
 set(SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 set(LIBS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/libs)
@@ -26,9 +27,11 @@ add_executable(
 
 add_subdirectory(${LIBS_DIR}/sqlite_cpp)
 add_subdirectory(${LIBS_DIR}/tgbot_fragment)
-
 add_subdirectory(${LIBS_DIR}/libgit2)
 
+
+target_include_directories(Buildroid PRIVATE ${JSON_INC_PATH})
+target_link_directories(Buildroid PRIVATE ${JSON_LIB_PATH})
 
 include_directories(
     "libs/sqlite_cpp/include"
@@ -42,6 +45,5 @@ target_link_libraries(Buildroid PRIVATE
 tgbot_fragment
 sqlite_cpp
 TgBot
-cpprestsdk::cpprest
 libgit2package
-)
+jsoncpp)
