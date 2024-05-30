@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.5.1)
 
-set(CMAKE_CXX_COMPILER g++)
-set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD 17)
 
 project(Buildroid)
 
@@ -42,6 +41,7 @@ include_directories(
 )
 
 target_link_libraries(Buildroid PRIVATE
+dl
 tgbot_fragment
 sqlite_cpp
 TgBot

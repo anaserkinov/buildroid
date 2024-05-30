@@ -25,7 +25,7 @@ using namespace TgBot;
 
 namespace fs = std::filesystem;
 
-TgBot::Bot* bot = nullptr;
+TgBot::Bot *bot = nullptr;
 DatabaseController dbController;
 
 std::string lastUsedBranch = "";
@@ -34,82 +34,97 @@ std::mutex docekrMtx;
 std::condition_variable dockerCV;
 bool resumeDCThread = true;
 
-std::string base64_encode(const std::string& in) {
+std::string base64_encode(const std::string &in)
+{
     std::string out;
 
-    std::string base64_encode_b = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";  //=
+    std::string base64_encode_b = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"; //=
 
     int val = 0, valb = -6;
-    for (unsigned char c : in) {
+    for (unsigned char c : in)
+    {
         val = (val << 8) + c;
         valb += 8;
-        while (valb >= 0) {
+        while (valb >= 0)
+        {
             out.push_back(base64_encode_b[(val >> valb) & 0x3F]);
             valb -= 6;
         }
     }
-    if (valb > -6) out.push_back(base64_encode_b[((val << 8) >> (valb + 8)) & 0x3F]);
-    while (out.size() % 4) out.push_back('=');
+    if (valb > -6)
+        out.push_back(base64_encode_b[((val << 8) >> (valb + 8)) & 0x3F]);
+    while (out.size() % 4)
+        out.push_back('=');
     return out;
 }
 
-RSA* createPrivateRSA(std::string key) {
-    RSA* rsa = NULL;
-    const char* c_string = key.c_str();
-    BIO* keybio = BIO_new_mem_buf((void*)c_string, -1);
-    if (keybio == NULL) {
+RSA *createPrivateRSA(std::string key)
+{
+    RSA *rsa = NULL;
+    const char *c_string = key.c_str();
+    BIO *keybio = BIO_new_mem_buf((void *)c_string, -1);
+    if (keybio == NULL)
+    {
         return 0;
     }
     rsa = PEM_read_bio_RSAPrivateKey(keybio, &rsa, NULL, NULL);
     return rsa;
 }
 
-bool RSASign(RSA* rsa,
-             const unsigned char* Msg,
+bool RSASign(RSA *rsa,
+             const unsigned char *Msg,
              size_t MsgLen,
-             unsigned char** EncMsg,
-             size_t* MsgLenEnc) {
-    EVP_MD_CTX* m_RSASignCtx = EVP_MD_CTX_create();
-    EVP_PKEY* priKey = EVP_PKEY_new();
+             unsigned char **EncMsg,
+             size_t *MsgLenEnc)
+{
+    EVP_MD_CTX *m_RSASignCtx = EVP_MD_CTX_create();
+    EVP_PKEY *priKey = EVP_PKEY_new();
     EVP_PKEY_assign_RSA(priKey, rsa);
-    if (EVP_DigestSignInit(m_RSASignCtx, NULL, EVP_sha256(), NULL, priKey) <= 0) {
+    if (EVP_DigestSignInit(m_RSASignCtx, NULL, EVP_sha256(), NULL, priKey) <= 0)
+    {
         return false;
     }
-    if (EVP_DigestSignUpdate(m_RSASignCtx, Msg, MsgLen) <= 0) {
+    if (EVP_DigestSignUpdate(m_RSASignCtx, Msg, MsgLen) <= 0)
+    {
         return false;
     }
-    if (EVP_DigestSignFinal(m_RSASignCtx, NULL, MsgLenEnc) <= 0) {
+    if (EVP_DigestSignFinal(m_RSASignCtx, NULL, MsgLenEnc) <= 0)
+    {
         return false;
     }
-    *EncMsg = (unsigned char*)malloc(*MsgLenEnc);
-    if (EVP_DigestSignFinal(m_RSASignCtx, *EncMsg, MsgLenEnc) <= 0) {
+    *EncMsg = (unsigned char *)malloc(*MsgLenEnc);
+    if (EVP_DigestSignFinal(m_RSASignCtx, *EncMsg, MsgLenEnc) <= 0)
+    {
         return false;
     }
     EVP_MD_CTX_destroy(m_RSASignCtx);
     return true;
 }
 
-
-std::string signMessage(std::string privateKey, std::string plainText) {
-    RSA* privateRSA = createPrivateRSA(privateKey);
-    unsigned char* encMessage;
+std::string signMessage(std::string privateKey, std::string plainText)
+{
+    RSA *privateRSA = createPrivateRSA(privateKey);
+    unsigned char *encMessage;
     size_t encMessageLength;
-    RSASign(privateRSA, (unsigned char*)plainText.c_str(), plainText.length(), &encMessage, &encMessageLength);
-    std::string str1((char*)(encMessage), encMessageLength);
+    RSASign(privateRSA, (unsigned char *)plainText.c_str(), plainText.length(), &encMessage, &encMessageLength);
+    std::string str1((char *)(encMessage), encMessageLength);
     free(encMessage);
     return base64_encode(str1);
 }
 
-std::string url_encode(const std::string& value) {
+std::string url_encode(const std::string &value)
+{
     std::ostringstream escaped;
     escaped.fill('0');
     escaped << std::hex;
 
-    for (std::string::const_iterator i = value.begin(), n = value.end(); i != n; ++i) {
+    for (std::string::const_iterator i = value.begin(), n = value.end(); i != n; ++i)
+    {
         std::string::value_type c = (*i);
 
         // Keep alphanumeric and other accepted characters intact
-        if (isalnum(c) || c == '-' || c == '_' || c == '.' || c == '~') {
+        if (isalnum(c) || c == '-' || c == '_' || c == '.' || c == '~')
+        {
             escaped << c;
             continue;
         }
@@ -123,7 +138,8 @@ std::string url_encode(const std::string& value) {
     return escaped.str();
 }
 
-void generateOAuth2Token() {
+void generateOAuth2Token()
+{
     Json::Value jwt_header;
     Json::Value jwt_claim_set;
     std::time_t t = std::time(NULL);
@@ -166,11 +182,13 @@ void generateOAuth2Token() {
     std::cout << post_body << std::endl;
 }
 
-std::string getContainerStatus(const std::string& containerName) {
+std::string getContainerStatus(const std::string &containerName)
+{
     std::string command = "docker inspect --format '{{.State.Status}}' " + containerName;
 
-    FILE* pipe = popen(command.c_str(), "r");
-    if (!pipe) {
+    FILE *pipe = popen(command.c_str(), "r");
+    if (!pipe)
+    {
         std::cerr << "Error executing command." << std::endl;
         return "Error";
     }
@@ -178,7 +196,8 @@ std::string getContainerStatus(const std::string& containerName) {
     char buffer[128];
     std::string status;
 
-    while (fgets(buffer, sizeof(buffer), pipe) != nullptr) {
+    while (fgets(buffer, sizeof(buffer), pipe) != nullptr)
+    {
         buffer[strcspn(buffer, "\n")] = '\0';
         status += buffer;
     }
@@ -188,14 +207,16 @@ std::string getContainerStatus(const std::string& containerName) {
     return status;
 }
 
-void signalHandler(int s) {
+void signalHandler(int s)
+{
     printf("SIGINT got\n");
     // listener.close().wait();
     // pthread_join(thread, nullptr);
     exit(0);
 };
 
-void* runListener(void* arg) {
+void *runListener(void *arg)
+{
     // web::http::experimental::listener::http_listener listener("http://localhost:8080/");
 
     // listener.support(web::http::methods::POST, [](web::http::http_request request) {
@@ -220,14 +241,18 @@ void* runListener(void* arg) {
     return nullptr;
 }
 
-void dockerThread() {
-    while (true) {
+void dockerThread()
+{
+    while (true)
+    {
         std::unique_ptr<Task> task = dbController.getConfirmedTask();
 
         std::cout << "thread running \n";
 
-        if (task != nullptr) {
-            try {
+        if (task != nullptr)
+        {
+            try
+            {
                 dbController.setTaskStatus(
                     task->id,
                     TASK_STATUS::IN_PROGRESS);
@@ -253,11 +278,15 @@ void dockerThread() {
 
                 std::string containerStatus = getContainerStatus("taxi_container");
                 std::cout << "docker container status: " << containerStatus << "\n";
-                if (containerStatus != "running") {
+                if (containerStatus != "running")
+                {
                     int result = system("docker start taxi_container");
-                    if (result == 0) {
+                    if (result == 0)
+                    {
                         std::cout << "Taxi container has been started\n";
-                    } else {
+                    }
+                    else
+                    {
                         std::cout << "Container couldn't be started\n";
                     }
                 }
@@ -274,7 +303,8 @@ void dockerThread() {
                 command += "cp -R /home/source/. /home/gradle/unicaltaxi-driver && ";
                 command += "cd /home/gradle/unicaltaxi-driver";
 
-                if (lastUsedBranch != task->branch) {
+                if (lastUsedBranch != task->branch)
+                {
                     lastUsedBranch = task->branch;
                     command += " && find . -type d -path '*/src/*' -prune -o -name 'build' -type d -exec rm -rf {} +";
                     command += " && ./gradlew clean";
@@ -292,29 +322,40 @@ void dockerThread() {
                 {
                     std::vector<std::string> apps;
 
-                    if (task->app == "All") {
+                    if (task->app == "All")
+                    {
                         std::vector<std::string> allApps = Utils::getTaxiApps();
                         apps.assign(allApps.begin(), allApps.end());
-                    } else {
+                    }
+                    else
+                    {
                         apps.push_back(task->app);
                     }
 
-                    if (task->buildType == "publish") {
-                        for (std::string app : apps) {
+                    if (task->buildType == "publish")
+                    {
+                        for (std::string app : apps)
+                        {
                             buildCommand += "gradle :apps:" + app + ":bundleStoreRelease && ";
                             copyOuputCommand += "cp -R /home/gradle/unicaltaxi-driver/apps/" +
                                                 app +
                                                 "/store/release/. /home/source/docker/build/outputs/publish && ";
                         }
-                    } else if (task->buildType == "release") {
-                        for (std::string app : apps) {
+                    }
+                    else if (task->buildType == "release")
+                    {
+                        for (std::string app : apps)
+                        {
                             buildCommand += "gradle :apps:" + app + ":assembleStoreRelease && ";
                             copyOuputCommand += "cp -R /home/gradle/unicaltaxi-driver/apps/" +
                                                 app +
                                                 "/build/outputs/apk/store/release/. /home/source/docker/build/outputs/release && ";
                         }
-                    } else {
-                        for (std::string app : apps) {
+                    }
+                    else
+                    {
+                        for (std::string app : apps)
+                        {
                             buildCommand += "gradle :apps:" + app + ":assembleStoreDebug && ";
                             copyOuputCommand += "cp -R /home/gradle/unicaltaxi-driver/apps/" +
                                                 app +
@@ -346,33 +387,45 @@ void dockerThread() {
                     "",
                     "html");
 
-                if (task->buildType == "publish") {
-                    for (const auto& entry : fs::recursive_directory_iterator(fs::current_path().string() + "/" + Utils::workDir + "/" + Utils::taxiPath + "/docker/build/outputs/publish")) {
-                        if (entry.is_regular_file() && entry.path().extension() == ".aab") {
+                if (task->buildType == "publish")
+                {
+                    for (const auto &entry : fs::recursive_directory_iterator(fs::current_path().string() + "/" + Utils::workDir + "/" + Utils::taxiPath + "/docker/build/outputs/publish"))
+                    {
+                        if (entry.is_regular_file() && entry.path().extension() == ".aab")
+                        {
                             bot->getApi().sendDocument(
                                 task->charId,
                                 InputFile::fromFile(entry.path().string(), "application/x-authorware-bin"));
                         }
                     }
-                } else if (task->buildType == "release") {
-                    for (const auto& entry : fs::recursive_directory_iterator(fs::current_path().string() + "/" + Utils::workDir + "/" + Utils::taxiPath + "/docker/build/outputs/release")) {
-                        if (entry.is_regular_file() && entry.path().extension() == ".apk") {
-                            bot->getApi().sendDocument(
-                                task->charId,
-                                InputFile::fromFile(entry.path().string(), "application/vnd.android.package-archive"));
-                        }
-                    }
-                } else {
-                    for (const auto& entry : fs::recursive_directory_iterator(fs::current_path().string() + "/" + Utils::workDir + "/" + Utils::taxiPath + "/docker/build/outputs/debug")) {
-                        if (entry.is_regular_file() && entry.path().extension() == ".apk") {
+                }
+                else if (task->buildType == "release")
+                {
+                    for (const auto &entry : fs::recursive_directory_iterator(fs::current_path().string() + "/" + Utils::workDir + "/" + Utils::taxiPath + "/docker/build/outputs/release"))
+                    {
+                        if (entry.is_regular_file() && entry.path().extension() == ".apk")
+                        {
                             bot->getApi().sendDocument(
                                 task->charId,
                                 InputFile::fromFile(entry.path().string(), "application/vnd.android.package-archive"));
                         }
                     }
                 }
-
-            } catch (const std::exception& e) {
+                else
+                {
+                    for (const auto &entry : fs::recursive_directory_iterator(fs::current_path().string() + "/" + Utils::workDir + "/" + Utils::taxiPath + "/docker/build/outputs/debug"))
+                    {
+                        if (entry.is_regular_file() && entry.path().extension() == ".apk")
+                        {
+                            bot->getApi().sendDocument(
+                                task->charId,
+                                InputFile::fromFile(entry.path().string(), "application/vnd.android.package-archive"));
+                        }
+                    }
+                }
+            }
+            catch (const std::exception &e)
+            {
                 std::cerr << e.what() << '\n';
                 dbController.setTaskStatus(
                     task->id,
@@ -382,37 +435,45 @@ void dockerThread() {
 
         {
             std::unique_lock<std::mutex> lock(docekrMtx);
-            if (resumeDCThread && dbController.getConfirmedTask() == nullptr) {
+            if (resumeDCThread && dbController.getConfirmedTask() == nullptr)
+            {
                 resumeDCThread = false;
-                dockerCV.wait(lock, [] { return resumeDCThread; });
+                dockerCV.wait(lock, []
+                              { return resumeDCThread; });
             }
         }
     }
 }
 
-std::vector<std::string> split(const std::string& s, char delimiter) {
+std::vector<std::string> split(const std::string &s, char delimiter)
+{
     std::vector<std::string> tokens;
     std::string token;
     std::istringstream tokenStream(s);
-    while (std::getline(tokenStream, token, delimiter)) {
+    while (std::getline(tokenStream, token, delimiter))
+    {
         tokens.push_back(token);
     }
     return tokens;
 }
 
-bool checkIfDCImageExists() {
-    FILE* pipe = popen("docker images --format \"{{.Repository}}\"", "r");
+bool checkIfDCImageExists()
+{
+    FILE *pipe = popen("docker images --format \"{{.Repository}}\"", "r");
 
-    if (!pipe) {
+    if (!pipe)
+    {
         std::cerr << "Error: Unable to run the Docker command." << std::endl;
         return 1;
     }
 
     char buffer[128];
 
-    while (fgets(buffer, sizeof(buffer), pipe) != nullptr) {
+    while (fgets(buffer, sizeof(buffer), pipe) != nullptr)
+    {
         buffer[strcspn(buffer, "\n")] = '\0';
-        if (std::string(buffer) == "taxi_image") {
+        if (std::string(buffer) == "taxi_image")
+        {
             pclose(pipe);
             return true;
         }
@@ -423,19 +484,23 @@ bool checkIfDCImageExists() {
     return false;
 }
 
-bool checkIfDCContainerExists() {
-    FILE* pipe = popen("docker ps -a --format '{{.Names}}'", "r");
+bool checkIfDCContainerExists()
+{
+    FILE *pipe = popen("docker ps -a --format '{{.Names}}'", "r");
 
-    if (!pipe) {
+    if (!pipe)
+    {
         std::cerr << "Error: Unable to run the Docker command." << std::endl;
         return 1;
     }
 
     char buffer[128];
 
-    while (fgets(buffer, sizeof(buffer), pipe) != nullptr) {
+    while (fgets(buffer, sizeof(buffer), pipe) != nullptr)
+    {
         buffer[strcspn(buffer, "\n")] = '\0';
-        if (std::string(buffer) == "taxi_container") {
+        if (std::string(buffer) == "taxi_container")
+        {
             pclose(pipe);
             return true;
         }
@@ -446,23 +511,29 @@ bool checkIfDCContainerExists() {
     return false;
 }
 
-int main() {
-    generateOAuth2Token();
-    return 0;
+int main()
+{
+    // generateOAuth2Token();
+    // return 0;
     std::ifstream configFile("../config.txt");
     std::unordered_map<std::string, std::string> configMap;
 
-    if (configFile.is_open()) {
+    if (configFile.is_open())
+    {
         std::string line;
-        while (std::getline(configFile, line)) {
+        while (std::getline(configFile, line))
+        {
             std::istringstream iss(line);
             std::string key, value;
-            if (std::getline(iss, key, '=') && std::getline(iss, value)) {
+            if (std::getline(iss, key, '=') && std::getline(iss, value))
+            {
                 configMap[key] = value;
             }
         }
         configFile.close();
-    } else {
+    }
+    else
+    {
         std::cerr << "Failed to open config file." << std::endl;
     }
 
@@ -473,56 +544,72 @@ int main() {
         configMap["TAXI_REPO"].c_str(),
         (Utils::workDir + "/" + Utils::taxiPath).c_str());
 
-    if (checkIfDCImageExists()) {
+    if (checkIfDCImageExists())
+    {
         std::cout << "Taxi image already exists\n";
-    } else {
+    }
+    else
+    {
         int result = system(
             "docker build -t "
             "taxi_image "
             "-f workdir/unicaltaxi-driver/Dockerfile .");
-        if (result == 0) {
+        if (result == 0)
+        {
             std::cout << "Taxi image has been created\n";
-        } else {
+        }
+        else
+        {
             std::cout << "Creating image failed\n";
         }
     }
 
-    if (checkIfDCContainerExists()) {
+    if (checkIfDCContainerExists())
+    {
         std::cout << "Taxi container already exists\n";
-    } else {
-        const char* relativePath = "workdir/unicaltaxi-driver";
+    }
+    else
+    {
+        const char *relativePath = "workdir/unicaltaxi-driver";
         std::filesystem::path absolutePath = std::filesystem::absolute(relativePath);
 
         std::string cmd = "docker run -d -v " + absolutePath.string() + ":/home/source --name taxi_container taxi_image";
 
         int result = system(cmd.c_str());
-        if (result == 0) {
+        if (result == 0)
+        {
             std::cout << "Taxi container has been created\n";
-        } else {
+        }
+        else
+        {
             std::cout << "Taxi container has been created\n";
         }
     }
 
-    if (getContainerStatus("taxi_container") == "running") {
+    if (getContainerStatus("taxi_container") == "running")
+    {
         int result = system("docker stop taxi_container");
-        if (result == 0) {
+        if (result == 0)
+        {
             std::cout << "Taxi container has been stopped\n";
-        } else {
+        }
+        else
+        {
             std::cout << "Container couldn't be stopped\n";
         }
     }
 
     dbController.createTables();
 
-    dbController.addListener(1, [](int action) {
+    dbController.addListener(1, [](int action)
+                             {
         std::cout << "confirmed"
                   << "\n";
         {
             std::unique_lock<std::mutex> lock(docekrMtx);
             resumeDCThread = true;
             dockerCV.notify_one();
-        }
-    });
+        } });
 
     bot = new Bot(configMap["BOT_TOKEN"]);
 
@@ -530,7 +617,8 @@ int main() {
     dcThread.detach();
 
     FragmentManager fragmentManager(bot);
-    fragmentManager.setFragmentFactory([](int fragmentId) -> std::shared_ptr<Fragment> {
+    fragmentManager.setFragmentFactory([](int fragmentId) -> std::shared_ptr<Fragment>
+                                       {
         std::shared_ptr<BaseFragment> fragment = nullptr;
         switch (fragmentId) {
             case Fragments::LOGIN: {
@@ -566,42 +654,40 @@ int main() {
         }
 
         fragment->setDBController(&dbController);
-        return fragment;
-    });
+        return fragment; });
 
     bot->getEvents().onCommand(
         {"start"},
-        [&](TgBot::Message::Ptr message) {
+        [&](TgBot::Message::Ptr message)
+        {
             dbController.resetUser(message->from->id);
             fragmentManager.onCommand(message);
         });
 
-    bot->getEvents().onNonCommandMessage([&fragmentManager](Message::Ptr message) {
-        fragmentManager.onNonCommandMessage(message);
-    });
+    bot->getEvents().onNonCommandMessage([&fragmentManager](Message::Ptr message)
+                                         { fragmentManager.onNonCommandMessage(message); });
 
-    bot->getEvents().onCallbackQuery([&fragmentManager](CallbackQuery::Ptr callbackQuery) {
-        fragmentManager.onCallbackQuery(callbackQuery);
-    });
+    bot->getEvents().onCallbackQuery([&fragmentManager](CallbackQuery::Ptr callbackQuery)
+                                     { fragmentManager.onCallbackQuery(callbackQuery); });
 
     // signal(SIGINT, signalHandler);
 
-    try {
+    try
+    {
         bot->getApi().deleteWebhook();
+        bot->getApi().setWebhook("https://taxi-log.fast-taxi.uz/bot-api/");
+        TgWebhookTcpServer webhookServer(4000, "/", bot->getEventHandler());
+        printf("Server starting\n");
+        webhookServer.start();
 
-        // TgWebhookTcpServer webhookServer(8080, bot);
-        // printf("Server starting\n");
-
-        // bot.getApi().deleteWebhook();
-        // bot.getApi().setWebhook("https://anasxonunical.jprq.live");
-        // webhookServer.start();
-
-        TgBot::TgLongPoll longPoll(*bot);
-        while (true) {
-            printf("Long poll started\n");
-            longPoll.start();
-        }
-    } catch (TgBot::TgException& e) {
+        // TgBot::TgLongPoll longPoll(*bot);
+        // while (true) {
+        //     printf("Long poll started\n");
+        //     longPoll.start();
+        // }
+    }
+    catch (TgBot::TgException &e)
+    {
         printf("error: %s\n", e.what());
     }
 

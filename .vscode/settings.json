@@ -75,6 +75,10 @@
         "variant": "cpp",
         "*.ipp": "cpp",
         "netfwd": "cpp",
-        "*.suite": "cpp"
+        "*.suite": "cpp",
+        "charconv": "cpp",
+        "shared_mutex": "cpp",
+        "span": "cpp",
+        "format": "cpp"
     }
 }

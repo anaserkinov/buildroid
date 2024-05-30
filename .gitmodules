@@ -7,3 +7,6 @@
 [submodule "libs/tgbot_fragment"]
 	path = libs/tgbot_fragment
 	url = https://github.com/anaserkinov/tgbot_fragment.git
+[submodule "libs/libgit2"]
+	path = libs/libgit2
+	url = https://github.com/libgit2/libgit2.git
