@@ -32,6 +32,9 @@
 *.app
 
 build/*
-/build
-/external
+shared/build
+build
+external
+deps
+host/docker-compose.env
 docker_token

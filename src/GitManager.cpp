@@ -82,7 +82,7 @@ void GitManager::fetch(const std::string& localPath) {
     git_fetch_options fetch_opts = GIT_FETCH_OPTIONS_INIT;
     fetch_opts.callbacks.credentials = credentialsCallback;
 
-    int fetch_result = git_remote_fetch(remote, NULL, &fetch_opts, "fetch");
+    int fetch_result = git_remote_fetch(remote, nullptr, &fetch_opts, "fetch");
     if (fetch_result != 0) {
         const git_error* error = giterr_last();
         if (error) {

@@ -5,6 +5,7 @@
 
 struct Task {
     int64_t id;
+    int64_t type;
     int64_t userId;
     std::string project;
     std::string branch;
@@ -15,6 +16,7 @@ struct Task {
     int32_t errorCode;
     int64_t charId;
     int64_t messageId;
+    int64_t gitlabJobId;
 };
 
 #endif

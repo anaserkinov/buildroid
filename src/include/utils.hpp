@@ -1,5 +1,5 @@
-#ifndef UTILS_HPP
-#define UTILS_HPP
+#ifndef BUILDRROID_UTILS_HPP
+#define BUILDRROID_UTILS_HPP
 
 #include <Data.hpp>
 #include <algorithm>
@@ -11,18 +11,24 @@
 
 class Events {
    public:
-    static const int TASK_CONFIRMED = 2;
+    static const int TASK_CONFIRMED;
+};
+
+class TASK_TYPE {
+   public:
+    static const int BUILD;
+    static const int SEND;
 };
 
 class TASK_STATUS {
    public:
-    static const int CREATED = 1;
-    static const int NEW = 2;
-    static const int CONFIRMED = 3;
-    static const int IN_PROGRESS = 4;
-    static const int COMPLETED = 5;
-    static const int FAILED = 6;
-    static const int CANCELED = 7;
+    static const int CREATED;
+    static const int NEW;
+    static const int CONFIRMED;
+    static const int IN_PROGRESS;
+    static const int COMPLETED;
+    static const int FAILED;
+    static const int CANCELED;
 };
 
 class Utils {
@@ -36,11 +42,11 @@ class Utils {
     static const std::string taxiPath;
     static const std::string bitoPath;
 
-    static std::unique_ptr<std::string> execute(const std::string& command) {
+    static std::string execute(const std::string& command) {
         FILE* pipe = popen(command.c_str(), "r");
         if (!pipe) {
             std::cerr << "Error opening pipe." << std::endl;
-            return std::make_unique<std::string>("Error opening pipe.");
+            return "error";
         }
 
         char buffer[128];
@@ -51,15 +57,22 @@ class Utils {
         int status = pclose(pipe);
 
         if (WIFEXITED(status) && WEXITSTATUS(status) == 0) {
-            std::cout << "Command executed successfully." << std::endl;
-            return nullptr;
+            return result;
         } else {
             std::cerr << "Error executing command." << std::endl;
             if (!result.empty()) {
                 std::cerr << "Error message: " << result << std::endl;
             }
-            return std::make_unique<std::string>(result);
+            return "error";
         }
+    }
+
+    static std::string getVersionCode(const std::string filePath){
+        return Utils::execute("aapt dump badging \"" + filePath + "\" | awk -v FS=\"'\" '/versionName/{print $4}'");
+    }
+
+    static std::string getVersionName(const std::string filePath){
+        return Utils::execute("aapt dump badging \"" + filePath + "\" | awk -v FS=\"'\" '/versionName/{print $6}'");
     }
 
     static void clearStringFromSticker(std::string& s) {

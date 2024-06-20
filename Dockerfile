@@ -1,20 +1,23 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN mkdir -p external && cd external
+WORKDIR buildroid
 
-RUN apt-get update && \
-apt install -y openssl libssl-dev libboost-all-dev libcpprest-dev unzip zip git curl screen && \
-apt install -y gcc clang pkg-config cmake make
+COPY config.txt .
+COPY tools.sh .
+RUN chmod +x tools.sh
 
-COPY . .
+RUN /bin/bash -c './tools.sh --install_deps'
 
-RUN cd external/vcpkg && \
-./bootstrap-vcpkg.sh && \
-./vcpkg integrate install && \
-./vcpkg install jsoncpp 
+COPY shared shared
+RUN /bin/bash -c './tools.sh --buildLibs'
 
-RUN mkdir -p build && \
-cmake .. && \
-make
+COPY libs libs
+COPY src src
+COPY CMakeLists.txt .
+COPY config.txt .
+RUN /bin/bash -c './tools.sh --build'
+
+RUN rm -rf shared
+RUN rm -rf libs src CMakeLists.txt config.t

@@ -62,6 +62,10 @@ class DatabaseController {
         int32_t taskId,
         int64_t chatId,
         int64_t messageId);
+    void createSendTask(
+        std::string projectName,
+        int64_t gitlabJobId
+    );
     void deleteTask(
         int32_t taskId);
 

@@ -22,6 +22,7 @@ void DatabaseController::createTables() {
         MainDatabase::getDB().executeFast(
                                  "CREATE TABLE IF NOT EXISTS tasks("
                                  "id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,"
+                                 "type INTEGER,"
                                  "userId INTEGER,"
                                  "project TEXT,"
                                  "branch TEXT,"
@@ -32,6 +33,7 @@ void DatabaseController::createTables() {
                                  "errorCode INTEGER,"
                                  "chatId INTEGER,"
                                  "messageId INTEGER,"
+                                 "gitlabJobId INTEGER,"
                                  "createdAt INTEGER,"
                                  "startedAt INTEGER,"
                                  "completedAt INTEGER"
@@ -150,15 +152,17 @@ std::unique_ptr<Task> DatabaseController::getTask(int32_t taskId) {
                 Task{
                     cursor.ptr->longValue(0),
                     cursor.ptr->longValue(1),
-                    cursor.ptr->stringValue(2),
+                    cursor.ptr->longValue(2),
                     cursor.ptr->stringValue(3),
                     cursor.ptr->stringValue(4),
                     cursor.ptr->stringValue(5),
                     cursor.ptr->stringValue(6),
-                    cursor.ptr->intValue(7),
+                    cursor.ptr->stringValue(7),
                     cursor.ptr->intValue(8),
-                    cursor.ptr->longValue(9),
-                    cursor.ptr->longValue(10)});
+                    cursor.ptr->intValue(9),
+                    cursor.ptr->longValue(10),
+                    cursor.ptr->longValue(11),
+                    cursor.ptr->longValue(12)});
 
     } catch (const std::exception& e) {
         printf(e.what());
@@ -176,15 +180,17 @@ std::unique_ptr<Task> DatabaseController::getConfirmedTask() {
                 Task{
                     cursor.ptr->longValue(0),
                     cursor.ptr->longValue(1),
-                    cursor.ptr->stringValue(2),
+                    cursor.ptr->longValue(2),
                     cursor.ptr->stringValue(3),
                     cursor.ptr->stringValue(4),
                     cursor.ptr->stringValue(5),
                     cursor.ptr->stringValue(6),
-                    cursor.ptr->intValue(7),
+                    cursor.ptr->stringValue(7),
                     cursor.ptr->intValue(8),
-                    cursor.ptr->longValue(9),
-                    cursor.ptr->longValue(10)});
+                    cursor.ptr->intValue(9),
+                    cursor.ptr->longValue(10),
+                    cursor.ptr->longValue(11),
+                    cursor.ptr->longValue(12)});
 
     } catch (const std::exception& e) {
         printf(e.what());
@@ -199,18 +205,19 @@ void DatabaseController::selectProject(
         int32_t userTaskId = getCurrentTaskId(userId);
         if (userTaskId == -1) {
             auto preparedS = MainDatabase::getDB().executeFast(
-                "REPLACE INTO tasks VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+                "REPLACE INTO tasks VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 
             preparedS->requery();
-            preparedS->bindInt64(2, userId);
-            preparedS->bindString(7, "");
-            preparedS->bindInt32(8, TASK_STATUS::CREATED);
-            preparedS->bindInt32(9, -1);
-            preparedS->bindInt64(10, -1);
+            preparedS->bindInt64(2, TASK_TYPE::BUILD);
+            preparedS->bindInt64(3, userId);
+            preparedS->bindString(8, "");
+            preparedS->bindInt32(9, TASK_STATUS::CREATED);
+            preparedS->bindInt32(10, -1);
             preparedS->bindInt64(11, -1);
             preparedS->bindInt64(12, -1);
-            preparedS->bindInt64(13, -1);
             preparedS->bindInt64(14, -1);
+            preparedS->bindInt64(15, -1);
+            preparedS->bindInt64(16, -1);
 
             userTaskId = preparedS->step(MainDatabase::getDB());
             preparedS->dispose();
@@ -296,6 +303,31 @@ void DatabaseController::setTaskTitle(
     }
 }
 
+void DatabaseController::createSendTask(
+        std::string projectName,
+        int64_t gitlabJobId) {
+    try {
+        auto preparedS = MainDatabase::getDB().executeFast(
+                "REPLACE INTO tasks VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+
+        preparedS->requery();
+        preparedS->bindInt64(2, TASK_TYPE::SEND);
+        preparedS->bindString(4, projectName); 
+        preparedS->bindInt64(9, TASK_STATUS::CONFIRMED);
+        preparedS->bindInt64(13, gitlabJobId); 
+
+        preparedS->step(MainDatabase::getDB());
+        preparedS->dispose();
+
+        for (const auto& entry : mListeners) {
+            entry.second(Events::TASK_CONFIRMED);
+        }
+    } catch (const std::exception& e) {
+        printf(e.what());
+    }
+}
+
+
 void DatabaseController::setTaskStatus(
     int32_t id,
     int32_t status) {
@@ -313,7 +345,6 @@ void DatabaseController::setTaskStatus(
                 entry.second(Events::TASK_CONFIRMED);
             }
         }
-
     } catch (const std::exception& e) {
         printf(e.what());
     }

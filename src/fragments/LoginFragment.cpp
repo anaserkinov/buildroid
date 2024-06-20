@@ -14,17 +14,17 @@ LoginFragment::LoginFragment()
 };
 
 void LoginFragment::onCommand(const Message::Ptr& message) {
-    auto keyboard = std::make_shared<ReplyKeyboardMarkup>();
-    keyboard->resizeKeyboard = true;
-    auto button = std::make_shared<KeyboardButton>();
-    button->requestContact = true;
-    button->text = "Phone number";
-    sendMessage(
-        message->chat->id,
-        "Send your phone number",
-        false,
-        0,
-        addButton(keyboard, button));
+    // auto keyboard = std::make_shared<ReplyKeyboardMarkup>();
+    // keyboard->resizeKeyboard = true;
+    // auto button = std::make_shared<KeyboardButton>();
+    // button->requestContact = true;
+    // button->text = "Phone number";
+    // sendMessage(
+    //     message->chat->id,
+    //     "Send your phone number",
+    //     false,
+    //     0,
+    //     addButton(keyboard, button));
 }
 
 void LoginFragment::onNonCommandMessage(const Message::Ptr& message) {

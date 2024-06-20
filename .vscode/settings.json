@@ -79,6 +79,7 @@
         "charconv": "cpp",
         "shared_mutex": "cpp",
         "span": "cpp",
-        "format": "cpp"
+        "format": "cpp",
+        "stdfloat": "cpp"
     }
 }

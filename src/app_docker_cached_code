@@ -1,0 +1,169 @@
+dbController.setTaskStatus(
+                    task->id,
+                    TASK_STATUS::IN_PROGRESS);
+                task->status = TASK_STATUS::IN_PROGRESS;
+
+                bot->getApi().editMessageText(
+                    Utils::getTaskInfoText(task),
+                    task->charId,
+                    task->messageId,
+                    "",
+                    "html");
+
+                GitManager gitManager;
+                gitManager.checkout(
+                    Utils::workDir + "/" + Utils::taxiPath,
+                    task->branch);
+
+                {
+                    std::ofstream localProperties(Utils::workDir + "/" + Utils::taxiPath + "/" + "local.properties");
+                    localProperties << "sdk.dir=/usr/local/android-sdk-linux";
+                    localProperties.close();
+                }
+
+                std::string containerStatus = getContainerStatus("taxi_container");
+                if (containerStatus != "running")
+                {
+                    int result = system("docker start taxi_container");
+                    if (result == 0)
+                    {
+                        std::cout << "Taxi container has been started\n";
+                    }
+                    else
+                    {
+                        std::cout << "Container couldn't be started\n";
+                    }
+                }
+
+                std::string command = "docker exec -t taxi_container /bin/bash -c ";
+
+                command += "\"rm -rf /home/source/docker/build/outputs/publish && ";
+                command += "mkdir -p /home/source/docker/build/outputs/publish && ";
+                command += "rm -rf /home/source/docker/build/outputs/release && ";
+                command += "mkdir -p /home/source/docker/build/outputs/release && ";
+                command += "rm -rf /home/source/docker/build/outputs/debug && ";
+                command += "mkdir -p /home/source/docker/build/outputs/debug && ";
+                command += "rm -rf /home/gradle/unicaltaxi-driver && ";
+                command += "cp -R /home/source/. /home/gradle/unicaltaxi-driver && ";
+                command += "cd /home/gradle/unicaltaxi-driver";
+
+                if (lastUsedBranch != task->branch)
+                {
+                    lastUsedBranch = task->branch;
+                    command += " && find . -type d -path '*/src/*' -prune -o -name 'build' -type d -exec rm -rf {} +";
+                    command += " && ./gradlew clean";
+                    // command += " && ./gradlew build --refresh-dependencies";
+                }
+
+                // assembleStandaloneDebug
+                // assembleDebug
+                // assembleRelease
+                // bundleRelease
+
+                std::string buildCommand;
+                std::string copyOuputCommand;
+
+                {
+                    std::vector<std::string> apps;
+
+                    if (task->app == "All")
+                    {
+                        std::vector<std::string> allApps = Utils::getTaxiApps();
+                        apps.assign(allApps.begin(), allApps.end());
+                    }
+                    else
+                    {
+                        apps.push_back(task->app);
+                    }
+
+                    if (task->buildType == "publish")
+                    {
+                        for (std::string app : apps)
+                        {
+                            buildCommand += "gradle :apps:" + app + ":bundleStoreRelease && ";
+                            copyOuputCommand += "cp -R /home/gradle/unicaltaxi-driver/apps/" +
+                                                app +
+                                                "/store/release/. /home/source/docker/build/outputs/publish && ";
+                        }
+                    }
+                    else if (task->buildType == "release")
+                    {
+                        for (std::string app : apps)
+                        {
+                            buildCommand += "gradle :apps:" + app + ":assembleStoreRelease && ";
+                            copyOuputCommand += "cp -R /home/gradle/unicaltaxi-driver/apps/" +
+                                                app +
+                                                "/build/outputs/apk/store/release/. /home/source/docker/build/outputs/release && ";
+                        }
+                    }
+                    else
+                    {
+                        for (std::string app : apps)
+                        {
+                            buildCommand += "gradle :apps:" + app + ":assembleStoreDebug && ";
+                            copyOuputCommand += "cp -R /home/gradle/unicaltaxi-driver/apps/" +
+                                                app +
+                                                "/build/outputs/apk/store/debug/. /home/source/docker/build/outputs/debug && ";
+                        }
+                    }
+
+                    buildCommand.erase(buildCommand.length() - 4, 4);
+                    copyOuputCommand.erase(copyOuputCommand.length() - 4, 4);
+                }
+
+                command += " && " + buildCommand;
+                command += " && " + copyOuputCommand;
+
+                command += "\"";
+
+                Utils::execute(command);
+
+                dbController.setTaskStatus(
+                    task->id,
+                    TASK_STATUS::COMPLETED);
+
+                task->status = TASK_STATUS::COMPLETED;
+
+                bot->getApi().editMessageText(
+                    Utils::getTaskInfoText(task),
+                    task->charId,
+                    task->messageId,
+                    "",
+                    "html");
+
+                if (task->buildType == "publish")
+                {
+                    for (const auto &entry : fs::recursive_directory_iterator(fs::current_path().string() + "/" + Utils::workDir + "/" + Utils::taxiPath + "/docker/build/outputs/publish"))
+                    {
+                        if (entry.is_regular_file() && entry.path().extension() == ".aab")
+                        {
+                            bot->getApi().sendDocument(
+                                task->charId,
+                                InputFile::fromFile(entry.path().string(), "application/x-authorware-bin"));
+                        }
+                    }
+                }
+                else if (task->buildType == "release")
+                {
+                    for (const auto &entry : fs::recursive_directory_iterator(fs::current_path().string() + "/" + Utils::workDir + "/" + Utils::taxiPath + "/docker/build/outputs/release"))
+                    {
+                        if (entry.is_regular_file() && entry.path().extension() == ".apk")
+                        {
+                            bot->getApi().sendDocument(
+                                task->charId,
+                                InputFile::fromFile(entry.path().string(), "application/vnd.android.package-archive"));
+                        }
+                    }
+                }
+                else
+                {
+                    for (const auto &entry : fs::recursive_directory_iterator(fs::current_path().string() + "/" + Utils::workDir + "/" + Utils::taxiPath + "/docker/build/outputs/debug"))
+                    {
+                        if (entry.is_regular_file() && entry.path().extension() == ".apk")
+                        {
+                            bot->getApi().sendDocument(
+                                task->charId,
+                                InputFile::fromFile(entry.path().string(), "application/vnd.android.package-archive"));
+                        }
+                    }
+                }

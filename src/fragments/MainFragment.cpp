@@ -22,14 +22,14 @@ void MainFragment::onCreate(int16_t type, const std::shared_ptr<void>& data) {
         createKeyboard(
             {
                 {"Taxi 🚕",
-                 "Bito 🧮"},
+                 "ERP 🧮"},
             },
             keyboard));
 }
 
 void MainFragment::onNonCommandMessage(const Message::Ptr& message) {
-    if (message->text == "Bito 🧮") {
-        dbController->selectProject(message->from->id, "bito");
+    if (message->text == "ERP 🧮") {
+        dbController->selectProject(message->from->id, "erp");
         sendMessage(
             message->chat->id,
             "https://play.google.com/store/apps/details?id=uz.unical.bito.pro");
