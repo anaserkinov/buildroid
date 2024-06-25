@@ -77,8 +77,8 @@ std::string getContainerStatus(const std::string &containerName)
 }
 
 void gitWebhookThread(){
-    // web::uri_builder uriB(U("http://localhost:8080"));
-    web::uri_builder uriB(U("https://0.0.0.0:4040"));
+    // web::uri_builder uriB(U("http://localhost:8000"));
+    web::uri_builder uriB(U("http://0.0.0.0:4040"));
     web::http::experimental::listener::http_listener listener(uriB.to_uri().to_string());
 
     listener.support(web::http::methods::POST, [](web::http::http_request request) {
@@ -351,19 +351,19 @@ int main()
     // bot->getEvents().onCallbackQuery([&fragmentManager](CallbackQuery::Ptr callbackQuery)
     //                                  { fragmentManager.onCallbackQuery(callbackQuery); });
 
-    try
-    {
+    try{
         //webhook
         bot->getApi().deleteWebhook();
         bot->getApi().setWebhook("https://taxi-log.fast-taxi.uz/bot-tg-api/");
         TgWebhookTcpServer webhookServer(4000, "/", bot->getEventHandler());
-        printf("Server starting\n");
+        std::cout << "Bot starting" << std::endl;
         webhookServer.start();
 
-        //long poll
+        // long poll
+        // bot->getApi().deleteWebhook();
         // TgBot::TgLongPoll longPoll(*bot);
         // while (true) {
-        //     printf("Long poll started\n");
+        //     std::cout << "Bot starting" << std::endl;
         //     longPoll.start();
         // }
     }

@@ -80,6 +80,7 @@
         "shared_mutex": "cpp",
         "span": "cpp",
         "format": "cpp",
-        "stdfloat": "cpp"
+        "stdfloat": "cpp",
+        "*.dat": "cpp"
     }
 }

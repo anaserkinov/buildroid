@@ -2,7 +2,7 @@ services:
   bot:
     image: anasxonunical/buildroid:v1.0.0
     ports:
-      - "4000:4000" # host_port:container_port
-      - "4040:4040" # host_port:container_port
+      - "4000:4000" # host_port:container_port or only container port to use any free port in host
+      - "4040:4040" # host_port:container_portor only container port to use any free port in host
     entrypoint: ./build/Buildroid
     container_name: buildroid_container
