@@ -174,15 +174,20 @@ void tasksThread(){
                         for (const auto &entry : fs::recursive_directory_iterator(fs::current_path().string() + "/" + downloadPath + "/outputs/release")){
                             if (entry.is_regular_file() && entry.path().extension() == ".apk"){
                                 try {
-                                    bot->getApi().sendDocument(
+                                    auto message = bot->getApi().sendDocument(
                                         tgGroupId,
                                         TgBot::InputFile::fromFile(entry.path().string(), "application/vnd.android.package-archive"),
                                         "",
-                                        "#"+Utils::getVersionCode(entry.path().string())+"v"+Utils::getVersionName(entry.path().string()),
-                                        0,
-                                        nullptr,
-                                        "markdown"
+                                        "#"+Utils::getVersionCode(entry.path().string())+"v"+Utils::getVersionName(entry.path().string())
                                     );
+                                    try {
+                                        bot->getApi().pinChatMessage(
+                                            tgGroupId,
+                                            message->messageId
+                                        );
+                                    } catch(const std::exception& e){
+
+                                    }
                                 } catch(const std::exception &e){
                                     
                                 }
@@ -192,15 +197,21 @@ void tasksThread(){
                         for (const auto &entry : fs::recursive_directory_iterator(fs::current_path().string() + "/" + downloadPath + "/outputs/debug")){
                             if (entry.is_regular_file() && entry.path().extension() == ".apk"){
                                 try {
-                                    bot->getApi().sendDocument(
+                                    auto message = bot->getApi().sendDocument(
                                         tgTestGroupId,
                                         TgBot::InputFile::fromFile(entry.path().string(), "application/vnd.android.package-archive"),
                                         "",
-                                        "#"+Utils::getVersionCode(entry.path().string())+"v"+Utils::getVersionName(entry.path().string()),
-                                        0,
-                                        nullptr,
-                                        "markdown"
+                                        "#"+Utils::getVersionCode(entry.path().string())+"v"+Utils::getVersionName(entry.path().string())
                                     );
+                                    try {
+                                        bot->getApi().pinChatMessage(
+                                            tgTestGroupId,
+                                            message->messageId,
+                                            true
+                                        );
+                                    } catch(const std::exception& e){
+
+                                    }
                                 } catch(const std::exception &e){
                                     
                                 }
