@@ -58,7 +58,7 @@ std::string getContainerStatus(const std::string &containerName)
     FILE *pipe = popen(command.c_str(), "r");
     if (!pipe)
     {
-        std::cerr << "Error executing command." << std::endl;
+        std::cout<< "Error executing command." << "\n";
         return "Error";
     }
 
@@ -83,28 +83,36 @@ void gitWebhookThread(){
 
     listener.support(web::http::methods::POST, [](web::http::http_request request) {
         request.extract_json().then([=](web::json::value request_data){
-            std::cout<<"request: "<<request_data<<"\n";
-            if (request.relative_uri().path() == "/gitlab"){
-                if (request_data.has_field("build_status") && request_data.has_field("build_stage")){
-                    auto status = request_data.at("build_status").as_string();
-                    auto stage = request_data.at("build_stage").as_string();
-                    if(status == "success" && stage == "build"){
-                        auto projectId = request_data.at("project_id").as_number().to_int64();
-                        std::string project;
-                        if(projectId == getInt64FromConfig(KEY_TAXI_PROJECT_ID)){
-                            project = "taxi";
-                        } else if(projectId == getInt64FromConfig(KEY_BITO_PROJECT_ID)){
-                            project = "erp";
+            try {
+                std::cout<<"request: "<<request_data<<"\n";
+                if (request.relative_uri().path() == "/gitlab"){
+                    if (request_data.has_field("build_status") && request_data.has_field("build_stage")){
+                        auto status = request_data.at("build_status").as_string();
+                        auto stage = request_data.at("build_stage").as_string();
+                        if(status == "success" && stage == "build"){
+                            auto projectId = request_data.at("project_id").as_number().to_int64();
+                            std::string project;
+                            if(projectId == getInt64FromConfig(KEY_TAXI_PROJECT_ID)){
+                                project = "taxi";
+                            } else if(projectId == getInt64FromConfig(KEY_BITO_PROJECT_ID)){
+                                project = "erp";
+                            }
+
+                            auto jobId = request_data.at("build_id").as_number().to_int64();
+
+                            try{
+                                dbController.createSendTask(
+                                   project,
+                                   jobId
+                                );
+                            } catch(const std::exception &e){
+                                std::cout<<"Creating task error:" << e.what() << "\n";
+                            }
                         }
-
-                        auto jobId = request_data.at("build_id").as_number().to_int64();
-
-                        dbController.createSendTask(
-                            project,
-                            jobId
-                        );
-                    }
-                }  
+                    }  
+                }
+            } catch(const std::exception &e){
+                    std::cout<<"Receiving post request error:" << e.what() << "\n";
             }
         }).wait();
         request.reply(web::http::status_codes::OK);
@@ -129,6 +137,8 @@ void tasksThread(){
                         task->id,
                         TASK_STATUS::COMPLETED
                     );
+
+                    std::cout<<"Task in progress: " << task->project << "\n";
 
                     std::string downloadPath = "downloads/" + task->project + std::to_string(task->gitlabJobId);
                     std::string downloadUrl;
@@ -186,10 +196,10 @@ void tasksThread(){
                                             message->messageId
                                         );
                                     } catch(const std::exception& e){
-
+                                        std::cout<<"Pin error:" << e.what() << "\n";
                                     }
                                 } catch(const std::exception &e){
-                                    
+                                    std::cout<<"Message send error:" << e.what() << "\n";
                                 }
                             }
                         }
@@ -210,10 +220,10 @@ void tasksThread(){
                                             true
                                         );
                                     } catch(const std::exception& e){
-
+                                        std::cout<<"Pin error:" << e.what() << "\n";
                                     }
                                 } catch(const std::exception &e){
-                                    
+                                    std::cout<<"Message send error:" << e.what() << "\n";
                                 }
                             }
                         }
@@ -222,7 +232,7 @@ void tasksThread(){
                     
                 }
             } catch (const std::exception &e) {
-                std::cerr << e.what() << '\n';
+                std::cout<<"Task error:" << e.what() << "\n";
                 dbController.setTaskStatus(
                     task->id,
                     TASK_STATUS::CONFIRMED);
@@ -356,7 +366,7 @@ int main()
         bot->getApi().deleteWebhook();
         bot->getApi().setWebhook("https://taxi-log.fast-taxi.uz/bot-tg-api/");
         TgWebhookTcpServer webhookServer(4000, "/", bot->getEventHandler());
-        std::cout << "Bot starting" << std::endl;
+        std::cout << "Bot working" << std::endl;
         webhookServer.start();
 
         // long poll

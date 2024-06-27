@@ -49,4 +49,8 @@ for cmd in "${COMMANDS[@]}"; do
     screen -S $SESSION_NAME -X stuff "$cmd"$'\n'
 done
 
+elif [ $1 == "--debug" ]; then
+
+gdb --args ./build/Buildroid
+
 fi

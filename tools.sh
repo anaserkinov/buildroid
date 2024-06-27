@@ -1,17 +1,8 @@
 if [ $1 == "--install_deps" ]; then
 apt-get update
 apt install -y openssl libssl-dev libboost-all-dev libcpprest-dev unzip zip git curl
-apt install -y gcc clang pkg-config cmake make
+apt install -y gcc clang pkg-config cmake make gdb
 
-
-ANDROID_SDK_URL="https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip"
-ANDROID_HOME="/usr/local/android-sdk-linux"
-ANDROID_BUILD_TOOLS_VERSION="34.0.0"
-ANDROID_VERSION=34
-
-JAVA_URL_PATH="jbrsdk-17.0.10-linux-x64-b1087.21"
-JAVA_HOME="/usr/local/java"
-JAVA_URL="https://cache-redirector.jetbrains.com/intellij-jbr/$JAVA_URL_PATH.tar.gz"
 
 mkdir -p $ANDROID_HOME /usr/local
 
@@ -36,8 +27,6 @@ curl -o $ANDROID_HOME/android-sdk.zip $ANDROID_SDK_URL
 cd $ANDROID_HOME && \
 unzip android-sdk.zip && \
 rm android-sdk.zip && \
-
-export PATH=$ANDROID_HOME/build-tools/$ANDROID_BUILD_TOOLS_VERSION:$JAVA_HOME/bin:$PATH
 
 yes | ${ANDROID_HOME}/cmdline-tools/bin/sdkmanager --sdk_root=$ANDROID_HOME --licenses
 $ANDROID_HOME/cmdline-tools/bin/sdkmanager --sdk_root=$ANDROID_HOME --update
