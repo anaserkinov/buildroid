@@ -33,7 +33,7 @@ void DatabaseController::createTables() {
                                  "errorCode INTEGER,"
                                  "chatId INTEGER,"
                                  "messageId INTEGER,"
-                                 "gitlabJobId INTEGER,"
+                                 "gitJobId INTEGER,"
                                  "createdAt INTEGER,"
                                  "startedAt INTEGER,"
                                  "completedAt INTEGER"
@@ -305,7 +305,7 @@ void DatabaseController::setTaskTitle(
 
 void DatabaseController::createSendTask(
         std::string projectName,
-        int64_t gitlabJobId) {
+        int64_t gitJobId) {
     try {
         auto preparedS = MainDatabase::getDB().executeFast(
                 "REPLACE INTO tasks VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
@@ -314,7 +314,7 @@ void DatabaseController::createSendTask(
         preparedS->bindInt64(2, TASK_TYPE::SEND);
         preparedS->bindString(4, projectName); 
         preparedS->bindInt64(9, TASK_STATUS::CONFIRMED);
-        preparedS->bindInt64(13, gitlabJobId); 
+        preparedS->bindInt64(13, gitJobId); 
 
         preparedS->step(MainDatabase::getDB());
         preparedS->dispose();

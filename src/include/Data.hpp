@@ -16,7 +16,7 @@ struct Task {
     int32_t errorCode;
     int64_t charId;
     int64_t messageId;
-    int64_t gitlabJobId;
+    int64_t gitJobId;
 };
 
 #endif
