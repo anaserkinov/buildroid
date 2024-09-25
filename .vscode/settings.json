@@ -82,5 +82,6 @@
         "format": "cpp",
         "stdfloat": "cpp",
         "*.dat": "cpp"
-    }
+    },
+    "git.ignoreLimitWarning": true
 }
