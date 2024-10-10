@@ -3,7 +3,6 @@ apt-get update
 apt install -y openssl libssl-dev libboost-all-dev libcpprest-dev unzip zip git curl
 apt install -y gcc clang pkg-config cmake make gdb
 
-
 mkdir -p $ANDROID_HOME /usr/local
 
 

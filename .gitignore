@@ -39,3 +39,4 @@ deps
 host/docker-compose.env
 docker_token
 config.txt
+service-account.json

@@ -4,8 +4,18 @@ set(CMAKE_CXX_STANDARD 17)
 
 project(Buildroid)
 
-set(JSON_INC_PATH external/vcpkg/packages/jsoncpp_x64-linux/include)
-set(JSON_LIB_PATH external/vcpkg/packages/jsoncpp_x64-linux/lib)
+if(APPLE)
+    message(STATUS "Configuring for macOS") 
+    set(JSON_INC_PATH ${CMAKE_CURRENT_SOURCE_DIR}/external/vcpkg/packages/jsoncpp_arm64-osx/include)
+    set(JSON_LIB_PATH ${CMAKE_CURRENT_SOURCE_DIR}/external/vcpkg/packages/jsoncpp_arm64-osx/lib)  
+elseif(UNIX AND NOT APPLE)
+    message(STATUS "Configuring for Linux (Ubuntu or other distributions)")
+    set(JSON_INC_PATH ${CMAKE_CURRENT_SOURCE_DIR}/external/vcpkg/packages/jsoncpp_x64-linux/include)
+    set(JSON_LIB_PATH ${CMAKE_CURRENT_SOURCE_DIR}/external/vcpkg/packages/jsoncpp_x64-linux/lib) 
+else()
+    message(FATAL_ERROR "Unsupported operating system")
+endif()
+
 
 set(SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 set(LIBS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/libs)
@@ -26,7 +36,6 @@ add_executable(
 
 add_subdirectory(${LIBS_DIR}/tgbot_fragment)
 
-
 target_include_directories(
     Buildroid PRIVATE
     ${JSON_INC_PATH}
@@ -38,14 +47,27 @@ target_include_directories(
 )
 
 add_library(Buildroid_Libs SHARED IMPORTED)
-set_target_properties(Buildroid_Libs PROPERTIES
-    IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/deps/libBuildroid_Libs.so
-)
-
 add_library(libgit2 SHARED IMPORTED)
-set_target_properties(libgit2 PROPERTIES
-    IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/deps/libgit2.so
-)
+
+
+
+if(APPLE)
+    set_target_properties(Buildroid_Libs PROPERTIES
+        IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/deps/libBuildroid_Libs.dylib
+    )
+    set_target_properties(libgit2 PROPERTIES
+        IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/deps/libgit2.dylib
+    )  
+elseif(UNIX AND NOT APPLE)
+    set_target_properties(Buildroid_Libs PROPERTIES
+        IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/deps/libBuildroid_Libs.so
+    )
+    set_target_properties(libgit2 PROPERTIES
+        IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/deps/libgit2.so
+    ) 
+else()
+    message(FATAL_ERROR "Unsupported operating system")
+endif()
 
 find_library(sqlite_cpp sqlite_cpp PATHS ${SHARED_LIBS_DIR}/build/sqlite_cpp)
 find_library(jsoncpp jsoncpp PATHS ${JSON_LIB_PATH})

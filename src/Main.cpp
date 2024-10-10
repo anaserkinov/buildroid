@@ -489,7 +489,7 @@ int main() {
 
   printf("Exit bot\n");
 
-  git_libgit2_shutdown();
+  // git_libgit2_shutdown();
 
   printf("Exit server\n");
 
